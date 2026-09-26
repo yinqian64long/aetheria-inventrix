@@ -1,0 +1,1526 @@
+{
+  "flightsList": [
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "Katowice",
+          "airport": "",
+          "airportCode": "KTW",
+          "dateIso": "2026-10-29",
+          "date": "czwartek, 29 paÅº",
+          "time": "06:00",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/electra-airways/",
+            "logo": "https://s.content4travel.com/itkpl/logo_electra_4f1f013a63.webp",
+            "visible": true,
+            "carriageConditions": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+            "email": "office@electra-airways.com",
+            "phone": "+35929533331",
+            "web": "www.electra-airways.com",
+            "name": "Electra Airways",
+            "streetAddress": "Aleksander Malinov Blvd. 51",
+            "additionalAddress": "1712 Sofia, Bulgaria",
+            "legalForm": "Ltd.",
+            "registrationNumber": "203506186"
+          },
+          "flightNumber": "AMQ436"
+        },
+        "arrival": {
+          "city": "DÅ¼erba",
+          "airport": "",
+          "airportCode": "DJE",
+          "dateIso": "2026-10-29",
+          "date": "czwartek, 29 paÅº",
+          "time": "09:00",
+          "flightCarrierInfo": "$50:flightsList:0:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "AMQ436"
+        },
+        "duration": {
+          "hours": 3,
+          "minutes": 0
+        },
+        "date": "czwartek, 29 paÅº",
+        "dateIso": "2026-10-29",
+        "flightCarrierInfo": "$50:flightsList:0:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "AMQ436",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "592Â zÅ",
+      "pricePerPerson": "296Â zÅ",
+      "priceCatalogCode": "L254",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgwdFVWMFJLUlY4b0FUb0VUREkxTkVJR0NJQ1ppdGNHU2dZSWdKbUsxd1pRQW1JRkNnTkxWRmRxQlFvRFJFcEZjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX0tUV0RKRV8oAToETDI1NEIGCICZitcGSgYIgJmK1wZQAmIFCgNLVFdqBQoDREpFcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "296Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "296Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "Warszawa-OkÄcie",
+          "airport": "",
+          "airportCode": "WAW",
+          "dateIso": "2026-10-29",
+          "date": "czwartek, 29 paÅº",
+          "time": "20:25",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/smartwings/",
+            "logo": "https://s.content4travel.com/itkpl/logo_smartwings_9fa2f287a1.svg",
+            "visible": true,
+            "carriageConditions": "https://s.content4travel.com/itkpl/ogolne_warunki_przewozu_pasazerow_i_bagazu_PL_1_346a25ec41.pdf?updated_at=2023-03-22T12:12:46.361Z",
+            "email": "travel@smartwings.com",
+            "phone": "+420284000612",
+            "web": "www.smartwings.com",
+            "name": "Smartwings",
+            "streetAddress": "Gordona Bennetta 2B",
+            "additionalAddress": "02-159 Warszawa, Polska",
+            "legalForm": "SpÃ³Åka z o.o.",
+            "registrationNumber": "0000385545"
+          },
+          "flightNumber": "TVP7526"
+        },
+        "arrival": {
+          "city": "DÅ¼erba",
+          "airport": "",
+          "airportCode": "DJE",
+          "dateIso": "2026-10-29",
+          "date": "czwartek, 29 paÅº",
+          "time": "23:50",
+          "flightCarrierInfo": "$50:flightsList:1:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "TVP7526"
+        },
+        "duration": {
+          "hours": 3,
+          "minutes": 25
+        },
+        "date": "czwartek, 29 paÅº",
+        "dateIso": "2026-10-29",
+        "flightCarrierInfo": "$50:flightsList:1:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "TVP7526",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 8,
+            "registeredWeight": 23
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "592Â zÅ",
+      "pricePerPerson": "296Â zÅ",
+      "priceCatalogCode": "L254",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgxZEJWMFJLUlY4b0FUb0VUREkxTkVJR0NJQ1ppdGNHU2dZSWdKbUsxd1pRQW1JRkNnTlhRVmRxQlFvRFJFcEZjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dBV0RKRV8oAToETDI1NEIGCICZitcGSgYIgJmK1wZQAmIFCgNXQVdqBQoDREpFcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "296Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "296Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "Warszawa-OkÄcie",
+          "airport": "",
+          "airportCode": "WAW",
+          "dateIso": "2026-10-21",
+          "date": "Åroda, 21 paÅº",
+          "time": "05:55",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/enter-air/",
+            "logo": "https://s.content4travel.com/itkpl/logo_enter_5a4ba5809f.svg?updated_at=2023-03-03T09:51:38.559Z",
+            "visible": true,
+            "carriageConditions": "https://s.content4travel.com/itkpl/Enter_Air_Ogolne_Warunki_Przewozu_obowiazuje_od_13_maja_2025_329e8a6279.pdf",
+            "email": "enterair@enterair.pl",
+            "phone": "+48223551570",
+            "web": "www.enterair.pl",
+            "name": "Enter Air",
+            "streetAddress": "Bokserska  66",
+            "additionalAddress": "02-690 Warszawa, Poland",
+            "legalForm": "SpÃ³Åka Akcyjna",
+            "registrationNumber": "0000339408"
+          },
+          "flightNumber": "ENT5653"
+        },
+        "arrival": {
+          "city": "Antalya",
+          "airport": "",
+          "airportCode": "AYT",
+          "dateIso": "2026-10-21",
+          "date": "Åroda, 21 paÅº",
+          "time": "10:10",
+          "flightCarrierInfo": "$50:flightsList:2:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "ENT5653"
+        },
+        "duration": {
+          "hours": 3,
+          "minutes": 15
+        },
+        "date": "Åroda, 21 paÅº",
+        "dateIso": "2026-10-21",
+        "flightCarrierInfo": "$50:flightsList:2:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "ENT5653",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "780Â zÅ",
+      "pricePerPerson": "390Â zÅ",
+      "priceCatalogCode": "L264",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgxZEJWMEZaVkY4b0FUb0VUREkyTkVJR0NJQ0I0TllHU2dZSWdJSGcxZ1pRQW1JRkNnTlhRVmRxQlFvRFFWbFVjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dBV0FZVF8oAToETDI2NEIGCICB4NYGSgYIgIHg1gZQAmIFCgNXQVdqBQoDQVlUcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "390Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "390Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "Katowice",
+          "airport": "",
+          "airportCode": "KTW",
+          "dateIso": "2026-10-22",
+          "date": "czwartek, 22 paÅº",
+          "time": "07:00",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/electra-airways/",
+            "logo": "https://s.content4travel.com/itkpl/logo_electra_4f1f013a63.webp",
+            "visible": true,
+            "carriageConditions": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+            "email": "office@electra-airways.com",
+            "phone": "+35929533331",
+            "web": "www.electra-airways.com",
+            "name": "Electra Airways",
+            "streetAddress": "Aleksander Malinov Blvd. 51",
+            "additionalAddress": "1712 Sofia, Bulgaria",
+            "legalForm": "Ltd.",
+            "registrationNumber": "203506186"
+          },
+          "flightNumber": "AMQ436"
+        },
+        "arrival": {
+          "city": "DÅ¼erba",
+          "airport": "",
+          "airportCode": "DJE",
+          "dateIso": "2026-10-22",
+          "date": "czwartek, 22 paÅº",
+          "time": "09:00",
+          "flightCarrierInfo": "$50:flightsList:3:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "AMQ436"
+        },
+        "duration": {
+          "hours": 3,
+          "minutes": 0
+        },
+        "date": "czwartek, 22 paÅº",
+        "dateIso": "2026-10-22",
+        "flightCarrierInfo": "$50:flightsList:3:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "AMQ436",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "792Â zÅ",
+      "pricePerPerson": "396Â zÅ",
+      "priceCatalogCode": "L254",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgwdFVWMFJLUlY4b0FUb0VUREkxTkVJR0NJQ2s1ZFlHU2dZSWdLVGwxZ1pRQW1JRkNnTkxWRmRxQlFvRFJFcEZjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX0tUV0RKRV8oAToETDI1NEIGCICk5dYGSgYIgKTl1gZQAmIFCgNLVFdqBQoDREpFcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "396Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "396Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "Warszawa-OkÄcie",
+          "airport": "",
+          "airportCode": "WAW",
+          "dateIso": "2026-10-22",
+          "date": "czwartek, 22 paÅº",
+          "time": "21:25",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/smartwings/",
+            "logo": "https://s.content4travel.com/itkpl/logo_smartwings_9fa2f287a1.svg",
+            "visible": true,
+            "carriageConditions": "https://s.content4travel.com/itkpl/ogolne_warunki_przewozu_pasazerow_i_bagazu_PL_1_346a25ec41.pdf?updated_at=2023-03-22T12:12:46.361Z",
+            "email": "travel@smartwings.com",
+            "phone": "+420284000612",
+            "web": "www.smartwings.com",
+            "name": "Smartwings",
+            "streetAddress": "Gordona Bennetta 2B",
+            "additionalAddress": "02-159 Warszawa, Polska",
+            "legalForm": "SpÃ³Åka z o.o.",
+            "registrationNumber": "0000385545"
+          },
+          "flightNumber": "TVP7526"
+        },
+        "arrival": {
+          "city": "DÅ¼erba",
+          "airport": "",
+          "airportCode": "DJE",
+          "dateIso": "2026-10-22",
+          "date": "czwartek, 22 paÅº",
+          "time": "23:50",
+          "flightCarrierInfo": "$50:flightsList:4:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "TVP7526"
+        },
+        "duration": {
+          "hours": 3,
+          "minutes": 25
+        },
+        "date": "czwartek, 22 paÅº",
+        "dateIso": "2026-10-22",
+        "flightCarrierInfo": "$50:flightsList:4:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "TVP7526",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 8,
+            "registeredWeight": 23
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "792Â zÅ",
+      "pricePerPerson": "396Â zÅ",
+      "priceCatalogCode": "L254",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgxZEJWMFJLUlY4b0FUb0VUREkxTkVJR0NJQ2s1ZFlHU2dZSWdLVGwxZ1pRQW1JRkNnTlhRVmRxQlFvRFJFcEZjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dBV0RKRV8oAToETDI1NEIGCICk5dYGSgYIgKTl1gZQAmIFCgNXQVdqBQoDREpFcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "396Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "396Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "PoznaÅ",
+          "airport": "",
+          "airportCode": "POZ",
+          "dateIso": "2026-10-24",
+          "date": "sobota, 24 paÅº",
+          "time": "14:15",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/enter-air/",
+            "logo": "https://s.content4travel.com/itkpl/logo_enter_5a4ba5809f.svg?updated_at=2023-03-03T09:51:38.559Z",
+            "visible": true,
+            "carriageConditions": "https://s.content4travel.com/itkpl/Enter_Air_Ogolne_Warunki_Przewozu_obowiazuje_od_13_maja_2025_329e8a6279.pdf",
+            "email": "enterair@enterair.pl",
+            "phone": "+48223551570",
+            "web": "www.enterair.pl",
+            "name": "Enter Air",
+            "streetAddress": "Bokserska  66",
+            "additionalAddress": "02-690 Warszawa, Poland",
+            "legalForm": "SpÃ³Åka Akcyjna",
+            "registrationNumber": "0000339408"
+          },
+          "flightNumber": "ENT7101"
+        },
+        "arrival": {
+          "city": "Madera - Funchal",
+          "airport": "",
+          "airportCode": "FNC",
+          "dateIso": "2026-10-24",
+          "date": "sobota, 24 paÅº",
+          "time": "18:40",
+          "flightCarrierInfo": "$50:flightsList:5:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "ENT7101"
+        },
+        "duration": {
+          "hours": 5,
+          "minutes": 25
+        },
+        "date": "sobota, 24 paÅº",
+        "dateIso": "2026-10-24",
+        "flightCarrierInfo": "$50:flightsList:5:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "ENT7101",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "900Â zÅ",
+      "pricePerPerson": "450Â zÅ",
+      "priceCatalogCode": "L258",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgxQlBXa1pPUTE4b0FUb0VUREkxT0VJR0NJRHE3OVlHU2dZSWdPcnYxZ1pRQW1JRkNnTlFUMXBxQlFvRFJrNURjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1BPWkZOQ18oAToETDI1OEIGCIDq79YGSgYIgOrv1gZQAmIFCgNQT1pqBQoDRk5DcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "450Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "450Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "Warszawa-OkÄcie",
+          "airport": "",
+          "airportCode": "WAW",
+          "dateIso": "2026-10-23",
+          "date": "piÄtek, 23 paÅº",
+          "time": "22:20",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/smartwings/",
+            "logo": "https://s.content4travel.com/itkpl/logo_smartwings_9fa2f287a1.svg",
+            "visible": true,
+            "carriageConditions": "https://s.content4travel.com/itkpl/ogolne_warunki_przewozu_pasazerow_i_bagazu_PL_1_346a25ec41.pdf?updated_at=2023-03-22T12:12:46.361Z",
+            "email": "travel@smartwings.com",
+            "phone": "+420284000612",
+            "web": "www.smartwings.com",
+            "name": "Smartwings",
+            "streetAddress": "Gordona Bennetta 2B",
+            "additionalAddress": "02-159 Warszawa, Polska",
+            "legalForm": "SpÃ³Åka z o.o.",
+            "registrationNumber": "0000385545"
+          },
+          "flightNumber": "TVP7208"
+        },
+        "arrival": {
+          "city": "Antalya",
+          "airport": "",
+          "airportCode": "AYT",
+          "dateIso": "2026-10-24",
+          "date": "sobota, 24 paÅº",
+          "time": "02:25",
+          "flightCarrierInfo": "$50:flightsList:6:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "TVP7208"
+        },
+        "duration": {
+          "hours": 3,
+          "minutes": 5
+        },
+        "date": "piÄtek, 23 paÅº",
+        "dateIso": "2026-10-23",
+        "flightCarrierInfo": "$50:flightsList:6:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "TVP7208",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 8,
+            "registeredWeight": 23
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "980Â zÅ",
+      "pricePerPerson": "490Â zÅ",
+      "priceCatalogCode": "L261",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgxZEJWMEZaVkY4b0FUb0VUREkyTVVJR0NJREg2dFlHU2dZSWdNZnExZ1pRQW1JRkNnTlhRVmRxQlFvRFFWbFVjZ01LQVRuaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dBV0FZVF8oAToETDI2MUIGCIDH6tYGSgYIgMfq1gZQAmIFCgNXQVdqBQoDQVlUcgMKATniAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "490Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "490Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "Warszawa-OkÄcie",
+          "airport": "",
+          "airportCode": "WAW",
+          "dateIso": "2026-10-26",
+          "date": "poniedziaÅek, 26 paÅº",
+          "time": "12:45",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/lot/",
+            "logo": "https://s.content4travel.com/itkpl/logo_lot_5b01f38b9e.svg?updated_at=2023-03-03T09:51:39.548Z",
+            "visible": true,
+            "carriageConditions": "https://www.lot.com/pl/pl/regulacje/conditions-of-carriage",
+            "email": "kontakt@lot.pl",
+            "phone": "+48225777755",
+            "web": "www.lot.com",
+            "name": "Polskie Linie Lotnicze LOT SA",
+            "streetAddress": "Komitetu Obrony RobotnikÃ³w 43",
+            "additionalAddress": "02-146 Warszawa, Poland",
+            "legalForm": "SpÃ³Åka Akcyjna",
+            "registrationNumber": "0000056844"
+          },
+          "flightNumber": "LO6607"
+        },
+        "arrival": {
+          "city": "Malaga",
+          "airport": "",
+          "airportCode": "AGP",
+          "dateIso": "2026-10-26",
+          "date": "poniedziaÅek, 26 paÅº",
+          "time": "16:55",
+          "flightCarrierInfo": "$50:flightsList:7:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "LO6607"
+        },
+        "duration": {
+          "hours": 4,
+          "minutes": 10
+        },
+        "date": "poniedziaÅek, 26 paÅº",
+        "dateIso": "2026-10-26",
+        "flightCarrierInfo": "$50:flightsList:7:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "LO6607",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "1Â 092Â zÅ",
+      "pricePerPerson": "546Â zÅ",
+      "priceCatalogCode": "L202",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgxZEJWMEZIVUY4b0FUb0VUREl3TWtJR0NJQ3clMkJ0WUdTZ1lJZ0xENjFnWlFBbUlGQ2dOWFFWZHFCUW9EUVVkUWNnTUtBVEhpQVFrS0IxSmxjMkZpWldVJTNEJTIyJTJDJTIyY3VycmVuY3klMjIlM0ElMjJQTE4lMjIlMkMlMjJsYW5ndWFnZSUyMiUzQSUyMnBsJTIyJTJDJTIyc3VwcGxpZXIlMjIlM0ElMjJpdGFrYSUyMiUyQyUyMnBhcnRpY2lwYW50cyUyMiUzQSU3QiUyMmFkdWx0c051bWJlciUyMiUzQTIlMkMlMjJjaGlsZHJlbkJpcnRoRGF0ZXMlMjIlM0ElNUIlNUQlN0QlMkMlMjJwcm9kdWN0VXJsJTIyJTNBJTIyJTIyJTdE&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dBV0FHUF8oAToETDIwMkIGCICw+tYGSgYIgLD61gZQAmIFCgNXQVdqBQoDQUdQcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "546Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "546Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "Warszawa-OkÄcie",
+          "airport": "",
+          "airportCode": "WAW",
+          "dateIso": "2026-10-22",
+          "date": "czwartek, 22 paÅº",
+          "time": "06:40",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/enter-air/",
+            "logo": "https://s.content4travel.com/itkpl/logo_enter_5a4ba5809f.svg?updated_at=2023-03-03T09:51:38.559Z",
+            "visible": true,
+            "carriageConditions": "https://s.content4travel.com/itkpl/Enter_Air_Ogolne_Warunki_Przewozu_obowiazuje_od_13_maja_2025_329e8a6279.pdf",
+            "email": "enterair@enterair.pl",
+            "phone": "+48223551570",
+            "web": "www.enterair.pl",
+            "name": "Enter Air",
+            "streetAddress": "Bokserska  66",
+            "additionalAddress": "02-690 Warszawa, Poland",
+            "legalForm": "SpÃ³Åka Akcyjna",
+            "registrationNumber": "0000339408"
+          },
+          "flightNumber": "ENT5847"
+        },
+        "arrival": {
+          "city": "Monastyr",
+          "airport": "",
+          "airportCode": "MIR",
+          "dateIso": "2026-10-22",
+          "date": "czwartek, 22 paÅº",
+          "time": "09:10",
+          "flightCarrierInfo": "$50:flightsList:8:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "ENT5847"
+        },
+        "duration": {
+          "hours": 3,
+          "minutes": 30
+        },
+        "date": "czwartek, 22 paÅº",
+        "dateIso": "2026-10-22",
+        "flightCarrierInfo": "$50:flightsList:8:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "ENT5847",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "1Â 192Â zÅ",
+      "pricePerPerson": "596Â zÅ",
+      "priceCatalogCode": "L240",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgxZEJWMDFKVWw4b0FUb0VUREkwTUVJR0NJQ2s1ZFlHU2dZSWdLVGwxZ1pRQW1JRkNnTlhRVmRxQlFvRFRVbFNjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dBV01JUl8oAToETDI0MEIGCICk5dYGSgYIgKTl1gZQAmIFCgNXQVdqBQoDTUlScgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "596Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "596Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "Katowice",
+          "airport": "",
+          "airportCode": "KTW",
+          "dateIso": "2026-10-22",
+          "date": "czwartek, 22 paÅº",
+          "time": "08:30",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/electra-airways/",
+            "logo": "https://s.content4travel.com/itkpl/logo_electra_4f1f013a63.webp",
+            "visible": true,
+            "carriageConditions": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+            "email": "office@electra-airways.com",
+            "phone": "+35929533331",
+            "web": "www.electra-airways.com",
+            "name": "Electra Airways",
+            "streetAddress": "Aleksander Malinov Blvd. 51",
+            "additionalAddress": "1712 Sofia, Bulgaria",
+            "legalForm": "Ltd.",
+            "registrationNumber": "203506186"
+          },
+          "flightNumber": "AMQ4273"
+        },
+        "arrival": {
+          "city": "Monastyr",
+          "airport": "",
+          "airportCode": "MIR",
+          "dateIso": "2026-10-22",
+          "date": "czwartek, 22 paÅº",
+          "time": "10:30",
+          "flightCarrierInfo": "$50:flightsList:9:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "AMQ4273"
+        },
+        "duration": {
+          "hours": 3,
+          "minutes": 0
+        },
+        "date": "czwartek, 22 paÅº",
+        "dateIso": "2026-10-22",
+        "flightCarrierInfo": "$50:flightsList:9:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "AMQ4273",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "1Â 192Â zÅ",
+      "pricePerPerson": "596Â zÅ",
+      "priceCatalogCode": "L240",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgwdFVWMDFKVWw4b0FUb0VUREkwTUVJR0NJQ2s1ZFlHU2dZSWdLVGwxZ1pRQW1JRkNnTkxWRmRxQlFvRFRVbFNjZ01LQVRQaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX0tUV01JUl8oAToETDI0MEIGCICk5dYGSgYIgKTl1gZQAmIFCgNLVFdqBQoDTUlScgMKATPiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "596Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "596Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "WrocÅaw",
+          "airport": "",
+          "airportCode": "WRO",
+          "dateIso": "2026-10-22",
+          "date": "czwartek, 22 paÅº",
+          "time": "16:20",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/electra-airways/",
+            "logo": "https://s.content4travel.com/itkpl/logo_electra_4f1f013a63.webp",
+            "visible": true,
+            "carriageConditions": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+            "email": "office@electra-airways.com",
+            "phone": "+35929533331",
+            "web": "www.electra-airways.com",
+            "name": "Electra Airways",
+            "streetAddress": "Aleksander Malinov Blvd. 51",
+            "additionalAddress": "1712 Sofia, Bulgaria",
+            "legalForm": "Ltd.",
+            "registrationNumber": "203506186"
+          },
+          "flightNumber": "AMQ4275"
+        },
+        "arrival": {
+          "city": "Monastyr",
+          "airport": "",
+          "airportCode": "MIR",
+          "dateIso": "2026-10-22",
+          "date": "czwartek, 22 paÅº",
+          "time": "18:05",
+          "flightCarrierInfo": "$50:flightsList:10:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "AMQ4275"
+        },
+        "duration": {
+          "hours": 2,
+          "minutes": 45
+        },
+        "date": "czwartek, 22 paÅº",
+        "dateIso": "2026-10-22",
+        "flightCarrierInfo": "$50:flightsList:10:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "AMQ4275",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "1Â 192Â zÅ",
+      "pricePerPerson": "596Â zÅ",
+      "priceCatalogCode": "L240",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgxZFNUMDFKVWw4b0FUb0VUREkwTUVJR0NJQ2s1ZFlHU2dZSWdLVGwxZ1pRQW1JRkNnTlhVazlxQlFvRFRVbFNjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dST01JUl8oAToETDI0MEIGCICk5dYGSgYIgKTl1gZQAmIFCgNXUk9qBQoDTUlScgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "596Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "596Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "Katowice",
+          "airport": "",
+          "airportCode": "KTW",
+          "dateIso": "2026-10-28",
+          "date": "Åroda, 28 paÅº",
+          "time": "06:30",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/electra-airways/",
+            "logo": "https://s.content4travel.com/itkpl/logo_electra_4f1f013a63.webp",
+            "visible": true,
+            "carriageConditions": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+            "email": "office@electra-airways.com",
+            "phone": "+35929533331",
+            "web": "www.electra-airways.com",
+            "name": "Electra Airways",
+            "streetAddress": "Aleksander Malinov Blvd. 51",
+            "additionalAddress": "1712 Sofia, Bulgaria",
+            "legalForm": "Ltd.",
+            "registrationNumber": "203506186"
+          },
+          "flightNumber": "AMQ342"
+        },
+        "arrival": {
+          "city": "Wyspy Kanaryjskie - La Palma",
+          "airport": "",
+          "airportCode": "SPC",
+          "dateIso": "2026-10-28",
+          "date": "Åroda, 28 paÅº",
+          "time": "11:00",
+          "flightCarrierInfo": "$50:flightsList:11:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "AMQ342"
+        },
+        "duration": {
+          "hours": 5,
+          "minutes": 30
+        },
+        "date": "Åroda, 28 paÅº",
+        "dateIso": "2026-10-28",
+        "flightCarrierInfo": "$50:flightsList:11:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "AMQ342",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 15
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "1Â 192Â zÅ",
+      "pricePerPerson": "596Â zÅ",
+      "priceCatalogCode": "L198",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgwdFVWMU5RUTE4b0FUb0VUREU1T0VJR0NJRDJoTmNHU2dZSWdQYUUxd1pRQW1JRkNnTkxWRmRxQlFvRFUxQkRjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX0tUV1NQQ18oAToETDE5OEIGCID2hNcGSgYIgPaE1wZQAmIFCgNLVFdqBQoDU1BDcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "596Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "596Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "PoznaÅ",
+          "airport": "",
+          "airportCode": "POZ",
+          "dateIso": "2026-10-29",
+          "date": "czwartek, 29 paÅº",
+          "time": "07:00",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/nesma-airlines/",
+            "logo": "https://s.content4travel.com/itkpl/nesma_airlines_9b940096ce.png",
+            "visible": true,
+            "carriageConditions": "https://www.nesmaairlines.com/general-rules-and-conditions",
+            "email": "wecare@nesmaairlines.com",
+            "phone": "+20215671",
+            "web": "https://www.nesmaairlines.com",
+            "name": "Nesma Airlines",
+            "streetAddress": "El Madina Street, El Nozha El Gedida 5",
+            "additionalAddress": "0000 Cairo, Egypt",
+            "legalForm": "S.A.E.",
+            "registrationNumber": "44701"
+          },
+          "flightNumber": "NE4615"
+        },
+        "arrival": {
+          "city": "Hurghada",
+          "airport": "",
+          "airportCode": "HRG",
+          "dateIso": "2026-10-29",
+          "date": "czwartek, 29 paÅº",
+          "time": "13:30",
+          "flightCarrierInfo": "$50:flightsList:12:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "NE4615"
+        },
+        "duration": {
+          "hours": 4,
+          "minutes": 30
+        },
+        "date": "czwartek, 29 paÅº",
+        "dateIso": "2026-10-29",
+        "flightCarrierInfo": "$50:flightsList:12:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "NE4615",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "1Â 192Â zÅ",
+      "pricePerPerson": "596Â zÅ",
+      "priceCatalogCode": "L237",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgxQlBXa2hTUjE4b0FUb0VUREl6TjBJR0NJQ1ppdGNHU2dZSWdKbUsxd1pRQW1JRkNnTlFUMXBxQlFvRFNGSkhjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1BPWkhSR18oAToETDIzN0IGCICZitcGSgYIgJmK1wZQAmIFCgNQT1pqBQoDSFJHcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "596Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "596Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "Katowice",
+          "airport": "",
+          "airportCode": "KTW",
+          "dateIso": "2026-10-29",
+          "date": "czwartek, 29 paÅº",
+          "time": "14:55",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/electra-airways/",
+            "logo": "https://s.content4travel.com/itkpl/logo_electra_4f1f013a63.webp",
+            "visible": true,
+            "carriageConditions": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+            "email": "office@electra-airways.com",
+            "phone": "+35929533331",
+            "web": "www.electra-airways.com",
+            "name": "Electra Airways",
+            "streetAddress": "Aleksander Malinov Blvd. 51",
+            "additionalAddress": "1712 Sofia, Bulgaria",
+            "legalForm": "Ltd.",
+            "registrationNumber": "203506186"
+          },
+          "flightNumber": "AMQ464"
+        },
+        "arrival": {
+          "city": "Hurghada",
+          "airport": "",
+          "airportCode": "HRG",
+          "dateIso": "2026-10-29",
+          "date": "czwartek, 29 paÅº",
+          "time": "21:00",
+          "flightCarrierInfo": "$50:flightsList:13:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "AMQ464"
+        },
+        "duration": {
+          "hours": 4,
+          "minutes": 5
+        },
+        "date": "czwartek, 29 paÅº",
+        "dateIso": "2026-10-29",
+        "flightCarrierInfo": "$50:flightsList:13:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "AMQ464",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "1Â 192Â zÅ",
+      "pricePerPerson": "596Â zÅ",
+      "priceCatalogCode": "L237",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgwdFVWMGhTUjE4b0FUb0VUREl6TjBJR0NJQ1ppdGNHU2dZSWdKbUsxd1pRQW1JRkNnTkxWRmRxQlFvRFNGSkhjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX0tUV0hSR18oAToETDIzN0IGCICZitcGSgYIgJmK1wZQAmIFCgNLVFdqBQoDSFJHcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "596Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "596Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "WrocÅaw",
+          "airport": "",
+          "airportCode": "WRO",
+          "dateIso": "2026-10-29",
+          "date": "czwartek, 29 paÅº",
+          "time": "19:30",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/nesma-airlines/",
+            "logo": "https://s.content4travel.com/itkpl/nesma_airlines_9b940096ce.png",
+            "visible": true,
+            "carriageConditions": "https://www.nesmaairlines.com/general-rules-and-conditions",
+            "email": "wecare@nesmaairlines.com",
+            "phone": "+20215671",
+            "web": "https://www.nesmaairlines.com",
+            "name": "Nesma Airlines",
+            "streetAddress": "El Madina Street, El Nozha El Gedida 5",
+            "additionalAddress": "0000 Cairo, Egypt",
+            "legalForm": "S.A.E.",
+            "registrationNumber": "44701"
+          },
+          "flightNumber": "NE4617"
+        },
+        "arrival": {
+          "city": "Hurghada",
+          "airport": "",
+          "airportCode": "HRG",
+          "dateIso": "2026-10-30",
+          "date": "piÄtek, 30 paÅº",
+          "time": "00:30",
+          "flightCarrierInfo": "$50:flightsList:14:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "NE4617"
+        },
+        "duration": {
+          "hours": 4,
+          "minutes": 0
+        },
+        "date": "czwartek, 29 paÅº",
+        "dateIso": "2026-10-29",
+        "flightCarrierInfo": "$50:flightsList:14:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "NE4617",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "1Â 192Â zÅ",
+      "pricePerPerson": "596Â zÅ",
+      "priceCatalogCode": "L240",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgxZFNUMGhTUjE4b0FUb0VUREkwTUVJR0NJQ1ppdGNHU2dZSWdKbUsxd1pRQW1JRkNnTlhVazlxQlFvRFNGSkhjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dST0hSR18oAToETDI0MEIGCICZitcGSgYIgJmK1wZQAmIFCgNXUk9qBQoDSFJHcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "596Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "596Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "Katowice",
+          "airport": "",
+          "airportCode": "KTW",
+          "dateIso": "2026-10-21",
+          "date": "Åroda, 21 paÅº",
+          "time": "05:40",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/electra-airways/",
+            "logo": "https://s.content4travel.com/itkpl/logo_electra_4f1f013a63.webp",
+            "visible": true,
+            "carriageConditions": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+            "email": "office@electra-airways.com",
+            "phone": "+35929533331",
+            "web": "www.electra-airways.com",
+            "name": "Electra Airways",
+            "streetAddress": "Aleksander Malinov Blvd. 51",
+            "additionalAddress": "1712 Sofia, Bulgaria",
+            "legalForm": "Ltd.",
+            "registrationNumber": "203506186"
+          },
+          "flightNumber": "AMQ320"
+        },
+        "arrival": {
+          "city": "Antalya",
+          "airport": "",
+          "airportCode": "AYT",
+          "dateIso": "2026-10-21",
+          "date": "Åroda, 21 paÅº",
+          "time": "09:20",
+          "flightCarrierInfo": "$50:flightsList:15:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "AMQ320"
+        },
+        "duration": {
+          "hours": 2,
+          "minutes": 40
+        },
+        "date": "Åroda, 21 paÅº",
+        "dateIso": "2026-10-21",
+        "flightCarrierInfo": "$50:flightsList:15:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "AMQ320",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "1Â 580Â zÅ",
+      "pricePerPerson": "790Â zÅ",
+      "priceCatalogCode": "KFLI",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgwdFVWMEZaVkY4b0FUb0VTMFpNU1VJR0NJQ0I0TllHU2dZSWdJSGcxZ1pRQW1JRkNnTkxWRmRxQlFvRFFWbFVjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX0tUV0FZVF8oAToES0ZMSUIGCICB4NYGSgYIgIHg1gZQAmIFCgNLVFdqBQoDQVlUcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "790Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "790Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "WrocÅaw",
+          "airport": "",
+          "airportCode": "WRO",
+          "dateIso": "2026-10-21",
+          "date": "Åroda, 21 paÅº",
+          "time": "13:20",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/electra-airways/",
+            "logo": "https://s.content4travel.com/itkpl/logo_electra_4f1f013a63.webp",
+            "visible": true,
+            "carriageConditions": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+            "email": "office@electra-airways.com",
+            "phone": "+35929533331",
+            "web": "www.electra-airways.com",
+            "name": "Electra Airways",
+            "streetAddress": "Aleksander Malinov Blvd. 51",
+            "additionalAddress": "1712 Sofia, Bulgaria",
+            "legalForm": "Ltd.",
+            "registrationNumber": "203506186"
+          },
+          "flightNumber": "AMQ324"
+        },
+        "arrival": {
+          "city": "Antalya",
+          "airport": "",
+          "airportCode": "AYT",
+          "dateIso": "2026-10-21",
+          "date": "Åroda, 21 paÅº",
+          "time": "17:10",
+          "flightCarrierInfo": "$50:flightsList:16:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "AMQ324"
+        },
+        "duration": {
+          "hours": 2,
+          "minutes": 50
+        },
+        "date": "Åroda, 21 paÅº",
+        "dateIso": "2026-10-21",
+        "flightCarrierInfo": "$50:flightsList:16:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "AMQ324",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "1Â 580Â zÅ",
+      "pricePerPerson": "790Â zÅ",
+      "priceCatalogCode": "KFLI",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgxZFNUMEZaVkY4b0FUb0VTMFpNU1VJR0NJQ0I0TllHU2dZSWdJSGcxZ1pRQW1JRkNnTlhVazlxQlFvRFFWbFVjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dST0FZVF8oAToES0ZMSUIGCICB4NYGSgYIgIHg1gZQAmIFCgNXUk9qBQoDQVlUcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "790Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "790Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "PoznaÅ",
+          "airport": "",
+          "airportCode": "POZ",
+          "dateIso": "2026-10-21",
+          "date": "Åroda, 21 paÅº",
+          "time": "14:55",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/enter-air/",
+            "logo": "https://s.content4travel.com/itkpl/logo_enter_5a4ba5809f.svg?updated_at=2023-03-03T09:51:38.559Z",
+            "visible": true,
+            "carriageConditions": "https://s.content4travel.com/itkpl/Enter_Air_Ogolne_Warunki_Przewozu_obowiazuje_od_13_maja_2025_329e8a6279.pdf",
+            "email": "enterair@enterair.pl",
+            "phone": "+48223551570",
+            "web": "www.enterair.pl",
+            "name": "Enter Air",
+            "streetAddress": "Bokserska  66",
+            "additionalAddress": "02-690 Warszawa, Poland",
+            "legalForm": "SpÃ³Åka Akcyjna",
+            "registrationNumber": "0000339408"
+          },
+          "flightNumber": "ENT5871"
+        },
+        "arrival": {
+          "city": "Antalya",
+          "airport": "",
+          "airportCode": "AYT",
+          "dateIso": "2026-10-21",
+          "date": "Åroda, 21 paÅº",
+          "time": "19:25",
+          "flightCarrierInfo": "$50:flightsList:17:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "ENT5871"
+        },
+        "duration": {
+          "hours": 3,
+          "minutes": 30
+        },
+        "date": "Åroda, 21 paÅº",
+        "dateIso": "2026-10-21",
+        "flightCarrierInfo": "$50:flightsList:17:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "ENT5871",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "1Â 580Â zÅ",
+      "pricePerPerson": "790Â zÅ",
+      "priceCatalogCode": "KFLI",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgxQlBXa0ZaVkY4b0FUb0VTMFpNU1VJR0NJQ0I0TllHU2dZSWdJSGcxZ1pRQW1JRkNnTlFUMXBxQlFvRFFWbFVjZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1BPWkFZVF8oAToES0ZMSUIGCICB4NYGSgYIgIHg1gZQAmIFCgNQT1pqBQoDQVlUcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "790Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "790Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "Katowice",
+          "airport": "",
+          "airportCode": "KTW",
+          "dateIso": "2026-10-20",
+          "date": "wtorek, 20 paÅº",
+          "time": "17:00",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/electra-airways/",
+            "logo": "https://s.content4travel.com/itkpl/logo_electra_4f1f013a63.webp",
+            "visible": true,
+            "carriageConditions": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+            "email": "office@electra-airways.com",
+            "phone": "+35929533331",
+            "web": "www.electra-airways.com",
+            "name": "Electra Airways",
+            "streetAddress": "Aleksander Malinov Blvd. 51",
+            "additionalAddress": "1712 Sofia, Bulgaria",
+            "legalForm": "Ltd.",
+            "registrationNumber": "203506186"
+          },
+          "flightNumber": "AMQ270"
+        },
+        "arrival": {
+          "city": "Szarm el-Szejk",
+          "airport": "",
+          "airportCode": "SSH",
+          "dateIso": "2026-10-20",
+          "date": "wtorek, 20 paÅº",
+          "time": "21:50",
+          "flightCarrierInfo": "$50:flightsList:18:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "AMQ270"
+        },
+        "duration": {
+          "hours": 3,
+          "minutes": 50
+        },
+        "date": "wtorek, 20 paÅº",
+        "dateIso": "2026-10-20",
+        "flightCarrierInfo": "$50:flightsList:18:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "AMQ270",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "1Â 592Â zÅ",
+      "pricePerPerson": "796Â zÅ",
+      "priceCatalogCode": "L264",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgwdFVWMU5UU0Y4b0FUb0VUREkyTkVJR0NJRGUydFlHU2dZSWdON2ExZ1pRQW1JRkNnTkxWRmRxQlFvRFUxTkljZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX0tUV1NTSF8oAToETDI2NEIGCIDe2tYGSgYIgN7a1gZQAmIFCgNLVFdqBQoDU1NIcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "796Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "796Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    },
+    {
+      "departureFlight": {
+        "departure": {
+          "city": "Warszawa-OkÄcie",
+          "airport": "",
+          "airportCode": "WAW",
+          "dateIso": "2026-10-20",
+          "date": "wtorek, 20 paÅº",
+          "time": "20:10",
+          "flightCarrierInfo": {
+            "link": "/linie-lotnicze/lot/",
+            "logo": "https://s.content4travel.com/itkpl/logo_lot_5b01f38b9e.svg?updated_at=2023-03-03T09:51:39.548Z",
+            "visible": true,
+            "carriageConditions": "https://www.lot.com/pl/pl/regulacje/conditions-of-carriage",
+            "email": "kontakt@lot.pl",
+            "phone": "+48225777755",
+            "web": "www.lot.com",
+            "name": "Polskie Linie Lotnicze LOT SA",
+            "streetAddress": "Komitetu Obrony RobotnikÃ³w 43",
+            "additionalAddress": "02-146 Warszawa, Poland",
+            "legalForm": "SpÃ³Åka Akcyjna",
+            "registrationNumber": "0000056844"
+          },
+          "flightNumber": "LO6679"
+        },
+        "arrival": {
+          "city": "Szarm el-Szejk",
+          "airport": "",
+          "airportCode": "SSH",
+          "dateIso": "2026-10-21",
+          "date": "Åroda, 21 paÅº",
+          "time": "01:25",
+          "flightCarrierInfo": "$50:flightsList:19:departureFlight:departure:flightCarrierInfo",
+          "flightNumber": "LO6679"
+        },
+        "duration": {
+          "hours": 4,
+          "minutes": 15
+        },
+        "date": "wtorek, 20 paÅº",
+        "dateIso": "2026-10-20",
+        "flightCarrierInfo": "$50:flightsList:19:departureFlight:departure:flightCarrierInfo",
+        "flightNumber": "LO6679",
+        "numberOfStops": 0,
+        "luggage": {
+          "included": true,
+          "details": {
+            "handWeight": 5,
+            "registeredWeight": 20
+          }
+        }
+      },
+      "returnFlight": null,
+      "type": "oneWayTicket",
+      "badges": [],
+      "flightPrice": "1Â 592Â zÅ",
+      "pricePerPerson": "796Â zÅ",
+      "priceCatalogCode": "L264",
+      "currency": "PLN",
+      "url": "https://www.itaka.pl/booking?q=JTdCJTIyaWQlMjIlM0ElMjJDZ1ZKZEdGcllSSUVWa2xVV0JvRFVFeE9JZ3hmUmt4SFgxZEJWMU5UU0Y4b0FUb0VUREkyTkVJR0NJRGUydFlHU2dZSWdON2ExZ1pRQW1JRkNnTlhRVmRxQlFvRFUxTkljZ01LQVRIaUFRa0tCMUpsYzJGaVpXVSUzRCUyMiUyQyUyMmN1cnJlbmN5JTIyJTNBJTIyUExOJTIyJTJDJTIybGFuZ3VhZ2UlMjIlM0ElMjJwbCUyMiUyQyUyMnN1cHBsaWVyJTIyJTNBJTIyaXRha2ElMjIlMkMlMjJwYXJ0aWNpcGFudHMlMjIlM0ElN0IlMjJhZHVsdHNOdW1iZXIlMjIlM0EyJTJDJTIyY2hpbGRyZW5CaXJ0aERhdGVzJTIyJTNBJTVCJTVEJTdEJTJDJTIycHJvZHVjdFVybCUyMiUzQSUyMiUyMiU3RA%3D%3D&adultsNumber=2&carrierCodes=%5B%5D&childrenBirthDates=%5B%5D&tenant=itaka-pl-multiroom&locale=pl&flightType=oneWayTicket&departureDate=%7B%22from%22%3A%222026-10-20%22%7D&returnDate=%7B%22to%22%3A%222026-11-01%22%7D",
+      "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dBV1NTSF8oAToETDI2NEIGCIDe2tYGSgYIgN7a1gZQAmIFCgNXQVdqBQoDU1NIcgMKATHiAQkKB1Jlc2FiZWU=",
+      "isBestseller": false,
+      "isPromoted": false,
+      "isRecommended": null,
+      "participantsPriceDetails": [
+        {
+          "type": "adult",
+          "price": "796Â zÅ"
+        },
+        {
+          "type": "adult",
+          "price": "796Â zÅ"
+        }
+      ],
+      "isApproximateSchedule": false
+    }
+  ],
+  "pagesCount": 2,
+  "rateCount": 29
+}

@@ -1,0 +1,243 @@
+{
+  "query": "CNX \u2192 BKK on 25/10/2026, 1 adult [\u22640 stops/sector]",
+  "currency": "USD",
+  "passengers": {
+    "adults": 1,
+    "children": 0,
+    "infants": 0
+  },
+  "resultsCount": 15,
+  "searchTimeMs": 3997,
+  "itineraries": [
+    {
+      "id": "21c80756510f000000550fb9_0",
+      "price": 60.0,
+      "priceFormatted": "60 USD",
+      "totalDurationSeconds": 4800,
+      "bookingUrl": "https://kiwi.com/u/kxtd2d",
+      "imageId": "bangkok_th",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "BKK",
+        "departureTime": "2026-10-25T06:35:00",
+        "arrivalTime": "2026-10-25T07:55:00",
+        "durationSeconds": 4800,
+        "stops": 0,
+        "route": [
+          "CNX",
+          "BKK"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "BKK",
+            "fromCity": "Chiang Mai",
+            "toCity": "Bangkok",
+            "fromName": "Chiang Mai International",
+            "toName": "Suvarnabhumi",
+            "fromCountry": "Thailand",
+            "toCountry": "Thailand",
+            "departureTime": "2026-10-25T06:35:00",
+            "arrivalTime": "2026-10-25T07:55:00",
+            "durationSeconds": 4800,
+            "carrier": "VZ",
+            "carrierName": "Thai Vietjet",
+            "flightNumber": "VZ2105",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c8018b510f0000cf913577_0",
+      "price": 68.0,
+      "priceFormatted": "68 USD",
+      "totalDurationSeconds": 4500,
+      "bookingUrl": "https://kiwi.com/u/9uyrsw",
+      "imageId": "bangkok_th",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "DMK",
+        "departureTime": "2026-10-25T07:05:00",
+        "arrivalTime": "2026-10-25T08:20:00",
+        "durationSeconds": 4500,
+        "stops": 0,
+        "route": [
+          "CNX",
+          "DMK"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "DMK",
+            "fromCity": "Chiang Mai",
+            "toCity": "Bangkok",
+            "fromName": "Chiang Mai International",
+            "toName": "Don Mueang International",
+            "fromCountry": "Thailand",
+            "toCountry": "Thailand",
+            "departureTime": "2026-10-25T07:05:00",
+            "arrivalTime": "2026-10-25T08:20:00",
+            "durationSeconds": 4500,
+            "carrier": "SL",
+            "carrierName": "Thai Lion Air",
+            "flightNumber": "SL519",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c8018b510f0000e27e79ef_0",
+      "price": 68.0,
+      "priceFormatted": "68 USD",
+      "totalDurationSeconds": 4500,
+      "bookingUrl": "https://kiwi.com/u/9f33w5",
+      "imageId": "bangkok_th",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "DMK",
+        "departureTime": "2026-10-25T06:45:00",
+        "arrivalTime": "2026-10-25T08:00:00",
+        "durationSeconds": 4500,
+        "stops": 0,
+        "route": [
+          "CNX",
+          "DMK"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "DMK",
+            "fromCity": "Chiang Mai",
+            "toCity": "Bangkok",
+            "fromName": "Chiang Mai International",
+            "toName": "Don Mueang International",
+            "fromCountry": "Thailand",
+            "toCountry": "Thailand",
+            "departureTime": "2026-10-25T06:45:00",
+            "arrivalTime": "2026-10-25T08:00:00",
+            "durationSeconds": 4500,
+            "carrier": "DD",
+            "carrierName": "Nok Air",
+            "flightNumber": "DD123",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c8018b510f0000365fed28_0",
+      "price": 68.0,
+      "priceFormatted": "68 USD",
+      "totalDurationSeconds": 4500,
+      "bookingUrl": "https://kiwi.com/u/bwdhqf",
+      "imageId": "bangkok_th",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "DMK",
+        "departureTime": "2026-10-25T08:00:00",
+        "arrivalTime": "2026-10-25T09:15:00",
+        "durationSeconds": 4500,
+        "stops": 0,
+        "route": [
+          "CNX",
+          "DMK"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "DMK",
+            "fromCity": "Chiang Mai",
+            "toCity": "Bangkok",
+            "fromName": "Chiang Mai International",
+            "toName": "Don Mueang International",
+            "fromCountry": "Thailand",
+            "toCountry": "Thailand",
+            "departureTime": "2026-10-25T08:00:00",
+            "arrivalTime": "2026-10-25T09:15:00",
+            "durationSeconds": 4500,
+            "carrier": "SL",
+            "carrierName": "Thai Lion Air",
+            "flightNumber": "SL503",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c8018b510f00000b1ddcda_0",
+      "price": 69.0,
+      "priceFormatted": "69 USD",
+      "totalDurationSeconds": 4500,
+      "bookingUrl": "https://kiwi.com/u/uuzpn9",
+      "imageId": "bangkok_th",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "DMK",
+        "departureTime": "2026-10-25T08:05:00",
+        "arrivalTime": "2026-10-25T09:20:00",
+        "durationSeconds": 4500,
+        "stops": 0,
+        "route": [
+          "CNX",
+          "DMK"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "DMK",
+            "fromCity": "Chiang Mai",
+            "toCity": "Bangkok",
+            "fromName": "Chiang Mai International",
+            "toName": "Don Mueang International",
+            "fromCountry": "Thailand",
+            "toCountry": "Thailand",
+            "departureTime": "2026-10-25T08:05:00",
+            "arrivalTime": "2026-10-25T09:20:00",
+            "durationSeconds": 4500,
+            "carrier": "DD",
+            "carrierName": "Nok Air",
+            "flightNumber": "DD125",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    }
+  ]
+}

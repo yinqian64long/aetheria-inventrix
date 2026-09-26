@@ -1,0 +1,96 @@
+[
+  {
+    "Data": "2026-11-14",
+    "Cena": 3299,
+    "Bilety": [
+      {
+        "BindId": "285717_432873",
+        "Id": "285717_432853",
+        "PakietId": 285717,
+        "DaneDoSzczegolow": {
+          "TrasaWCId": 432853,
+          "PrzystanekId": 1177575,
+          "Iata": "KTW"
+        },
+        "Wylot": {
+          "Panstwo": "Tajlandia",
+          "Przystanek": "Phuket",
+          "Region": "Phuket",
+          "Iata": "HKT",
+          "Godzina": "09:40",
+          "Przesuniecie": null
+        },
+        "Przylot": {
+          "Panstwo": "Polska",
+          "Przystanek": "Katowice",
+          "Region": null,
+          "Iata": "KTW",
+          "Godzina": "15:35",
+          "Przesuniecie": null
+        },
+        "CzasLotu": "11:55",
+        "CzyDreamliner": false,
+        "Dokument": "Paszport",
+        "NazwaPrzewoznika": "LOT Charters Dreamliner",
+        "BagazPodreczny": 5,
+        "BagazRejestrowany": 20,
+        "BagazSportowy": null,
+        "Wyzywienie": true,
+        "Cena": 3299,
+        "CenaRazem": 10998,
+        "Pakiety": null,
+        "KodPrzewoznikaIata": "LO",
+        "NumerLotu": "LO6546",
+        "Wybrany": true
+      }
+    ],
+    "Wybrana": true
+  },
+  {
+    "Data": "2026-11-21",
+    "Cena": 3349,
+    "Bilety": [
+      {
+        "BindId": "285718_432873",
+        "Id": "285718_432854",
+        "PakietId": 285718,
+        "DaneDoSzczegolow": {
+          "TrasaWCId": 432854,
+          "PrzystanekId": 1177577,
+          "Iata": "KTW"
+        },
+        "Wylot": {
+          "Panstwo": "Tajlandia",
+          "Przystanek": "Phuket",
+          "Region": "Phuket",
+          "Iata": "HKT",
+          "Godzina": "09:40",
+          "Przesuniecie": null
+        },
+        "Przylot": {
+          "Panstwo": "Polska",
+          "Przystanek": "Katowice",
+          "Region": null,
+          "Iata": "KTW",
+          "Godzina": "15:35",
+          "Przesuniecie": null
+        },
+        "CzasLotu": "11:55",
+        "CzyDreamliner": false,
+        "Dokument": "Paszport",
+        "NazwaPrzewoznika": "LOT Charters Dreamliner",
+        "BagazPodreczny": 5,
+        "BagazRejestrowany": 20,
+        "BagazSportowy": null,
+        "Wyzywienie": true,
+        "Cena": 3349,
+        "CenaRazem": 11098,
+        "Pakiety": null,
+        "KodPrzewoznikaIata": "LO",
+        "NumerLotu": "LO6546",
+        "Wybrany": false
+      }
+    ],
+    "Wybrana": false
+  }
+]

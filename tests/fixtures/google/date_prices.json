@@ -1,0 +1,14 @@
+{
+  "BKK-WAW": [
+    {"date": "2026-10-20", "price": 240.0, "currency": "USD"},
+    {"date": "2026-10-21", "price": 255.0, "currency": "USD"},
+    {"date": "2026-10-22", "price": 380.0, "currency": "USD"}
+  ],
+  "BKK-KRK": [
+    {"date": "2026-10-20", "price": 210.0, "currency": "USD"},
+    {"date": "2026-10-21", "price": 410.0, "currency": "USD"}
+  ],
+  "BKK-WAW-EUR": [
+    {"date": "2026-10-20", "price": 200.0, "currency": "EUR"}
+  ]
+}

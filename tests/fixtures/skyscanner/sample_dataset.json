@@ -1,0 +1,108 @@
+[
+  {
+    "prices": {
+      "google": 409,
+      "kiwi": 380,
+      "travelpayouts": 130
+    },
+    "bestPrice": 130,
+    "cheapestSource": "travelpayouts",
+    "sourcesFound": ["google", "kiwi", "travelpayouts"],
+    "currency": "USD",
+    "airline": "American Airlines",
+    "departDate": "2026-10-22",
+    "departTime": "2026-10-22T06:00:00",
+    "arriveTime": "2026-10-22T14:32:00",
+    "duration": "5h 32m",
+    "durationMinutes": 332,
+    "stops": 0,
+    "origin": "CNX",
+    "destination": "WAW",
+    "from": {
+      "airport": "CNX",
+      "city": "Chiang Mai",
+      "country": "Thailand"
+    },
+    "to": {
+      "airport": "WAW",
+      "city": "Warsaw",
+      "country": "Poland"
+    },
+    "segments": [
+      {
+        "flightCode": "AA 123",
+        "airline": "American Airlines",
+        "airlineCode": "AA",
+        "from": "CNX",
+        "to": "WAW",
+        "departure": "2026-10-22T06:00:00",
+        "arrival": "2026-10-22T14:32:00",
+        "duration": "5h 32m",
+        "cabinClass": "ECONOMY"
+      }
+    ],
+    "baggage": {
+      "includedHandBags": 1,
+      "includedCheckedBags": 0,
+      "includedPersonalItem": 1
+    },
+    "isSelfTransfer": false,
+    "links": {
+      "googleFlights": "https://www.google.com/travel/flights?q=CNX+WAW+2026-10-22",
+      "kiwi": "https://www.kiwi.com/en/search/results/...",
+      "book": "https://www.example.com/book"
+    },
+    "scrapedAt": "2026-09-25T16:45:42.209Z"
+  },
+  {
+    "bestPrice": 245.5,
+    "cheapestSource": "kiwi",
+    "currency": "EUR",
+    "airline": "LOT + Qatar Airways",
+    "departDate": "2026-10-25",
+    "departTime": "2026-10-25T22:10:00",
+    "arriveTime": "2026-10-26T18:40:00",
+    "duration": "14h 30m",
+    "stops": 1,
+    "from": {
+      "airport": "CNX",
+      "city": "Chiang Mai",
+      "country": "Thailand"
+    },
+    "to": {
+      "airport": "KRK",
+      "city": "Krakow",
+      "country": "Poland"
+    },
+    "segments": [
+      {
+        "flightCode": "QR 835",
+        "airline": "Qatar Airways",
+        "from": "CNX",
+        "to": "DOH",
+        "departure": "2026-10-25T22:10:00",
+        "arrival": "2026-10-26T01:40:00",
+        "cabinClass": "ECONOMY"
+      },
+      {
+        "flightCode": "LO 174",
+        "airline": "LOT",
+        "from": "DOH",
+        "to": "KRK",
+        "departure": "2026-10-26T08:00:00",
+        "arrival": "2026-10-26T18:40:00",
+        "cabinClass": "ECONOMY"
+      }
+    ],
+    "baggage": {
+      "includedHandBags": 0,
+      "includedCheckedBags": 0,
+      "includedPersonalItem": 1
+    },
+    "isSelfTransfer": true,
+    "links": {
+      "kiwi": "https://www.kiwi.com/en/search/results/cnx/krk/2026-10-25"
+    },
+    "scrapedAt": "2026-09-25T16:45:42.209Z"
+  }
+]

@@ -1,0 +1,150 @@
+{
+  "status": "completed",
+  "search_id": "ws_test_cnx_waw",
+  "total_results": 6,
+  "cheapest_price": 394.0,
+  "offers": [
+    {
+      "id": "wo_test_vz_wmi",
+      "price": 394.0,
+      "currency": "USD",
+      "airline": "Thai VietJet Air",
+      "airline_code": "VZ",
+      "origin": "CNX",
+      "destination": "WMI",
+      "departure_time": "2026-10-25T22:30:00",
+      "arrival_time": "2026-10-27T13:00:00",
+      "duration_minutes": 2670,
+      "stops": 3,
+      "cabin": "Economy",
+      "refundable": false,
+      "self_transfer": "unprotected",
+      "split_ticket": "true",
+      "combo_type": "virtual_interlining",
+      "link": "https://letsfg.co/en?stage=results&sid=ws_test_cnx_waw&offer=wo_test_vz_wmi&cur=USD",
+      "bags": {"cabin": true, "checked": 0},
+      "segments": [
+        {
+          "airline": "Thai VietJet Air",
+          "airline_code": "VZ",
+          "flight_number": "VZ119",
+          "origin": "CNX",
+          "destination": "BKK",
+          "departure_time": "2026-10-25T22:30:00",
+          "arrival_time": "2026-10-25T23:50:00"
+        },
+        {
+          "airline": "Scandinavian Airlines",
+          "airline_code": "SK",
+          "flight_number": "SK974",
+          "origin": "BKK",
+          "destination": "CPH",
+          "departure_time": "2026-10-26T12:35:00",
+          "arrival_time": "2026-10-26T19:05:00"
+        },
+        {
+          "airline": "Ryanair",
+          "airline_code": "FR",
+          "flight_number": "FR1785",
+          "origin": "CPH",
+          "destination": "BGY",
+          "departure_time": "2026-10-27T06:45:00",
+          "arrival_time": "2026-10-27T08:55:00"
+        },
+        {
+          "airline": "Ryanair",
+          "airline_code": "FR",
+          "flight_number": "FR1903",
+          "origin": "BGY",
+          "destination": "WMI",
+          "departure_time": "2026-10-27T11:05:00",
+          "arrival_time": "2026-10-27T13:00:00"
+        }
+      ]
+    },
+    {
+      "id": "wo_test_ak_waw",
+      "price": 473.0,
+      "currency": "USD",
+      "airline": "AirAsia",
+      "airline_code": "AK",
+      "origin": "CNX",
+      "destination": "WAW",
+      "departure_time": "2026-10-25T09:10:00",
+      "arrival_time": "2026-10-26T06:20:00",
+      "duration_minutes": 1630,
+      "stops": 2,
+      "refundable": false,
+      "self_transfer": false,
+      "link": "https://letsfg.co/en?stage=results&sid=ws_test_cnx_waw&offer=wo_test_ak_waw&cur=USD",
+      "bags": {"cabin": 1, "checked": 0},
+      "segments": [
+        {
+          "airline_code": "AK",
+          "flight_no": "AK863",
+          "origin": "CNX",
+          "destination": "KUL"
+        },
+        {
+          "airline_code": "EY",
+          "flight_no": "EY474",
+          "origin": "KUL",
+          "destination": "AUH"
+        },
+        {
+          "airline_code": "EY",
+          "flight_no": "EY159",
+          "origin": "AUH",
+          "destination": "WAW"
+        }
+      ]
+    },
+    {
+      "id": "wo_test_eur",
+      "price": 180.0,
+      "currency": "EUR",
+      "airline_code": "LO",
+      "origin": "CNX",
+      "destination": "WAW",
+      "departure_time": "2026-10-25T08:00:00",
+      "arrival_time": "2026-10-25T20:00:00",
+      "duration_minutes": 720,
+      "stops": 1,
+      "cabin_bag_included": true,
+      "link": "https://letsfg.co/en?stage=results&sid=ws_test_cnx_waw&offer=wo_test_eur&cur=EUR"
+    },
+    {
+      "id": "wo_test_4",
+      "price": 610.0,
+      "currency": "USD",
+      "airline_code": "TG",
+      "origin": "CNX",
+      "destination": "WAW",
+      "departure_time": "2026-10-25T08:05:00",
+      "arrival_time": "2026-10-25T16:40:00",
+      "stops": 2
+    },
+    {
+      "id": "wo_test_5",
+      "price": 620.0,
+      "currency": "USD",
+      "airline_code": "QR",
+      "origin": "CNX",
+      "destination": "WAW",
+      "departure_time": "2026-10-25T07:00:00",
+      "arrival_time": "2026-10-25T18:00:00",
+      "stops": 1
+    },
+    {
+      "id": "wo_test_6",
+      "price": 900.0,
+      "currency": "USD",
+      "airline_code": "LH",
+      "origin": "CNX",
+      "destination": "WAW",
+      "departure_time": "2026-10-25T06:00:00",
+      "arrival_time": "2026-10-25T19:00:00",
+      "stops": 2
+    }
+  ]
+}

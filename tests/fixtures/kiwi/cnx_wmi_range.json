@@ -1,0 +1,423 @@
+{
+  "query": "CNX \u2192 WMI on 20/10/2026\u201301/11/2026, 1 adult",
+  "currency": "USD",
+  "passengers": {
+    "adults": 1,
+    "children": 0,
+    "infants": 0
+  },
+  "resultsCount": 15,
+  "searchTimeMs": 1795,
+  "itineraries": [
+    {
+      "id": "21c807f051160000b1cbe6b6_0|21c807f051160000b1cbe6b6_1|07f023b051170000a4a75da6_0",
+      "price": 277.442252,
+      "priceFormatted": "277 USD",
+      "totalDurationSeconds": 114600,
+      "bookingUrl": "https://kiwi.com/u/jbu68x",
+      "imageId": "warsaw_pl",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "WMI",
+        "departureTime": "2026-11-01T09:10:00",
+        "arrivalTime": "2026-11-02T11:00:00",
+        "durationSeconds": 114600,
+        "stops": 2,
+        "route": [
+          "CNX",
+          "AUH",
+          "MXP",
+          "WMI"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "AUH",
+            "fromCity": "Chiang Mai",
+            "toCity": "Abu Dhabi",
+            "fromName": "Chiang Mai International",
+            "toName": "Zayed International Airport",
+            "fromCountry": "Thailand",
+            "toCountry": "United Arab Emirates",
+            "departureTime": "2026-11-01T09:10:00",
+            "arrivalTime": "2026-11-01T13:05:00",
+            "durationSeconds": 24900,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY427",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "AUH",
+            "to": "MXP",
+            "fromCity": "Abu Dhabi",
+            "toCity": "Milan",
+            "fromName": "Zayed International Airport",
+            "toName": "Milan\u2013Malpensa",
+            "fromCountry": "United Arab Emirates",
+            "toCountry": "Italy",
+            "departureTime": "2026-11-02T02:50:00",
+            "arrivalTime": "2026-11-02T06:30:00",
+            "durationSeconds": 24000,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY81",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "MXP",
+            "to": "WMI",
+            "fromCity": "Milan",
+            "toCity": "Warsaw",
+            "fromName": "Milan\u2013Malpensa",
+            "toName": "Warsaw Modlin",
+            "fromCountry": "Italy",
+            "toCountry": "Poland",
+            "departureTime": "2026-11-02T08:55:00",
+            "arrivalTime": "2026-11-02T11:00:00",
+            "durationSeconds": 7500,
+            "carrier": "FR",
+            "carrierName": "Ryanair",
+            "flightNumber": "FR7306",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c807f0511200008176ae7d_0|21c807f0511200008176ae7d_1|07f023b051130000028174dc_0",
+      "price": 278.166852,
+      "priceFormatted": "278 USD",
+      "totalDurationSeconds": 117300,
+      "bookingUrl": "https://kiwi.com/u/g9pby5",
+      "imageId": "warsaw_pl",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "WMI",
+        "departureTime": "2026-10-28T09:10:00",
+        "arrivalTime": "2026-10-29T11:45:00",
+        "durationSeconds": 117300,
+        "stops": 2,
+        "route": [
+          "CNX",
+          "AUH",
+          "MXP",
+          "WMI"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "AUH",
+            "fromCity": "Chiang Mai",
+            "toCity": "Abu Dhabi",
+            "fromName": "Chiang Mai International",
+            "toName": "Zayed International Airport",
+            "fromCountry": "Thailand",
+            "toCountry": "United Arab Emirates",
+            "departureTime": "2026-10-28T09:10:00",
+            "arrivalTime": "2026-10-28T13:05:00",
+            "durationSeconds": 24900,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY427",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "AUH",
+            "to": "MXP",
+            "fromCity": "Abu Dhabi",
+            "toCity": "Milan",
+            "fromName": "Zayed International Airport",
+            "toName": "Milan\u2013Malpensa",
+            "fromCountry": "United Arab Emirates",
+            "toCountry": "Italy",
+            "departureTime": "2026-10-29T02:50:00",
+            "arrivalTime": "2026-10-29T06:30:00",
+            "durationSeconds": 24000,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY81",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "MXP",
+            "to": "WMI",
+            "fromCity": "Milan",
+            "toCity": "Warsaw",
+            "fromName": "Milan\u2013Malpensa",
+            "toName": "Warsaw Modlin",
+            "fromCountry": "Italy",
+            "toCountry": "Poland",
+            "departureTime": "2026-10-29T09:40:00",
+            "arrivalTime": "2026-10-29T11:45:00",
+            "durationSeconds": 7500,
+            "carrier": "FR",
+            "carrierName": "Ryanair",
+            "flightNumber": "FR5821",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c807f051130000e1880a22_0|21c807f051130000e1880a22_1|255823b051140000d9558854_0",
+      "price": 279.442252,
+      "priceFormatted": "279 USD",
+      "totalDurationSeconds": 113700,
+      "bookingUrl": "https://kiwi.com/u/jx4ywq9",
+      "imageId": "warsaw_pl",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "WMI",
+        "departureTime": "2026-10-29T09:10:00",
+        "arrivalTime": "2026-10-30T10:45:00",
+        "durationSeconds": 113700,
+        "stops": 2,
+        "route": [
+          "CNX",
+          "AUH",
+          "MXP",
+          "WMI"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "AUH",
+            "fromCity": "Chiang Mai",
+            "toCity": "Abu Dhabi",
+            "fromName": "Chiang Mai International",
+            "toName": "Zayed International Airport",
+            "fromCountry": "Thailand",
+            "toCountry": "United Arab Emirates",
+            "departureTime": "2026-10-29T09:10:00",
+            "arrivalTime": "2026-10-29T13:05:00",
+            "durationSeconds": 24900,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY427",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "AUH",
+            "to": "MXP",
+            "fromCity": "Abu Dhabi",
+            "toCity": "Milan",
+            "fromName": "Zayed International Airport",
+            "toName": "Milan\u2013Malpensa",
+            "fromCountry": "United Arab Emirates",
+            "toCountry": "Italy",
+            "departureTime": "2026-10-29T14:20:00",
+            "arrivalTime": "2026-10-29T18:20:00",
+            "durationSeconds": 25200,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY79",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "BGY",
+            "to": "WMI",
+            "fromCity": "Milan",
+            "toCity": "Warsaw",
+            "fromName": "Milan Bergamo International Airport",
+            "toName": "Warsaw Modlin",
+            "fromCountry": "Italy",
+            "toCountry": "Poland",
+            "departureTime": "2026-10-30T08:50:00",
+            "arrivalTime": "2026-10-30T10:45:00",
+            "durationSeconds": 6900,
+            "carrier": "FR",
+            "carrierName": "Ryanair",
+            "flightNumber": "FR1903",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c807f0511500003405295c_0|21c807f0511500003405295c_1|07f023b05116000086be15ee_0",
+      "price": 286.440616,
+      "priceFormatted": "286 USD",
+      "totalDurationSeconds": 113400,
+      "bookingUrl": "https://kiwi.com/u/mw58pz",
+      "imageId": "warsaw_pl",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "WMI",
+        "departureTime": "2026-10-31T09:10:00",
+        "arrivalTime": "2026-11-01T10:40:00",
+        "durationSeconds": 113400,
+        "stops": 2,
+        "route": [
+          "CNX",
+          "AUH",
+          "MXP",
+          "WMI"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "AUH",
+            "fromCity": "Chiang Mai",
+            "toCity": "Abu Dhabi",
+            "fromName": "Chiang Mai International",
+            "toName": "Zayed International Airport",
+            "fromCountry": "Thailand",
+            "toCountry": "United Arab Emirates",
+            "departureTime": "2026-10-31T09:10:00",
+            "arrivalTime": "2026-10-31T13:05:00",
+            "durationSeconds": 24900,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY427",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "AUH",
+            "to": "MXP",
+            "fromCity": "Abu Dhabi",
+            "toCity": "Milan",
+            "fromName": "Zayed International Airport",
+            "toName": "Milan\u2013Malpensa",
+            "fromCountry": "United Arab Emirates",
+            "toCountry": "Italy",
+            "departureTime": "2026-11-01T02:50:00",
+            "arrivalTime": "2026-11-01T06:30:00",
+            "durationSeconds": 24000,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY81",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "MXP",
+            "to": "WMI",
+            "fromCity": "Milan",
+            "toCity": "Warsaw",
+            "fromName": "Milan\u2013Malpensa",
+            "toName": "Warsaw Modlin",
+            "fromCountry": "Italy",
+            "toCountry": "Poland",
+            "departureTime": "2026-11-01T08:35:00",
+            "arrivalTime": "2026-11-01T10:40:00",
+            "durationSeconds": 7500,
+            "carrier": "FR",
+            "carrierName": "Ryanair",
+            "flightNumber": "FR5821",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c80756511300002385c4d8_0|0756260251140000abb0f3cf_0|260223b05114000044cbeeae_0",
+      "price": 301.930344,
+      "priceFormatted": "302 USD",
+      "totalDurationSeconds": 102900,
+      "bookingUrl": "https://kiwi.com/u/b5h2zj",
+      "imageId": "warsaw_pl",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "WMI",
+        "departureTime": "2026-10-29T18:05:00",
+        "arrivalTime": "2026-10-30T16:40:00",
+        "durationSeconds": 102900,
+        "stops": 2,
+        "route": [
+          "CNX",
+          "BKK",
+          "ARN",
+          "WMI"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "BKK",
+            "fromCity": "Chiang Mai",
+            "toCity": "Bangkok",
+            "fromName": "Chiang Mai International",
+            "toName": "Suvarnabhumi",
+            "fromCountry": "Thailand",
+            "toCountry": "Thailand",
+            "departureTime": "2026-10-29T18:05:00",
+            "arrivalTime": "2026-10-29T19:25:00",
+            "durationSeconds": 4800,
+            "carrier": "FD",
+            "carrierName": "Thai AirAsia",
+            "flightNumber": "FD4109",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "BKK",
+            "to": "ARN",
+            "fromCity": "Bangkok",
+            "toCity": "Stockholm",
+            "fromName": "Suvarnabhumi",
+            "toName": "Stockholm Arlanda",
+            "fromCountry": "Thailand",
+            "toCountry": "Sweden",
+            "departureTime": "2026-10-30T05:55:00",
+            "arrivalTime": "2026-10-30T12:50:00",
+            "durationSeconds": 46500,
+            "carrier": "N0",
+            "carrierName": "Norse Atlantic Airways",
+            "flightNumber": "N0194",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "ARN",
+            "to": "WMI",
+            "fromCity": "Stockholm",
+            "toCity": "Warsaw",
+            "fromName": "Stockholm Arlanda",
+            "toName": "Warsaw Modlin",
+            "fromCountry": "Sweden",
+            "toCountry": "Poland",
+            "departureTime": "2026-10-30T15:00:00",
+            "arrivalTime": "2026-10-30T16:40:00",
+            "durationSeconds": 6000,
+            "carrier": "FR",
+            "carrierName": "Ryanair",
+            "flightNumber": "FR1945",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    }
+  ]
+}

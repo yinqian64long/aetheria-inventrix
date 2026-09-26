@@ -1,0 +1,28 @@
+{
+  "searchUrl": "https://skiplagged.com/flights/BKK/KRK/2026-10-25",
+  "flights": [
+    {
+      "price": {"amount": 348, "currency": "USD"},
+      "deepLink": "https://skiplagged.com/flights/BKK/KRK/2026-10-25#f1",
+      "departure": {"airport": "BKK", "dateTime": "2026-10-25T09:00:00+07:00"},
+      "arrival": {"airport": "KRK", "dateTime": "2026-10-26T11:05:00+01:00"},
+      "airlines": "Oman Air, Ryanair",
+      "flightNumbers": ["WY818", "FR1234"],
+      "layovers": 2,
+      "durationMinutes": 1565,
+      "attributes": ["virtual-interline", "multi-stop"]
+    },
+    {
+      "price": {"amount": 381, "currency": "USD"},
+      "deepLink": "/flights/BKK/KRK/2026-10-25#f2",
+      "departure": {"airport": "BKK", "dateTime": "2026-10-25T23:40:00+07:00"},
+      "arrival": {"airport": "KRK", "dateTime": "2026-10-26T18:20:00+01:00"},
+      "airlines": "Qatar Airways, LOT Polish Airlines",
+      "flightNumbers": ["QR835", "LO74"],
+      "layovers": 1,
+      "durationMinutes": 1120,
+      "attributes": ["standard", "multi-stop"]
+    }
+  ],
+  "pagination": {"offset": 0, "limit": 5, "total": 2}
+}

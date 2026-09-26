@@ -1,0 +1,9 @@
+{
+  "search_id": "ws_test_cnx_waw",
+  "status": "searching",
+  "parsed": {
+    "origin": "CNX",
+    "destination": "WAW",
+    "date_from": "2026-10-25"
+  }
+}

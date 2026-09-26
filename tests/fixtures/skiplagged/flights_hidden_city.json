@@ -1,0 +1,17 @@
+{
+  "searchUrl": "https://skiplagged.com/flights/CNX/WAW/2026-10-22",
+  "flights": [
+    {
+      "price": {"amount": 199, "currency": "USD"},
+      "deepLink": "https://skiplagged.com/flights/CNX/WAW/2026-10-22#hidden",
+      "departure": {"airport": "CNX", "dateTime": "2026-10-22T08:00:00+07:00"},
+      "arrival": {"airport": "BUD", "dateTime": "2026-10-23T14:30:00+02:00"},
+      "airlines": "Thai Lion Air, Wizz Air",
+      "flightNumbers": ["SL602", "W62201"],
+      "layovers": 1,
+      "durationMinutes": 1410,
+      "attributes": ["hidden-city", "multi-stop"]
+    }
+  ],
+  "pagination": {"offset": 0, "limit": 5, "total": 1}
+}

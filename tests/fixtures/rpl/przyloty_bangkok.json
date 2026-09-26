@@ -1,0 +1,96 @@
+[
+  {
+    "Data": "2026-11-21",
+    "Cena": 2219,
+    "Bilety": [
+      {
+        "BindId": "287974_433846",
+        "Id": "287974_433825",
+        "PakietId": 287974,
+        "DaneDoSzczegolow": {
+          "TrasaWCId": 433825,
+          "PrzystanekId": 1179523,
+          "Iata": "POZ"
+        },
+        "Wylot": {
+          "Panstwo": "Tajlandia",
+          "Przystanek": "Bangkok",
+          "Region": "Bangkok",
+          "Iata": "BKK",
+          "Godzina": "11:35",
+          "Przesuniecie": null
+        },
+        "Przylot": {
+          "Panstwo": "Polska",
+          "Przystanek": "Poznań",
+          "Region": null,
+          "Iata": "POZ",
+          "Godzina": "20:10",
+          "Przesuniecie": null
+        },
+        "CzasLotu": "14:35",
+        "CzyDreamliner": false,
+        "Dokument": "Paszport",
+        "NazwaPrzewoznika": "World2Fly",
+        "BagazPodreczny": 8,
+        "BagazRejestrowany": 23,
+        "BagazSportowy": null,
+        "Wyzywienie": true,
+        "Cena": 2219,
+        "CenaRazem": 7398,
+        "Pakiety": null,
+        "KodPrzewoznikaIata": "2W",
+        "NumerLotu": "WFL7610",
+        "Wybrany": true
+      }
+    ],
+    "Wybrana": true
+  },
+  {
+    "Data": "2026-11-28",
+    "Cena": 2219,
+    "Bilety": [
+      {
+        "BindId": "287975_433846",
+        "Id": "287975_433826",
+        "PakietId": 287975,
+        "DaneDoSzczegolow": {
+          "TrasaWCId": 433826,
+          "PrzystanekId": 1179525,
+          "Iata": "POZ"
+        },
+        "Wylot": {
+          "Panstwo": "Tajlandia",
+          "Przystanek": "Bangkok",
+          "Region": "Bangkok",
+          "Iata": "BKK",
+          "Godzina": "11:35",
+          "Przesuniecie": null
+        },
+        "Przylot": {
+          "Panstwo": "Polska",
+          "Przystanek": "Poznań",
+          "Region": null,
+          "Iata": "POZ",
+          "Godzina": "20:10",
+          "Przesuniecie": null
+        },
+        "CzasLotu": "14:35",
+        "CzyDreamliner": false,
+        "Dokument": "Paszport",
+        "NazwaPrzewoznika": "World2Fly",
+        "BagazPodreczny": 8,
+        "BagazRejestrowany": 23,
+        "BagazSportowy": null,
+        "Wyzywienie": true,
+        "Cena": 2219,
+        "CenaRazem": 7398,
+        "Pakiety": null,
+        "KodPrzewoznikaIata": "2W",
+        "NumerLotu": "WFL7610",
+        "Wybrany": false
+      }
+    ],
+    "Wybrana": false
+  }
+]

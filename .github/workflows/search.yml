@@ -1,0 +1,132 @@
+name: Flight search
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      sources:
+        description: Comma-separated source names (empty = all enabled in config)
+        type: string
+        default: ""
+      dry_run:
+        description: Run without saving state or sending Telegram alerts
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: flight-search
+  cancel-in-progress: false
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      EVENT_NAME: ${{ github.event_name }}
+      INPUT_SOURCES: ${{ github.event.inputs.sources || '' }}
+      INPUT_DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: true
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v10.2.0
+        with:
+          enable-cache: true
+          python-version: "3.12"
+
+      - name: Sync dependencies
+        run: uv sync --frozen
+
+      - name: Run tests
+        run: uv run pytest -q
+
+      - name: Run flight search
+        id: search
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          LETSFG_CLIENT_ID: ${{ secrets.LETSFG_CLIENT_ID }}
+          LETSFG_REFRESH_TOKEN: ${{ secrets.LETSFG_REFRESH_TOKEN }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          LETSFG_REFRESH_TOKEN_OUT: ${{ runner.temp }}/letsfg_rt
+        run: |
+          set -euo pipefail
+          args=(run --config config.yaml --state state/state.json --out results)
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] && [ -n "$INPUT_SOURCES" ]; then
+            args+=(--sources "$INPUT_SOURCES")
+          fi
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] && [ "$INPUT_DRY_RUN" = "true" ]; then
+            args+=(--dry-run)
+          fi
+          uv run python -m flightsearch "${args[@]}"
+
+      - name: Update LetsFG refresh token secret
+        if: always() && steps.search.outcome != 'skipped'
+        env:
+          GH_TOKEN: ${{ secrets.GH_SECRETS_PAT }}
+          LETSFG_RT_PATH: ${{ runner.temp }}/letsfg_rt
+        run: |
+          set -euo pipefail
+          if [ ! -f "$LETSFG_RT_PATH" ]; then
+            exit 0
+          fi
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "Rotated LetsFG token on disk but GH_SECRETS_PAT is not set; skipping secret update."
+            exit 0
+          fi
+          gh secret set LETSFG_REFRESH_TOKEN < "$LETSFG_RT_PATH"
+
+      - name: Commit state and results
+        if: always() && steps.search.outcome != 'skipped'
+        run: |
+          set -euo pipefail
+          if [ "$INPUT_DRY_RUN" = "true" ]; then
+            echo "Dry run; skipping commit."
+            exit 0
+          fi
+          if [ ! -d state ] && [ ! -d results ]; then
+            echo "No state/ or results/ directory; skipping commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/ results/ 2>/dev/null || true
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update flight search state and results"
+            branch="${GITHUB_REF_NAME}"
+            for attempt in 1 2 3; do
+              if git pull --rebase --autostash origin "$branch" && git push origin "HEAD:$branch"; then
+                exit 0
+              fi
+              echo "Push failed (attempt $attempt); retrying..."
+              sleep "$((attempt * 5))"
+            done
+            exit 1
+          fi
+          echo "No changes to commit."
+
+      - name: Disable workflow after search window
+        if: always() && steps.search.outcome != 'skipped'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if [ ! -f results/latest.json ]; then
+            exit 0
+          fi
+          if jq -e '.window_over == true' results/latest.json > /dev/null 2>&1; then
+            gh workflow disable search.yml
+            echo "Search window over; disabled scheduled runs."
+          fi
+
+      - name: Fail job if flight search failed
+        if: steps.search.outcome == 'failure'
+        run: exit 1

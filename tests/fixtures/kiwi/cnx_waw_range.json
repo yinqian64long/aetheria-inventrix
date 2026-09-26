@@ -1,0 +1,561 @@
+{
+  "query": "CNX \u2192 WAW on 20/10/2026\u201301/11/2026, 1 adult",
+  "currency": "USD",
+  "passengers": {
+    "adults": 1,
+    "children": 0,
+    "infants": 0
+  },
+  "resultsCount": 15,
+  "searchTimeMs": 2101,
+  "itineraries": [
+    {
+      "id": "21c820ef51110000794f13d0_0|21c820ef51110000794f13d0_1",
+      "price": 198.0,
+      "priceFormatted": "198 USD",
+      "totalDurationSeconds": 97800,
+      "bookingUrl": "https://kiwi.com/u/u7r7bt",
+      "imageId": "warsaw_pl",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "WAW",
+        "departureTime": "2026-10-27T09:10:00",
+        "arrivalTime": "2026-10-28T06:20:00",
+        "durationSeconds": 97800,
+        "stops": 1,
+        "route": [
+          "CNX",
+          "AUH",
+          "WAW"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "AUH",
+            "fromCity": "Chiang Mai",
+            "toCity": "Abu Dhabi",
+            "fromName": "Chiang Mai International",
+            "toName": "Zayed International Airport",
+            "fromCountry": "Thailand",
+            "toCountry": "United Arab Emirates",
+            "departureTime": "2026-10-27T09:10:00",
+            "arrivalTime": "2026-10-27T13:05:00",
+            "durationSeconds": 24900,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY427",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "AUH",
+            "to": "WAW",
+            "fromCity": "Abu Dhabi",
+            "toCity": "Warsaw",
+            "fromName": "Zayed International Airport",
+            "toName": "Warsaw Chopin",
+            "fromCountry": "United Arab Emirates",
+            "toCountry": "Poland",
+            "departureTime": "2026-10-28T02:55:00",
+            "arrivalTime": "2026-10-28T06:20:00",
+            "durationSeconds": 23100,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY159",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c820ef511300004a22a8b3_0|21c820ef511300004a22a8b3_1",
+      "price": 199.0,
+      "priceFormatted": "199 USD",
+      "totalDurationSeconds": 97800,
+      "bookingUrl": "https://kiwi.com/u/ybx4guy",
+      "imageId": "warsaw_pl",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "WAW",
+        "departureTime": "2026-10-29T09:10:00",
+        "arrivalTime": "2026-10-30T06:20:00",
+        "durationSeconds": 97800,
+        "stops": 1,
+        "route": [
+          "CNX",
+          "AUH",
+          "WAW"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "AUH",
+            "fromCity": "Chiang Mai",
+            "toCity": "Abu Dhabi",
+            "fromName": "Chiang Mai International",
+            "toName": "Zayed International Airport",
+            "fromCountry": "Thailand",
+            "toCountry": "United Arab Emirates",
+            "departureTime": "2026-10-29T09:10:00",
+            "arrivalTime": "2026-10-29T13:05:00",
+            "durationSeconds": 24900,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY427",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "AUH",
+            "to": "WAW",
+            "fromCity": "Abu Dhabi",
+            "toCity": "Warsaw",
+            "fromName": "Zayed International Airport",
+            "toName": "Warsaw Chopin",
+            "fromCountry": "United Arab Emirates",
+            "toCountry": "Poland",
+            "departureTime": "2026-10-30T02:55:00",
+            "arrivalTime": "2026-10-30T06:20:00",
+            "durationSeconds": 23100,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY159",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c820ef51120000d6a8ac24_0|21c820ef51120000d6a8ac24_1",
+      "price": 199.0,
+      "priceFormatted": "199 USD",
+      "totalDurationSeconds": 97800,
+      "bookingUrl": "https://kiwi.com/u/4qj3gs",
+      "imageId": "warsaw_pl",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "WAW",
+        "departureTime": "2026-10-28T09:10:00",
+        "arrivalTime": "2026-10-29T06:20:00",
+        "durationSeconds": 97800,
+        "stops": 1,
+        "route": [
+          "CNX",
+          "AUH",
+          "WAW"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "AUH",
+            "fromCity": "Chiang Mai",
+            "toCity": "Abu Dhabi",
+            "fromName": "Chiang Mai International",
+            "toName": "Zayed International Airport",
+            "fromCountry": "Thailand",
+            "toCountry": "United Arab Emirates",
+            "departureTime": "2026-10-28T09:10:00",
+            "arrivalTime": "2026-10-28T13:05:00",
+            "durationSeconds": 24900,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY427",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "AUH",
+            "to": "WAW",
+            "fromCity": "Abu Dhabi",
+            "toCity": "Warsaw",
+            "fromName": "Zayed International Airport",
+            "toName": "Warsaw Chopin",
+            "fromCountry": "United Arab Emirates",
+            "toCountry": "Poland",
+            "departureTime": "2026-10-29T02:55:00",
+            "arrivalTime": "2026-10-29T06:20:00",
+            "durationSeconds": 23100,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY159",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c820ef511400009f04f308_0|21c820ef511400009f04f308_1",
+      "price": 199.0,
+      "priceFormatted": "199 USD",
+      "totalDurationSeconds": 97800,
+      "bookingUrl": "https://kiwi.com/u/jwvucd",
+      "imageId": "warsaw_pl",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "WAW",
+        "departureTime": "2026-10-30T09:10:00",
+        "arrivalTime": "2026-10-31T06:20:00",
+        "durationSeconds": 97800,
+        "stops": 1,
+        "route": [
+          "CNX",
+          "AUH",
+          "WAW"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "AUH",
+            "fromCity": "Chiang Mai",
+            "toCity": "Abu Dhabi",
+            "fromName": "Chiang Mai International",
+            "toName": "Zayed International Airport",
+            "fromCountry": "Thailand",
+            "toCountry": "United Arab Emirates",
+            "departureTime": "2026-10-30T09:10:00",
+            "arrivalTime": "2026-10-30T13:05:00",
+            "durationSeconds": 24900,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY427",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "AUH",
+            "to": "WAW",
+            "fromCity": "Abu Dhabi",
+            "toCity": "Warsaw",
+            "fromName": "Zayed International Airport",
+            "toName": "Warsaw Chopin",
+            "fromCountry": "United Arab Emirates",
+            "toCountry": "Poland",
+            "departureTime": "2026-10-31T02:55:00",
+            "arrivalTime": "2026-10-31T06:20:00",
+            "durationSeconds": 23100,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY159",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c820ef511500009a74cffd_0|21c820ef511500009a74cffd_1",
+      "price": 199.0,
+      "priceFormatted": "199 USD",
+      "totalDurationSeconds": 97800,
+      "bookingUrl": "https://kiwi.com/u/7vprgjw",
+      "imageId": "warsaw_pl",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "WAW",
+        "departureTime": "2026-10-31T09:10:00",
+        "arrivalTime": "2026-11-01T06:20:00",
+        "durationSeconds": 97800,
+        "stops": 1,
+        "route": [
+          "CNX",
+          "AUH",
+          "WAW"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "AUH",
+            "fromCity": "Chiang Mai",
+            "toCity": "Abu Dhabi",
+            "fromName": "Chiang Mai International",
+            "toName": "Zayed International Airport",
+            "fromCountry": "Thailand",
+            "toCountry": "United Arab Emirates",
+            "departureTime": "2026-10-31T09:10:00",
+            "arrivalTime": "2026-10-31T13:05:00",
+            "durationSeconds": 24900,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY427",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "AUH",
+            "to": "WAW",
+            "fromCity": "Abu Dhabi",
+            "toCity": "Warsaw",
+            "fromName": "Zayed International Airport",
+            "toName": "Warsaw Chopin",
+            "fromCountry": "United Arab Emirates",
+            "toCountry": "Poland",
+            "departureTime": "2026-11-01T02:55:00",
+            "arrivalTime": "2026-11-01T06:20:00",
+            "durationSeconds": 23100,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY159",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c820ef51160000da2e0a54_0|21c820ef51160000da2e0a54_1",
+      "price": 199.0,
+      "priceFormatted": "199 USD",
+      "totalDurationSeconds": 97800,
+      "bookingUrl": "https://kiwi.com/u/bgxmmp",
+      "imageId": "warsaw_pl",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "WAW",
+        "departureTime": "2026-11-01T09:10:00",
+        "arrivalTime": "2026-11-02T06:20:00",
+        "durationSeconds": 97800,
+        "stops": 1,
+        "route": [
+          "CNX",
+          "AUH",
+          "WAW"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "AUH",
+            "fromCity": "Chiang Mai",
+            "toCity": "Abu Dhabi",
+            "fromName": "Chiang Mai International",
+            "toName": "Zayed International Airport",
+            "fromCountry": "Thailand",
+            "toCountry": "United Arab Emirates",
+            "departureTime": "2026-11-01T09:10:00",
+            "arrivalTime": "2026-11-01T13:05:00",
+            "durationSeconds": 24900,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY427",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "AUH",
+            "to": "WAW",
+            "fromCity": "Abu Dhabi",
+            "toCity": "Warsaw",
+            "fromName": "Zayed International Airport",
+            "toName": "Warsaw Chopin",
+            "fromCountry": "United Arab Emirates",
+            "toCountry": "Poland",
+            "departureTime": "2026-11-02T02:55:00",
+            "arrivalTime": "2026-11-02T06:20:00",
+            "durationSeconds": 23100,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY159",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c807f051130000e1880a22_0|21c807f051130000e1880a22_1|255823b051140000d9558854_0",
+      "price": 279.442252,
+      "priceFormatted": "279 USD",
+      "totalDurationSeconds": 113700,
+      "bookingUrl": "https://kiwi.com/u/5mp5qd",
+      "imageId": "warsaw_pl",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "WMI",
+        "departureTime": "2026-10-29T09:10:00",
+        "arrivalTime": "2026-10-30T10:45:00",
+        "durationSeconds": 113700,
+        "stops": 2,
+        "route": [
+          "CNX",
+          "AUH",
+          "MXP",
+          "WMI"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "AUH",
+            "fromCity": "Chiang Mai",
+            "toCity": "Abu Dhabi",
+            "fromName": "Chiang Mai International",
+            "toName": "Zayed International Airport",
+            "fromCountry": "Thailand",
+            "toCountry": "United Arab Emirates",
+            "departureTime": "2026-10-29T09:10:00",
+            "arrivalTime": "2026-10-29T13:05:00",
+            "durationSeconds": 24900,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY427",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "AUH",
+            "to": "MXP",
+            "fromCity": "Abu Dhabi",
+            "toCity": "Milan",
+            "fromName": "Zayed International Airport",
+            "toName": "Milan\u2013Malpensa",
+            "fromCountry": "United Arab Emirates",
+            "toCountry": "Italy",
+            "departureTime": "2026-10-29T14:20:00",
+            "arrivalTime": "2026-10-29T18:20:00",
+            "durationSeconds": 25200,
+            "carrier": "EY",
+            "carrierName": "Etihad Airways",
+            "flightNumber": "EY79",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "BGY",
+            "to": "WMI",
+            "fromCity": "Milan",
+            "toCity": "Warsaw",
+            "fromName": "Milan Bergamo International Airport",
+            "toName": "Warsaw Modlin",
+            "fromCountry": "Italy",
+            "toCountry": "Poland",
+            "departureTime": "2026-10-30T08:50:00",
+            "arrivalTime": "2026-10-30T10:45:00",
+            "durationSeconds": 6900,
+            "carrier": "FR",
+            "carrierName": "Ryanair",
+            "flightNumber": "FR1903",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    },
+    {
+      "id": "21c8075651130000c3502dc6_0|0756260251140000abb0f3cf_0|260223b05114000044cbeeae_0",
+      "price": 302.930344,
+      "priceFormatted": "303 USD",
+      "totalDurationSeconds": 93600,
+      "bookingUrl": "https://kiwi.com/u/zrwjbs",
+      "imageId": "warsaw_pl",
+      "baggage": {
+        "personalItem": 0,
+        "cabinBag": 1,
+        "checkedBag": 0
+      },
+      "outbound": {
+        "from": "CNX",
+        "to": "WMI",
+        "departureTime": "2026-10-29T20:40:00",
+        "arrivalTime": "2026-10-30T16:40:00",
+        "durationSeconds": 93600,
+        "stops": 2,
+        "route": [
+          "CNX",
+          "BKK",
+          "ARN",
+          "WMI"
+        ],
+        "cabinClass": "Economy",
+        "segments": [
+          {
+            "from": "CNX",
+            "to": "BKK",
+            "fromCity": "Chiang Mai",
+            "toCity": "Bangkok",
+            "fromName": "Chiang Mai International",
+            "toName": "Suvarnabhumi",
+            "fromCountry": "Thailand",
+            "toCountry": "Thailand",
+            "departureTime": "2026-10-29T20:40:00",
+            "arrivalTime": "2026-10-29T22:05:00",
+            "durationSeconds": 5100,
+            "carrier": "FD",
+            "carrierName": "Thai AirAsia",
+            "flightNumber": "FD4103",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "BKK",
+            "to": "ARN",
+            "fromCity": "Bangkok",
+            "toCity": "Stockholm",
+            "fromName": "Suvarnabhumi",
+            "toName": "Stockholm Arlanda",
+            "fromCountry": "Thailand",
+            "toCountry": "Sweden",
+            "departureTime": "2026-10-30T05:55:00",
+            "arrivalTime": "2026-10-30T12:50:00",
+            "durationSeconds": 46500,
+            "carrier": "N0",
+            "carrierName": "Norse Atlantic Airways",
+            "flightNumber": "N0194",
+            "cabinClass": "Economy"
+          },
+          {
+            "from": "ARN",
+            "to": "WMI",
+            "fromCity": "Stockholm",
+            "toCity": "Warsaw",
+            "fromName": "Stockholm Arlanda",
+            "toName": "Warsaw Modlin",
+            "fromCountry": "Sweden",
+            "toCountry": "Poland",
+            "departureTime": "2026-10-30T15:00:00",
+            "arrivalTime": "2026-10-30T16:40:00",
+            "durationSeconds": 6000,
+            "carrier": "FR",
+            "carrierName": "Ryanair",
+            "flightNumber": "FR1945",
+            "cabinClass": "Economy"
+          }
+        ]
+      },
+      "inbound": null
+    }
+  ]
+}

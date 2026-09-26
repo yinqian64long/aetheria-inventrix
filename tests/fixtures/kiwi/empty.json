@@ -1,0 +1,10 @@
+{
+  "query": {},
+  "currency": "USD",
+  "passengers": {
+    "adults": 1
+  },
+  "resultsCount": 0,
+  "itineraries": [],
+  "searchTimeMs": 1
+}

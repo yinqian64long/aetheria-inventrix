@@ -1,0 +1,27 @@
+home_origin: CNX
+positioning_origins: [BKK, DMK, HKT]
+destinations: [WAW, KRK, GDN, KTW, WRO, POZ]
+extra_destinations: [WMI]
+date_from: 2026-10-20
+date_to: 2026-11-01
+adults: 1
+cabin_bags: 1
+checked_bags: 0
+max_total_usd: 250
+near_miss_usd: 300
+currency: USD
+hop:
+  min_connection_minutes: 240
+  max_connection_hours: 24
+  fetch_timeout_s: 360
+sources:
+  kiwi: {enabled: true}
+  skiplagged: {enabled: true, max_detail_searches: 12, timeout_s: 1200}
+  google: {enabled: true}
+  letsfg: {enabled: true, max_searches_per_run: 20, timeout_s: 1800}
+  skyscanner: {enabled: true, max_runs_per_day: 6, timeout_s: 1200}
+  rpl: {enabled: true}
+  itaka: {enabled: true}
+  chartershop: {enabled: true}
+notify:
+  telegram: {enabled: true, heartbeat_utc_hour: 0}
