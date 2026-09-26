@@ -1,24 +1,24 @@
 {
   "alerts": {},
   "last_heartbeat_date": null,
-  "runs": 3,
+  "runs": 4,
   "sources": {
     "chartershop": {
       "data": {},
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-26T16:20:54.206187+00:00"
+        "last_ok": "2026-09-26T21:07:21.809011+00:00"
       }
     },
     "google": {
       "data": {
-        "date_parity": 1
+        "date_parity": 0
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-26T16:20:54.206187+00:00"
+        "last_ok": "2026-09-26T21:07:21.809011+00:00"
       }
     },
     "hops": {
@@ -26,7 +26,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-26T16:20:54.206187+00:00"
+        "last_ok": "2026-09-26T21:07:21.809011+00:00"
       }
     },
     "itaka": {
@@ -34,7 +34,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-26T16:20:54.206187+00:00"
+        "last_ok": "2026-09-26T21:07:21.809011+00:00"
       }
     },
     "kiwi": {
@@ -42,7 +42,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-26T16:20:54.206187+00:00"
+        "last_ok": "2026-09-26T21:07:21.809011+00:00"
       }
     },
     "rpl": {
@@ -50,7 +50,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-26T16:20:54.206187+00:00"
+        "last_ok": "2026-09-26T21:07:21.809011+00:00"
       }
     },
     "skiplagged": {
@@ -58,7 +58,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-26T16:20:54.206187+00:00"
+        "last_ok": "2026-09-26T21:07:21.809011+00:00"
       }
     }
   },
