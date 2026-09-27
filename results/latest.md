@@ -1,87 +1,58 @@
 # Flight search
 
-- Qualifying: 4
-- Near misses: 45
-- Dropped: 19
+- Qualifying: 0
+- Near misses: 21
+- Dropped: 0
 - Messages sent: 0
 
 ## Qualifying deals
 
-| Total | Route | Date | Source | Link |
-| --- | --- | --- | --- | --- |
-| $206 | CNX→WAW | 2026-10-29 | kiwi | https://kiwi.com/u/n8vrx3r |
-| $206 | CNX→WAW | 2026-10-30 | kiwi | https://kiwi.com/u/th5w2n |
-| $206 | CNX→WAW | 2026-10-31 | kiwi | https://kiwi.com/u/358f49 |
-| $206 | CNX→WAW | 2026-11-01 | kiwi | https://kiwi.com/u/yzsj65 |
+_none_
 
 ## Near misses
 
 | Total | Route | Date | Source | Link |
 | --- | --- | --- | --- | --- |
-| $274 | CNX→KTW | 2026-10-29 | kiwi | https://kiwi.com/u/nu4fk3 |
-| $274 | CNX→KTW | 2026-11-01 | kiwi | https://kiwi.com/u/9pqd5v |
-| $276 | BKK→GDN | 2026-10-30 | kiwi | https://kiwi.com/u/xumsft |
-| $276 | CNX→KTW | 2026-10-30 | kiwi | https://kiwi.com/u/5up554f |
-| $276 | CNX→KTW | 2026-10-31 | kiwi | https://kiwi.com/u/shdj3d |
-| $280 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/s5tv6x |
-| $281.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/2b978r |
-| $282 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/9q9rcf |
-| $282.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/dcrpzc |
-| $283 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/x75th3 |
-| $283.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/qn7sxf |
-| $284 | CNX→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/fhb24n |
-| $284.92 | BKK→WMI | 2026-10-30 | kiwi | https://kiwi.com/u/3xvprbw |
-| $285.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/bsguwx |
-| $287.20 | CNX→POZ | 2026-10-27 | kiwi | https://kiwi.com/u/tkw59sg |
-| $287.95 | CNX→WMI | 2026-10-27 | kiwi | https://kiwi.com/u/xv9g68 |
-| $288 | CNX→WRO | 2026-10-29 | kiwi | https://kiwi.com/u/6xbztg |
-| $288 | CNX→WRO | 2026-10-29 | kiwi | https://kiwi.com/u/z99cyh |
-| $288 | CNX→WRO | 2026-10-30 | kiwi | https://kiwi.com/u/jcdmyr |
-| $288 | CNX→WRO | 2026-10-30 | kiwi | https://kiwi.com/u/9sx2wx |
-| $288 | CNX→WRO | 2026-10-31 | kiwi | https://kiwi.com/u/qyct96 |
-| $288 | CNX→WRO | 2026-10-31 | kiwi | https://kiwi.com/u/xkhhnb |
-| $288.21 | CNX→KTW | 2026-10-27 | kiwi | https://kiwi.com/u/jcb7j7 |
-| $288.69 | CNX→KRK | 2026-10-27 | kiwi | https://kiwi.com/u/sqf374 |
-| $288.94 | CNX→WMI | 2026-11-01 | kiwi | https://kiwi.com/u/xqy4pj6 |
-| $291 | CNX→WRO | 2026-11-01 | kiwi | https://kiwi.com/u/gw499v |
-| $292 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/pssbtb |
-| $292 | CNX→KRK | 2026-10-30 | kiwi | https://kiwi.com/u/wvyqdz |
-| $292 | CNX→KRK | 2026-10-31 | kiwi | https://kiwi.com/u/vzh2yr |
-| $292 | CNX→POZ | 2026-10-29 | kiwi | https://kiwi.com/u/czstps |
-| $292 | CNX→POZ | 2026-10-30 | kiwi | https://kiwi.com/u/z6g5hm |
-| $292 | CNX→POZ | 2026-10-31 | kiwi | https://kiwi.com/u/cqs6zvk |
-| $292 | CNX→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/wdbckp |
-| $292.69 | CNX→KRK | 2026-10-27 | kiwi | https://kiwi.com/u/gg7kqn |
-| $293.66 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/npsb3f |
-| $293.66 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/uutb5c |
-| $293.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/hhjwpdm |
-| $295.66 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/gvqj5yj |
-| $295.90 | BKK→GDN | 2026-10-30 | kiwi | https://kiwi.com/u/gy9rrpy |
-| $295.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/k9zvup |
-| $296 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/fb3xhjg |
-| $296.66 | BKK→KRK | 2026-10-30 | kiwi | https://kiwi.com/u/rj59sp |
-| $296.66 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/zvv8s3 |
-| $296.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/b3nfrw |
-| $297.69 | CNX→GDN | 2026-10-27 | kiwi | https://kiwi.com/u/gw8xvbc |
+| $277 | BKK→GDN | 2026-10-30 | kiwi | https://kiwi.com/u/cgmuybh |
+| $277.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/7vc8pd |
+| $277.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/nhug9h3 |
+| $278.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/dr98fv |
+| $279 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/uzgxn3 |
+| $280 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/vdg3n2 |
+| $280.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/syr9t8 |
+| $281.92 | BKK→WMI | 2026-10-30 | kiwi | https://kiwi.com/u/pj424k |
+| $282 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/nqsr7p |
+| $282.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/wz9vwk |
+| $283 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/2gw4xg |
+| $292.66 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/c3w725q |
+| $292.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/dfcc9j5 |
+| $292.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/42ss9j |
+| $293.66 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/jgu83x |
+| $295.66 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/hyt9t8m |
+| $295.90 | BKK→GDN | 2026-10-30 | kiwi | https://kiwi.com/u/s5v9pbc |
+| $295.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/btzvku |
+| $296.66 | BKK→KRK | 2026-10-30 | kiwi | https://kiwi.com/u/jq27852 |
+| $296.66 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/hy2qqg |
+| $296.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/fd7yru4 |
 
 ## Best per source
 
 | Source | Total | Route | Date |
 | --- | --- | --- | --- |
-| google | $420 | BKK→KRK | 2026-10-27 |
-| kiwi | $206 | CNX→WAW | 2026-10-29 |
+| google | $412 | BKK→WAW | 2026-10-28 |
+| kiwi | $277 | BKK→GDN | 2026-10-30 |
 | skiplagged | $412 | BKK→KRK | 2026-10-28 |
 
 ## Source status
 
 | Source | Status | Count | Seconds | Error |
 | --- | --- | --- | --- | --- |
-| chartershop | ok | 0 | 2.4 |  |
-| google | ok | 134 | 91.4 |  |
-| hops | ok | 513 | 43.7 |  |
-| itaka | ok | 0 | 2.9 |  |
-| kiwi | ok | 416 | 17.2 |  |
+| chartershop | ok | 0 | 2.1 |  |
+| google | ok | 152 | 94.9 |  |
+| hops | ok | 516 | 55.2 |  |
+| itaka | ok | 0 | 2.6 |  |
+| kiwi | ok | 413 | 14.9 |  |
 | letsfg | skipped | 0 | 0.0 | LETSFG_REFRESH_TOKEN not set |
-| rpl | ok | 0 | 1.8 |  |
-| skiplagged | ok | 260 | 152.0 |  |
+| rpl | ok | 0 | 1.7 |  |
+| skiplagged | ok | 260 | 147.0 |  |
 | skyscanner | skipped | 0 | 0.0 | APIFY_TOKEN not set |
