@@ -254,6 +254,7 @@ async def test_cursor_rotation_and_daily_cap(monkeypatch: pytest.MonkeyPatch) ->
         assert search.call_count == 20
 
         bodies = [json.loads(c.request.content.decode()) for c in search.calls]
+        assert search.calls[0].request.headers["user-agent"] == "LetsFG-Python-SDK/1.0.3"
         assert bodies[0]["origin"] == "CNX"
         assert bodies[0]["destination"] == "WAW"
         assert bodies[0]["date_from"] == "2026-10-20"

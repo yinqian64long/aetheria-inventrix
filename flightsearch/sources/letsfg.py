@@ -21,6 +21,9 @@ DISCOVERY_URL = (
 TOKEN_URL = "https://letsfg.co/developers/api/oauth/token"
 SEARCH_URL = "https://letsfg.co/api/search"
 RESULTS_URL = "https://letsfg.co/api/results/{search_id}"
+# Cloudflare rejects the default Python user agent with 403 before the app
+# sees the request. This is the identifier the LetsFG SDK sends.
+_USER_AGENT = "LetsFG-Python-SDK/1.0.3"
 
 DAILY_CAP = 95
 STARTS_PER_10MIN = 10
@@ -446,7 +449,11 @@ class LetsFGSource(Source):
                     "refresh_token": self._refresh_token,
                     "client_id": self._client_id,
                 },
-                headers={"Content-Type": "application/x-www-form-urlencoded"},
+                headers={
+                    "Content-Type": "application/x-www-form-urlencoded",
+                    "User-Agent": _USER_AGENT,
+                    "Accept": "application/json",
+                },
             )
             if resp.status_code == 401:
                 raise SourceError("letsfg: refresh token rejected (401)")
@@ -478,6 +485,8 @@ class LetsFGSource(Source):
             "Authorization": f"Bearer {self._access_token}",
             "Content-Type": "application/json",
             "Accept": "application/json",
+            "User-Agent": _USER_AGENT,
+            "X-Client-Type": "python-sdk",
         }
 
     async def _request(

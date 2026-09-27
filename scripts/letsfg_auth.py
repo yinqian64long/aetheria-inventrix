@@ -29,7 +29,8 @@ DISCOVERY_URLS = (
     "https://letsfg.co/.well-known/oauth-authorization-server",
 )
 DEFAULT_REDIRECT = "http://127.0.0.1:8765/callback"
-DEFAULT_SCOPE = "flights"
+# Bare "flights" is dropped by the server, so the grant has no scope.
+DEFAULT_SCOPE = "flights:search flights:book profile:read"
 CLIENT_NAME = "flightsearch-letsfg"
 _FALLBACK = {
     "authorization_endpoint": "https://letsfg.co/connect",
@@ -125,15 +126,17 @@ class _CallbackHandler(http.server.BaseHTTPRequestHandler):
             self.send_error(400, "state mismatch")
             return
         body: bytes
+        # Assign on the class. BaseHTTPRequestHandler instances shadow
+        # class attributes, and capture_code reads _CallbackHandler.result.
         if error:
             desc = (qs.get("error_description") or [error])[0]
-            self.result = {"error": desc}
+            type(self).result = {"error": desc}
             body = b"Authorization failed. You can close this tab."
         elif not code:
-            self.result = {"error": "missing code"}
+            type(self).result = {"error": "missing code"}
             body = b"Missing authorization code. You can close this tab."
         else:
-            self.result = {"code": code}
+            type(self).result = {"code": code}
             body = b"LetsFG connected. You can close this tab and return to the terminal."
         self.send_response(200)
         self.send_header("Content-Type", "text/plain; charset=utf-8")
@@ -280,6 +283,7 @@ def main(argv: list[str] | None = None) -> int:
             f"&code_challenge_method=S256"
             f"&state={urllib.parse.quote(state)}"
             f"&scope={urllib.parse.quote(args.scope)}"
+            f"&prompt=consent"
         )
         print("Open this URL and approve the LetsFG connection:", file=sys.stderr)
         print(authorize, file=sys.stderr)
