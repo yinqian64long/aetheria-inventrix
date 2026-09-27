@@ -1,24 +1,40 @@
 {
-  "alerts": {},
+  "alerts": {
+    "CNX-WMI|2026-10-29|2026-10-29T18:05:00|FD4109,N0194,FR1945": {
+      "first_seen": "2026-09-27T16:56:21.301515+00:00",
+      "last_alerted": "2026-09-27T16:56:21.301515+00:00",
+      "total_usd": 235.0
+    },
+    "CNX-WMI|2026-10-29|2026-10-29T21:30:00|SL521,N0194,FR1945": {
+      "first_seen": "2026-09-27T16:56:21.301515+00:00",
+      "last_alerted": "2026-09-27T16:56:21.301515+00:00",
+      "total_usd": 237.0
+    },
+    "CNX-WMI|2026-10-29|2026-10-29T22:35:00|VZ119,N0194,FR1945": {
+      "first_seen": "2026-09-27T16:56:21.301515+00:00",
+      "last_alerted": "2026-09-27T16:56:21.301515+00:00",
+      "total_usd": 238.0
+    }
+  },
   "last_heartbeat_date": "2026-09-27",
-  "runs": 6,
+  "runs": 7,
   "sources": {
     "chartershop": {
       "data": {},
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-27T11:59:09.394037+00:00"
+        "last_ok": "2026-09-27T16:56:21.301515+00:00"
       }
     },
     "google": {
       "data": {
-        "date_parity": 0
+        "date_parity": 1
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-27T11:59:09.394037+00:00"
+        "last_ok": "2026-09-27T16:56:21.301515+00:00"
       }
     },
     "hops": {
@@ -26,7 +42,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-27T11:59:09.394037+00:00"
+        "last_ok": "2026-09-27T16:56:21.301515+00:00"
       }
     },
     "itaka": {
@@ -34,7 +50,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-27T11:59:09.394037+00:00"
+        "last_ok": "2026-09-27T16:56:21.301515+00:00"
       }
     },
     "kiwi": {
@@ -42,7 +58,19 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-27T11:59:09.394037+00:00"
+        "last_ok": "2026-09-27T16:56:21.301515+00:00"
+      }
+    },
+    "letsfg": {
+      "data": {
+        "cursor": 3,
+        "day": "2026-09-27",
+        "searches_today": 3
+      },
+      "health": {
+        "consecutive_failures": 0,
+        "last_error": null,
+        "last_ok": "2026-09-27T16:56:21.301515+00:00"
       }
     },
     "rpl": {
@@ -50,7 +78,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-27T11:59:09.394037+00:00"
+        "last_ok": "2026-09-27T16:56:21.301515+00:00"
       }
     },
     "skiplagged": {
@@ -58,7 +86,19 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-27T11:59:09.394037+00:00"
+        "last_ok": "2026-09-27T16:56:21.301515+00:00"
+      }
+    },
+    "skyscanner": {
+      "data": {
+        "cursor": 2,
+        "day": "2026-09-27",
+        "runs_today": 2
+      },
+      "health": {
+        "consecutive_failures": 0,
+        "last_error": null,
+        "last_ok": "2026-09-27T16:56:21.301515+00:00"
       }
     }
   },

@@ -1,70 +1,70 @@
 # Flight search
 
-- Qualifying: 0
-- Near misses: 33
+- Qualifying: 3
+- Near misses: 27
 - Dropped: 0
 - Messages sent: 1
 
 ## Qualifying deals
 
-_none_
+| Total | Route | Date | Source | Link |
+| --- | --- | --- | --- | --- |
+| $235 | CNX→WMI | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261029/ |
+| $237 | CNX→WMI | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261029/ |
+| $238 | CNX→WMI | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261029/ |
 
 ## Near misses
 
 | Total | Route | Date | Source | Link |
 | --- | --- | --- | --- | --- |
-| $254 | BKK→GDN | 2026-10-30 | kiwi | https://kiwi.com/u/sy5r87z |
-| $254 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/8x9v99 |
-| $255 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/x4ygk8 |
-| $256.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/7yj6k4 |
-| $257 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/g25vqgr |
-| $257.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/m3ryjw |
-| $258 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/xs42vn |
-| $258 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/t5dvvd |
-| $259.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/yfrxjx4 |
-| $260.92 | BKK→WMI | 2026-10-30 | kiwi | https://kiwi.com/u/hm6xh2 |
-| $260.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/hb3679 |
-| $260.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/rsjmqz |
-| $272.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/dvf6n5 |
-| $273.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/yxc7su |
-| $275.90 | BKK→GDN | 2026-10-30 | kiwi | https://kiwi.com/u/38ku8q |
-| $275.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/r2f2sh |
-| $275.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/7fpz5s |
-| $276.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/z2ynk2 |
-| $288.40 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/h22b9zz |
-| $288.40 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/tbm25h |
-| $290.40 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/2ynh5y |
-| $291.40 | BKK→KRK | 2026-10-30 | kiwi | https://kiwi.com/u/w87x9m |
-| $291.40 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/tgxxsj |
-| $291.40 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/6nhuy9 |
-| $292.87 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/464b2cg |
-| $292.87 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/4pxcuu |
-| $294.87 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/776ddqf |
-| $295.87 | BKK→KRK | 2026-10-30 | kiwi | https://kiwi.com/u/nhwuh2 |
-| $295.87 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/gwyh6x |
-| $295.87 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/sxcvtf |
-| $296.92 | CNX→KTW | 2026-10-29 | kiwi | https://kiwi.com/u/wxr7v7 |
-| $297.92 | CNX→KTW | 2026-10-29 | kiwi | https://kiwi.com/u/wbbpft |
-| $299.92 | CNX→KTW | 2026-10-29 | kiwi | https://kiwi.com/u/ufnt6s |
+| $254 | BKK→GDN | 2026-10-30 | kiwi | https://kiwi.com/u/nsudyk |
+| $255 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/j7gx37 |
+| $255 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/rpypvc |
+| $257 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/2pguyp |
+| $257.92 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/f6pxcn |
+| $259 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/4j7ty2 |
+| $260.92 | BKK→WMI | 2026-10-30 | kiwi | https://kiwi.com/u/rnycps |
+| $269 | CNX→KRK | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261029/ |
+| $271 | CNX→KRK | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261029/ |
+| $275.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/4dx23qk |
+| $275.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/249nysq |
+| $277.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/cp93qb |
+| $278.90 | BKK→GDN | 2026-10-30 | kiwi | https://kiwi.com/u/f762f2 |
+| $279.90 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/uynwqv |
+| $288.40 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/wmjkd6 |
+| $288.40 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/j3n783 |
+| $291.40 | BKK→KRK | 2026-10-30 | kiwi | https://kiwi.com/u/wz6uq2 |
+| $292.87 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/rqpdkpp |
+| $292.87 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/rtqnm6 |
+| $294.87 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/5rxu3t |
+| $295.87 | BKK→KRK | 2026-10-30 | kiwi | https://kiwi.com/u/bsvshmf |
+| $296.87 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/22mkfn2 |
+| $296.92 | CNX→KTW | 2026-10-29 | kiwi | https://kiwi.com/u/9d6u4m |
+| $297 | CNX→WMI | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261031/ |
+| $297.92 | CNX→KTW | 2026-10-29 | kiwi | https://kiwi.com/u/7d6b92 |
+| $298 | CNX→KRK | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261031/ |
+| $299.92 | CNX→KTW | 2026-10-29 | kiwi | https://kiwi.com/u/x77jpd |
 
 ## Best per source
 
 | Source | Total | Route | Date |
 | --- | --- | --- | --- |
-| google | $420 | BKK→KRK | 2026-10-27 |
-| kiwi | $254 | CNX→GDN | 2026-10-29 |
+| google | $412 | BKK→WAW | 2026-10-28 |
+| kiwi | $254 | BKK→GDN | 2026-10-30 |
+| letsfg | $409 | CNX→WAW | 2026-10-20 |
 | skiplagged | $412 | BKK→KRK | 2026-10-28 |
+| skyscanner | $235 | CNX→WMI | 2026-10-29 |
 
 ## Source status
 
 | Source | Status | Count | Seconds | Error |
 | --- | --- | --- | --- | --- |
-| chartershop | ok | 0 | 2.4 |  |
-| google | ok | 134 | 113.4 |  |
-| hops | ok | 516 | 55.2 |  |
-| itaka | ok | 0 | 2.4 |  |
-| kiwi | ok | 415 | 13.9 |  |
-| letsfg | skipped | 0 | 0.0 | LETSFG_REFRESH_TOKEN not set |
-| rpl | ok | 0 | 1.6 |  |
-| skiplagged | ok | 260 | 206.6 |  |
-| skyscanner | skipped | 0 | 0.0 | APIFY_TOKEN not set |
+| chartershop | ok | 0 | 2.8 |  |
+| google | ok | 152 | 94.6 |  |
+| hops | ok | 516 | 50.9 |  |
+| itaka | ok | 0 | 3.9 |  |
+| kiwi | ok | 416 | 14.9 |  |
+| letsfg | ok | 15 | 75.7 |  |
+| rpl | ok | 0 | 2.3 |  |
+| skiplagged | ok | 260 | 150.9 |  |
+| skyscanner | ok | 50 | 30.4 |  |
