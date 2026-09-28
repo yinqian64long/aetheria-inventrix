@@ -1,5 +1,10 @@
 {
   "alerts": {
+    "BKK-WAW|2026-11-01|2026-11-01T14:55:00|N0192,W61502|hop:kiwi|CNX-BKK|2026-10-31|2026-10-31T14:20:00|VZ111": {
+      "first_seen": "2026-09-28T23:14:26.133968+00:00",
+      "last_alerted": "2026-09-28T23:14:26.133968+00:00",
+      "total_usd": 228.0
+    },
     "BKK-WAW|2026-11-01|2026-11-01T14:55:00|N0192,W61502|hop:kiwi|CNX-BKK|2026-10-31|2026-10-31T20:40:00|FD4103": {
       "first_seen": "2026-09-28T13:49:18.385591+00:00",
       "last_alerted": "2026-09-28T13:49:18.385591+00:00",
@@ -50,6 +55,11 @@
       "last_alerted": "2026-09-28T13:49:18.385591+00:00",
       "total_usd": 220.0
     },
+    "CNX-WAW|2026-10-31|2026-10-31T20:50:00|VZ2107,N0192,W61502": {
+      "first_seen": "2026-09-28T23:14:26.133968+00:00",
+      "last_alerted": "2026-09-28T23:14:26.133968+00:00",
+      "total_usd": 224.0
+    },
     "CNX-WAW|2026-10-31|2026-10-31T21:30:00|SL521,N0192,W61502": {
       "first_seen": "2026-09-28T13:49:18.385591+00:00",
       "last_alerted": "2026-09-28T13:49:18.385591+00:00",
@@ -74,6 +84,11 @@
       "first_seen": "2026-09-28T13:49:18.385591+00:00",
       "last_alerted": "2026-09-28T13:49:18.385591+00:00",
       "total_usd": 231.0
+    },
+    "CNX-WAW|2026-11-01|2026-11-01T08:30:00|FD3438,N0192,W61502": {
+      "first_seen": "2026-09-28T23:14:26.133968+00:00",
+      "last_alerted": "2026-09-28T23:14:26.133968+00:00",
+      "total_usd": 233.0
     },
     "CNX-WAW|2026-11-01|2026-11-01T08:55:00|FD4101,N0192,W61502": {
       "first_seen": "2026-09-28T13:49:18.385591+00:00",
@@ -107,24 +122,24 @@
     }
   },
   "last_heartbeat_date": "2026-09-28",
-  "runs": 10,
+  "runs": 11,
   "sources": {
     "chartershop": {
       "data": {},
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T13:49:18.385591+00:00"
+        "last_ok": "2026-09-28T23:14:26.133968+00:00"
       }
     },
     "google": {
       "data": {
-        "date_parity": 0
+        "date_parity": 1
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T13:49:18.385591+00:00"
+        "last_ok": "2026-09-28T23:14:26.133968+00:00"
       }
     },
     "hops": {
@@ -132,7 +147,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T13:49:18.385591+00:00"
+        "last_ok": "2026-09-28T23:14:26.133968+00:00"
       }
     },
     "itaka": {
@@ -140,7 +155,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T13:49:18.385591+00:00"
+        "last_ok": "2026-09-28T23:14:26.133968+00:00"
       }
     },
     "kiwi": {
@@ -148,19 +163,19 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T13:49:18.385591+00:00"
+        "last_ok": "2026-09-28T23:14:26.133968+00:00"
       }
     },
     "letsfg": {
       "data": {
-        "cursor": 19,
+        "cursor": 39,
         "day": "2026-09-28",
-        "searches_today": 9
+        "searches_today": 29
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T13:49:18.385591+00:00"
+        "last_ok": "2026-09-28T23:14:26.133968+00:00"
       }
     },
     "rpl": {
@@ -168,7 +183,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T13:49:18.385591+00:00"
+        "last_ok": "2026-09-28T23:14:26.133968+00:00"
       }
     },
     "skiplagged": {
@@ -176,19 +191,19 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T13:49:18.385591+00:00"
+        "last_ok": "2026-09-28T23:14:26.133968+00:00"
       }
     },
     "skyscanner": {
       "data": {
-        "cursor": 8,
+        "cursor": 10,
         "day": "2026-09-28",
-        "runs_today": 4
+        "runs_today": 6
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T13:49:18.385591+00:00"
+        "last_ok": "2026-09-28T23:14:26.133968+00:00"
       }
     }
   },
