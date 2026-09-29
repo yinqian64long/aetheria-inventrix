@@ -1,0 +1,61 @@
+[
+  {
+    "source": "trip.com",
+    "service": "flights",
+    "origin": "CNX",
+    "destination": "WAW",
+    "departureDate": "2026-10-27",
+    "departureTime": "2026-10-27T09:10:00",
+    "arrivalTime": "2026-10-28T06:20:00",
+    "price": 210,
+    "currency": "USD",
+    "airline": "Etihad",
+    "flightNumber": "EY427",
+    "stops": 1,
+    "duration": "14h 10m",
+    "url": "https://www.trip.com/flights/showfarefirst?dcity=cnx&acity=waw&ddate=2026-10-27",
+    "baggage": {"cabinBag": 1},
+    "selfTransfer": false
+  },
+  {
+    "source": "trip.com",
+    "service": "flights",
+    "from": {"airport": "CNX"},
+    "to": {"airport": "WAW"},
+    "departureTime": "2026-10-27T21:40:00",
+    "price": 9000,
+    "currency": "THB",
+    "segments": [
+      {
+        "airline": "LOT",
+        "flightNumber": "LO68",
+        "from": "CNX",
+        "to": "WAW"
+      }
+    ],
+    "isSelfTransfer": true
+  },
+  {
+    "service": "flights",
+    "origin": "CNX",
+    "destination": "WAW",
+    "departureDate": "2026-12-01",
+    "price": 50,
+    "currency": "USD"
+  },
+  {
+    "service": "hotels",
+    "destination": "Bangkok",
+    "price": 40,
+    "currency": "USD"
+  },
+  {
+    "service": "flights",
+    "sponsored": true,
+    "origin": "CNX",
+    "destination": "WAW",
+    "departureDate": "2026-10-27",
+    "price": 10,
+    "currency": "USD"
+  }
+]
