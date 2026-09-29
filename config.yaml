@@ -23,5 +23,6 @@ sources:
   rpl: {enabled: true}
   itaka: {enabled: true}
   chartershop: {enabled: true}
+  trip: {enabled: true, max_searches_per_run: 12, timeout_s: 1200}
 notify:
   telegram: {enabled: true, heartbeat_utc_hour: 0}
