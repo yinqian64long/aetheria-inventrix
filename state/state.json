@@ -10,6 +10,16 @@
       "last_alerted": "2026-09-28T13:49:18.385591+00:00",
       "total_usd": 226.0
     },
+    "CNX-GDN|2026-10-27|2026-10-27T09:10:00|EY427,EY67,FR545": {
+      "first_seen": "2026-09-29T12:48:44.832532+00:00",
+      "last_alerted": "2026-09-29T12:48:44.832532+00:00",
+      "total_usd": 249.0
+    },
+    "CNX-POZ|2026-10-27|2026-10-27T09:10:00|EY427,EY67,FR2194": {
+      "first_seen": "2026-09-29T12:48:44.832532+00:00",
+      "last_alerted": "2026-09-29T12:48:44.832532+00:00",
+      "total_usd": 242.0
+    },
     "CNX-WAW|2026-10-27|2026-10-27T09:10:00|EY427,EY159": {
       "first_seen": "2026-09-28T13:49:18.385591+00:00",
       "last_alerted": "2026-09-28T13:49:18.385591+00:00",
@@ -119,27 +129,37 @@
       "first_seen": "2026-09-27T16:56:21.301515+00:00",
       "last_alerted": "2026-09-27T16:56:21.301515+00:00",
       "total_usd": 238.0
+    },
+    "CNX-WMI|2026-10-31|2026-10-31T20:40:00|FD4103,N0192,FR1945": {
+      "first_seen": "2026-09-29T12:48:44.832532+00:00",
+      "last_alerted": "2026-09-29T12:48:44.832532+00:00",
+      "total_usd": 250.0
+    },
+    "CNX-WRO|2026-10-27|2026-10-27T09:10:00|EY427,EY67,FR8405": {
+      "first_seen": "2026-09-29T12:48:44.832532+00:00",
+      "last_alerted": "2026-09-29T12:48:44.832532+00:00",
+      "total_usd": 246.0
     }
   },
   "last_heartbeat_date": "2026-09-29",
-  "runs": 12,
+  "runs": 13,
   "sources": {
     "chartershop": {
       "data": {},
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T05:40:58.824149+00:00"
+        "last_ok": "2026-09-29T12:48:44.832532+00:00"
       }
     },
     "google": {
       "data": {
-        "date_parity": 0
+        "date_parity": 1
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T05:40:58.824149+00:00"
+        "last_ok": "2026-09-29T12:48:44.832532+00:00"
       }
     },
     "hops": {
@@ -147,7 +167,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T05:40:58.824149+00:00"
+        "last_ok": "2026-09-29T12:48:44.832532+00:00"
       }
     },
     "itaka": {
@@ -155,7 +175,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T05:40:58.824149+00:00"
+        "last_ok": "2026-09-29T12:48:44.832532+00:00"
       }
     },
     "kiwi": {
@@ -163,19 +183,19 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T05:40:58.824149+00:00"
+        "last_ok": "2026-09-29T12:48:44.832532+00:00"
       }
     },
     "letsfg": {
       "data": {
-        "cursor": 44,
+        "cursor": 51,
         "day": "2026-09-29",
-        "searches_today": 5
+        "searches_today": 12
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T05:40:58.824149+00:00"
+        "last_ok": "2026-09-29T12:48:44.832532+00:00"
       }
     },
     "rpl": {
@@ -183,7 +203,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T05:40:58.824149+00:00"
+        "last_ok": "2026-09-29T12:48:44.832532+00:00"
       }
     },
     "skiplagged": {
@@ -191,19 +211,29 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T05:40:58.824149+00:00"
+        "last_ok": "2026-09-29T12:48:44.832532+00:00"
       }
     },
     "skyscanner": {
       "data": {
-        "cursor": 12,
+        "cursor": 14,
         "day": "2026-09-29",
-        "runs_today": 2
+        "runs_today": 4
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T05:40:58.824149+00:00"
+        "last_ok": "2026-09-29T12:48:44.832532+00:00"
+      }
+    },
+    "trip": {
+      "data": {
+        "cursor": 12
+      },
+      "health": {
+        "consecutive_failures": 1,
+        "last_error": "trip: all 12 airline searches failed: trip: airline HTTP 404: Not Found! 1、软路由服务无法匹配到该域名，请检查域名指向是否正确； 2、请检查是否成功申请了域名。",
+        "last_ok": null
       }
     }
   },
