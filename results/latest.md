@@ -1,9 +1,9 @@
 # Flight search
 
-- Qualifying: 18
-- Near misses: 103
-- Dropped: 8
-- Messages sent: 1
+- Qualifying: 14
+- Near misses: 77
+- Dropped: 4
+- Messages sent: 0
 
 ## Qualifying deals
 
@@ -15,126 +15,96 @@
 | $178 | CNX→WAW | 2026-10-30 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-30?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159 |
 | $178 | CNX→WAW | 2026-10-31 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159 |
 | $178 | CNX→WAW | 2026-11-01 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159 |
-| $222 | CNX→WAW | 2026-10-31 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD4103-N0192-W61502 |
-| $223 | CNX→WAW | 2026-10-31 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=SL521-N0192-W61502 |
-| $229 | CNX→WAW | 2026-10-31 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD3428-N0192-W61502 |
-| $229 | CNX→WAW | 2026-10-31 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2107-N0192-W61502 |
-| $232 | CNX→WAW | 2026-11-01 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=SL519-N0192-W61502 |
-| $234 | CNX→WAW | 2026-11-01 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD3438-N0192-W61502 |
-| $234 | CNX→WAW | 2026-11-01 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-N0192-W61502 |
-| $237 | CNX→WAW | 2026-11-01 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD3412-N0192-W61502 |
-| $242 | CNX→POZ | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_b08bcd6431dc4053&offer=wo_d40eda0ab2ea&cur=USD |
-| $246 | CNX→WRO | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_a78a1c3998814571&offer=wo_52c0ef346cec&cur=USD |
-| $249 | CNX→GDN | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_fa8833d95e4f4869&offer=wo_1a4456d4242f&cur=USD |
-| $250 | CNX→WMI | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261031/ |
+| $223 | CNX→WAW | 2026-10-31 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD4103-N0192-W61502 |
+| $224 | CNX→WAW | 2026-10-31 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=SL521-N0192-W61502 |
+| $230 | CNX→WAW | 2026-10-31 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2107-N0192-W61502 |
+| $231 | CNX→WAW | 2026-10-31 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD3428-N0192-W61502 |
+| $233 | CNX→WAW | 2026-11-01 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=SL519-N0192-W61502 |
+| $235 | CNX→WAW | 2026-11-01 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-N0192-W61502 |
+| $236 | CNX→WAW | 2026-11-01 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD3438-N0192-W61502 |
+| $243 | CNX→WAW | 2026-11-01 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD4101-N0192-W61502 |
 
 ## Near misses
 
 | Total | Route | Date | Source | Link |
 | --- | --- | --- | --- | --- |
-| $251 | CNX→KRK | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261031/ |
-| $251 | CNX→WMI | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261031/ |
-| $252 | CNX→KRK | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261031/ |
-| $255 | CNX→WAW | 2026-10-29 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY177-W61368 |
-| $256 | CNX→KRK | 2026-10-28 | letsfg | https://letsfg.co/en?stage=results&sid=ws_c399dba0753a4926&offer=wo_283306c932de&cur=USD |
-| $256 | CNX→KTW | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_d4a5dd326a65468d&offer=wo_4772e9300dd9&cur=USD |
-| $256 | CNX→POZ | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_b08bcd6431dc4053&offer=wo_3191e382de8a&cur=USD |
-| $256 | CNX→WMI | 2026-10-28 | letsfg | https://letsfg.co/en?stage=results&sid=ws_18c22185c6964843&offer=wo_7508d85ef2cb&cur=USD |
-| $256 | CNX→WMI | 2026-11-01 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261101/ |
-| $256 | CNX→WMI | 2026-10-28 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261028/ |
-| $257 | CNX→KTW | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_d4a5dd326a65468d&offer=wo_3373f8834bcc&cur=USD |
-| $257 | CNX→WMI | 2026-10-28 | letsfg | https://letsfg.co/en?stage=results&sid=ws_18c22185c6964843&offer=wo_7fa08f18e3c7&cur=USD |
-| $257 | CNX→KRK | 2026-10-28 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261028/ |
-| $257 | CNX→WMI | 2026-10-30 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261030/ |
-| $258 | CNX→WMI | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261029/ |
-| $258 | CNX→WMI | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261031/ |
-| $258 | CNX→WMI | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261031/ |
-| $259 | CNX→WRO | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_a78a1c3998814571&offer=wo_ed3283a08cad&cur=USD |
-| $259 | CNX→KRK | 2026-10-27 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261027/ |
-| $259 | CNX→KRK | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261031/ |
-| $259 | CNX→KRK | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261031/ |
-| $260 | CNX→GDN | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_fa8833d95e4f4869&offer=wo_3ba191d0d15c&cur=USD |
-| $260 | CNX→WAW | 2026-10-28 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY113-W61476 |
-| $260 | CNX→WAW | 2026-10-28 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY111-W61476 |
-| $260 | CNX→KRK | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261029/ |
-| $260 | CNX→KRK | 2026-10-27 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261027/ |
-| $260 | CNX→WMI | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261029/ |
-| $260 | CNX→WMI | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261031/ |
-| $261 | CNX→WAW | 2026-10-27 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY111-W61476 |
-| $261 | CNX→WAW | 2026-10-27 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY113-W61476 |
-| $261 | CNX→WAW | 2026-10-29 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY113-W61476 |
-| $261 | CNX→KRK | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261031/ |
-| $263 | CNX→GDN | 2026-10-28 | letsfg | https://letsfg.co/en?stage=results&sid=ws_a98f751acd694a52&offer=wo_a78124d52e33&cur=USD |
-| $264 | CNX→GDN | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_fa8833d95e4f4869&offer=wo_ced00051849d&cur=USD |
-| $264 | CNX→WMI | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261031/ |
-| $264 | CNX→WMI | 2026-10-27 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261027/ |
-| $264 | CNX→WMI | 2026-10-27 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261027/ |
-| $265 | CNX→KTW | 2026-10-31 | kiwi | https://kiwi.com/u/s6f4gt |
-| $265 | CNX→KTW | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_d4a5dd326a65468d&offer=wo_4216325071d6&cur=USD |
-| $267 | CNX→GDN | 2026-10-28 | letsfg | https://letsfg.co/en?stage=results&sid=ws_a98f751acd694a52&offer=wo_aa7538a53e3e&cur=USD |
-| $268 | CNX→KTW | 2026-10-28 | kiwi | https://kiwi.com/u/x573kvm |
-| $268 | CNX→KTW | 2026-10-29 | kiwi | https://kiwi.com/u/2jxctr |
-| $268 | CNX→KTW | 2026-10-30 | kiwi | https://kiwi.com/u/dn347b |
-| $268 | CNX→KTW | 2026-11-01 | kiwi | https://kiwi.com/u/pfw86m2 |
-| $270 | CNX→WRO | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_a78a1c3998814571&offer=wo_abd6e1e3f048&cur=USD |
-| $272 | CNX→KRK | 2026-10-28 | letsfg | https://letsfg.co/en?stage=results&sid=ws_c399dba0753a4926&offer=wo_b7098b9be37f&cur=USD |
-| $273.56 | BKK→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/2bsvxk |
-| $274 | CNX→KRK | 2026-10-28 | letsfg | https://letsfg.co/en?stage=results&sid=ws_c399dba0753a4926&offer=wo_a9afc4fe3bf3&cur=USD |
-| $274 | CNX→WMI | 2026-11-01 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261101/ |
-| $274.57 | BKK→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/93hc72 |
-| $275 | CNX→KRK | 2026-11-01 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261101/ |
-| $275.78 | BKK→WMI | 2026-11-01 | kiwi | https://kiwi.com/u/9j66ny |
-| $276 | CNX→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/7pdmjw8 |
-| $277 | BKK→GDN | 2026-10-30 | kiwi | https://kiwi.com/u/8t8mg9 |
-| $278 | CNX→WMI | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261029/ |
-| $278.97 | BKK→WRO | 2026-11-01 | kiwi | https://kiwi.com/u/qghf52 |
-| $278.98 | BKK→KRK | 2026-11-01 | kiwi | https://kiwi.com/u/w829yn |
-| $279 | CNX→KTW | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_d4a5dd326a65468d&offer=wo_b0b96c8db6ce&cur=USD |
-| $279 | CNX→KRK | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261031/ |
-| $279 | CNX→WMI | 2026-10-27 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261027/ |
-| $280.56 | CNX→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/bpst6uu |
-| $281 | CNX→WMI | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261029/ |
-| $281.57 | CNX→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/q6z8wb |
-| $282 | CNX→WRO | 2026-10-27 | kiwi | https://kiwi.com/u/ts4p452 |
-| $282 | CNX→WRO | 2026-10-28 | kiwi | https://kiwi.com/u/3zfb35 |
-| $282 | CNX→WRO | 2026-10-28 | kiwi | https://kiwi.com/u/dj7kut |
-| $282 | CNX→WRO | 2026-10-29 | kiwi | https://kiwi.com/u/jwhh5j |
-| $282 | CNX→WRO | 2026-10-29 | kiwi | https://kiwi.com/u/nfpb8d |
-| $282 | CNX→WRO | 2026-10-30 | kiwi | https://kiwi.com/u/ujdnrd |
-| $282 | CNX→WRO | 2026-10-30 | kiwi | https://kiwi.com/u/yc5grv |
-| $282 | CNX→WRO | 2026-10-31 | kiwi | https://kiwi.com/u/2g2gt3 |
-| $282 | CNX→WRO | 2026-10-31 | kiwi | https://kiwi.com/u/nqhwtw |
-| $282 | CNX→WRO | 2026-11-01 | kiwi | https://kiwi.com/u/xftmkm |
-| $282 | CNX→WMI | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/wmi/261029/ |
-| $282.56 | CNX→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/j24c3p |
-| $283 | CNX→POZ | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_b08bcd6431dc4053&offer=wo_603547e7b1f4&cur=USD |
-| $283.56 | CNX→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/56sqws |
-| $283.57 | CNX→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/8ugvt2 |
-| $284 | CNX→POZ | 2026-10-29 | kiwi | https://kiwi.com/u/49jpnsh |
-| $284 | CNX→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/jw6kcx |
-| $284 | CNX→KRK | 2026-10-27 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261027/ |
-| $284 | CNX→KRK | 2026-10-30 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261030/ |
-| $284 | CNX→KRK | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261031/ |
-| $284.57 | CNX→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/39fy32 |
-| $285 | CNX→KRK | 2026-10-27 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261027/ |
-| $285.56 | CNX→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/xnbhvj |
-| $286.36 | CNX→POZ | 2026-10-29 | kiwi | https://kiwi.com/u/fxvqjx |
-| $286.57 | CNX→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/myn3tq |
-| $287 | BKK→WAW | 2026-11-01 | kiwi | https://kiwi.com/u/jgjfyb |
-| $289.08 | CNX→KTW | 2026-10-29 | kiwi | https://kiwi.com/u/bcbjpd |
-| $289.35 | CNX→POZ | 2026-10-27 | kiwi | https://kiwi.com/u/7wqw8v |
-| $289.56 | CNX→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/c5utdk |
-| $290.57 | CNX→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/h6gy22 |
-| $292 | CNX→WAW | 2026-10-28 | letsfg | https://letsfg.co/en?stage=results&sid=ws_18c22185c6964843&offer=wo_635f105cef5d&cur=USD |
-| $294 | CNX→KTW | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_d4a5dd326a65468d&offer=wo_c5854a92e942&cur=USD |
-| $294 | CNX→POZ | 2026-10-27 | letsfg | https://letsfg.co/en?stage=results&sid=ws_b08bcd6431dc4053&offer=wo_168e9a1604b9&cur=USD |
-| $294.56 | CNX→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/79ryrk |
-| $295 | CNX→KRK | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261031/ |
-| $295.57 | CNX→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/xbs242 |
-| $296.82 | CNX→KRK | 2026-11-01 | kiwi | https://kiwi.com/u/5xwpqm |
-| $297 | CNX→KRK | 2026-10-30 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/krk/261030/ |
-| $298.35 | DMK→GDN | 2026-10-31 | kiwi | https://kiwi.com/u/9p65r8 |
-| $300 | CNX→GDN | 2026-10-28 | letsfg | https://letsfg.co/en?stage=results&sid=ws_a98f751acd694a52&offer=wo_806231b73cb0&cur=USD |
+| $251 | CNX→GDN | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261031/ |
+| $252 | CNX→GDN | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261031/ |
+| $254 | CNX→GDN | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261031/ |
+| $257 | CNX→KTW | 2026-10-27 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/ktw/261027/ |
+| $258 | CNX→GDN | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261031/ |
+| $258 | CNX→GDN | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261031/ |
+| $258 | CNX→KTW | 2026-10-28 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/ktw/261028/ |
+| $260 | CNX→WAW | 2026-10-27 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432 |
+| $260 | CNX→WAW | 2026-10-29 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387 |
+| $260 | CNX→WAW | 2026-10-29 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432 |
+| $261 | CNX→GDN | 2026-11-01 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261101/ |
+| $261 | CNX→GDN | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261031/ |
+| $262 | CNX→GDN | 2026-10-30 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261030/ |
+| $263 | CNX→GDN | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261029/ |
+| $265 | CNX→WAW | 2026-10-28 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY111-W61476 |
+| $265 | CNX→WAW | 2026-10-28 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY113-W61476 |
+| $265 | CNX→GDN | 2026-10-27 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261027/ |
+| $267 | CNX→KTW | 2026-10-29 | kiwi | https://kiwi.com/u/c3h5x7 |
+| $267 | CNX→KTW | 2026-11-01 | kiwi | https://kiwi.com/u/36byxgh |
+| $268 | CNX→KTW | 2026-10-27 | kiwi | https://kiwi.com/u/76y4vw |
+| $268 | CNX→KTW | 2026-10-28 | kiwi | https://kiwi.com/u/xyfy48 |
+| $268 | CNX→KTW | 2026-10-30 | kiwi | https://kiwi.com/u/fptr5u |
+| $268 | CNX→KTW | 2026-10-31 | kiwi | https://kiwi.com/u/r2sdd5 |
+| $268 | CNX→KTW | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/ktw/261029/ |
+| $270 | CNX→GDN | 2026-11-01 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261101/ |
+| $272 | CNX→GDN | 2026-11-01 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261101/ |
+| $273 | CNX→GDN | 2026-10-28 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261028/ |
+| $274 | CNX→GDN | 2026-11-01 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261101/ |
+| $275 | CNX→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/bbfnx2 |
+| $276 | CNX→WRO | 2026-10-28 | letsfg | https://letsfg.co/en?stage=results&sid=ws_27ee9328f138487f&offer=wo_4e173c3854fa&cur=USD |
+| $276.38 | CNX→WMI | 2026-11-01 | kiwi | https://kiwi.com/u/pqt4un |
+| $276.53 | BKK→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/wuuz58b |
+| $277.10 | CNX→WMI | 2026-10-28 | kiwi | https://kiwi.com/u/yh9t6h |
+| $277.55 | BKK→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/wthxdh |
+| $277.84 | CNX→POZ | 2026-10-27 | kiwi | https://kiwi.com/u/pn8wkz |
+| $278.75 | BKK→WMI | 2026-11-01 | kiwi | https://kiwi.com/u/qnpk2q |
+| $279 | CNX→GDN | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261029/ |
+| $279.53 | CNX→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/h4txfs |
+| $280 | BKK→GDN | 2026-10-30 | kiwi | https://kiwi.com/u/bv83gk |
+| $281 | CNX→WRO | 2026-10-29 | kiwi | https://kiwi.com/u/9ujru3b |
+| $281 | CNX→WRO | 2026-10-29 | kiwi | https://kiwi.com/u/wur2yx |
+| $281 | CNX→WRO | 2026-11-01 | kiwi | https://kiwi.com/u/rzzpwv |
+| $281.11 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/wf2xpg |
+| $281.53 | CNX→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/nh2wcv |
+| $281.94 | BKK→WRO | 2026-11-01 | kiwi | https://kiwi.com/u/3qdg3m3 |
+| $281.95 | BKK→KRK | 2026-11-01 | kiwi | https://kiwi.com/u/nn7d86 |
+| $282 | CNX→WRO | 2026-10-27 | kiwi | https://kiwi.com/u/xcsmt6 |
+| $282 | CNX→WRO | 2026-10-27 | kiwi | https://kiwi.com/u/qd4d7c |
+| $282 | CNX→WRO | 2026-10-28 | kiwi | https://kiwi.com/u/w7t6wd |
+| $282 | CNX→WRO | 2026-10-28 | kiwi | https://kiwi.com/u/rdpp4d |
+| $282 | CNX→WRO | 2026-10-30 | kiwi | https://kiwi.com/u/jgxk7g |
+| $282 | CNX→WRO | 2026-10-30 | kiwi | https://kiwi.com/u/rhczkuv |
+| $282 | CNX→WRO | 2026-10-31 | kiwi | https://kiwi.com/u/7nsxsv |
+| $282 | CNX→WRO | 2026-10-31 | kiwi | https://kiwi.com/u/3vf7sxy |
+| $282.53 | CNX→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/69vz6k |
+| $283 | CNX→POZ | 2026-10-29 | kiwi | https://kiwi.com/u/frnpbr |
+| $283 | CNX→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/gqqqd8 |
+| $283.57 | CNX→KRK | 2026-10-29 | kiwi | https://kiwi.com/u/cdnfzz |
+| $284 | CNX→KTW | 2026-10-31 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/ktw/261031/ |
+| $284.06 | CNX→KRK | 2026-10-27 | kiwi | https://kiwi.com/u/8f4ubr |
+| $285 | CNX→GDN | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261029/ |
+| $285.10 | CNX→WMI | 2026-10-31 | kiwi | https://kiwi.com/u/7b4d25 |
+| $285.32 | CNX→POZ | 2026-10-29 | kiwi | https://kiwi.com/u/q8vuqz |
+| $287 | CNX→KTW | 2026-10-27 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/ktw/261027/ |
+| $287.59 | CNX→WMI | 2026-10-28 | kiwi | https://kiwi.com/u/982kff |
+| $288 | CNX→GDN | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261029/ |
+| $289 | CNX→GDN | 2026-10-29 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261029/ |
+| $289.53 | CNX→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/brf9gf |
+| $290.55 | CNX→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/r9fx6bd |
+| $291 | CNX→GDN | 2026-10-27 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/gdn/261027/ |
+| $292 | BKK→WAW | 2026-11-01 | kiwi | https://kiwi.com/u/y9bznw |
+| $293.53 | CNX→POZ | 2026-11-01 | kiwi | https://kiwi.com/u/hnnmsu |
+| $294.55 | CNX→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/ryjz7g |
+| $295 | CNX→WRO | 2026-10-28 | letsfg | https://letsfg.co/en?stage=results&sid=ws_27ee9328f138487f&offer=wo_76d6ebf919a1&cur=USD |
+| $295.31 | CNX→POZ | 2026-10-27 | kiwi | https://kiwi.com/u/6c7vxq |
+| $295.78 | CNX→KRK | 2026-11-01 | kiwi | https://kiwi.com/u/tjtpg4 |
+| $297 | CNX→KTW | 2026-10-28 | skyscanner | https://www.skyscanner.net/transport/flights/cnx/ktw/261028/ |
 
 ## Best per source
 
@@ -142,21 +112,21 @@
 | --- | --- | --- | --- |
 | google | $195 | CNX→WAW | 2026-10-27 |
 | kiwi | $198 | CNX→WAW | 2026-10-27 |
-| letsfg | $187 | CNX→WAW | 2026-10-28 |
+| letsfg | $276 | CNX→WRO | 2026-10-28 |
 | skiplagged | $178 | CNX→WAW | 2026-10-27 |
-| skyscanner | $195 | CNX→WAW | 2026-10-27 |
+| skyscanner | $251 | CNX→GDN | 2026-10-31 |
 
 ## Source status
 
 | Source | Status | Count | Seconds | Error |
 | --- | --- | --- | --- | --- |
-| chartershop | ok | 0 | 2.7 |  |
-| google | ok | 161 | 97.9 |  |
-| hops | ok | 520 | 48.7 |  |
-| itaka | ok | 0 | 3.8 |  |
-| kiwi | ok | 416 | 17.1 |  |
-| letsfg | ok | 35 | 62.3 |  |
-| rpl | ok | 0 | 2.8 |  |
-| skiplagged | ok | 269 | 119.4 |  |
-| skyscanner | ok | 46 | 28.6 |  |
-| trip | error | 0 | 3.0 | trip: all 12 airline searches failed: trip: airline HTTP 404: Not Found! 1、软路由服务无法匹配到该域名，请检查域名指向是否正确； 2、请检查是否成功申请了域名。 |
+| chartershop | ok | 0 | 2.9 |  |
+| google | ok | 147 | 91.3 |  |
+| hops | ok | 514 | 57.0 |  |
+| itaka | ok | 0 | 3.6 |  |
+| kiwi | ok | 417 | 15.6 |  |
+| letsfg | ok | 10 | 28.5 |  |
+| rpl | ok | 0 | 2.2 |  |
+| skiplagged | ok | 260 | 235.5 |  |
+| skyscanner | ok | 40 | 26.6 |  |
+| trip | ok | 0 | 300.6 |  |

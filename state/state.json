@@ -142,24 +142,24 @@
     }
   },
   "last_heartbeat_date": "2026-09-29",
-  "runs": 13,
+  "runs": 14,
   "sources": {
     "chartershop": {
       "data": {},
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T12:48:44.832532+00:00"
+        "last_ok": "2026-09-29T22:13:02.839057+00:00"
       }
     },
     "google": {
       "data": {
-        "date_parity": 1
+        "date_parity": 0
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T12:48:44.832532+00:00"
+        "last_ok": "2026-09-29T22:13:02.839057+00:00"
       }
     },
     "hops": {
@@ -167,7 +167,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T12:48:44.832532+00:00"
+        "last_ok": "2026-09-29T22:13:02.839057+00:00"
       }
     },
     "itaka": {
@@ -175,7 +175,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T12:48:44.832532+00:00"
+        "last_ok": "2026-09-29T22:13:02.839057+00:00"
       }
     },
     "kiwi": {
@@ -183,19 +183,19 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T12:48:44.832532+00:00"
+        "last_ok": "2026-09-29T22:13:02.839057+00:00"
       }
     },
     "letsfg": {
       "data": {
-        "cursor": 51,
+        "cursor": 53,
         "day": "2026-09-29",
-        "searches_today": 12
+        "searches_today": 14
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T12:48:44.832532+00:00"
+        "last_ok": "2026-09-29T22:13:02.839057+00:00"
       }
     },
     "rpl": {
@@ -203,7 +203,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T12:48:44.832532+00:00"
+        "last_ok": "2026-09-29T22:13:02.839057+00:00"
       }
     },
     "skiplagged": {
@@ -211,29 +211,32 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T12:48:44.832532+00:00"
+        "last_ok": "2026-09-29T22:13:02.839057+00:00"
       }
     },
     "skyscanner": {
       "data": {
-        "cursor": 14,
+        "cursor": 16,
         "day": "2026-09-29",
-        "runs_today": 4
+        "runs_today": 6
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-29T12:48:44.832532+00:00"
+        "last_ok": "2026-09-29T22:13:02.839057+00:00"
       }
     },
     "trip": {
       "data": {
-        "cursor": 12
+        "cursor": 12,
+        "day": "2026-09-29",
+        "route_cursor": 1,
+        "routes_today": 1
       },
       "health": {
-        "consecutive_failures": 1,
-        "last_error": "trip: all 12 airline searches failed: trip: airline HTTP 404: Not Found! 1、软路由服务无法匹配到该域名，请检查域名指向是否正确； 2、请检查是否成功申请了域名。",
-        "last_ok": null
+        "consecutive_failures": 0,
+        "last_error": null,
+        "last_ok": "2026-09-29T22:13:02.839057+00:00"
       }
     }
   },
