@@ -4,7 +4,6 @@ import json
 import logging
 from datetime import date, datetime, timezone
 from pathlib import Path
-from typing import Any
 
 import httpx
 import pytest
@@ -12,37 +11,29 @@ import respx
 
 from flightsearch.context import RunContext
 from flightsearch.models import SearchQuery
-from flightsearch.sources.base import SourceError
-from flightsearch.sources.trip import (
-    TRIP_AIRLINE_URL,
-    TripSource,
-    city_code,
-    classify_markdown,
-    coerce_markdown,
-    parse_airline_markdown,
-)
 from flightsearch.sources import load_source
+from flightsearch.sources.base import SourceError
+from flightsearch.sources.trip import ACTOR_ID, TripSource, route_pairs, run_url
 
-FIXTURE = Path(__file__).resolve().parent / "fixtures" / "trip" / "cnx_waw.md"
+FIXTURE = Path(__file__).resolve().parent / "fixtures" / "trip" / "sample_dataset.json"
+APIFY_RUN_URL = run_url(ACTOR_ID)
 
 
-class FakeFx:
-    def __init__(self, rate: float = 0.14) -> None:
-        self.rate = rate
-        self.calls: list[tuple[float, str]] = []
+class _FakeFx:
+    rates = {"USD": 1.0, "THB": 0.03}
 
     def to_usd(self, amount: float, currency: str) -> float:
-        self.calls.append((amount, currency.upper()))
-        if currency.upper() == "USD":
-            return float(amount)
-        return round(float(amount) * self.rate, 2)
+        rate = self.rates.get(currency.upper())
+        if rate is None:
+            raise ValueError(f"unknown currency {currency}")
+        return amount * rate
 
 
-def _query(**overrides: Any) -> SearchQuery:
-    base = dict(
+def _query(**overrides: object) -> SearchQuery:
+    base: dict = dict(
         home_origin="CNX",
         positioning_origins=("BKK",),
-        destinations=("WAW",),
+        destinations=("WAW", "KRK"),
         extra_destinations=(),
         date_from=date(2026, 10, 27),
         date_to=date(2026, 10, 28),
@@ -59,58 +50,88 @@ def _query(**overrides: Any) -> SearchQuery:
 
 def _ctx(
     *,
-    http: httpx.AsyncClient | None = None,
-    fx: FakeFx | None = None,
     state: dict | None = None,
     env: dict | None = None,
+    now: datetime | None = None,
+    http: httpx.AsyncClient | None = None,
 ) -> RunContext:
     return RunContext(
         http=http or httpx.AsyncClient(),
-        fx=fx or FakeFx(),
+        fx=_FakeFx(),
         state=state if state is not None else {},
         log=logging.getLogger("test.trip"),
-        now=datetime(2026, 9, 29, 12, 0, tzinfo=timezone.utc),
-        env=env if env is not None else {"TRIPGENIE_API_KEY": "test-activation-code"},
+        now=now or datetime(2026, 9, 29, 12, 0, tzinfo=timezone.utc),
+        env=env if env is not None else {"APIFY_TOKEN": "test-token-secret"},
     )
 
 
-def test_city_code_maps_metro_airports() -> None:
-    assert city_code("dmk") == "BKK"
-    assert city_code("WMI") == "WAW"
-    assert city_code("CNX") == "CNX"
-
-
 def test_load_source_trip() -> None:
-    src = load_source("trip", {"max_searches_per_run": 4})
+    src = load_source("trip", {"max_routes_per_day": 4})
     assert isinstance(src, TripSource)
     assert src.name == "trip"
 
 
-def test_is_available_requires_activation_code() -> None:
+def test_is_available_requires_apify_token() -> None:
     src = TripSource()
     ok, reason = src.is_available({})
     assert ok is False
-    assert "TRIPGENIE_API_KEY" in reason
-    ok, reason = src.is_available({"TRIPGENIE_API_KEY": "  "})
+    assert "APIFY_TOKEN" in reason
+    ok, reason = src.is_available({"APIFY_TOKEN": "  "})
     assert ok is False
-    ok, reason = src.is_available({"TRIPGENIE_API_KEY": "abc"})
+    ok, reason = src.is_available({"APIFY_TOKEN": "tok"})
     assert ok is True
+    assert reason == ""
 
 
-def test_parse_markdown_maps_fields_and_drops_other_airports() -> None:
-    text = FIXTURE.read_text(encoding="utf-8")
-    fx = FakeFx()
-    offers = parse_airline_markdown(
-        text,
-        fx=fx,
-        adults=1,
-        requested_from="CNX",
-        requested_to="WAW",
-        window_from=date(2026, 10, 20),
-        window_to=date(2026, 11, 1),
+def test_route_pairs_include_wmi_and_keep_dmk() -> None:
+    query = _query(
+        positioning_origins=("BKK", "DMK", "HKT"),
+        destinations=("WAW", "KRK"),
+        extra_destinations=("WMI",),
     )
-    assert [o.flight_numbers[0] for o in offers] == ["EY427", "HU7601"]
-    ey = offers[0]
+    pairs = route_pairs(query)
+    assert pairs[0] == ("CNX", "WAW")
+    assert ("CNX", "WMI") in pairs
+    assert ("DMK", "WAW") in pairs
+    assert ("DMK", "WMI") not in pairs
+    assert ("BKK", "KRK") in pairs
+
+
+@pytest.mark.asyncio
+@respx.mock
+async def test_request_shape_and_parsing() -> None:
+    items = json.loads(FIXTURE.read_text())
+    route = respx.post(APIFY_RUN_URL).mock(
+        return_value=httpx.Response(200, json=items)
+    )
+    src = TripSource({"max_routes_per_day": 4, "max_results": 8, "date_timeout_s": 90})
+    state: dict = {}
+    query = _query(destinations=("WAW",), positioning_origins=(), date_to=date(2026, 10, 27))
+    async with httpx.AsyncClient() as http:
+        offers = await src.search(query, _ctx(state=state, http=http))
+
+    assert route.call_count == 1
+    req = route.calls[0].request
+    assert req.headers["Authorization"] == "Bearer test-token-secret"
+    assert "token=" not in str(req.url)
+    assert "test-token-secret" not in str(req.url)
+    body = json.loads(req.content.decode())
+    assert body["service"] == "flights"
+    assert body["origin"] == "CNX"
+    assert body["destination"] == "WAW"
+    assert body["departureDate"] == "2026-10-27"
+    assert body["tripType"] == "oneway"
+    assert body["adults"] == 1
+    assert body["currency"] == "USD"
+    assert body["maxResults"] == 8
+    assert body["includeSponsored"] is False
+    assert body["enrichDetails"] is False
+    assert req.url.params.get("timeout") == "90"
+    assert state["routes_today"] == 1
+    assert state["route_cursor"] == 1
+
+    assert [o.flight_numbers[0] for o in offers] == ["EY427", "LO68"]
+    ey = next(o for o in offers if o.flight_numbers == ["EY427"])
     assert ey.source == "trip"
     assert ey.origin == "CNX"
     assert ey.destination == "WAW"
@@ -118,167 +139,194 @@ def test_parse_markdown_maps_fields_and_drops_other_airports() -> None:
     assert ey.depart_time == datetime(2026, 10, 27, 9, 10)
     assert ey.arrive_time == datetime(2026, 10, 28, 6, 20)
     assert ey.price_usd == 210.0
-    assert ey.price_original == 210.0
-    assert ey.currency_original == "USD"
-    assert ey.airlines == ["EY"]
-    assert ey.flight_numbers == ["EY427", "EY159"]
+    assert ey.airlines == ["Etihad"]
     assert ey.stops == 1
-    assert ey.duration_minutes == 1270
+    assert ey.duration_minutes == 850
     assert ey.cabin_bag_included is True
-    assert ey.self_transfer is None
-    assert ey.link and "dcity=cnx" in ey.link and "acity=waw" in ey.link
+    assert ey.self_transfer is False
+    assert ey.notes == ""
+    assert ey.link.startswith("https://www.trip.com/flights/showfarefirst?")
 
-    hu = offers[1]
-    assert hu.arrive_time == datetime(2026, 10, 28, 6, 40)
-    assert hu.price_original == 4600.0
-    assert hu.currency_original == "CNY"
-    assert hu.price_usd == round(4600 * 0.14, 2)
-    assert hu.stops == 0
-    assert (4600.0, "CNY") in fx.calls
-
-
-def test_coerce_json_string_and_classify() -> None:
-    raw = json.dumps(FIXTURE.read_text(encoding="utf-8"))
-    text = coerce_markdown(raw)
-    assert "**Flight No:" in text
-    assert classify_markdown(text) == "ok"
-    assert classify_markdown("invalid token") == "auth"
-    assert classify_markdown("Sorry, no flights found") == "empty"
-    assert classify_markdown('{"message":"upstream timeout"}') == "error"
-
-
-def test_self_transfer_note() -> None:
-    text = """
-**Flight No: SL602 / W62201**
-- Price: Total 199 USD
-- Time: 2026-10-22 08:00 - 2026-10-22 18:30, Duration 630 minutes
-- Airport: Chiang Mai (CNX) → Warsaw (WAW)
-- Airline: Thai Lion Air (SL), Wizz Air (W6)
-- self-transfer, separate tickets
-"""
-    offers = parse_airline_markdown(
-        text,
-        fx=FakeFx(),
-        adults=1,
-        requested_from="CNX",
-        requested_to="WAW",
-        window_from=date(2026, 10, 20),
-        window_to=date(2026, 11, 1),
-    )
-    assert len(offers) == 1
-    assert offers[0].self_transfer is True
-    assert offers[0].notes == "self-transfer"
-    assert offers[0].airlines == ["SL", "W6"]
-    assert offers[0].stops == 1
+    lot = next(o for o in offers if o.flight_numbers == ["LO68"])
+    assert lot.price_original == 9000
+    assert lot.currency_original == "THB"
+    assert lot.price_usd == pytest.approx(270.0)
+    assert lot.stops == 0
+    assert lot.self_transfer is True
+    assert lot.cabin_bag_included is None
+    assert lot.notes == "bags not verified (Trip.com)"
+    assert "dcity=cnx" in lot.link
+    assert "ddate=2026-10-27" in lot.link
 
 
 @pytest.mark.asyncio
 @respx.mock
-async def test_search_sends_city_codes_and_advances_cursor(
-    caplog: pytest.LogCaptureFixture,
-) -> None:
-    secret = "test-activation-code"
-    route = respx.post(TRIP_AIRLINE_URL).mock(
-        return_value=httpx.Response(200, text="placeholder")
+async def test_window_fans_out_one_date_per_actor_run() -> None:
+    respx.post(APIFY_RUN_URL).mock(return_value=httpx.Response(200, json=[]))
+    src = TripSource({"max_routes_per_day": 4})
+    async with httpx.AsyncClient() as http:
+        await src.search(
+            _query(destinations=("WAW",), positioning_origins=()),
+            _ctx(http=http),
+        )
+    dates = sorted(
+        json.loads(call.request.content.decode())["departureDate"]
+        for call in respx.calls
     )
-    src = TripSource({"max_searches_per_run": 1, "concurrency": 1})
+    assert dates == ["2026-10-27", "2026-10-28"]
+
+
+@pytest.mark.asyncio
+@respx.mock
+async def test_budget_rotates_routes_and_resets_next_day() -> None:
+    respx.post(APIFY_RUN_URL).mock(return_value=httpx.Response(200, json=[]))
+    src = TripSource({"max_routes_per_day": 4})
     state: dict = {}
-    query = _query(
-        home_origin="DMK",
-        positioning_origins=(),
-        destinations=("WMI",),
-        date_from=date(2026, 10, 27),
-        date_to=date(2026, 10, 28),
-    )
-    dmk = """
-**Flight No: LO123**
-- Price: Total 180 USD
-- Time: 2026-10-27 11:00 - 2026-10-27 18:00, Duration 420 minutes
-- Airport: Don Mueang (DMK) → Warsaw Modlin (WMI)
-- Airline: LOT (LO)
-- Book https://www.trip.com/flights/showfarefirst?dcity=dmk&acity=wmi&ddate=2026-10-27
-"""
-    route.return_value = httpx.Response(200, text=dmk)
+    query = _query()
     async with httpx.AsyncClient() as http:
-        with caplog.at_level(logging.DEBUG):
-            offers = await src.search(query, _ctx(http=http, state=state, env={
-                "TRIPGENIE_API_KEY": secret,
-            }))
-    assert route.call_count == 1
-    body = json.loads(route.calls[0].request.content.decode())
-    assert body["token"] == secret
-    assert body["departure"] == "BKK"
-    assert body["arrival"] == "WAW"
-    assert body["date"] == "2026-10-27"
-    assert body["flight_type"] == "0"
-    assert "DMK" in body["query"] and "WMI" in body["query"]
-    assert secret not in str(route.calls[0].request.url)
-    assert state["cursor"] == 1
-    assert len(offers) == 1
-    assert offers[0].origin == "DMK"
-    assert offers[0].destination == "WMI"
-    assert offers[0].link.startswith("https://www.trip.com/flights/showfarefirst?dcity=dmk")
-    assert secret not in caplog.text
+        for expected in (1, 2, 3, 4):
+            await src.search(
+                query,
+                _ctx(
+                    state=state,
+                    http=http,
+                    now=datetime(2026, 9, 29, 10, 0, tzinfo=timezone.utc),
+                ),
+            )
+            assert state["routes_today"] == expected
+        assert state["route_cursor"] == 4
+        assert respx.calls.call_count == 8
 
-    route.reset()
-    route.return_value = httpx.Response(200, text="Sorry, no flights found")
-    async with httpx.AsyncClient() as http:
-        second = await src.search(query, _ctx(http=http, state=state))
-    assert route.call_count == 1
-    body = json.loads(route.calls[0].request.content.decode())
-    assert body["date"] == "2026-10-28"
-    assert second == []
-    assert state["cursor"] == 0
+        before = respx.calls.call_count
+        await src.search(
+            query,
+            _ctx(
+                state=state,
+                http=http,
+                now=datetime(2026, 9, 29, 22, 0, tzinfo=timezone.utc),
+            ),
+        )
+        assert respx.calls.call_count == before
+
+        await src.search(
+            query,
+            _ctx(
+                state=state,
+                http=http,
+                now=datetime(2026, 9, 30, 1, 0, tzinfo=timezone.utc),
+            ),
+        )
+    assert state["day"] == "2026-09-30"
+    assert state["routes_today"] == 1
+    assert state["route_cursor"] == 5
+    bodies = [
+        json.loads(call.request.content.decode()) for call in respx.calls[-2:]
+    ]
+    assert {body["origin"] for body in bodies} == {"CNX"}
+    assert {body["destination"] for body in bodies} == {"WAW"}
 
 
 @pytest.mark.asyncio
 @respx.mock
-async def test_auth_failure_raises_without_leaking_token(
-    caplog: pytest.LogCaptureFixture,
-) -> None:
-    secret = "super-secret-activation"
-    respx.post(TRIP_AIRLINE_URL).mock(
-        return_value=httpx.Response(200, text="invalid token, please reapply")
-    )
-    src = TripSource({"max_searches_per_run": 3})
+async def test_http_error_all_routes_raise() -> None:
+    respx.post(APIFY_RUN_URL).mock(return_value=httpx.Response(500, text="boom"))
+    src = TripSource({"max_routes_per_day": 4})
     async with httpx.AsyncClient() as http:
-        with caplog.at_level(logging.WARNING):
-            with pytest.raises(SourceError, match="activation code rejected"):
-                await src.search(
-                    _query(),
-                    _ctx(http=http, env={"TRIPGENIE_API_KEY": secret}),
-                )
-    assert secret not in caplog.text
+        with pytest.raises(SourceError, match="all 1 route"):
+            await src.search(
+                _query(destinations=("WAW",), positioning_origins=()),
+                _ctx(http=http),
+            )
 
 
 @pytest.mark.asyncio
 @respx.mock
-async def test_http_failures_raise_source_error() -> None:
-    respx.post(TRIP_AIRLINE_URL).mock(
-        return_value=httpx.Response(404, text="Not Found! domain not routed")
+async def test_402_insufficient_credit() -> None:
+    respx.post(APIFY_RUN_URL).mock(
+        return_value=httpx.Response(402, text="Payment required: insufficient credit")
     )
-    src = TripSource({"max_searches_per_run": 2, "concurrency": 1})
+    src = TripSource({"max_routes_per_day": 4})
     async with httpx.AsyncClient() as http:
-        with pytest.raises(SourceError, match="all 2 airline searches failed"):
+        with pytest.raises(SourceError, match="insufficient credit"):
             await src.search(_query(), _ctx(http=http))
 
 
 @pytest.mark.asyncio
 @respx.mock
-async def test_partial_failure_keeps_successful_offers() -> None:
-    markdown = FIXTURE.read_text(encoding="utf-8")
-    calls = {"n": 0}
+async def test_partial_date_failure_keeps_offers() -> None:
+    items = json.loads(FIXTURE.read_text())[:1]
 
-    def responder(request: httpx.Request) -> httpx.Response:
-        calls["n"] += 1
-        if calls["n"] == 1:
-            return httpx.Response(502, text="bad gateway")
-        return httpx.Response(200, text=markdown)
+    def handler(request: httpx.Request) -> httpx.Response:
+        body = json.loads(request.content.decode())
+        if body["departureDate"] == "2026-10-27":
+            return httpx.Response(503, text="unavailable")
+        return httpx.Response(200, json=items)
 
-    respx.post(TRIP_AIRLINE_URL).mock(side_effect=responder)
-    src = TripSource({"max_searches_per_run": 2, "concurrency": 1})
+    respx.post(APIFY_RUN_URL).mock(side_effect=handler)
+    src = TripSource({"max_routes_per_day": 4})
     async with httpx.AsyncClient() as http:
-        offers = await src.search(_query(), _ctx(http=http))
-    assert offers
-    assert offers[0].origin == "CNX"
-    assert offers[0].destination == "WAW"
+        offers = await src.search(
+            _query(destinations=("WAW",), positioning_origins=()),
+            _ctx(http=http),
+        )
+    assert len(offers) == 1
+    assert offers[0].flight_numbers == ["EY427"]
+    assert offers[0].depart_date == date(2026, 10, 27)
+
+
+@pytest.mark.asyncio
+@respx.mock
+async def test_token_never_logged(caplog: pytest.LogCaptureFixture) -> None:
+    respx.post(APIFY_RUN_URL).mock(return_value=httpx.Response(200, json=[]))
+    secret = "super-secret-apify-token-xyz"
+    src = TripSource({"max_routes_per_day": 4})
+    with caplog.at_level(logging.DEBUG, logger="test.trip"):
+        async with httpx.AsyncClient() as http:
+            await src.search(
+                _query(destinations=("WAW",), positioning_origins=()),
+                _ctx(http=http, env={"APIFY_TOKEN": secret}),
+            )
+    joined = "\n".join(record.message for record in caplog.records)
+    assert secret not in joined
+
+
+@pytest.mark.asyncio
+@respx.mock
+async def test_caps_twenty_per_route() -> None:
+    items = [
+        {
+            "service": "flights",
+            "origin": "CNX",
+            "destination": "WAW",
+            "departureDate": "2026-10-27",
+            "price": 100 + i,
+            "currency": "USD",
+            "flightNumber": f"LO{i}",
+        }
+        for i in range(25)
+    ]
+    respx.post(APIFY_RUN_URL).mock(return_value=httpx.Response(200, json=items))
+    src = TripSource({"max_routes_per_day": 4})
+    async with httpx.AsyncClient() as http:
+        offers = await src.search(
+            _query(
+                destinations=("WAW",),
+                positioning_origins=(),
+                date_to=date(2026, 10, 27),
+            ),
+            _ctx(http=http),
+        )
+    assert len(offers) == 20
+    assert offers[0].price_usd == 100
+    assert offers[-1].price_usd == 119
+
+
+@pytest.mark.asyncio
+async def test_window_already_over_makes_no_requests() -> None:
+    src = TripSource()
+    async with httpx.AsyncClient() as http:
+        offers = await src.search(
+            _query(),
+            _ctx(http=http, now=datetime(2026, 12, 1, tzinfo=timezone.utc)),
+        )
+    assert offers == []

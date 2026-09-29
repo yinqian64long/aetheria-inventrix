@@ -56,7 +56,6 @@ jobs:
           LETSFG_CLIENT_ID: ${{ secrets.LETSFG_CLIENT_ID }}
           LETSFG_REFRESH_TOKEN: ${{ secrets.LETSFG_REFRESH_TOKEN }}
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
-          TRIPGENIE_API_KEY: ${{ secrets.TRIPGENIE_API_KEY }}
           LETSFG_REFRESH_TOKEN_OUT: ${{ runner.temp }}/letsfg_rt
         run: |
           set -euo pipefail

@@ -31,7 +31,7 @@ After the last day of the window passes, `results/latest.json` sets `"window_ove
 | **rpl** | None | Free | r.pl offers |
 | **itaka** | None | Free | itaka.pl |
 | **chartershop** | None | Free | Charter listings; many Thailand charters are restricted for sale outside Thailand (Thai CAA) |
-| **trip** | `TRIPGENIE_API_KEY` (activation code from [trip.com/tripgenie/openclaw](https://www.trip.com/tripgenie/openclaw)) | Free beta | TripGenie LLM flight search; one city-pair and date per call, budgeted by `max_searches_per_run` |
+| **trip** | `APIFY_TOKEN` (same secret as Skyscanner) | Apify `lentic_clockss/trip-com-scraper`, pay per result; `max_routes_per_day` routes, each covering the date window | Trip.com one-way fares. A cabin bag is unverified unless the actor says it is included. Disabled without the token |
 
 Enable or tune sources under `sources:` in `config.yaml`. Override for a single run with `--sources kiwi,skiplagged`.
 
@@ -47,8 +47,7 @@ Enable or tune sources under `sources:` in `config.yaml`. Override for a single 
    gh secret set LETSFG_REFRESH_TOKEN
    gh secret set GH_SECRETS_PAT   # required if letsfg is enabled (see below)
    # Optional:
-   gh secret set APIFY_TOKEN
-   gh secret set TRIPGENIE_API_KEY   # Trip.com OpenClaw activation code; required if trip is enabled
+   gh secret set APIFY_TOKEN      # Skyscanner and Trip.com
    ```
 
    **`GH_SECRETS_PAT` (required when LetsFG is enabled):** LetsFG refresh tokens rotate on every API use. The workflow writes the new token back with `gh secret set LETSFG_REFRESH_TOKEN`, which needs a **fine-grained PAT** stored as `GH_SECRETS_PAT`: access limited to **this repository only**, permission **Secrets: Read and write**, expiry **at least 45 days** (rotate the PAT before it expires).
