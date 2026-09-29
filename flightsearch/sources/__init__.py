@@ -15,6 +15,7 @@ SOURCE_CLASSES: dict[str, str] = {
     "rpl": "flightsearch.sources.rpl:RplSource",
     "itaka": "flightsearch.sources.itaka:ItakaSource",
     "chartershop": "flightsearch.sources.chartershop:ChartershopSource",
+    "trip": "flightsearch.sources.trip:TripSource",
 }
 
 
