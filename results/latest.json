@@ -41,7 +41,7 @@
         "EY159"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/yqfndn",
+      "link": "https://kiwi.com/u/xcsjhg",
       "notes": "",
       "origin": "CNX",
       "price_original": 198.0,
@@ -52,31 +52,28 @@
     },
     "letsfg": {
       "airlines": [
-        "SL",
-        "Z0",
-        "FR"
+        "EY"
       ],
-      "arrive_time": "2026-10-26T22:55:00",
+      "arrive_time": "2026-10-28T06:20:00",
       "cabin_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-25",
-      "depart_time": "2026-10-25T08:00:00",
-      "destination": "WRO",
-      "duration_minutes": 2695,
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 1630,
       "flight_numbers": [
-        "SL503",
-        "Z0794",
-        "FR8407"
+        "EY427",
+        "EY159"
       ],
       "hop": null,
-      "link": "https://letsfg.co/en?stage=results&sid=ws_d4bd8f1a6ae64276&offer=wo_cb64a743c707&cur=USD",
+      "link": "https://letsfg.co/en?stage=results&sid=ws_9bbef56d6e834fa4&offer=wo_3fe002fd772c&cur=USD",
       "notes": "",
       "origin": "CNX",
-      "price_original": 333.0,
-      "price_usd": 333.0,
+      "price_original": 186.0,
+      "price_usd": 186.0,
       "self_transfer": null,
       "source": "letsfg",
-      "stops": 2
+      "stops": 1
     },
     "skiplagged": {
       "airlines": [
@@ -107,82 +104,83 @@
       "airlines": [
         "Thai AirAsia",
         "Norse Atlantic Airways",
-        "Wizz Air"
+        "Ryanair"
       ],
-      "arrive_time": "2026-11-02T23:00:00",
+      "arrive_time": "2026-11-02T10:40:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-31",
       "depart_time": "2026-10-31T20:40:00",
-      "destination": "GDN",
-      "duration_minutes": 3380,
+      "destination": "POZ",
+      "duration_minutes": 2640,
       "flight_numbers": [
         "FD4103",
         "N0192",
-        "W61732"
+        "FR7678"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261031/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
-      "price_original": 252.0,
-      "price_usd": 252.0,
+      "price_original": 251.0,
+      "price_usd": 251.0,
       "self_transfer": true,
       "source": "skyscanner",
       "stops": 2
     }
   },
-  "dropped_count": 0,
-  "finished_at": "2026-09-28T23:26:13.223076+00:00",
+  "dropped_count": 1,
+  "finished_at": "2026-09-29T05:44:54.813386+00:00",
   "messages_sent": 1,
   "near_misses": [
     {
       "airlines": [
-        "Etihad Airways",
-        "Wizz Air Malta"
-      ],
-      "arrive_time": "2026-10-30T09:10:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "WAW",
-      "duration_minutes": 1800,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "W46387"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387",
-      "notes": "virtual-interline",
-      "origin": "CNX",
-      "price_original": 252.0,
-      "price_usd": 252.0,
-      "self_transfer": true,
-      "source": "skiplagged",
-      "stops": 2
-    },
-    {
-      "airlines": [
         "Thai AirAsia",
         "Norse Atlantic Airways",
-        "Wizz Air"
+        "Ryanair"
       ],
-      "arrive_time": "2026-11-02T23:00:00",
+      "arrive_time": "2026-11-02T10:40:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-31",
       "depart_time": "2026-10-31T20:40:00",
-      "destination": "GDN",
-      "duration_minutes": 3380,
+      "destination": "POZ",
+      "duration_minutes": 2640,
       "flight_numbers": [
         "FD4103",
         "N0192",
-        "W61732"
+        "FR7678"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261031/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 251.0,
+      "price_usd": 251.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Thai Lion Air",
+        "Norse Atlantic Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-11-02T10:40:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T21:30:00",
+      "destination": "POZ",
+      "duration_minutes": 2590,
+      "flight_numbers": [
+        "SL521",
+        "N0192",
+        "FR7678"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
       "price_original": 252.0,
@@ -193,302 +191,56 @@
     },
     {
       "airlines": [
-        "Thai Lion Air",
+        "Thai AirAsia",
         "Norse Atlantic Airways",
-        "Wizz Air"
+        "Ryanair"
       ],
-      "arrive_time": "2026-11-02T23:00:00",
+      "arrive_time": "2026-11-02T17:05:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T21:30:00",
-      "destination": "GDN",
-      "duration_minutes": 3330,
+      "depart_time": "2026-10-31T20:40:00",
+      "destination": "WRO",
+      "duration_minutes": 3025,
       "flight_numbers": [
-        "SL521",
+        "FD4103",
         "N0192",
-        "W61732"
+        "FR2355"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261031/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261031/",
       "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 252.0,
+      "price_usd": 252.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Wizz Air"
+      ],
+      "arrive_time": "2026-10-29T13:25:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 2055,
+      "flight_numbers": [
+        "EY427",
+        "EY113",
+        "W61476"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY113-W61476",
+      "notes": "",
       "origin": "CNX",
       "price_original": 253.0,
       "price_usd": 253.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Ryanair"
-      ],
-      "arrive_time": "2026-11-01T11:30:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 1940,
-      "flight_numbers": [
-        "EY427",
-        "EY81",
-        "FR3117"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 256.0,
-      "price_usd": 256.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Ryanair"
-      ],
-      "arrive_time": "2026-10-28T17:10:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 2280,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "FR3413"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261027/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 256.0,
-      "price_usd": 256.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-10-30T10:20:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "WAW",
-      "duration_minutes": 1870,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "W61432"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432",
-      "notes": "virtual-interline",
-      "origin": "CNX",
-      "price_original": 258.0,
-      "price_usd": 258.0,
-      "self_transfer": true,
-      "source": "skiplagged",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Ryanair"
-      ],
-      "arrive_time": "2026-10-31T08:10:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 3180,
-      "flight_numbers": [
-        "EY427",
-        "EY155",
-        "FR1921"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261029/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 259.0,
-      "price_usd": 259.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Thai AirAsia",
-        "Norse Atlantic Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-11-02T23:00:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T22:10:00",
-      "destination": "GDN",
-      "duration_minutes": 3290,
-      "flight_numbers": [
-        "FD3428",
-        "N0192",
-        "W61732"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 259.0,
-      "price_usd": 259.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Thai Lion Air",
-        "Norse Atlantic Airways",
-        "Ryanair"
-      ],
-      "arrive_time": "2026-11-02T07:25:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T07:05:00",
-      "destination": "GDN",
-      "duration_minutes": 1820,
-      "flight_numbers": [
-        "SL519",
-        "N0192",
-        "FR4616"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261101/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 262.0,
-      "price_usd": 262.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Ryanair"
-      ],
-      "arrive_time": "2026-10-28T22:55:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 2625,
-      "flight_numbers": [
-        "EY427",
-        "EY63",
-        "FR593"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261027/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 262.0,
-      "price_usd": 262.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Nok Air",
-        "Norse Atlantic Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-11-02T23:00:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T22:30:00",
-      "destination": "GDN",
-      "duration_minutes": 3270,
-      "flight_numbers": [
-        "DD141",
-        "N0192",
-        "W61732"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 262.0,
-      "price_usd": 262.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-10-30T10:15:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "WAW",
-      "duration_minutes": 1865,
-      "flight_numbers": [
-        "EY427",
-        "EY177",
-        "W61368"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY177-W61368",
-      "notes": "",
-      "origin": "CNX",
-      "price_original": 263.0,
-      "price_usd": 263.0,
       "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-10-28T10:20:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
-      "destination": "WAW",
-      "duration_minutes": 1870,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "W61432"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432",
-      "notes": "virtual-interline",
-      "origin": "CNX",
-      "price_original": 265.0,
-      "price_usd": 265.0,
-      "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
     },
@@ -513,8 +265,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY111-W61476",
       "notes": "",
       "origin": "CNX",
-      "price_original": 265.0,
-      "price_usd": 265.0,
+      "price_original": 253.0,
+      "price_usd": 253.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 2
@@ -522,53 +274,135 @@
     {
       "airlines": [
         "Etihad Airways",
-        "Ryanair"
-      ],
-      "arrive_time": "2026-10-29T09:20:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 1810,
-      "flight_numbers": [
-        "EY427",
-        "EY177",
-        "FR6845"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261028/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 266.0,
-      "price_usd": 266.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
         "Wizz Air"
       ],
-      "arrive_time": "2026-11-02T19:35:00",
-      "cabin_bag_included": false,
+      "arrive_time": "2026-10-28T13:25:00",
+      "cabin_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 2425,
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 2055,
       "flight_numbers": [
         "EY427",
-        "EY177",
-        "W61742"
+        "EY113",
+        "W61476"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261101/",
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY113-W61476",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 254.0,
+      "price_usd": 254.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-10-28T12:10:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "KRK",
+      "duration_minutes": 1980,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "FR4463"
+      ],
+      "hop": null,
+      "link": "https://letsfg.co/en?stage=results&sid=ws_33a8674e53ac49cc&offer=wo_386a585d9ae1&cur=USD",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 256.0,
+      "price_usd": 256.0,
+      "self_transfer": null,
+      "source": "letsfg",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-10-28T07:50:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 1720,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "FR3593"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261027/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
-      "price_original": 267.0,
-      "price_usd": 267.0,
+      "price_original": 256.0,
+      "price_usd": 256.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-10-28T10:00:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "KRK",
+      "duration_minutes": 1850,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "FR888"
+      ],
+      "hop": null,
+      "link": "https://letsfg.co/en?stage=results&sid=ws_33a8674e53ac49cc&offer=wo_f27fb3987550&cur=USD",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 258.0,
+      "price_usd": 258.0,
+      "self_transfer": null,
+      "source": "letsfg",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Thai AirAsia",
+        "Norse Atlantic Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-11-02T10:40:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T22:10:00",
+      "destination": "POZ",
+      "duration_minutes": 2550,
+      "flight_numbers": [
+        "FD3428",
+        "N0192",
+        "FR7678"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 258.0,
+      "price_usd": 258.0,
       "self_transfer": true,
       "source": "skyscanner",
       "stops": 2
@@ -578,26 +412,163 @@
         "Etihad Airways",
         "Ryanair"
       ],
-      "arrive_time": "2026-10-30T00:20:00",
+      "arrive_time": "2026-11-02T07:30:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 2710,
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 3140,
       "flight_numbers": [
         "EY427",
         "EY81",
-        "FR3408"
+        "FR3593"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261028/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
-      "price_original": 267.0,
-      "price_usd": 267.0,
+      "price_original": 258.0,
+      "price_usd": 258.0,
       "self_transfer": true,
       "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Thai Lion Air",
+        "Norse Atlantic Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-11-02T10:40:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T07:05:00",
+      "destination": "POZ",
+      "duration_minutes": 2015,
+      "flight_numbers": [
+        "SL519",
+        "N0192",
+        "FR7678"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261101/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 261.0,
+      "price_usd": 261.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Nok Air",
+        "Norse Atlantic Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-11-02T10:40:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T22:30:00",
+      "destination": "POZ",
+      "duration_minutes": 2530,
+      "flight_numbers": [
+        "DD141",
+        "N0192",
+        "FR7678"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 261.0,
+      "price_usd": 261.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-10-30T10:50:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 1900,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "FR3593"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261029/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 262.0,
+      "price_usd": 262.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-10-30T08:40:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 3210,
+      "flight_numbers": [
+        "EY427",
+        "EY31",
+        "FR5051"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261028/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 262.0,
+      "price_usd": 262.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "W6"
+      ],
+      "arrive_time": "2026-10-28T10:20:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 1870,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "W61432"
+      ],
+      "hop": null,
+      "link": "https://letsfg.co/en?stage=results&sid=ws_9bbef56d6e834fa4&offer=wo_6df2af448cd5&cur=USD",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 266.0,
+      "price_usd": 266.0,
+      "self_transfer": null,
+      "source": "letsfg",
       "stops": 2
     },
     {
@@ -618,7 +589,7 @@
         "LO3883"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/bn36h6x",
+      "link": "https://kiwi.com/u/u29txz",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 268.0,
@@ -645,88 +616,7 @@
         "LO3883"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/4xcvpbq",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 268.0,
-      "price_usd": 268.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "EY",
-        "LO"
-      ],
-      "arrive_time": "2026-10-31T14:15:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-30",
-      "depart_time": "2026-10-30T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 2105,
-      "flight_numbers": [
-        "EY427",
-        "EY159",
-        "LO3883"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/nsgq49",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 268.0,
-      "price_usd": 268.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "EY",
-        "LO"
-      ],
-      "arrive_time": "2026-11-01T14:15:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 2105,
-      "flight_numbers": [
-        "EY427",
-        "EY159",
-        "LO3883"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/tvfuqt",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 268.0,
-      "price_usd": 268.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "EY",
-        "LO"
-      ],
-      "arrive_time": "2026-11-02T11:20:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 1930,
-      "flight_numbers": [
-        "EY427",
-        "EY159",
-        "LO3881"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/pk6cu2",
+      "link": "https://kiwi.com/u/4u7yyr",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 268.0,
@@ -753,7 +643,115 @@
         "LO3881"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/6rwb62",
+      "link": "https://kiwi.com/u/39zrsq7",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 268.0,
+      "price_usd": 268.0,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "LO"
+      ],
+      "arrive_time": "2026-11-01T14:15:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T09:10:00",
+      "destination": "KTW",
+      "duration_minutes": 2105,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3883"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/sf2tpx",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 268.0,
+      "price_usd": 268.0,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "LO"
+      ],
+      "arrive_time": "2026-11-02T11:20:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T09:10:00",
+      "destination": "KTW",
+      "duration_minutes": 1930,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3881"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/5jwj4z",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 268.0,
+      "price_usd": 268.0,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-10-28T16:55:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "WRO",
+      "duration_minutes": 2265,
+      "flight_numbers": [
+        "EY427",
+        "EY67",
+        "FR8405"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261027/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 268.0,
+      "price_usd": 268.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "LO"
+      ],
+      "arrive_time": "2026-10-31T14:15:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
+      "destination": "KTW",
+      "duration_minutes": 2105,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3883"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/vf5qur",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 269.0,
@@ -768,20 +766,47 @@
         "Norse Atlantic Airways",
         "Ryanair"
       ],
-      "arrive_time": "2026-11-02T07:25:00",
+      "arrive_time": "2026-11-02T10:40:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-11-01",
       "depart_time": "2026-11-01T08:30:00",
-      "destination": "GDN",
-      "duration_minutes": 1735,
+      "destination": "POZ",
+      "duration_minutes": 1930,
       "flight_numbers": [
         "FD3438",
         "N0192",
-        "FR4616"
+        "FR7678"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261101/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261101/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 270.0,
+      "price_usd": 270.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Wizz Air"
+      ],
+      "arrive_time": "2026-10-28T13:00:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "WRO",
+      "duration_minutes": 2030,
+      "flight_numbers": [
+        "EY427",
+        "EY113",
+        "W61812"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261027/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
       "price_original": 271.0,
@@ -792,29 +817,29 @@
     },
     {
       "airlines": [
-        "Etihad Airways",
-        "Ryanair"
+        "EY",
+        "LO"
       ],
-      "arrive_time": "2026-10-30T17:10:00",
-      "cabin_bag_included": false,
+      "arrive_time": "2026-10-28T11:20:00",
+      "cabin_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 2280,
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "KRK",
+      "duration_minutes": 1930,
       "flight_numbers": [
         "EY427",
-        "EY79",
-        "FR3408"
+        "EY159",
+        "LO3907"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261029/",
-      "notes": "cheapestSource=kiwi",
+      "link": "https://letsfg.co/en?stage=results&sid=ws_33a8674e53ac49cc&offer=wo_485e7600e647&cur=USD",
+      "notes": "",
       "origin": "CNX",
-      "price_original": 271.0,
-      "price_usd": 271.0,
-      "self_transfer": true,
-      "source": "skyscanner",
+      "price_original": 272.0,
+      "price_usd": 272.0,
+      "self_transfer": null,
+      "source": "letsfg",
       "stops": 2
     },
     {
@@ -823,24 +848,24 @@
         "Norse Atlantic Airways",
         "Ryanair"
       ],
-      "arrive_time": "2026-11-02T07:25:00",
+      "arrive_time": "2026-11-02T10:40:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-11-01",
       "depart_time": "2026-11-01T06:35:00",
-      "destination": "GDN",
-      "duration_minutes": 1850,
+      "destination": "POZ",
+      "duration_minutes": 2045,
       "flight_numbers": [
         "VZ2105",
         "N0192",
-        "FR4616"
+        "FR7678"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261101/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261101/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
-      "price_original": 275.0,
-      "price_usd": 275.0,
+      "price_original": 274.0,
+      "price_usd": 274.0,
       "self_transfer": true,
       "source": "skyscanner",
       "stops": 2
@@ -876,7 +901,7 @@
           "VZ101"
         ],
         "hop": null,
-        "link": "https://kiwi.com/u/np3h9g",
+        "link": "https://kiwi.com/u/4nvjzf",
         "notes": "",
         "origin": "CNX",
         "price_original": 40.0,
@@ -885,14 +910,42 @@
         "source": "kiwi",
         "stops": 0
       },
-      "link": "https://kiwi.com/u/szkqrf",
+      "link": "https://kiwi.com/u/dzt6w5",
       "notes": "self-transfer",
       "origin": "BKK",
-      "price_original": 236.0,
-      "price_usd": 236.0,
+      "price_original": 235.0,
+      "price_usd": 235.0,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai Vietjet",
+        "Norse Atlantic Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-11-02T17:05:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T06:35:00",
+      "destination": "WRO",
+      "duration_minutes": 2430,
+      "flight_numbers": [
+        "VZ2105",
+        "N0192",
+        "FR2355"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261101/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 275.0,
+      "price_usd": 275.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
     },
     {
       "airlines": [
@@ -912,7 +965,7 @@
         "LO3835"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/24j6q9",
+      "link": "https://kiwi.com/u/2h9g2z",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 276.0,
@@ -952,7 +1005,7 @@
           "VZ111"
         ],
         "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
+        "link": "https://kiwi.com/u/znfvy3",
         "notes": "",
         "origin": "CNX",
         "price_original": 45.0,
@@ -961,7 +1014,7 @@
         "source": "kiwi",
         "stops": 0
       },
-      "link": "https://kiwi.com/u/7muzw5",
+      "link": "https://kiwi.com/u/cdczsm",
       "notes": "self-transfer",
       "origin": "BKK",
       "price_original": 232.584827,
@@ -972,28 +1025,54 @@
     },
     {
       "airlines": [
-        "VZ",
-        "N0",
-        "W6"
+        "Etihad Airways",
+        "Ryanair"
       ],
-      "arrive_time": "2026-10-30T23:00:00",
-      "cabin_bag_included": true,
+      "arrive_time": "2026-11-01T07:20:00",
+      "cabin_bag_included": false,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T20:50:00",
-      "destination": "GDN",
-      "duration_minutes": 1930,
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 3130,
       "flight_numbers": [
-        "VZ2107",
-        "N0194",
-        "W61732"
+        "EY427",
+        "EY177",
+        "FR8523"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/8z8gm9",
-      "notes": "self-transfer",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261030/",
+      "notes": "cheapestSource=kiwi",
       "origin": "CNX",
       "price_original": 278.0,
       "price_usd": 278.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-10-28T17:10:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "KTW",
+      "duration_minutes": 2280,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "FR3413"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/u5vkg7",
+      "notes": "self-transfer; airport change at MXP→BGY",
+      "origin": "CNX",
+      "price_original": 278.161165,
+      "price_usd": 278.161165,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -1016,7 +1095,7 @@
         "FR7306"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/zqk97x",
+      "link": "https://kiwi.com/u/7vc2kz",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 278.161165,
@@ -1027,128 +1106,23 @@
     },
     {
       "airlines": [
-        "EY",
-        "FR"
+        "Etihad Airways",
+        "Ryanair"
       ],
-      "arrive_time": "2026-10-28T07:50:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
-      "destination": "POZ",
-      "duration_minutes": 1720,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "FR3593"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/6mujbf",
-      "notes": "self-transfer; airport change at MXP→BGY",
-      "origin": "CNX",
-      "price_original": 278.885096,
-      "price_usd": 278.885096,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "EY",
-        "FR"
-      ],
-      "arrive_time": "2026-10-28T12:40:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
-      "destination": "WMI",
-      "duration_minutes": 2010,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "FR3341"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/py32jj",
-      "notes": "self-transfer; airport change at MXP→BGY",
-      "origin": "CNX",
-      "price_original": 278.89987,
-      "price_usd": 278.89987,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Norse Atlantic Airways",
-        "Ryanair",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-11-03T07:35:00",
-      "cabin_bag_included": null,
+      "arrive_time": "2026-11-02T12:25:00",
+      "cabin_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T14:55:00",
-      "destination": "WAW",
-      "duration_minutes": 2800,
-      "flight_numbers": [
-        "N0192",
-        "FR7600",
-        "W62467"
-      ],
-      "hop": {
-        "airlines": [
-          "VZ"
-        ],
-        "arrive_time": "2026-10-31T15:40:00",
-        "cabin_bag_included": true,
-        "currency_original": "USD",
-        "depart_date": "2026-10-31",
-        "depart_time": "2026-10-31T14:20:00",
-        "destination": "BKK",
-        "duration_minutes": 80,
-        "flight_numbers": [
-          "VZ111"
-        ],
-        "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
-        "notes": "",
-        "origin": "CNX",
-        "price_original": 45.0,
-        "price_usd": 45.0,
-        "self_transfer": false,
-        "source": "kiwi",
-        "stops": 0
-      },
-      "link": "https://skiplagged.com/flights/BKK/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=N0192-FR7600-W62467",
-      "notes": "virtual-interline",
-      "origin": "BKK",
-      "price_original": 234.0,
-      "price_usd": 234.0,
-      "self_transfer": true,
-      "source": "skiplagged",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "LOT Polish Airlines"
-      ],
-      "arrive_time": "2026-10-30T20:50:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 2500,
+      "depart_time": "2026-11-01T09:10:00",
+      "destination": "WRO",
+      "duration_minutes": 1995,
       "flight_numbers": [
         "EY427",
-        "EY159",
-        "LO3825"
+        "EY31",
+        "FR2069"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261029/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261101/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
       "price_original": 279.0,
@@ -1188,7 +1162,7 @@
           "VZ111"
         ],
         "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
+        "link": "https://kiwi.com/u/znfvy3",
         "notes": "",
         "origin": "CNX",
         "price_original": 45.0,
@@ -1197,7 +1171,7 @@
         "source": "kiwi",
         "stops": 0
       },
-      "link": "https://kiwi.com/u/gpkfw47",
+      "link": "https://kiwi.com/u/tj8fbd",
       "notes": "self-transfer",
       "origin": "BKK",
       "price_original": 234.336164,
@@ -1237,7 +1211,7 @@
           "VZ111"
         ],
         "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
+        "link": "https://kiwi.com/u/znfvy3",
         "notes": "",
         "origin": "CNX",
         "price_original": 45.0,
@@ -1246,7 +1220,7 @@
         "source": "kiwi",
         "stops": 0
       },
-      "link": "https://kiwi.com/u/jwf3vx",
+      "link": "https://kiwi.com/u/gy9j4j",
       "notes": "self-transfer",
       "origin": "BKK",
       "price_original": 234.807533,
@@ -1257,84 +1231,31 @@
     },
     {
       "airlines": [
-        "EY",
-        "LO"
-      ],
-      "arrive_time": "2026-10-31T08:10:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-30",
-      "depart_time": "2026-10-30T09:10:00",
-      "destination": "WRO",
-      "duration_minutes": 1740,
-      "flight_numbers": [
-        "EY427",
-        "EY159",
-        "LO3851"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/c3nrdcd",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 280.0,
-      "price_usd": 280.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "EY",
-        "LO"
-      ],
-      "arrive_time": "2026-10-31T11:40:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-30",
-      "depart_time": "2026-10-30T09:10:00",
-      "destination": "WRO",
-      "duration_minutes": 1950,
-      "flight_numbers": [
-        "EY427",
-        "EY159",
-        "LO3853"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/fzjugf",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 280.0,
-      "price_usd": 280.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
         "Etihad Airways",
         "Ryanair"
       ],
-      "arrive_time": "2026-10-28T13:30:00",
+      "arrive_time": "2026-10-28T07:50:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-27",
       "depart_time": "2026-10-27T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 2060,
+      "destination": "POZ",
+      "duration_minutes": 1720,
       "flight_numbers": [
         "EY427",
-        "EY67",
-        "FR5536"
+        "EY113",
+        "FR3143",
+        "FR3593"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261027/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261027/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
       "price_original": 280.0,
       "price_usd": 280.0,
       "self_transfer": true,
       "source": "skyscanner",
-      "stops": 2
+      "stops": 3
     },
     {
       "airlines": [
@@ -1354,11 +1275,65 @@
         "FR1903"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/37z3q9",
+      "link": "https://kiwi.com/u/k63z7v3",
       "notes": "self-transfer; airport change at MXP→BGY",
       "origin": "CNX",
       "price_original": 280.161165,
       "price_usd": 280.161165,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-10-31T20:45:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
+      "destination": "WRO",
+      "duration_minutes": 2495,
+      "flight_numbers": [
+        "EY427",
+        "EY47",
+        "FR5416"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261030/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 281.0,
+      "price_usd": 281.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-11-01T11:30:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T09:10:00",
+      "destination": "GDN",
+      "duration_minutes": 1940,
+      "flight_numbers": [
+        "EY427",
+        "EY81",
+        "FR3117"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/u2ugb8m",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 281.115987,
+      "price_usd": 281.115987,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -1381,7 +1356,7 @@
         "FR8804"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/rct4k8",
+      "link": "https://kiwi.com/u/77wxmx",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 281.375421,
@@ -1421,7 +1396,7 @@
           "VZ111"
         ],
         "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
+        "link": "https://kiwi.com/u/znfvy3",
         "notes": "",
         "origin": "CNX",
         "price_original": 45.0,
@@ -1430,7 +1405,7 @@
         "source": "kiwi",
         "stops": 0
       },
-      "link": "https://kiwi.com/u/wtg54kv",
+      "link": "https://kiwi.com/u/u3mkynm",
       "notes": "self-transfer",
       "origin": "BKK",
       "price_original": 236.543218,
@@ -1438,34 +1413,6 @@
       "self_transfer": true,
       "source": "kiwi",
       "stops": 1
-    },
-    {
-      "airlines": [
-        "SL",
-        "N0",
-        "FR"
-      ],
-      "arrive_time": "2026-11-02T10:40:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T07:05:00",
-      "destination": "POZ",
-      "duration_minutes": 2015,
-      "flight_numbers": [
-        "SL519",
-        "N0192",
-        "FR7678"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/hnxrtn",
-      "notes": "self-transfer; airport change at DMK→BKK",
-      "origin": "CNX",
-      "price_original": 281.584827,
-      "price_usd": 281.584827,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
     },
     {
       "airlines": [
@@ -1485,7 +1432,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/4jqtf4",
+      "link": "https://kiwi.com/u/v8uxxf",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.0,
@@ -1512,7 +1459,7 @@
         "LO3853"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/5dchx9",
+      "link": "https://kiwi.com/u/w5sju7",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.0,
@@ -1539,7 +1486,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/rshqgn",
+      "link": "https://kiwi.com/u/ykwcpy6",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.0,
@@ -1566,7 +1513,61 @@
         "LO3853"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/2v4fxx",
+      "link": "https://kiwi.com/u/sx9juc",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 282.0,
+      "price_usd": 282.0,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "LO"
+      ],
+      "arrive_time": "2026-10-30T08:10:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "WRO",
+      "duration_minutes": 1740,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3851"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/6q9282",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 282.0,
+      "price_usd": 282.0,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "LO"
+      ],
+      "arrive_time": "2026-10-30T11:40:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "WRO",
+      "duration_minutes": 1950,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3853"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/nd3dq8",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.0,
@@ -1593,7 +1594,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/g7g5ty",
+      "link": "https://kiwi.com/u/t8r5cc",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.0,
@@ -1620,7 +1621,7 @@
         "LO3853"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/4y35nrw",
+      "link": "https://kiwi.com/u/v5xk8x",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.0,
@@ -1647,39 +1648,11 @@
         "LO3853"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/q9zt33r",
+      "link": "https://kiwi.com/u/8ju7cv",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.0,
       "price_usd": 282.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "VZ",
-        "N0",
-        "FR"
-      ],
-      "arrive_time": "2026-11-02T10:40:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T06:35:00",
-      "destination": "POZ",
-      "duration_minutes": 2045,
-      "flight_numbers": [
-        "VZ2105",
-        "N0192",
-        "FR7678"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/t2tggh",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 282.584827,
-      "price_usd": 282.584827,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -1702,7 +1675,7 @@
         "FR8523"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/jvbfv3",
+      "link": "https://kiwi.com/u/4znz5z",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.622459,
@@ -1716,11 +1689,11 @@
         "EY",
         "LO"
       ],
-      "arrive_time": "2026-10-30T08:10:00",
+      "arrive_time": "2026-10-31T08:10:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
       "destination": "WRO",
       "duration_minutes": 1740,
       "flight_numbers": [
@@ -1729,7 +1702,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/sxjhg9",
+      "link": "https://kiwi.com/u/myhm2k",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 283.0,
@@ -1743,11 +1716,11 @@
         "EY",
         "LO"
       ],
-      "arrive_time": "2026-10-30T11:40:00",
+      "arrive_time": "2026-10-31T11:40:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
       "destination": "WRO",
       "duration_minutes": 1950,
       "flight_numbers": [
@@ -1756,7 +1729,7 @@
         "LO3853"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/ncuysf",
+      "link": "https://kiwi.com/u/7q462f",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 283.0,
@@ -1767,53 +1740,79 @@
     },
     {
       "airlines": [
-        "FD",
+        "SL",
         "N0",
         "FR"
       ],
-      "arrive_time": "2026-11-02T10:40:00",
+      "arrive_time": "2026-11-02T07:25:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
       "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T08:30:00",
-      "destination": "POZ",
-      "duration_minutes": 1930,
+      "depart_time": "2026-11-01T07:05:00",
+      "destination": "GDN",
+      "duration_minutes": 1820,
       "flight_numbers": [
-        "FD3438",
+        "SL519",
         "N0192",
-        "FR7678"
+        "FR4616"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/m4tn5z",
+      "link": "https://kiwi.com/u/ymq5us",
       "notes": "self-transfer; airport change at DMK→BKK",
       "origin": "CNX",
-      "price_original": 283.584827,
-      "price_usd": 283.584827,
+      "price_original": 283.336164,
+      "price_usd": 283.336164,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
     },
     {
       "airlines": [
-        "DD",
-        "N0",
-        "W6"
+        "EY",
+        "FR"
       ],
-      "arrive_time": "2026-10-30T23:00:00",
+      "arrive_time": "2026-10-29T09:20:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
+      "destination": "GDN",
+      "duration_minutes": 1810,
+      "flight_numbers": [
+        "EY427",
+        "EY177",
+        "FR6845"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/jgyg6n",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 283.899141,
+      "price_usd": 283.899141,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "LO"
+      ],
+      "arrive_time": "2026-10-30T11:25:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T22:30:00",
-      "destination": "GDN",
-      "duration_minutes": 1830,
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 1935,
       "flight_numbers": [
-        "DD141",
-        "N0194",
-        "W61732"
+        "EY427",
+        "EY159",
+        "LO3945"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/xjg99nx",
-      "notes": "self-transfer; airport change at DMK→BKK",
+      "link": "https://kiwi.com/u/88tth9",
+      "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 284.0,
       "price_usd": 284.0,
@@ -1839,7 +1838,7 @@
         "LO3945"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/yfqhgc",
+      "link": "https://kiwi.com/u/3jmj4s",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 284.0,
@@ -1851,28 +1850,165 @@
     {
       "airlines": [
         "EY",
-        "LO"
+        "FR"
       ],
-      "arrive_time": "2026-10-30T11:25:00",
+      "arrive_time": "2026-10-28T10:00:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "KRK",
+      "duration_minutes": 1850,
+      "flight_numbers": [
+        "EY427",
+        "EY113",
+        "FR3143",
+        "FR888"
+      ],
+      "hop": null,
+      "link": "https://letsfg.co/en?stage=results&sid=ws_33a8674e53ac49cc&offer=wo_911b413c0f16&cur=USD",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 284.0,
+      "price_usd": 284.0,
+      "self_transfer": null,
+      "source": "letsfg",
+      "stops": 3
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "LOT Polish Airlines"
+      ],
+      "arrive_time": "2026-10-29T14:10:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
       "destination": "POZ",
-      "duration_minutes": 1935,
+      "duration_minutes": 2100,
       "flight_numbers": [
         "EY427",
         "EY159",
-        "LO3945"
+        "LO3943"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/wpqrdx7",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261028/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 284.0,
+      "price_usd": 284.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "LOT Polish Airlines"
+      ],
+      "arrive_time": "2026-11-01T14:10:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 2100,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3943"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 284.0,
+      "price_usd": 284.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "VZ",
+        "N0",
+        "FR"
+      ],
+      "arrive_time": "2026-11-02T07:25:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T06:35:00",
+      "destination": "GDN",
+      "duration_minutes": 1850,
+      "flight_numbers": [
+        "VZ2105",
+        "N0192",
+        "FR4616"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/x2ksyk",
       "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 284.336164,
+      "price_usd": 284.336164,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "LOT Polish Airlines"
+      ],
+      "arrive_time": "2026-10-31T14:10:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 2100,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3943"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261030/",
+      "notes": "cheapestSource=kiwi",
       "origin": "CNX",
       "price_original": 285.0,
       "price_usd": 285.0,
       "self_transfer": true,
-      "source": "kiwi",
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-10-29T20:30:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
+      "destination": "WRO",
+      "duration_minutes": 2480,
+      "flight_numbers": [
+        "EY427",
+        "EY47",
+        "FR98"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261028/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 285.0,
+      "price_usd": 285.0,
+      "self_transfer": true,
+      "source": "skyscanner",
       "stops": 2
     },
     {
@@ -1906,7 +2042,7 @@
           "VZ111"
         ],
         "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
+        "link": "https://kiwi.com/u/znfvy3",
         "notes": "",
         "origin": "CNX",
         "price_original": 45.0,
@@ -1915,7 +2051,7 @@
         "source": "kiwi",
         "stops": 0
       },
-      "link": "https://kiwi.com/u/9wkkxk",
+      "link": "https://kiwi.com/u/mhwfvf",
       "notes": "self-transfer",
       "origin": "BKK",
       "price_original": 240.207294,
@@ -1923,6 +2059,34 @@
       "self_transfer": true,
       "source": "kiwi",
       "stops": 1
+    },
+    {
+      "airlines": [
+        "FD",
+        "N0",
+        "FR"
+      ],
+      "arrive_time": "2026-11-02T07:25:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T08:30:00",
+      "destination": "GDN",
+      "duration_minutes": 1735,
+      "flight_numbers": [
+        "FD3438",
+        "N0192",
+        "FR4616"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/9n2dgx",
+      "notes": "self-transfer; airport change at DMK→BKK",
+      "origin": "CNX",
+      "price_original": 285.336164,
+      "price_usd": 285.336164,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
     },
     {
       "airlines": [
@@ -1942,7 +2106,7 @@
         "FR5821"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/8g2d35",
+      "link": "https://kiwi.com/u/h2dsjcb",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 285.407685,
@@ -1970,7 +2134,7 @@
         "FR7678"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/qcbvqy",
+      "link": "https://kiwi.com/u/pz4tzn",
       "notes": "self-transfer; airport change at DMK→BKK",
       "origin": "CNX",
       "price_original": 285.584827,
@@ -1981,84 +2145,28 @@
     },
     {
       "airlines": [
-        "EY",
-        "FR"
+        "DD",
+        "N0",
+        "W6"
       ],
-      "arrive_time": "2026-10-30T10:50:00",
+      "arrive_time": "2026-10-30T23:00:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "POZ",
-      "duration_minutes": 1900,
+      "depart_time": "2026-10-29T22:30:00",
+      "destination": "GDN",
+      "duration_minutes": 1830,
       "flight_numbers": [
-        "EY427",
-        "EY79",
-        "FR3593"
+        "DD141",
+        "N0194",
+        "W61732"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/64k73h",
-      "notes": "self-transfer; airport change at MXP→BGY",
+      "link": "https://kiwi.com/u/4r3hch",
+      "notes": "self-transfer; airport change at DMK→BKK",
       "origin": "CNX",
-      "price_original": 285.638576,
-      "price_usd": 285.638576,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Thai Lion Air",
-        "Norse Atlantic Airways",
-        "Wizz Air",
-        "LOT Polish Airlines"
-      ],
-      "arrive_time": "2026-11-02T11:20:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T21:30:00",
-      "destination": "KTW",
-      "duration_minutes": 2630,
-      "flight_numbers": [
-        "SL521",
-        "N0192",
-        "W61502",
-        "LO3881"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 286.0,
-      "price_usd": 286.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 3
-    },
-    {
-      "airlines": [
-        "EY",
-        "FR"
-      ],
-      "arrive_time": "2026-10-28T10:00:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
-      "destination": "KRK",
-      "duration_minutes": 1850,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "FR888"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/f5hxbh",
-      "notes": "self-transfer; airport change at MXP→BGY",
-      "origin": "CNX",
-      "price_original": 286.115987,
-      "price_usd": 286.115987,
+      "price_original": 287.0,
+      "price_usd": 287.0,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -2082,7 +2190,7 @@
         "FR4616"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/22dfvbd",
+      "link": "https://kiwi.com/u/hudmq3",
       "notes": "self-transfer; airport change at DMK→BKK",
       "origin": "CNX",
       "price_original": 287.336164,
@@ -2090,63 +2198,6 @@
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-11-01T10:55:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 1905,
-      "flight_numbers": [
-        "EY427",
-        "EY85",
-        "W61046"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 288.0,
-      "price_usd": 288.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Thai AirAsia",
-        "Norse Atlantic Airways",
-        "Ryanair",
-        "LOT Polish Airlines"
-      ],
-      "arrive_time": "2026-11-02T23:40:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T20:40:00",
-      "destination": "KTW",
-      "duration_minutes": 3420,
-      "flight_numbers": [
-        "FD4103",
-        "N0192",
-        "FR1945",
-        "LO3879"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 290.0,
-      "price_usd": 290.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 3
     },
     {
       "airlines": [
@@ -2167,7 +2218,7 @@
         "FR7678"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/7f925p",
+      "link": "https://kiwi.com/u/7xrvcf",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 290.584827,
@@ -2194,7 +2245,7 @@
         "FR947"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/qjbr83",
+      "link": "https://kiwi.com/u/zdvndp",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 290.623802,
@@ -2205,88 +2256,77 @@
     },
     {
       "airlines": [
-        "VZ",
         "N0",
-        "FR"
+        "W6"
       ],
-      "arrive_time": "2026-10-30T20:00:00",
+      "arrive_time": "2026-11-02T09:30:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T20:50:00",
-      "destination": "KRK",
-      "duration_minutes": 1750,
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T14:55:00",
+      "destination": "WAW",
+      "duration_minutes": 1475,
       "flight_numbers": [
-        "VZ2107",
-        "N0194",
-        "FR4626"
+        "N0192",
+        "W61502"
       ],
-      "hop": null,
-      "link": "https://kiwi.com/u/p2q3gv",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 291.750274,
-      "price_usd": 291.750274,
+      "hop": {
+        "airlines": [
+          "VZ"
+        ],
+        "arrive_time": "2026-10-31T15:40:00",
+        "cabin_bag_included": true,
+        "currency_original": "USD",
+        "depart_date": "2026-10-31",
+        "depart_time": "2026-10-31T14:20:00",
+        "destination": "BKK",
+        "duration_minutes": 80,
+        "flight_numbers": [
+          "VZ111"
+        ],
+        "hop": null,
+        "link": "https://kiwi.com/u/znfvy3",
+        "notes": "",
+        "origin": "CNX",
+        "price_original": 45.0,
+        "price_usd": 45.0,
+        "self_transfer": false,
+        "source": "kiwi",
+        "stops": 0
+      },
+      "link": "https://kiwi.com/u/hyzx3m",
+      "notes": "self-transfer; airport change at ARN→NYO",
+      "origin": "BKK",
+      "price_original": 246.000001,
+      "price_usd": 246.000001,
       "self_transfer": true,
       "source": "kiwi",
-      "stops": 2
+      "stops": 1
     },
     {
       "airlines": [
-        "Thai AirAsia",
-        "Norse Atlantic Airways",
-        "Wizz Air",
-        "LOT Polish Airlines"
+        "Etihad Airways",
+        "Ryanair"
       ],
-      "arrive_time": "2026-11-02T11:20:00",
+      "arrive_time": "2026-10-30T10:50:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T22:10:00",
-      "destination": "KTW",
-      "duration_minutes": 2590,
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 1900,
       "flight_numbers": [
-        "FD3428",
-        "N0192",
-        "W61502",
-        "LO3881"
+        "EY427",
+        "EY113",
+        "FR6305",
+        "FR3593"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261029/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
-      "price_original": 292.0,
-      "price_usd": 292.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 3
-    },
-    {
-      "airlines": [
-        "Thai Lion Air",
-        "Norse Atlantic Airways",
-        "Ryanair",
-        "LOT Polish Airlines"
-      ],
-      "arrive_time": "2026-11-02T23:40:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T21:30:00",
-      "destination": "KTW",
-      "duration_minutes": 3370,
-      "flight_numbers": [
-        "SL521",
-        "N0192",
-        "FR1945",
-        "LO3879"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 292.0,
-      "price_usd": 292.0,
+      "price_original": 291.0,
+      "price_usd": 291.0,
       "self_transfer": true,
       "source": "skyscanner",
       "stops": 3
@@ -2310,11 +2350,149 @@
         "FR4616"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/4v5qq7",
+      "link": "https://kiwi.com/u/vry8gg",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 292.336164,
       "price_usd": 292.336164,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-10-29T08:15:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
+      "destination": "KRK",
+      "duration_minutes": 1745,
+      "flight_numbers": [
+        "EY427",
+        "EY83",
+        "FR1470"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/pytq5bh",
+      "notes": "self-transfer; airport change at FCO→CIA",
+      "origin": "CNX",
+      "price_original": 292.593398,
+      "price_usd": 292.593398,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "W4"
+      ],
+      "arrive_time": "2026-10-28T08:05:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 1735,
+      "flight_numbers": [
+        "EY427",
+        "EY113",
+        "W46728",
+        "W41346"
+      ],
+      "hop": null,
+      "link": "https://letsfg.co/en?stage=results&sid=ws_9bbef56d6e834fa4&offer=wo_f38f6ddeb911&cur=USD",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 293.0,
+      "price_usd": 293.0,
+      "self_transfer": null,
+      "source": "letsfg",
+      "stops": 3
+    },
+    {
+      "airlines": [
+        "FD",
+        "N0",
+        "FR"
+      ],
+      "arrive_time": "2026-10-30T20:00:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T20:40:00",
+      "destination": "KRK",
+      "duration_minutes": 1760,
+      "flight_numbers": [
+        "FD4103",
+        "N0194",
+        "FR4626"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/yy8cvs",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 293.750274,
+      "price_usd": 293.750274,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Thai Airways",
+        "Norse Atlantic Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-11-02T10:40:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T21:10:00",
+      "destination": "POZ",
+      "duration_minutes": 2610,
+      "flight_numbers": [
+        "TG121",
+        "N0192",
+        "FR7678"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 294.0,
+      "price_usd": 294.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-10-29T09:30:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
+      "destination": "KRK",
+      "duration_minutes": 1820,
+      "flight_numbers": [
+        "EY427",
+        "EY177",
+        "FR2725"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/g4wn39",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 294.114549,
+      "price_usd": 294.114549,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -2338,7 +2516,7 @@
         "FR7678"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/792ush4",
+      "link": "https://kiwi.com/u/x9bth8",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 294.584827,
@@ -2378,7 +2556,7 @@
           "VZ101"
         ],
         "hop": null,
-        "link": "https://kiwi.com/u/np3h9g",
+        "link": "https://kiwi.com/u/4nvjzf",
         "notes": "",
         "origin": "CNX",
         "price_original": 40.0,
@@ -2387,7 +2565,7 @@
         "source": "kiwi",
         "stops": 0
       },
-      "link": "https://kiwi.com/u/wmx8kv",
+      "link": "https://kiwi.com/u/brfvru",
       "notes": "self-transfer",
       "origin": "BKK",
       "price_original": 254.750274,
@@ -2398,51 +2576,24 @@
     },
     {
       "airlines": [
-        "Etihad Airways",
-        "Ryanair"
-      ],
-      "arrive_time": "2026-10-30T10:50:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 1900,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "FR3117"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261029/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 295.0,
-      "price_usd": 295.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
         "Thai Airways",
         "Norse Atlantic Airways",
-        "Wizz Air"
+        "Ryanair"
       ],
-      "arrive_time": "2026-11-02T23:00:00",
+      "arrive_time": "2026-11-02T17:05:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-31",
       "depart_time": "2026-10-31T21:10:00",
-      "destination": "GDN",
-      "duration_minutes": 3350,
+      "destination": "WRO",
+      "duration_minutes": 2995,
       "flight_numbers": [
         "TG121",
         "N0192",
-        "W61732"
+        "FR2355"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261031/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261031/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
       "price_original": 295.0,
@@ -2453,33 +2604,58 @@
     },
     {
       "airlines": [
-        "Nok Air",
-        "Norse Atlantic Airways",
-        "Wizz Air",
-        "LOT Polish Airlines"
+        "VZ",
+        "N0",
+        "FR"
       ],
-      "arrive_time": "2026-11-02T11:20:00",
-      "cabin_bag_included": false,
+      "arrive_time": "2026-10-30T20:00:00",
+      "cabin_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T22:30:00",
-      "destination": "KTW",
-      "duration_minutes": 2570,
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T20:50:00",
+      "destination": "KRK",
+      "duration_minutes": 1750,
       "flight_numbers": [
-        "DD141",
-        "N0192",
-        "W61502",
-        "LO3881"
+        "VZ2107",
+        "N0194",
+        "FR4626"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
-      "notes": "cheapestSource=kiwi",
+      "link": "https://kiwi.com/u/j83jbp",
+      "notes": "self-transfer",
       "origin": "CNX",
-      "price_original": 295.0,
-      "price_usd": 295.0,
+      "price_original": 295.750274,
+      "price_usd": 295.750274,
       "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 3
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-10-30T17:10:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "KTW",
+      "duration_minutes": 2280,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "FR3408"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/cf4tt4",
+      "notes": "self-transfer; airport change at MXP→BGY",
+      "origin": "CNX",
+      "price_original": 296.101213,
+      "price_usd": 296.101213,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
     },
     {
       "airlines": [
@@ -2500,68 +2676,11 @@
         "FR4616"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/2p9trs",
+      "link": "https://kiwi.com/u/cqx5cz",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 296.336164,
       "price_usd": 296.336164,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Thai AirAsia",
-        "Norse Atlantic Airways",
-        "Ryanair",
-        "LOT Polish Airlines"
-      ],
-      "arrive_time": "2026-11-02T23:40:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T22:10:00",
-      "destination": "KTW",
-      "duration_minutes": 3330,
-      "flight_numbers": [
-        "FD3428",
-        "N0192",
-        "FR1945",
-        "LO3879"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 297.0,
-      "price_usd": 297.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 3
-    },
-    {
-      "airlines": [
-        "EY",
-        "FR"
-      ],
-      "arrive_time": "2026-11-02T09:45:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T09:10:00",
-      "destination": "KRK",
-      "duration_minutes": 1835,
-      "flight_numbers": [
-        "EY427",
-        "EY177",
-        "FR2762"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/54cfh55",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 297.100716,
-      "price_usd": 297.100716,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -2585,7 +2704,7 @@
         "FR4626"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/vqukf3u",
+      "link": "https://kiwi.com/u/ttqy6f",
       "notes": "self-transfer; airport change at DMK→BKK",
       "origin": "CNX",
       "price_original": 297.750274,
@@ -2593,173 +2712,9 @@
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
-    },
-    {
-      "airlines": [
-        "VZ",
-        "N0",
-        "FR"
-      ],
-      "arrive_time": "2026-10-30T16:40:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T20:50:00",
-      "destination": "WMI",
-      "duration_minutes": 1550,
-      "flight_numbers": [
-        "VZ2107",
-        "N0194",
-        "FR1945"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/trr8ny",
-      "notes": "arrives WMI; self-transfer",
-      "origin": "CNX",
-      "price_original": 298.278905,
-      "price_usd": 298.278905,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Nok Air",
-        "Norse Atlantic Airways",
-        "Ryanair",
-        "LOT Polish Airlines"
-      ],
-      "arrive_time": "2026-11-02T23:40:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T22:30:00",
-      "destination": "KTW",
-      "duration_minutes": 3310,
-      "flight_numbers": [
-        "DD141",
-        "N0192",
-        "FR1945",
-        "LO3879"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 300.0,
-      "price_usd": 300.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 3
     }
   ],
-  "new_alerts": [
-    {
-      "airlines": [
-        "Thai Vietjet Air",
-        "Norse Atlantic Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-11-02T09:30:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T20:50:00",
-      "destination": "WAW",
-      "duration_minutes": 2560,
-      "flight_numbers": [
-        "VZ2107",
-        "N0192",
-        "W61502"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2107-N0192-W61502",
-      "notes": "virtual-interline",
-      "origin": "CNX",
-      "price_original": 224.0,
-      "price_usd": 224.0,
-      "self_transfer": true,
-      "source": "skiplagged",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Norse Atlantic Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-11-02T09:30:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T14:55:00",
-      "destination": "WAW",
-      "duration_minutes": 1475,
-      "flight_numbers": [
-        "N0192",
-        "W61502"
-      ],
-      "hop": {
-        "airlines": [
-          "VZ"
-        ],
-        "arrive_time": "2026-10-31T15:40:00",
-        "cabin_bag_included": true,
-        "currency_original": "USD",
-        "depart_date": "2026-10-31",
-        "depart_time": "2026-10-31T14:20:00",
-        "destination": "BKK",
-        "duration_minutes": 80,
-        "flight_numbers": [
-          "VZ111"
-        ],
-        "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
-        "notes": "",
-        "origin": "CNX",
-        "price_original": 45.0,
-        "price_usd": 45.0,
-        "self_transfer": false,
-        "source": "kiwi",
-        "stops": 0
-      },
-      "link": "https://skiplagged.com/flights/BKK/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=N0192-W61502",
-      "notes": "virtual-interline",
-      "origin": "BKK",
-      "price_original": 183.0,
-      "price_usd": 183.0,
-      "self_transfer": true,
-      "source": "skiplagged",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Thai AirAsia",
-        "Norse Atlantic Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-11-02T09:30:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T08:30:00",
-      "destination": "WAW",
-      "duration_minutes": 1860,
-      "flight_numbers": [
-        "FD3438",
-        "N0192",
-        "W61502"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD3438-N0192-W61502",
-      "notes": "virtual-interline",
-      "origin": "CNX",
-      "price_original": 233.0,
-      "price_usd": 233.0,
-      "self_transfer": true,
-      "source": "skiplagged",
-      "stops": 2
-    }
-  ],
+  "new_alerts": [],
   "offers": [
     {
       "airlines": [
@@ -2815,11 +2770,11 @@
       "airlines": [
         "Etihad Airways"
       ],
-      "arrive_time": "2026-10-31T06:20:00",
+      "arrive_time": "2026-10-30T06:20:00",
       "cabin_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-30",
-      "depart_time": "2026-10-30T09:10:00",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
       "destination": "WAW",
       "duration_minutes": 1630,
       "flight_numbers": [
@@ -2827,7 +2782,7 @@
         "EY159"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-30?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
       "notes": "",
       "origin": "CNX",
       "price_original": 178.0,
@@ -2890,11 +2845,11 @@
       "airlines": [
         "Etihad Airways"
       ],
-      "arrive_time": "2026-10-30T06:20:00",
+      "arrive_time": "2026-10-31T06:20:00",
       "cabin_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
       "destination": "WAW",
       "duration_minutes": 1630,
       "flight_numbers": [
@@ -2902,7 +2857,7 @@
         "EY159"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-30?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
       "notes": "",
       "origin": "CNX",
       "price_original": 178.0,
@@ -2933,8 +2888,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD4103-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 220.0,
-      "price_usd": 220.0,
+      "price_original": 222.0,
+      "price_usd": 222.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -2961,8 +2916,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=SL521-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 222.0,
-      "price_usd": 222.0,
+      "price_original": 224.0,
+      "price_usd": 224.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -2989,8 +2944,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2107-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 224.0,
-      "price_usd": 224.0,
+      "price_original": 229.0,
+      "price_usd": 229.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -3017,60 +2972,11 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD3428-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 227.0,
-      "price_usd": 227.0,
+      "price_original": 230.0,
+      "price_usd": 230.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
-    },
-    {
-      "airlines": [
-        "Norse Atlantic Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-11-02T09:30:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T14:55:00",
-      "destination": "WAW",
-      "duration_minutes": 1475,
-      "flight_numbers": [
-        "N0192",
-        "W61502"
-      ],
-      "hop": {
-        "airlines": [
-          "VZ"
-        ],
-        "arrive_time": "2026-10-31T15:40:00",
-        "cabin_bag_included": true,
-        "currency_original": "USD",
-        "depart_date": "2026-10-31",
-        "depart_time": "2026-10-31T14:20:00",
-        "destination": "BKK",
-        "duration_minutes": 80,
-        "flight_numbers": [
-          "VZ111"
-        ],
-        "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
-        "notes": "",
-        "origin": "CNX",
-        "price_original": 45.0,
-        "price_usd": 45.0,
-        "self_transfer": false,
-        "source": "kiwi",
-        "stops": 0
-      },
-      "link": "https://skiplagged.com/flights/BKK/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=N0192-W61502",
-      "notes": "virtual-interline",
-      "origin": "BKK",
-      "price_original": 183.0,
-      "price_usd": 183.0,
-      "self_transfer": true,
-      "source": "skiplagged",
-      "stops": 1
     },
     {
       "airlines": [
@@ -3094,8 +3000,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=SL519-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 231.0,
-      "price_usd": 231.0,
+      "price_original": 232.0,
+      "price_usd": 232.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -3122,9 +3028,36 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 232.0,
-      "price_usd": 232.0,
+      "price_original": 234.0,
+      "price_usd": 234.0,
       "self_transfer": true,
+      "source": "skiplagged",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Wizz Air Malta"
+      ],
+      "arrive_time": "2026-10-30T09:10:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 1800,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "W46387"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 235.0,
+      "price_usd": 235.0,
+      "self_transfer": null,
       "source": "skiplagged",
       "stops": 2
     },
@@ -3150,8 +3083,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD3438-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 233.0,
-      "price_usd": 233.0,
+      "price_original": 235.0,
+      "price_usd": 235.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -3178,147 +3111,10 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD3412-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 235.0,
-      "price_usd": 235.0,
+      "price_original": 237.0,
+      "price_usd": 237.0,
       "self_transfer": true,
       "source": "skiplagged",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Wizz Air Malta"
-      ],
-      "arrive_time": "2026-10-30T09:10:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "WAW",
-      "duration_minutes": 1800,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "W46387"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387",
-      "notes": "virtual-interline",
-      "origin": "CNX",
-      "price_original": 252.0,
-      "price_usd": 252.0,
-      "self_transfer": true,
-      "source": "skiplagged",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Thai AirAsia",
-        "Norse Atlantic Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-11-02T23:00:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T20:40:00",
-      "destination": "GDN",
-      "duration_minutes": 3380,
-      "flight_numbers": [
-        "FD4103",
-        "N0192",
-        "W61732"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 252.0,
-      "price_usd": 252.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Thai Lion Air",
-        "Norse Atlantic Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-11-02T23:00:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T21:30:00",
-      "destination": "GDN",
-      "duration_minutes": 3330,
-      "flight_numbers": [
-        "SL521",
-        "N0192",
-        "W61732"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 253.0,
-      "price_usd": 253.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Ryanair"
-      ],
-      "arrive_time": "2026-11-01T11:30:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 1940,
-      "flight_numbers": [
-        "EY427",
-        "EY81",
-        "FR3117"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 256.0,
-      "price_usd": 256.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Ryanair"
-      ],
-      "arrive_time": "2026-10-28T17:10:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 2280,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "FR3413"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261027/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 256.0,
-      "price_usd": 256.0,
-      "self_transfer": true,
-      "source": "skyscanner",
       "stops": 2
     },
     {
@@ -3342,148 +3138,10 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 258.0,
-      "price_usd": 258.0,
+      "price_original": 242.0,
+      "price_usd": 242.0,
       "self_transfer": true,
       "source": "skiplagged",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Ryanair"
-      ],
-      "arrive_time": "2026-10-31T08:10:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 3180,
-      "flight_numbers": [
-        "EY427",
-        "EY155",
-        "FR1921"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261029/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 259.0,
-      "price_usd": 259.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Thai AirAsia",
-        "Norse Atlantic Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-11-02T23:00:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T22:10:00",
-      "destination": "GDN",
-      "duration_minutes": 3290,
-      "flight_numbers": [
-        "FD3428",
-        "N0192",
-        "W61732"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 259.0,
-      "price_usd": 259.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Thai Lion Air",
-        "Norse Atlantic Airways",
-        "Ryanair"
-      ],
-      "arrive_time": "2026-11-02T07:25:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T07:05:00",
-      "destination": "GDN",
-      "duration_minutes": 1820,
-      "flight_numbers": [
-        "SL519",
-        "N0192",
-        "FR4616"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261101/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 262.0,
-      "price_usd": 262.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Ryanair"
-      ],
-      "arrive_time": "2026-10-28T22:55:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 2625,
-      "flight_numbers": [
-        "EY427",
-        "EY63",
-        "FR593"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261027/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 262.0,
-      "price_usd": 262.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Nok Air",
-        "Norse Atlantic Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-11-02T23:00:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T22:30:00",
-      "destination": "GDN",
-      "duration_minutes": 3270,
-      "flight_numbers": [
-        "DD141",
-        "N0192",
-        "W61732"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 262.0,
-      "price_usd": 262.0,
-      "self_transfer": true,
-      "source": "skyscanner",
       "stops": 2
     },
     {
@@ -3507,10 +3165,94 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY177-W61368",
       "notes": "",
       "origin": "CNX",
-      "price_original": 263.0,
-      "price_usd": 263.0,
+      "price_original": 250.0,
+      "price_usd": 250.0,
       "self_transfer": null,
       "source": "skiplagged",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Thai AirAsia",
+        "Norse Atlantic Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-11-02T10:40:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T20:40:00",
+      "destination": "POZ",
+      "duration_minutes": 2640,
+      "flight_numbers": [
+        "FD4103",
+        "N0192",
+        "FR7678"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 251.0,
+      "price_usd": 251.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Thai Lion Air",
+        "Norse Atlantic Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-11-02T10:40:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T21:30:00",
+      "destination": "POZ",
+      "duration_minutes": 2590,
+      "flight_numbers": [
+        "SL521",
+        "N0192",
+        "FR7678"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 252.0,
+      "price_usd": 252.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Thai AirAsia",
+        "Norse Atlantic Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-11-02T17:05:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T20:40:00",
+      "destination": "WRO",
+      "duration_minutes": 3025,
+      "flight_numbers": [
+        "FD4103",
+        "N0192",
+        "FR2355"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261031/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 252.0,
+      "price_usd": 252.0,
+      "self_transfer": true,
+      "source": "skyscanner",
       "stops": 2
     },
     {
@@ -3518,25 +3260,25 @@
         "Etihad Airways",
         "Wizz Air"
       ],
-      "arrive_time": "2026-10-28T10:20:00",
+      "arrive_time": "2026-10-29T13:25:00",
       "cabin_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
       "destination": "WAW",
-      "duration_minutes": 1870,
+      "duration_minutes": 2055,
       "flight_numbers": [
         "EY427",
-        "EY79",
-        "W61432"
+        "EY113",
+        "W61476"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432",
-      "notes": "virtual-interline",
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY113-W61476",
+      "notes": "",
       "origin": "CNX",
-      "price_original": 265.0,
-      "price_usd": 265.0,
-      "self_transfer": true,
+      "price_original": 253.0,
+      "price_usd": 253.0,
+      "self_transfer": null,
       "source": "skiplagged",
       "stops": 2
     },
@@ -3561,8 +3303,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY111-W61476",
       "notes": "",
       "origin": "CNX",
-      "price_original": 265.0,
-      "price_usd": 265.0,
+      "price_original": 253.0,
+      "price_usd": 253.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 2
@@ -3570,53 +3312,135 @@
     {
       "airlines": [
         "Etihad Airways",
-        "Ryanair"
-      ],
-      "arrive_time": "2026-10-29T09:20:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 1810,
-      "flight_numbers": [
-        "EY427",
-        "EY177",
-        "FR6845"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261028/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 266.0,
-      "price_usd": 266.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
         "Wizz Air"
       ],
-      "arrive_time": "2026-11-02T19:35:00",
-      "cabin_bag_included": false,
+      "arrive_time": "2026-10-28T13:25:00",
+      "cabin_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 2425,
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 2055,
       "flight_numbers": [
         "EY427",
-        "EY177",
-        "W61742"
+        "EY113",
+        "W61476"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261101/",
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY113-W61476",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 254.0,
+      "price_usd": 254.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-10-28T12:10:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "KRK",
+      "duration_minutes": 1980,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "FR4463"
+      ],
+      "hop": null,
+      "link": "https://letsfg.co/en?stage=results&sid=ws_33a8674e53ac49cc&offer=wo_386a585d9ae1&cur=USD",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 256.0,
+      "price_usd": 256.0,
+      "self_transfer": null,
+      "source": "letsfg",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-10-28T07:50:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 1720,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "FR3593"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261027/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
-      "price_original": 267.0,
-      "price_usd": 267.0,
+      "price_original": 256.0,
+      "price_usd": 256.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-10-28T10:00:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "KRK",
+      "duration_minutes": 1850,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "FR888"
+      ],
+      "hop": null,
+      "link": "https://letsfg.co/en?stage=results&sid=ws_33a8674e53ac49cc&offer=wo_f27fb3987550&cur=USD",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 258.0,
+      "price_usd": 258.0,
+      "self_transfer": null,
+      "source": "letsfg",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Thai AirAsia",
+        "Norse Atlantic Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-11-02T10:40:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T22:10:00",
+      "destination": "POZ",
+      "duration_minutes": 2550,
+      "flight_numbers": [
+        "FD3428",
+        "N0192",
+        "FR7678"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 258.0,
+      "price_usd": 258.0,
       "self_transfer": true,
       "source": "skyscanner",
       "stops": 2
@@ -3626,26 +3450,163 @@
         "Etihad Airways",
         "Ryanair"
       ],
-      "arrive_time": "2026-10-30T00:20:00",
+      "arrive_time": "2026-11-02T07:30:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 2710,
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 3140,
       "flight_numbers": [
         "EY427",
         "EY81",
-        "FR3408"
+        "FR3593"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261028/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
-      "price_original": 267.0,
-      "price_usd": 267.0,
+      "price_original": 258.0,
+      "price_usd": 258.0,
       "self_transfer": true,
       "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Thai Lion Air",
+        "Norse Atlantic Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-11-02T10:40:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T07:05:00",
+      "destination": "POZ",
+      "duration_minutes": 2015,
+      "flight_numbers": [
+        "SL519",
+        "N0192",
+        "FR7678"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261101/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 261.0,
+      "price_usd": 261.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Nok Air",
+        "Norse Atlantic Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-11-02T10:40:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T22:30:00",
+      "destination": "POZ",
+      "duration_minutes": 2530,
+      "flight_numbers": [
+        "DD141",
+        "N0192",
+        "FR7678"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 261.0,
+      "price_usd": 261.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-10-30T10:50:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 1900,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "FR3593"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261029/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 262.0,
+      "price_usd": 262.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-10-30T08:40:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 3210,
+      "flight_numbers": [
+        "EY427",
+        "EY31",
+        "FR5051"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261028/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 262.0,
+      "price_usd": 262.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "W6"
+      ],
+      "arrive_time": "2026-10-28T10:20:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 1870,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "W61432"
+      ],
+      "hop": null,
+      "link": "https://letsfg.co/en?stage=results&sid=ws_9bbef56d6e834fa4&offer=wo_6df2af448cd5&cur=USD",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 266.0,
+      "price_usd": 266.0,
+      "self_transfer": null,
+      "source": "letsfg",
       "stops": 2
     },
     {
@@ -3666,7 +3627,7 @@
         "LO3883"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/bn36h6x",
+      "link": "https://kiwi.com/u/u29txz",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 268.0,
@@ -3693,88 +3654,7 @@
         "LO3883"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/4xcvpbq",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 268.0,
-      "price_usd": 268.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "EY",
-        "LO"
-      ],
-      "arrive_time": "2026-10-31T14:15:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-30",
-      "depart_time": "2026-10-30T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 2105,
-      "flight_numbers": [
-        "EY427",
-        "EY159",
-        "LO3883"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/nsgq49",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 268.0,
-      "price_usd": 268.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "EY",
-        "LO"
-      ],
-      "arrive_time": "2026-11-01T14:15:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 2105,
-      "flight_numbers": [
-        "EY427",
-        "EY159",
-        "LO3883"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/tvfuqt",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 268.0,
-      "price_usd": 268.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "EY",
-        "LO"
-      ],
-      "arrive_time": "2026-11-02T11:20:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 1930,
-      "flight_numbers": [
-        "EY427",
-        "EY159",
-        "LO3881"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/pk6cu2",
+      "link": "https://kiwi.com/u/4u7yyr",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 268.0,
@@ -3801,7 +3681,115 @@
         "LO3881"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/6rwb62",
+      "link": "https://kiwi.com/u/39zrsq7",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 268.0,
+      "price_usd": 268.0,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "LO"
+      ],
+      "arrive_time": "2026-11-01T14:15:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T09:10:00",
+      "destination": "KTW",
+      "duration_minutes": 2105,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3883"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/sf2tpx",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 268.0,
+      "price_usd": 268.0,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "LO"
+      ],
+      "arrive_time": "2026-11-02T11:20:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T09:10:00",
+      "destination": "KTW",
+      "duration_minutes": 1930,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3881"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/5jwj4z",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 268.0,
+      "price_usd": 268.0,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-10-28T16:55:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "WRO",
+      "duration_minutes": 2265,
+      "flight_numbers": [
+        "EY427",
+        "EY67",
+        "FR8405"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261027/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 268.0,
+      "price_usd": 268.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "LO"
+      ],
+      "arrive_time": "2026-10-31T14:15:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
+      "destination": "KTW",
+      "duration_minutes": 2105,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3883"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/vf5qur",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 269.0,
@@ -3816,20 +3804,47 @@
         "Norse Atlantic Airways",
         "Ryanair"
       ],
-      "arrive_time": "2026-11-02T07:25:00",
+      "arrive_time": "2026-11-02T10:40:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-11-01",
       "depart_time": "2026-11-01T08:30:00",
-      "destination": "GDN",
-      "duration_minutes": 1735,
+      "destination": "POZ",
+      "duration_minutes": 1930,
       "flight_numbers": [
         "FD3438",
         "N0192",
-        "FR4616"
+        "FR7678"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261101/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261101/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 270.0,
+      "price_usd": 270.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Wizz Air"
+      ],
+      "arrive_time": "2026-10-28T13:00:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "WRO",
+      "duration_minutes": 2030,
+      "flight_numbers": [
+        "EY427",
+        "EY113",
+        "W61812"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261027/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
       "price_original": 271.0,
@@ -3840,29 +3855,29 @@
     },
     {
       "airlines": [
-        "Etihad Airways",
-        "Ryanair"
+        "EY",
+        "LO"
       ],
-      "arrive_time": "2026-10-30T17:10:00",
-      "cabin_bag_included": false,
+      "arrive_time": "2026-10-28T11:20:00",
+      "cabin_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 2280,
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "KRK",
+      "duration_minutes": 1930,
       "flight_numbers": [
         "EY427",
-        "EY79",
-        "FR3408"
+        "EY159",
+        "LO3907"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261029/",
-      "notes": "cheapestSource=kiwi",
+      "link": "https://letsfg.co/en?stage=results&sid=ws_33a8674e53ac49cc&offer=wo_485e7600e647&cur=USD",
+      "notes": "",
       "origin": "CNX",
-      "price_original": 271.0,
-      "price_usd": 271.0,
-      "self_transfer": true,
-      "source": "skyscanner",
+      "price_original": 272.0,
+      "price_usd": 272.0,
+      "self_transfer": null,
+      "source": "letsfg",
       "stops": 2
     },
     {
@@ -3871,24 +3886,24 @@
         "Norse Atlantic Airways",
         "Ryanair"
       ],
-      "arrive_time": "2026-11-02T07:25:00",
+      "arrive_time": "2026-11-02T10:40:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-11-01",
       "depart_time": "2026-11-01T06:35:00",
-      "destination": "GDN",
-      "duration_minutes": 1850,
+      "destination": "POZ",
+      "duration_minutes": 2045,
       "flight_numbers": [
         "VZ2105",
         "N0192",
-        "FR4616"
+        "FR7678"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261101/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261101/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
-      "price_original": 275.0,
-      "price_usd": 275.0,
+      "price_original": 274.0,
+      "price_usd": 274.0,
       "self_transfer": true,
       "source": "skyscanner",
       "stops": 2
@@ -3924,7 +3939,7 @@
           "VZ101"
         ],
         "hop": null,
-        "link": "https://kiwi.com/u/np3h9g",
+        "link": "https://kiwi.com/u/4nvjzf",
         "notes": "",
         "origin": "CNX",
         "price_original": 40.0,
@@ -3933,14 +3948,42 @@
         "source": "kiwi",
         "stops": 0
       },
-      "link": "https://kiwi.com/u/szkqrf",
+      "link": "https://kiwi.com/u/dzt6w5",
       "notes": "self-transfer",
       "origin": "BKK",
-      "price_original": 236.0,
-      "price_usd": 236.0,
+      "price_original": 235.0,
+      "price_usd": 235.0,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai Vietjet",
+        "Norse Atlantic Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-11-02T17:05:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T06:35:00",
+      "destination": "WRO",
+      "duration_minutes": 2430,
+      "flight_numbers": [
+        "VZ2105",
+        "N0192",
+        "FR2355"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261101/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 275.0,
+      "price_usd": 275.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
     },
     {
       "airlines": [
@@ -3960,7 +4003,7 @@
         "LO3835"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/24j6q9",
+      "link": "https://kiwi.com/u/2h9g2z",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 276.0,
@@ -4000,7 +4043,7 @@
           "VZ111"
         ],
         "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
+        "link": "https://kiwi.com/u/znfvy3",
         "notes": "",
         "origin": "CNX",
         "price_original": 45.0,
@@ -4009,7 +4052,7 @@
         "source": "kiwi",
         "stops": 0
       },
-      "link": "https://kiwi.com/u/7muzw5",
+      "link": "https://kiwi.com/u/cdczsm",
       "notes": "self-transfer",
       "origin": "BKK",
       "price_original": 232.584827,
@@ -4020,28 +4063,54 @@
     },
     {
       "airlines": [
-        "VZ",
-        "N0",
-        "W6"
+        "Etihad Airways",
+        "Ryanair"
       ],
-      "arrive_time": "2026-10-30T23:00:00",
-      "cabin_bag_included": true,
+      "arrive_time": "2026-11-01T07:20:00",
+      "cabin_bag_included": false,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T20:50:00",
-      "destination": "GDN",
-      "duration_minutes": 1930,
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 3130,
       "flight_numbers": [
-        "VZ2107",
-        "N0194",
-        "W61732"
+        "EY427",
+        "EY177",
+        "FR8523"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/8z8gm9",
-      "notes": "self-transfer",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261030/",
+      "notes": "cheapestSource=kiwi",
       "origin": "CNX",
       "price_original": 278.0,
       "price_usd": 278.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-10-28T17:10:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "KTW",
+      "duration_minutes": 2280,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "FR3413"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/u5vkg7",
+      "notes": "self-transfer; airport change at MXP→BGY",
+      "origin": "CNX",
+      "price_original": 278.161165,
+      "price_usd": 278.161165,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -4064,7 +4133,7 @@
         "FR7306"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/zqk97x",
+      "link": "https://kiwi.com/u/7vc2kz",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 278.161165,
@@ -4075,128 +4144,23 @@
     },
     {
       "airlines": [
-        "EY",
-        "FR"
+        "Etihad Airways",
+        "Ryanair"
       ],
-      "arrive_time": "2026-10-28T07:50:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
-      "destination": "POZ",
-      "duration_minutes": 1720,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "FR3593"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/6mujbf",
-      "notes": "self-transfer; airport change at MXP→BGY",
-      "origin": "CNX",
-      "price_original": 278.885096,
-      "price_usd": 278.885096,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "EY",
-        "FR"
-      ],
-      "arrive_time": "2026-10-28T12:40:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
-      "destination": "WMI",
-      "duration_minutes": 2010,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "FR3341"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/py32jj",
-      "notes": "self-transfer; airport change at MXP→BGY",
-      "origin": "CNX",
-      "price_original": 278.89987,
-      "price_usd": 278.89987,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Norse Atlantic Airways",
-        "Ryanair",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-11-03T07:35:00",
-      "cabin_bag_included": null,
+      "arrive_time": "2026-11-02T12:25:00",
+      "cabin_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T14:55:00",
-      "destination": "WAW",
-      "duration_minutes": 2800,
-      "flight_numbers": [
-        "N0192",
-        "FR7600",
-        "W62467"
-      ],
-      "hop": {
-        "airlines": [
-          "VZ"
-        ],
-        "arrive_time": "2026-10-31T15:40:00",
-        "cabin_bag_included": true,
-        "currency_original": "USD",
-        "depart_date": "2026-10-31",
-        "depart_time": "2026-10-31T14:20:00",
-        "destination": "BKK",
-        "duration_minutes": 80,
-        "flight_numbers": [
-          "VZ111"
-        ],
-        "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
-        "notes": "",
-        "origin": "CNX",
-        "price_original": 45.0,
-        "price_usd": 45.0,
-        "self_transfer": false,
-        "source": "kiwi",
-        "stops": 0
-      },
-      "link": "https://skiplagged.com/flights/BKK/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=N0192-FR7600-W62467",
-      "notes": "virtual-interline",
-      "origin": "BKK",
-      "price_original": 234.0,
-      "price_usd": 234.0,
-      "self_transfer": true,
-      "source": "skiplagged",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "LOT Polish Airlines"
-      ],
-      "arrive_time": "2026-10-30T20:50:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 2500,
+      "depart_time": "2026-11-01T09:10:00",
+      "destination": "WRO",
+      "duration_minutes": 1995,
       "flight_numbers": [
         "EY427",
-        "EY159",
-        "LO3825"
+        "EY31",
+        "FR2069"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261029/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261101/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
       "price_original": 279.0,
@@ -4236,7 +4200,7 @@
           "VZ111"
         ],
         "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
+        "link": "https://kiwi.com/u/znfvy3",
         "notes": "",
         "origin": "CNX",
         "price_original": 45.0,
@@ -4245,7 +4209,7 @@
         "source": "kiwi",
         "stops": 0
       },
-      "link": "https://kiwi.com/u/gpkfw47",
+      "link": "https://kiwi.com/u/tj8fbd",
       "notes": "self-transfer",
       "origin": "BKK",
       "price_original": 234.336164,
@@ -4285,7 +4249,7 @@
           "VZ111"
         ],
         "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
+        "link": "https://kiwi.com/u/znfvy3",
         "notes": "",
         "origin": "CNX",
         "price_original": 45.0,
@@ -4294,7 +4258,7 @@
         "source": "kiwi",
         "stops": 0
       },
-      "link": "https://kiwi.com/u/jwf3vx",
+      "link": "https://kiwi.com/u/gy9j4j",
       "notes": "self-transfer",
       "origin": "BKK",
       "price_original": 234.807533,
@@ -4305,84 +4269,31 @@
     },
     {
       "airlines": [
-        "EY",
-        "LO"
-      ],
-      "arrive_time": "2026-10-31T08:10:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-30",
-      "depart_time": "2026-10-30T09:10:00",
-      "destination": "WRO",
-      "duration_minutes": 1740,
-      "flight_numbers": [
-        "EY427",
-        "EY159",
-        "LO3851"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/c3nrdcd",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 280.0,
-      "price_usd": 280.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "EY",
-        "LO"
-      ],
-      "arrive_time": "2026-10-31T11:40:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-30",
-      "depart_time": "2026-10-30T09:10:00",
-      "destination": "WRO",
-      "duration_minutes": 1950,
-      "flight_numbers": [
-        "EY427",
-        "EY159",
-        "LO3853"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/fzjugf",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 280.0,
-      "price_usd": 280.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
         "Etihad Airways",
         "Ryanair"
       ],
-      "arrive_time": "2026-10-28T13:30:00",
+      "arrive_time": "2026-10-28T07:50:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-27",
       "depart_time": "2026-10-27T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 2060,
+      "destination": "POZ",
+      "duration_minutes": 1720,
       "flight_numbers": [
         "EY427",
-        "EY67",
-        "FR5536"
+        "EY113",
+        "FR3143",
+        "FR3593"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261027/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261027/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
       "price_original": 280.0,
       "price_usd": 280.0,
       "self_transfer": true,
       "source": "skyscanner",
-      "stops": 2
+      "stops": 3
     },
     {
       "airlines": [
@@ -4402,11 +4313,65 @@
         "FR1903"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/37z3q9",
+      "link": "https://kiwi.com/u/k63z7v3",
       "notes": "self-transfer; airport change at MXP→BGY",
       "origin": "CNX",
       "price_original": 280.161165,
       "price_usd": 280.161165,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-10-31T20:45:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
+      "destination": "WRO",
+      "duration_minutes": 2495,
+      "flight_numbers": [
+        "EY427",
+        "EY47",
+        "FR5416"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261030/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 281.0,
+      "price_usd": 281.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-11-01T11:30:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T09:10:00",
+      "destination": "GDN",
+      "duration_minutes": 1940,
+      "flight_numbers": [
+        "EY427",
+        "EY81",
+        "FR3117"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/u2ugb8m",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 281.115987,
+      "price_usd": 281.115987,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -4429,7 +4394,7 @@
         "FR8804"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/rct4k8",
+      "link": "https://kiwi.com/u/77wxmx",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 281.375421,
@@ -4469,7 +4434,7 @@
           "VZ111"
         ],
         "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
+        "link": "https://kiwi.com/u/znfvy3",
         "notes": "",
         "origin": "CNX",
         "price_original": 45.0,
@@ -4478,7 +4443,7 @@
         "source": "kiwi",
         "stops": 0
       },
-      "link": "https://kiwi.com/u/wtg54kv",
+      "link": "https://kiwi.com/u/u3mkynm",
       "notes": "self-transfer",
       "origin": "BKK",
       "price_original": 236.543218,
@@ -4486,34 +4451,6 @@
       "self_transfer": true,
       "source": "kiwi",
       "stops": 1
-    },
-    {
-      "airlines": [
-        "SL",
-        "N0",
-        "FR"
-      ],
-      "arrive_time": "2026-11-02T10:40:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T07:05:00",
-      "destination": "POZ",
-      "duration_minutes": 2015,
-      "flight_numbers": [
-        "SL519",
-        "N0192",
-        "FR7678"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/hnxrtn",
-      "notes": "self-transfer; airport change at DMK→BKK",
-      "origin": "CNX",
-      "price_original": 281.584827,
-      "price_usd": 281.584827,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
     },
     {
       "airlines": [
@@ -4533,7 +4470,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/4jqtf4",
+      "link": "https://kiwi.com/u/v8uxxf",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.0,
@@ -4560,7 +4497,7 @@
         "LO3853"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/5dchx9",
+      "link": "https://kiwi.com/u/w5sju7",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.0,
@@ -4587,7 +4524,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/rshqgn",
+      "link": "https://kiwi.com/u/ykwcpy6",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.0,
@@ -4614,7 +4551,61 @@
         "LO3853"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/2v4fxx",
+      "link": "https://kiwi.com/u/sx9juc",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 282.0,
+      "price_usd": 282.0,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "LO"
+      ],
+      "arrive_time": "2026-10-30T08:10:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "WRO",
+      "duration_minutes": 1740,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3851"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/6q9282",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 282.0,
+      "price_usd": 282.0,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "LO"
+      ],
+      "arrive_time": "2026-10-30T11:40:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "WRO",
+      "duration_minutes": 1950,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3853"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/nd3dq8",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.0,
@@ -4641,7 +4632,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/g7g5ty",
+      "link": "https://kiwi.com/u/t8r5cc",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.0,
@@ -4668,7 +4659,7 @@
         "LO3853"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/4y35nrw",
+      "link": "https://kiwi.com/u/v5xk8x",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.0,
@@ -4695,39 +4686,11 @@
         "LO3853"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/q9zt33r",
+      "link": "https://kiwi.com/u/8ju7cv",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.0,
       "price_usd": 282.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "VZ",
-        "N0",
-        "FR"
-      ],
-      "arrive_time": "2026-11-02T10:40:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T06:35:00",
-      "destination": "POZ",
-      "duration_minutes": 2045,
-      "flight_numbers": [
-        "VZ2105",
-        "N0192",
-        "FR7678"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/t2tggh",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 282.584827,
-      "price_usd": 282.584827,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -4750,7 +4713,7 @@
         "FR8523"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/jvbfv3",
+      "link": "https://kiwi.com/u/4znz5z",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 282.622459,
@@ -4764,11 +4727,11 @@
         "EY",
         "LO"
       ],
-      "arrive_time": "2026-10-30T08:10:00",
+      "arrive_time": "2026-10-31T08:10:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
       "destination": "WRO",
       "duration_minutes": 1740,
       "flight_numbers": [
@@ -4777,7 +4740,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/sxjhg9",
+      "link": "https://kiwi.com/u/myhm2k",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 283.0,
@@ -4791,11 +4754,11 @@
         "EY",
         "LO"
       ],
-      "arrive_time": "2026-10-30T11:40:00",
+      "arrive_time": "2026-10-31T11:40:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
       "destination": "WRO",
       "duration_minutes": 1950,
       "flight_numbers": [
@@ -4804,7 +4767,7 @@
         "LO3853"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/ncuysf",
+      "link": "https://kiwi.com/u/7q462f",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 283.0,
@@ -4815,53 +4778,79 @@
     },
     {
       "airlines": [
-        "FD",
+        "SL",
         "N0",
         "FR"
       ],
-      "arrive_time": "2026-11-02T10:40:00",
+      "arrive_time": "2026-11-02T07:25:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
       "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T08:30:00",
-      "destination": "POZ",
-      "duration_minutes": 1930,
+      "depart_time": "2026-11-01T07:05:00",
+      "destination": "GDN",
+      "duration_minutes": 1820,
       "flight_numbers": [
-        "FD3438",
+        "SL519",
         "N0192",
-        "FR7678"
+        "FR4616"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/m4tn5z",
+      "link": "https://kiwi.com/u/ymq5us",
       "notes": "self-transfer; airport change at DMK→BKK",
       "origin": "CNX",
-      "price_original": 283.584827,
-      "price_usd": 283.584827,
+      "price_original": 283.336164,
+      "price_usd": 283.336164,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
     },
     {
       "airlines": [
-        "DD",
-        "N0",
-        "W6"
+        "EY",
+        "FR"
       ],
-      "arrive_time": "2026-10-30T23:00:00",
+      "arrive_time": "2026-10-29T09:20:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
+      "destination": "GDN",
+      "duration_minutes": 1810,
+      "flight_numbers": [
+        "EY427",
+        "EY177",
+        "FR6845"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/jgyg6n",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 283.899141,
+      "price_usd": 283.899141,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "LO"
+      ],
+      "arrive_time": "2026-10-30T11:25:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T22:30:00",
-      "destination": "GDN",
-      "duration_minutes": 1830,
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 1935,
       "flight_numbers": [
-        "DD141",
-        "N0194",
-        "W61732"
+        "EY427",
+        "EY159",
+        "LO3945"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/xjg99nx",
-      "notes": "self-transfer; airport change at DMK→BKK",
+      "link": "https://kiwi.com/u/88tth9",
+      "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 284.0,
       "price_usd": 284.0,
@@ -4887,7 +4876,7 @@
         "LO3945"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/yfqhgc",
+      "link": "https://kiwi.com/u/3jmj4s",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 284.0,
@@ -4899,28 +4888,165 @@
     {
       "airlines": [
         "EY",
-        "LO"
+        "FR"
       ],
-      "arrive_time": "2026-10-30T11:25:00",
+      "arrive_time": "2026-10-28T10:00:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "KRK",
+      "duration_minutes": 1850,
+      "flight_numbers": [
+        "EY427",
+        "EY113",
+        "FR3143",
+        "FR888"
+      ],
+      "hop": null,
+      "link": "https://letsfg.co/en?stage=results&sid=ws_33a8674e53ac49cc&offer=wo_911b413c0f16&cur=USD",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 284.0,
+      "price_usd": 284.0,
+      "self_transfer": null,
+      "source": "letsfg",
+      "stops": 3
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "LOT Polish Airlines"
+      ],
+      "arrive_time": "2026-10-29T14:10:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
       "destination": "POZ",
-      "duration_minutes": 1935,
+      "duration_minutes": 2100,
       "flight_numbers": [
         "EY427",
         "EY159",
-        "LO3945"
+        "LO3943"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/wpqrdx7",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261028/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 284.0,
+      "price_usd": 284.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "LOT Polish Airlines"
+      ],
+      "arrive_time": "2026-11-01T14:10:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 2100,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3943"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 284.0,
+      "price_usd": 284.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "VZ",
+        "N0",
+        "FR"
+      ],
+      "arrive_time": "2026-11-02T07:25:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T06:35:00",
+      "destination": "GDN",
+      "duration_minutes": 1850,
+      "flight_numbers": [
+        "VZ2105",
+        "N0192",
+        "FR4616"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/x2ksyk",
       "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 284.336164,
+      "price_usd": 284.336164,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "LOT Polish Airlines"
+      ],
+      "arrive_time": "2026-10-31T14:10:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 2100,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3943"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261030/",
+      "notes": "cheapestSource=kiwi",
       "origin": "CNX",
       "price_original": 285.0,
       "price_usd": 285.0,
       "self_transfer": true,
-      "source": "kiwi",
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-10-29T20:30:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
+      "destination": "WRO",
+      "duration_minutes": 2480,
+      "flight_numbers": [
+        "EY427",
+        "EY47",
+        "FR98"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261028/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 285.0,
+      "price_usd": 285.0,
+      "self_transfer": true,
+      "source": "skyscanner",
       "stops": 2
     },
     {
@@ -4954,7 +5080,7 @@
           "VZ111"
         ],
         "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
+        "link": "https://kiwi.com/u/znfvy3",
         "notes": "",
         "origin": "CNX",
         "price_original": 45.0,
@@ -4963,7 +5089,7 @@
         "source": "kiwi",
         "stops": 0
       },
-      "link": "https://kiwi.com/u/9wkkxk",
+      "link": "https://kiwi.com/u/mhwfvf",
       "notes": "self-transfer",
       "origin": "BKK",
       "price_original": 240.207294,
@@ -4971,6 +5097,34 @@
       "self_transfer": true,
       "source": "kiwi",
       "stops": 1
+    },
+    {
+      "airlines": [
+        "FD",
+        "N0",
+        "FR"
+      ],
+      "arrive_time": "2026-11-02T07:25:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T08:30:00",
+      "destination": "GDN",
+      "duration_minutes": 1735,
+      "flight_numbers": [
+        "FD3438",
+        "N0192",
+        "FR4616"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/9n2dgx",
+      "notes": "self-transfer; airport change at DMK→BKK",
+      "origin": "CNX",
+      "price_original": 285.336164,
+      "price_usd": 285.336164,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
     },
     {
       "airlines": [
@@ -4990,7 +5144,7 @@
         "FR5821"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/8g2d35",
+      "link": "https://kiwi.com/u/h2dsjcb",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 285.407685,
@@ -5018,7 +5172,7 @@
         "FR7678"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/qcbvqy",
+      "link": "https://kiwi.com/u/pz4tzn",
       "notes": "self-transfer; airport change at DMK→BKK",
       "origin": "CNX",
       "price_original": 285.584827,
@@ -5029,84 +5183,28 @@
     },
     {
       "airlines": [
-        "EY",
-        "FR"
+        "DD",
+        "N0",
+        "W6"
       ],
-      "arrive_time": "2026-10-30T10:50:00",
+      "arrive_time": "2026-10-30T23:00:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "POZ",
-      "duration_minutes": 1900,
+      "depart_time": "2026-10-29T22:30:00",
+      "destination": "GDN",
+      "duration_minutes": 1830,
       "flight_numbers": [
-        "EY427",
-        "EY79",
-        "FR3593"
+        "DD141",
+        "N0194",
+        "W61732"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/64k73h",
-      "notes": "self-transfer; airport change at MXP→BGY",
+      "link": "https://kiwi.com/u/4r3hch",
+      "notes": "self-transfer; airport change at DMK→BKK",
       "origin": "CNX",
-      "price_original": 285.638576,
-      "price_usd": 285.638576,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Thai Lion Air",
-        "Norse Atlantic Airways",
-        "Wizz Air",
-        "LOT Polish Airlines"
-      ],
-      "arrive_time": "2026-11-02T11:20:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T21:30:00",
-      "destination": "KTW",
-      "duration_minutes": 2630,
-      "flight_numbers": [
-        "SL521",
-        "N0192",
-        "W61502",
-        "LO3881"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 286.0,
-      "price_usd": 286.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 3
-    },
-    {
-      "airlines": [
-        "EY",
-        "FR"
-      ],
-      "arrive_time": "2026-10-28T10:00:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
-      "destination": "KRK",
-      "duration_minutes": 1850,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "FR888"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/f5hxbh",
-      "notes": "self-transfer; airport change at MXP→BGY",
-      "origin": "CNX",
-      "price_original": 286.115987,
-      "price_usd": 286.115987,
+      "price_original": 287.0,
+      "price_usd": 287.0,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -5130,7 +5228,7 @@
         "FR4616"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/22dfvbd",
+      "link": "https://kiwi.com/u/hudmq3",
       "notes": "self-transfer; airport change at DMK→BKK",
       "origin": "CNX",
       "price_original": 287.336164,
@@ -5138,63 +5236,6 @@
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-11-01T10:55:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T09:10:00",
-      "destination": "KTW",
-      "duration_minutes": 1905,
-      "flight_numbers": [
-        "EY427",
-        "EY85",
-        "W61046"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 288.0,
-      "price_usd": 288.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Thai AirAsia",
-        "Norse Atlantic Airways",
-        "Ryanair",
-        "LOT Polish Airlines"
-      ],
-      "arrive_time": "2026-11-02T23:40:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T20:40:00",
-      "destination": "KTW",
-      "duration_minutes": 3420,
-      "flight_numbers": [
-        "FD4103",
-        "N0192",
-        "FR1945",
-        "LO3879"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 290.0,
-      "price_usd": 290.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 3
     },
     {
       "airlines": [
@@ -5215,7 +5256,7 @@
         "FR7678"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/7f925p",
+      "link": "https://kiwi.com/u/7xrvcf",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 290.584827,
@@ -5242,7 +5283,7 @@
         "FR947"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/qjbr83",
+      "link": "https://kiwi.com/u/zdvndp",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 290.623802,
@@ -5253,88 +5294,77 @@
     },
     {
       "airlines": [
-        "VZ",
         "N0",
-        "FR"
+        "W6"
       ],
-      "arrive_time": "2026-10-30T20:00:00",
+      "arrive_time": "2026-11-02T09:30:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T20:50:00",
-      "destination": "KRK",
-      "duration_minutes": 1750,
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T14:55:00",
+      "destination": "WAW",
+      "duration_minutes": 1475,
       "flight_numbers": [
-        "VZ2107",
-        "N0194",
-        "FR4626"
+        "N0192",
+        "W61502"
       ],
-      "hop": null,
-      "link": "https://kiwi.com/u/p2q3gv",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 291.750274,
-      "price_usd": 291.750274,
+      "hop": {
+        "airlines": [
+          "VZ"
+        ],
+        "arrive_time": "2026-10-31T15:40:00",
+        "cabin_bag_included": true,
+        "currency_original": "USD",
+        "depart_date": "2026-10-31",
+        "depart_time": "2026-10-31T14:20:00",
+        "destination": "BKK",
+        "duration_minutes": 80,
+        "flight_numbers": [
+          "VZ111"
+        ],
+        "hop": null,
+        "link": "https://kiwi.com/u/znfvy3",
+        "notes": "",
+        "origin": "CNX",
+        "price_original": 45.0,
+        "price_usd": 45.0,
+        "self_transfer": false,
+        "source": "kiwi",
+        "stops": 0
+      },
+      "link": "https://kiwi.com/u/hyzx3m",
+      "notes": "self-transfer; airport change at ARN→NYO",
+      "origin": "BKK",
+      "price_original": 246.000001,
+      "price_usd": 246.000001,
       "self_transfer": true,
       "source": "kiwi",
-      "stops": 2
+      "stops": 1
     },
     {
       "airlines": [
-        "Thai AirAsia",
-        "Norse Atlantic Airways",
-        "Wizz Air",
-        "LOT Polish Airlines"
+        "Etihad Airways",
+        "Ryanair"
       ],
-      "arrive_time": "2026-11-02T11:20:00",
+      "arrive_time": "2026-10-30T10:50:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T22:10:00",
-      "destination": "KTW",
-      "duration_minutes": 2590,
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "POZ",
+      "duration_minutes": 1900,
       "flight_numbers": [
-        "FD3428",
-        "N0192",
-        "W61502",
-        "LO3881"
+        "EY427",
+        "EY113",
+        "FR6305",
+        "FR3593"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261029/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
-      "price_original": 292.0,
-      "price_usd": 292.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 3
-    },
-    {
-      "airlines": [
-        "Thai Lion Air",
-        "Norse Atlantic Airways",
-        "Ryanair",
-        "LOT Polish Airlines"
-      ],
-      "arrive_time": "2026-11-02T23:40:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T21:30:00",
-      "destination": "KTW",
-      "duration_minutes": 3370,
-      "flight_numbers": [
-        "SL521",
-        "N0192",
-        "FR1945",
-        "LO3879"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 292.0,
-      "price_usd": 292.0,
+      "price_original": 291.0,
+      "price_usd": 291.0,
       "self_transfer": true,
       "source": "skyscanner",
       "stops": 3
@@ -5358,11 +5388,149 @@
         "FR4616"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/4v5qq7",
+      "link": "https://kiwi.com/u/vry8gg",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 292.336164,
       "price_usd": 292.336164,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-10-29T08:15:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
+      "destination": "KRK",
+      "duration_minutes": 1745,
+      "flight_numbers": [
+        "EY427",
+        "EY83",
+        "FR1470"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/pytq5bh",
+      "notes": "self-transfer; airport change at FCO→CIA",
+      "origin": "CNX",
+      "price_original": 292.593398,
+      "price_usd": 292.593398,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "W4"
+      ],
+      "arrive_time": "2026-10-28T08:05:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 1735,
+      "flight_numbers": [
+        "EY427",
+        "EY113",
+        "W46728",
+        "W41346"
+      ],
+      "hop": null,
+      "link": "https://letsfg.co/en?stage=results&sid=ws_9bbef56d6e834fa4&offer=wo_f38f6ddeb911&cur=USD",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 293.0,
+      "price_usd": 293.0,
+      "self_transfer": null,
+      "source": "letsfg",
+      "stops": 3
+    },
+    {
+      "airlines": [
+        "FD",
+        "N0",
+        "FR"
+      ],
+      "arrive_time": "2026-10-30T20:00:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T20:40:00",
+      "destination": "KRK",
+      "duration_minutes": 1760,
+      "flight_numbers": [
+        "FD4103",
+        "N0194",
+        "FR4626"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/yy8cvs",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 293.750274,
+      "price_usd": 293.750274,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Thai Airways",
+        "Norse Atlantic Airways",
+        "Ryanair"
+      ],
+      "arrive_time": "2026-11-02T10:40:00",
+      "cabin_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T21:10:00",
+      "destination": "POZ",
+      "duration_minutes": 2610,
+      "flight_numbers": [
+        "TG121",
+        "N0192",
+        "FR7678"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/poz/261031/",
+      "notes": "cheapestSource=kiwi",
+      "origin": "CNX",
+      "price_original": 294.0,
+      "price_usd": 294.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-10-29T09:30:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
+      "destination": "KRK",
+      "duration_minutes": 1820,
+      "flight_numbers": [
+        "EY427",
+        "EY177",
+        "FR2725"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/g4wn39",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 294.114549,
+      "price_usd": 294.114549,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -5386,7 +5554,7 @@
         "FR7678"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/792ush4",
+      "link": "https://kiwi.com/u/x9bth8",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 294.584827,
@@ -5426,7 +5594,7 @@
           "VZ101"
         ],
         "hop": null,
-        "link": "https://kiwi.com/u/np3h9g",
+        "link": "https://kiwi.com/u/4nvjzf",
         "notes": "",
         "origin": "CNX",
         "price_original": 40.0,
@@ -5435,7 +5603,7 @@
         "source": "kiwi",
         "stops": 0
       },
-      "link": "https://kiwi.com/u/wmx8kv",
+      "link": "https://kiwi.com/u/brfvru",
       "notes": "self-transfer",
       "origin": "BKK",
       "price_original": 254.750274,
@@ -5446,51 +5614,24 @@
     },
     {
       "airlines": [
-        "Etihad Airways",
-        "Ryanair"
-      ],
-      "arrive_time": "2026-10-30T10:50:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 1900,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "FR3117"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261029/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 295.0,
-      "price_usd": 295.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
         "Thai Airways",
         "Norse Atlantic Airways",
-        "Wizz Air"
+        "Ryanair"
       ],
-      "arrive_time": "2026-11-02T23:00:00",
+      "arrive_time": "2026-11-02T17:05:00",
       "cabin_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-31",
       "depart_time": "2026-10-31T21:10:00",
-      "destination": "GDN",
-      "duration_minutes": 3350,
+      "destination": "WRO",
+      "duration_minutes": 2995,
       "flight_numbers": [
         "TG121",
         "N0192",
-        "W61732"
+        "FR2355"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/gdn/261031/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/wro/261031/",
       "notes": "cheapestSource=kiwi",
       "origin": "CNX",
       "price_original": 295.0,
@@ -5501,33 +5642,58 @@
     },
     {
       "airlines": [
-        "Nok Air",
-        "Norse Atlantic Airways",
-        "Wizz Air",
-        "LOT Polish Airlines"
+        "VZ",
+        "N0",
+        "FR"
       ],
-      "arrive_time": "2026-11-02T11:20:00",
-      "cabin_bag_included": false,
+      "arrive_time": "2026-10-30T20:00:00",
+      "cabin_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T22:30:00",
-      "destination": "KTW",
-      "duration_minutes": 2570,
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T20:50:00",
+      "destination": "KRK",
+      "duration_minutes": 1750,
       "flight_numbers": [
-        "DD141",
-        "N0192",
-        "W61502",
-        "LO3881"
+        "VZ2107",
+        "N0194",
+        "FR4626"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
-      "notes": "cheapestSource=kiwi",
+      "link": "https://kiwi.com/u/j83jbp",
+      "notes": "self-transfer",
       "origin": "CNX",
-      "price_original": 295.0,
-      "price_usd": 295.0,
+      "price_original": 295.750274,
+      "price_usd": 295.750274,
       "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 3
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-10-30T17:10:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "KTW",
+      "duration_minutes": 2280,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "FR3408"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/cf4tt4",
+      "notes": "self-transfer; airport change at MXP→BGY",
+      "origin": "CNX",
+      "price_original": 296.101213,
+      "price_usd": 296.101213,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
     },
     {
       "airlines": [
@@ -5548,68 +5714,11 @@
         "FR4616"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/2p9trs",
+      "link": "https://kiwi.com/u/cqx5cz",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 296.336164,
       "price_usd": 296.336164,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Thai AirAsia",
-        "Norse Atlantic Airways",
-        "Ryanair",
-        "LOT Polish Airlines"
-      ],
-      "arrive_time": "2026-11-02T23:40:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T22:10:00",
-      "destination": "KTW",
-      "duration_minutes": 3330,
-      "flight_numbers": [
-        "FD3428",
-        "N0192",
-        "FR1945",
-        "LO3879"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 297.0,
-      "price_usd": 297.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 3
-    },
-    {
-      "airlines": [
-        "EY",
-        "FR"
-      ],
-      "arrive_time": "2026-11-02T09:45:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T09:10:00",
-      "destination": "KRK",
-      "duration_minutes": 1835,
-      "flight_numbers": [
-        "EY427",
-        "EY177",
-        "FR2762"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/54cfh55",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 297.100716,
-      "price_usd": 297.100716,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -5633,7 +5742,7 @@
         "FR4626"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/vqukf3u",
+      "link": "https://kiwi.com/u/ttqy6f",
       "notes": "self-transfer; airport change at DMK→BKK",
       "origin": "CNX",
       "price_original": 297.750274,
@@ -5641,64 +5750,6 @@
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
-    },
-    {
-      "airlines": [
-        "VZ",
-        "N0",
-        "FR"
-      ],
-      "arrive_time": "2026-10-30T16:40:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T20:50:00",
-      "destination": "WMI",
-      "duration_minutes": 1550,
-      "flight_numbers": [
-        "VZ2107",
-        "N0194",
-        "FR1945"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/trr8ny",
-      "notes": "arrives WMI; self-transfer",
-      "origin": "CNX",
-      "price_original": 298.278905,
-      "price_usd": 298.278905,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Nok Air",
-        "Norse Atlantic Airways",
-        "Ryanair",
-        "LOT Polish Airlines"
-      ],
-      "arrive_time": "2026-11-02T23:40:00",
-      "cabin_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T22:30:00",
-      "destination": "KTW",
-      "duration_minutes": 3310,
-      "flight_numbers": [
-        "DD141",
-        "N0192",
-        "FR1945",
-        "LO3879"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/ktw/261031/",
-      "notes": "cheapestSource=kiwi",
-      "origin": "CNX",
-      "price_original": 300.0,
-      "price_usd": 300.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 3
     }
   ],
   "qualifying": [
@@ -5709,13 +5760,19 @@
       "also_seen": [
         {
           "cabin_bag_included": null,
+          "link": "https://letsfg.co/en?stage=results&sid=ws_9bbef56d6e834fa4&offer=wo_3fe002fd772c&cur=USD",
+          "source": "letsfg",
+          "total_usd": 186.0
+        },
+        {
+          "cabin_bag_included": null,
           "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI3agcIARIDQ05YcgcIARIDV0FXQAFIAXABmAEC&hl=en&gl=US&curr=USD",
           "source": "google",
           "total_usd": 195.0
         },
         {
           "cabin_bag_included": true,
-          "link": "https://kiwi.com/u/yqfndn",
+          "link": "https://kiwi.com/u/xcsjhg",
           "source": "kiwi",
           "total_usd": 198.0
         }
@@ -5754,7 +5811,7 @@
         },
         {
           "cabin_bag_included": true,
-          "link": "https://kiwi.com/u/zgvzf3",
+          "link": "https://kiwi.com/u/bghvdr",
           "source": "kiwi",
           "total_usd": 198.0
         }
@@ -5787,22 +5844,22 @@
       "also_seen": [
         {
           "cabin_bag_included": null,
-          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTMwagcIARIDQ05YcgcIARIDV0FXQAFIAXABmAEC&hl=en&gl=US&curr=USD",
+          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQ05YcgcIARIDV0FXQAFIAXABmAEC&hl=en&gl=US&curr=USD",
           "source": "google",
           "total_usd": 195.0
         },
         {
           "cabin_bag_included": true,
-          "link": "https://kiwi.com/u/9r58s9c",
+          "link": "https://kiwi.com/u/6tnmzt3",
           "source": "kiwi",
           "total_usd": 198.0
         }
       ],
-      "arrive_time": "2026-10-31T06:20:00",
+      "arrive_time": "2026-10-30T06:20:00",
       "cabin_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-30",
-      "depart_time": "2026-10-30T09:10:00",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
       "destination": "WAW",
       "duration_minutes": 1630,
       "flight_numbers": [
@@ -5810,7 +5867,7 @@
         "EY159"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-30?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
       "notes": "",
       "origin": "CNX",
       "price_original": 178.0,
@@ -5832,7 +5889,7 @@
         },
         {
           "cabin_bag_included": true,
-          "link": "https://kiwi.com/u/6jrc2kv",
+          "link": "https://kiwi.com/u/r9zgcv",
           "source": "kiwi",
           "total_usd": 198.0
         }
@@ -5871,7 +5928,7 @@
         },
         {
           "cabin_bag_included": true,
-          "link": "https://kiwi.com/u/q22zcj",
+          "link": "https://kiwi.com/u/hdzbpy",
           "source": "kiwi",
           "total_usd": 198.0
         }
@@ -5904,22 +5961,22 @@
       "also_seen": [
         {
           "cabin_bag_included": null,
-          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQ05YcgcIARIDV0FXQAFIAXABmAEC&hl=en&gl=US&curr=USD",
+          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTMwagcIARIDQ05YcgcIARIDV0FXQAFIAXABmAEC&hl=en&gl=US&curr=USD",
           "source": "google",
           "total_usd": 195.0
         },
         {
           "cabin_bag_included": true,
-          "link": "https://kiwi.com/u/f957sq",
+          "link": "https://kiwi.com/u/nj9jgg",
           "source": "kiwi",
           "total_usd": 199.0
         }
       ],
-      "arrive_time": "2026-10-30T06:20:00",
+      "arrive_time": "2026-10-31T06:20:00",
       "cabin_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
       "destination": "WAW",
       "duration_minutes": 1630,
       "flight_numbers": [
@@ -5927,7 +5984,7 @@
         "EY159"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-30?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
       "notes": "",
       "origin": "CNX",
       "price_original": 178.0,
@@ -5959,8 +6016,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD4103-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 220.0,
-      "price_usd": 220.0,
+      "price_original": 222.0,
+      "price_usd": 222.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -5988,8 +6045,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=SL521-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 222.0,
-      "price_usd": 222.0,
+      "price_original": 224.0,
+      "price_usd": 224.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -6017,8 +6074,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2107-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 224.0,
-      "price_usd": 224.0,
+      "price_original": 229.0,
+      "price_usd": 229.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -6046,68 +6103,11 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD3428-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 227.0,
-      "price_usd": 227.0,
+      "price_original": 230.0,
+      "price_usd": 230.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
-    },
-    {
-      "airlines": [
-        "Norse Atlantic Airways",
-        "Wizz Air"
-      ],
-      "also_seen": [
-        {
-          "cabin_bag_included": true,
-          "link": "https://kiwi.com/u/hdvd94k",
-          "source": "kiwi",
-          "total_usd": 289.0
-        }
-      ],
-      "arrive_time": "2026-11-02T09:30:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T14:55:00",
-      "destination": "WAW",
-      "duration_minutes": 1475,
-      "flight_numbers": [
-        "N0192",
-        "W61502"
-      ],
-      "hop": {
-        "airlines": [
-          "VZ"
-        ],
-        "arrive_time": "2026-10-31T15:40:00",
-        "cabin_bag_included": true,
-        "currency_original": "USD",
-        "depart_date": "2026-10-31",
-        "depart_time": "2026-10-31T14:20:00",
-        "destination": "BKK",
-        "duration_minutes": 80,
-        "flight_numbers": [
-          "VZ111"
-        ],
-        "hop": null,
-        "link": "https://kiwi.com/u/ztc2jc",
-        "notes": "",
-        "origin": "CNX",
-        "price_original": 45.0,
-        "price_usd": 45.0,
-        "self_transfer": false,
-        "source": "kiwi",
-        "stops": 0
-      },
-      "link": "https://skiplagged.com/flights/BKK/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=N0192-W61502",
-      "notes": "virtual-interline",
-      "origin": "BKK",
-      "price_original": 183.0,
-      "price_usd": 183.0,
-      "self_transfer": true,
-      "source": "skiplagged",
-      "stops": 1
     },
     {
       "airlines": [
@@ -6132,8 +6132,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=SL519-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 231.0,
-      "price_usd": 231.0,
+      "price_original": 232.0,
+      "price_usd": 232.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -6161,9 +6161,37 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 232.0,
-      "price_usd": 232.0,
+      "price_original": 234.0,
+      "price_usd": 234.0,
       "self_transfer": true,
+      "source": "skiplagged",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Wizz Air Malta"
+      ],
+      "also_seen": [],
+      "arrive_time": "2026-10-30T09:10:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 1800,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "W46387"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 235.0,
+      "price_usd": 235.0,
+      "self_transfer": null,
       "source": "skiplagged",
       "stops": 2
     },
@@ -6190,8 +6218,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD3438-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 233.0,
-      "price_usd": 233.0,
+      "price_original": 235.0,
+      "price_usd": 235.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -6219,9 +6247,65 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=FD3412-N0192-W61502",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 235.0,
-      "price_usd": 235.0,
+      "price_original": 237.0,
+      "price_usd": 237.0,
       "self_transfer": true,
+      "source": "skiplagged",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Wizz Air"
+      ],
+      "also_seen": [],
+      "arrive_time": "2026-10-30T10:20:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 1870,
+      "flight_numbers": [
+        "EY427",
+        "EY79",
+        "W61432"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432",
+      "notes": "virtual-interline",
+      "origin": "CNX",
+      "price_original": 242.0,
+      "price_usd": 242.0,
+      "self_transfer": true,
+      "source": "skiplagged",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Wizz Air"
+      ],
+      "also_seen": [],
+      "arrive_time": "2026-10-30T10:15:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 1865,
+      "flight_numbers": [
+        "EY427",
+        "EY177",
+        "W61368"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY177-W61368",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 250.0,
+      "price_usd": 250.0,
+      "self_transfer": null,
       "source": "skiplagged",
       "stops": 2
     }
@@ -6230,58 +6314,58 @@
     "chartershop": {
       "count": 0,
       "error": null,
-      "seconds": 2.5755975290000066,
+      "seconds": 2.3045877489999924,
       "status": "ok"
     },
     "google": {
-      "count": 167,
+      "count": 143,
       "error": null,
-      "seconds": 99.516076703,
+      "seconds": 91.333261247,
       "status": "ok"
     },
     "hops": {
-      "count": 514,
+      "count": 521,
       "error": null,
-      "seconds": 47.71025925299999,
+      "seconds": 48.56021761699999,
       "status": "ok"
     },
     "itaka": {
       "count": 0,
       "error": null,
-      "seconds": 2.7219636349999945,
+      "seconds": 3.1065189979999985,
       "status": "ok"
     },
     "kiwi": {
-      "count": 418,
+      "count": 416,
       "error": null,
-      "seconds": 14.416409130000005,
+      "seconds": 12.529773022,
       "status": "ok"
     },
     "letsfg": {
-      "count": 100,
+      "count": 25,
       "error": null,
-      "seconds": 706.114813869,
+      "seconds": 49.63484826700001,
       "status": "ok"
     },
     "rpl": {
       "count": 0,
       "error": null,
-      "seconds": 2.1757085079999996,
+      "seconds": 2.0526215030000117,
       "status": "ok"
     },
     "skiplagged": {
-      "count": 272,
+      "count": 269,
       "error": null,
-      "seconds": 189.51802591900002,
+      "seconds": 235.005831203,
       "status": "ok"
     },
     "skyscanner": {
       "count": 40,
       "error": null,
-      "seconds": 28.07487672900001,
+      "seconds": 20.451446642000008,
       "status": "ok"
     }
   },
-  "started_at": "2026-09-28T23:14:26.133968+00:00",
+  "started_at": "2026-09-29T05:40:58.824149+00:00",
   "window_over": false
 }

@@ -121,25 +121,25 @@
       "total_usd": 238.0
     }
   },
-  "last_heartbeat_date": "2026-09-28",
-  "runs": 11,
+  "last_heartbeat_date": "2026-09-29",
+  "runs": 12,
   "sources": {
     "chartershop": {
       "data": {},
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T23:14:26.133968+00:00"
+        "last_ok": "2026-09-29T05:40:58.824149+00:00"
       }
     },
     "google": {
       "data": {
-        "date_parity": 1
+        "date_parity": 0
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T23:14:26.133968+00:00"
+        "last_ok": "2026-09-29T05:40:58.824149+00:00"
       }
     },
     "hops": {
@@ -147,7 +147,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T23:14:26.133968+00:00"
+        "last_ok": "2026-09-29T05:40:58.824149+00:00"
       }
     },
     "itaka": {
@@ -155,7 +155,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T23:14:26.133968+00:00"
+        "last_ok": "2026-09-29T05:40:58.824149+00:00"
       }
     },
     "kiwi": {
@@ -163,19 +163,19 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T23:14:26.133968+00:00"
+        "last_ok": "2026-09-29T05:40:58.824149+00:00"
       }
     },
     "letsfg": {
       "data": {
-        "cursor": 39,
-        "day": "2026-09-28",
-        "searches_today": 29
+        "cursor": 44,
+        "day": "2026-09-29",
+        "searches_today": 5
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T23:14:26.133968+00:00"
+        "last_ok": "2026-09-29T05:40:58.824149+00:00"
       }
     },
     "rpl": {
@@ -183,7 +183,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T23:14:26.133968+00:00"
+        "last_ok": "2026-09-29T05:40:58.824149+00:00"
       }
     },
     "skiplagged": {
@@ -191,19 +191,19 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T23:14:26.133968+00:00"
+        "last_ok": "2026-09-29T05:40:58.824149+00:00"
       }
     },
     "skyscanner": {
       "data": {
-        "cursor": 10,
-        "day": "2026-09-28",
-        "runs_today": 6
+        "cursor": 12,
+        "day": "2026-09-29",
+        "runs_today": 2
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-28T23:14:26.133968+00:00"
+        "last_ok": "2026-09-29T05:40:58.824149+00:00"
       }
     }
   },
