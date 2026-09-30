@@ -20,6 +20,16 @@
       "last_alerted": "2026-09-30T05:29:13.417816+00:00",
       "total_usd": 249.0
     },
+    "CNX-GDN|2026-10-31|2026-10-31T09:10:00|EY427,EY81,FR3117": {
+      "first_seen": "2026-09-30T12:30:46.067317+00:00",
+      "last_alerted": "2026-09-30T12:30:46.067317+00:00",
+      "total_usd": 237.0
+    },
+    "CNX-GDN|2026-10-31|2026-10-31T20:40:00|FD4103,N0192,W61732": {
+      "first_seen": "2026-09-30T12:30:46.067317+00:00",
+      "last_alerted": "2026-09-30T12:30:46.067317+00:00",
+      "total_usd": 247.0
+    },
     "CNX-KRK|2026-10-29|2026-10-29T09:10:00|EY427,EY79,W62068": {
       "first_seen": "2026-09-30T05:29:13.417816+00:00",
       "last_alerted": "2026-09-30T05:29:13.417816+00:00",
@@ -39,6 +49,11 @@
       "first_seen": "2026-09-28T13:49:18.385591+00:00",
       "last_alerted": "2026-09-28T13:49:18.385591+00:00",
       "total_usd": 178.0
+    },
+    "CNX-WAW|2026-10-29|2026-10-29T09:10:00|EY427,EY113,W61476": {
+      "first_seen": "2026-09-30T12:30:46.067317+00:00",
+      "last_alerted": "2026-09-30T12:30:46.067317+00:00",
+      "total_usd": 248.0
     },
     "CNX-WAW|2026-10-29|2026-10-29T09:10:00|EY427,EY159": {
       "first_seen": "2026-09-28T13:49:18.385591+00:00",
@@ -152,24 +167,24 @@
     }
   },
   "last_heartbeat_date": "2026-09-30",
-  "runs": 15,
+  "runs": 16,
   "sources": {
     "chartershop": {
       "data": {},
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-30T05:29:13.417816+00:00"
+        "last_ok": "2026-09-30T12:30:46.067317+00:00"
       }
     },
     "google": {
       "data": {
-        "date_parity": 1
+        "date_parity": 0
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-30T05:29:13.417816+00:00"
+        "last_ok": "2026-09-30T12:30:46.067317+00:00"
       }
     },
     "hops": {
@@ -177,7 +192,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-30T05:29:13.417816+00:00"
+        "last_ok": "2026-09-30T12:30:46.067317+00:00"
       }
     },
     "itaka": {
@@ -185,7 +200,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-30T05:29:13.417816+00:00"
+        "last_ok": "2026-09-30T12:30:46.067317+00:00"
       }
     },
     "kiwi": {
@@ -193,19 +208,19 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-30T05:29:13.417816+00:00"
+        "last_ok": "2026-09-30T12:30:46.067317+00:00"
       }
     },
     "letsfg": {
       "data": {
-        "cursor": 67,
+        "cursor": 75,
         "day": "2026-09-30",
-        "searches_today": 14
+        "searches_today": 22
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-30T05:29:13.417816+00:00"
+        "last_ok": "2026-09-30T12:30:46.067317+00:00"
       }
     },
     "rpl": {
@@ -213,7 +228,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-30T05:29:13.417816+00:00"
+        "last_ok": "2026-09-30T12:30:46.067317+00:00"
       }
     },
     "skiplagged": {
@@ -221,30 +236,30 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-30T05:29:13.417816+00:00"
+        "last_ok": "2026-09-30T12:30:46.067317+00:00"
       }
     },
     "skyscanner": {
       "data": {
-        "cursor": 18,
+        "cursor": 20,
         "day": "2026-09-30",
-        "runs_today": 2
+        "runs_today": 4
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-09-30T05:29:13.417816+00:00"
+        "last_ok": "2026-09-30T12:30:46.067317+00:00"
       }
     },
     "trip": {
       "data": {
         "cursor": 12,
         "day": "2026-09-30",
-        "route_cursor": 2,
-        "routes_today": 1
+        "route_cursor": 3,
+        "routes_today": 2
       },
       "health": {
-        "consecutive_failures": 1,
+        "consecutive_failures": 2,
         "last_error": "trip: all 1 route(s) failed",
         "last_ok": "2026-09-29T22:13:02.839057+00:00"
       }
