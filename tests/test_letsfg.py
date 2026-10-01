@@ -61,7 +61,7 @@ def _query(**overrides: Any) -> SearchQuery:
     base = dict(
         home_origin="CNX",
         positioning_origins=("BKK", "DMK", "HKT"),
-        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ"),
+        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG"),
         extra_destinations=("WMI",),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 11, 1),
@@ -155,10 +155,10 @@ def test_cells_home_origin_only_waw_covers_wmi() -> None:
     origins = {c[0] for c in cells}
     dests = {c[1] for c in cells}
     assert origins == {"CNX"}
-    assert dests == {"WAW", "KRK", "GDN", "KTW", "WRO", "POZ"}
+    assert dests == {"WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG"}
     assert "WMI" not in dests
     assert "BKK" not in origins
-    assert len(cells) == 6 * 13
+    assert len(cells) == 7 * 13
 
 
 def test_parse_results_maps_fields_and_caps_five() -> None:

@@ -96,7 +96,7 @@ def test_load_config_real_yaml() -> None:
     cfg = load_config(ROOT / "config.yaml")
     assert cfg.query.home_origin == "CNX"
     assert cfg.query.positioning_origins == ("BKK", "DMK", "HKT")
-    assert cfg.query.destinations == ("WAW", "KRK", "GDN", "KTW", "WRO", "POZ")
+    assert cfg.query.destinations == ("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG")
     assert cfg.query.extra_destinations == ("WMI",)
     assert cfg.query.date_from == date(2026, 10, 20)
     assert cfg.query.date_to == date(2026, 11, 1)

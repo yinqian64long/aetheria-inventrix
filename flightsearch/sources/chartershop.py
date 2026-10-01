@@ -56,6 +56,7 @@ _PL_AIRPORTS = {
     "GDN",
     "WRO",
     "POZ",
+    "PRG",
     "RZE",
     "BZG",
     "SZZ",

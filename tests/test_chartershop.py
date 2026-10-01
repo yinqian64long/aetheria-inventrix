@@ -46,7 +46,7 @@ def _query(**overrides: Any) -> SearchQuery:
     base: dict[str, Any] = dict(
         home_origin="CNX",
         positioning_origins=("BKK", "DMK", "HKT"),
-        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ"),
+        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG"),
         extra_destinations=("WMI",),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 11, 1),
@@ -83,6 +83,7 @@ def test_schedule_keeps_only_th_to_pl() -> None:
         "KRK",
         "GDN",
         "WRO",
+        "PRG",
         "WMI",
     }
     assert not any(r["origin"] in {"WAW", "KTW", "POZ"} for r in rows)
