@@ -32,7 +32,7 @@ _TH_REGIONS: tuple[tuple[str, str], ...] = (
     ("BKK", "bangkok"),
     ("HKT", "phuket"),
 )
-_PL_DEFAULT = ("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "WMI")
+_PL_DEFAULT = ("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST", "WMI")
 
 _NUXT_RE = re.compile(
     r'<script[^>]*\bid=["\']__NUXT_DATA__["\'][^>]*>(.*?)</script>',

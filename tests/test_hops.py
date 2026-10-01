@@ -8,7 +8,7 @@ from flightsearch.models import Offer, SearchQuery
 QUERY = SearchQuery(
     home_origin="CNX",
     positioning_origins=("BKK", "DMK", "HKT"),
-    destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG"),
+    destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST"),
     extra_destinations=("WMI",),
     date_from=date(2026, 10, 20),
     date_to=date(2026, 11, 1),

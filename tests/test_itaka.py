@@ -45,7 +45,7 @@ def _query(**overrides: Any) -> SearchQuery:
     base: dict[str, Any] = dict(
         home_origin="CNX",
         positioning_origins=("BKK", "DMK", "HKT"),
-        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG"),
+        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST"),
         extra_destinations=("WMI",),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 11, 1),
@@ -97,7 +97,7 @@ def test_th_pl_sample_parses() -> None:
     first = offers[0]
     assert first.source == "itaka"
     assert first.origin in {"BKK", "HKT", "KBV", "DMK", "CNX"}
-    assert first.destination in {"WAW", "KTW", "KRK", "GDN", "WRO", "POZ", "PRG", "WMI"}
+    assert first.destination in {"WAW", "KTW", "KRK", "GDN", "WRO", "POZ", "PRG", "IST", "WMI"}
     assert first.currency_original == "PLN"
     assert first.price_usd == round(first.price_original * 0.25, 2)
     assert first.depart_time is not None

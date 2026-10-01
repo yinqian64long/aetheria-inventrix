@@ -34,7 +34,7 @@ def _query(**overrides: object) -> SearchQuery:
     base: dict = dict(
         home_origin="CNX",
         positioning_origins=("BKK",),
-        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG"),
+        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST"),
         extra_destinations=("WMI",),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 11, 1),
@@ -172,7 +172,7 @@ async def test_budget_rotation_and_day_rollover() -> None:
         assert respx.calls.call_count == before
         assert state["runs_today"] == 6
 
-        # Next UTC day: budget resets; cursor continues (PRG then WAW)
+        # Next UTC day: budget resets; cursor continues (PRG then IST)
         ctx = _ctx(
             state=state,
             http=http,
@@ -187,7 +187,7 @@ async def test_budget_rotation_and_day_rollover() -> None:
             for c in respx.calls[-2:]
         ]
         assert bodies[0]["destination"] == "PRG"
-        assert bodies[1]["destination"] == "WAW"
+        assert bodies[1]["destination"] == "IST"
 
 
 @pytest.mark.asyncio
