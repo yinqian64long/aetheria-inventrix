@@ -1,0 +1,16 @@
+{
+  "servers": {
+    "kiwi": {
+      "url_env": "KIWI_MCP_URL",
+      "url": "https://mcp.kiwi.com",
+      "legacy": false,
+      "expect_tools": ["search-flight"]
+    },
+    "skiplagged": {
+      "url_env": "SKIPLAGGED_MCP_URL",
+      "url": "https://mcp.skiplagged.com/mcp",
+      "legacy": true,
+      "expect_tools": ["sk_flights_search", "sk_flex_departure_calendar"]
+    }
+  }
+}

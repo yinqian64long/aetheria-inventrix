@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "kiwi": {
+      "url": "https://mcp.kiwi.com"
+    },
+    "skiplagged": {
+      "url": "https://mcp.skiplagged.com/mcp"
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${env:GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "google-calendar": {
+      "type": "http",
+      "url": "https://calendarmcp.googleapis.com/mcp/v1"
+    },
+    "x": {
+      "type": "http",
+      "url": "https://api.x.com/mcp"
+    },
+    "vercel": {
+      "type": "http",
+      "url": "https://mcp.vercel.com"
+    }
+  }
+}
