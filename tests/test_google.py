@@ -324,7 +324,7 @@ def test_plan_date_jobs_home_full_positioning_rotates() -> None:
     query = _query(
         home_origin="CNX",
         positioning_origins=("BKK", "DMK", "HKT"),
-        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST"),
+        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST", "BUD"),
         extra_destinations=("WMI",),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 11, 1),
@@ -333,8 +333,8 @@ def test_plan_date_jobs_home_full_positioning_rotates() -> None:
     assert len(dates) == 13
     even = plan_date_jobs(query, dates, 0)
     odd = plan_date_jobs(query, dates, 1)
-    assert len(even) == 117 + 168
-    assert len(odd) == 117 + 144
+    assert len(even) == 130 + 189
+    assert len(odd) == 130 + 162
     assert {(o, d, day) for o, d, day in even if o == "CNX"} == {
         ("CNX", dest, day) for dest in query.all_destinations for day in dates
     }

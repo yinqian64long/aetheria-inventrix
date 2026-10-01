@@ -58,6 +58,7 @@ _PL_AIRPORTS = {
     "POZ",
     "PRG",
     "IST",
+    "BUD",
     "RZE",
     "BZG",
     "SZZ",

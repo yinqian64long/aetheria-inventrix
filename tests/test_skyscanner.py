@@ -34,7 +34,7 @@ def _query(**overrides: object) -> SearchQuery:
     base: dict = dict(
         home_origin="CNX",
         positioning_origins=("BKK",),
-        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST"),
+        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST", "BUD"),
         extra_destinations=("WMI",),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 11, 1),
