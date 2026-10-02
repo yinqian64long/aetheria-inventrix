@@ -60,6 +60,11 @@
       "last_alerted": "2026-10-01T22:39:13.488082+00:00",
       "total_usd": 243.0
     },
+    "CNX-GDN|2026-11-01|2026-11-01T09:00:00|FD3412,N0192,W61732": {
+      "first_seen": "2026-10-02T22:11:17.712294+00:00",
+      "last_alerted": "2026-10-02T22:11:17.712294+00:00",
+      "total_usd": 242.0
+    },
     "CNX-KRK|2026-10-29|2026-10-29T09:10:00|EY427,EY79,W62068": {
       "first_seen": "2026-09-30T05:29:13.417816+00:00",
       "last_alerted": "2026-09-30T05:29:13.417816+00:00",
@@ -342,24 +347,24 @@
     }
   },
   "last_heartbeat_date": "2026-10-02",
-  "runs": 22,
+  "runs": 23,
   "sources": {
     "chartershop": {
       "data": {},
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T12:29:36.386711+00:00"
+        "last_ok": "2026-10-02T22:11:17.712294+00:00"
       }
     },
     "google": {
       "data": {
-        "date_parity": 0
+        "date_parity": 1
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T12:29:36.386711+00:00"
+        "last_ok": "2026-10-02T22:11:17.712294+00:00"
       }
     },
     "hops": {
@@ -367,7 +372,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T12:29:36.386711+00:00"
+        "last_ok": "2026-10-02T22:11:17.712294+00:00"
       }
     },
     "itaka": {
@@ -375,7 +380,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T12:29:36.386711+00:00"
+        "last_ok": "2026-10-02T22:11:17.712294+00:00"
       }
     },
     "kiwi": {
@@ -383,18 +388,18 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T12:29:36.386711+00:00"
+        "last_ok": "2026-10-02T22:11:17.712294+00:00"
       }
     },
     "letsfg": {
       "data": {
-        "cursor": 31,
+        "cursor": 45,
         "day": "2026-10-02",
-        "searches_today": 14
+        "searches_today": 28
       },
       "health": {
-        "consecutive_failures": 0,
-        "last_error": null,
+        "consecutive_failures": 1,
+        "last_error": "timeout after 1800s",
         "last_ok": "2026-10-02T12:29:36.386711+00:00"
       }
     },
@@ -403,7 +408,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T12:29:36.386711+00:00"
+        "last_ok": "2026-10-02T22:11:17.712294+00:00"
       }
     },
     "skiplagged": {
@@ -411,32 +416,32 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T12:29:36.386711+00:00"
+        "last_ok": "2026-10-02T22:11:17.712294+00:00"
       }
     },
     "skyscanner": {
       "data": {
-        "cursor": 32,
+        "cursor": 34,
         "day": "2026-10-02",
-        "runs_today": 4
+        "runs_today": 6
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T12:29:36.386711+00:00"
+        "last_ok": "2026-10-02T22:11:17.712294+00:00"
       }
     },
     "trip": {
       "data": {
         "cursor": 12,
         "day": "2026-10-02",
-        "route_cursor": 9,
-        "routes_today": 2
+        "route_cursor": 10,
+        "routes_today": 3
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T12:29:36.386711+00:00"
+        "last_ok": "2026-10-02T22:11:17.712294+00:00"
       }
     }
   },
