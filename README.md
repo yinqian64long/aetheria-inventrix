@@ -10,7 +10,7 @@ Defaults live in [`config.yaml`](config.yaml):
 |-----------|---------|
 | Home origin | CNX (Chiang Mai) |
 | Positioning origins | BKK, DMK, HKT (hop included in total) |
-| Destinations | WAW, KRK, GDN, KTW, WRO, POZ |
+| Destinations | WAW, KRK, GDN, KTW, WRO, POZ, PRG (Václav Havel), IST (Istanbul), BUD (Budapest) |
 | Extra destinations | WMI (Warsaw Modlin) |
 | Travel dates | 2026-10-20 through 2026-11-01 |
 | Passengers | 1 adult, 1 cabin bag, no checked bag |
