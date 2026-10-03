@@ -1,0 +1,38 @@
+{
+  "servers": {
+    "kiwi": {
+      "url_env": "KIWI_MCP_URL",
+      "url": "https://mcp.kiwi.com",
+      "legacy": false,
+      "needs_secret": false,
+      "expect_tools": ["search-flight"]
+    },
+    "skiplagged": {
+      "url_env": "SKIPLAGGED_MCP_URL",
+      "url": "https://mcp.skiplagged.com/mcp",
+      "legacy": true,
+      "needs_secret": false,
+      "expect_tools": ["sk_flights_search", "sk_flex_departure_calendar"]
+    },
+    "github": {
+      "url": "https://api.githubcopilot.com/mcp/",
+      "needs_secret": true,
+      "secret_env": "GITHUB_PERSONAL_ACCESS_TOKEN"
+    },
+    "google-calendar": {
+      "url": "https://calendarmcp.googleapis.com/mcp/v1",
+      "needs_secret": true,
+      "auth": "oauth"
+    },
+    "x": {
+      "url": "https://api.x.com/mcp",
+      "needs_secret": true,
+      "auth": "oauth"
+    },
+    "vercel": {
+      "url": "https://mcp.vercel.com",
+      "needs_secret": true,
+      "auth": "oauth"
+    }
+  }
+}
