@@ -145,6 +145,11 @@
       "last_alerted": "2026-10-02T05:33:10.786735+00:00",
       "total_usd": 239.0
     },
+    "CNX-POZ|2026-11-01|2026-11-01T09:00:00|FD3412,N0192,FR7678": {
+      "first_seen": "2026-10-03T05:14:57.782459+00:00",
+      "last_alerted": "2026-10-03T05:14:57.782459+00:00",
+      "total_usd": 244.0
+    },
     "CNX-WAW|2026-10-27|2026-10-27T09:10:00|EY427,EY159": {
       "first_seen": "2026-09-28T13:49:18.385591+00:00",
       "last_alerted": "2026-09-28T13:49:18.385591+00:00",
@@ -344,27 +349,32 @@
       "first_seen": "2026-10-02T05:33:10.786735+00:00",
       "last_alerted": "2026-10-02T05:33:10.786735+00:00",
       "total_usd": 240.0
+    },
+    "CNX-WRO|2026-11-01|2026-11-01T09:00:00|FD3412,N0192,FR2355": {
+      "first_seen": "2026-10-03T05:14:57.782459+00:00",
+      "last_alerted": "2026-10-03T05:14:57.782459+00:00",
+      "total_usd": 245.0
     }
   },
-  "last_heartbeat_date": "2026-10-02",
-  "runs": 23,
+  "last_heartbeat_date": "2026-10-03",
+  "runs": 24,
   "sources": {
     "chartershop": {
       "data": {},
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T22:11:17.712294+00:00"
+        "last_ok": "2026-10-03T05:14:57.782459+00:00"
       }
     },
     "google": {
       "data": {
-        "date_parity": 1
+        "date_parity": 0
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T22:11:17.712294+00:00"
+        "last_ok": "2026-10-03T05:14:57.782459+00:00"
       }
     },
     "hops": {
@@ -372,7 +382,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T22:11:17.712294+00:00"
+        "last_ok": "2026-10-03T05:14:57.782459+00:00"
       }
     },
     "itaka": {
@@ -380,7 +390,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T22:11:17.712294+00:00"
+        "last_ok": "2026-10-03T05:14:57.782459+00:00"
       }
     },
     "kiwi": {
@@ -388,18 +398,18 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T22:11:17.712294+00:00"
+        "last_ok": "2026-10-03T05:14:57.782459+00:00"
       }
     },
     "letsfg": {
       "data": {
-        "cursor": 45,
-        "day": "2026-10-02",
-        "searches_today": 28
+        "cursor": 49,
+        "day": "2026-10-03",
+        "searches_today": 4
       },
       "health": {
-        "consecutive_failures": 1,
-        "last_error": "timeout after 1800s",
+        "consecutive_failures": 2,
+        "last_error": "letsfg: results poll failed HTTP 502",
         "last_ok": "2026-10-02T12:29:36.386711+00:00"
       }
     },
@@ -408,7 +418,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T22:11:17.712294+00:00"
+        "last_ok": "2026-10-03T05:14:57.782459+00:00"
       }
     },
     "skiplagged": {
@@ -416,32 +426,32 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T22:11:17.712294+00:00"
+        "last_ok": "2026-10-03T05:14:57.782459+00:00"
       }
     },
     "skyscanner": {
       "data": {
-        "cursor": 34,
-        "day": "2026-10-02",
-        "runs_today": 6
+        "cursor": 36,
+        "day": "2026-10-03",
+        "runs_today": 2
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T22:11:17.712294+00:00"
+        "last_ok": "2026-10-03T05:14:57.782459+00:00"
       }
     },
     "trip": {
       "data": {
         "cursor": 12,
-        "day": "2026-10-02",
-        "route_cursor": 10,
-        "routes_today": 3
+        "day": "2026-10-03",
+        "route_cursor": 11,
+        "routes_today": 1
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-02T22:11:17.712294+00:00"
+        "last_ok": "2026-10-03T05:14:57.782459+00:00"
       }
     }
   },
