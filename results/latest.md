@@ -1,9 +1,9 @@
 # Flight search
 
 - Qualifying: 10
-- Near misses: 28
-- Dropped: 9
-- Messages sent: 3
+- Near misses: 27
+- Dropped: 44
+- Messages sent: 1
 
 ## Qualifying deals
 
@@ -11,68 +11,66 @@
 | --- | --- | --- | --- | --- |
 | $182 | CNX→WAW | 2026-10-27 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159 |
 | $182 | CNX→WAW | 2026-10-28 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159 |
-| $182 | CNX→WAW | 2026-10-30 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-30?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159 |
 | $182 | CNX→WAW | 2026-10-29 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159 |
+| $182 | CNX→WAW | 2026-10-30 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-30?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159 |
 | $182 | CNX→WAW | 2026-10-31 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159 |
-| $192 | CNX→WAW | 2026-11-01 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159 |
-| $233 | CNX→WAW | 2026-10-28 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387 |
-| $235 | CNX→WAW | 2026-10-28 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432 |
-| $241 | CNX→WAW | 2026-10-29 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387 |
-| $243 | CNX→WAW | 2026-10-29 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432 |
+| $182 | CNX→WAW | 2026-11-01 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159 |
+| $241 | CNX→WAW | 2026-10-27 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432 |
+| $241 | CNX→WAW | 2026-10-29 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432 |
+| $243 | CNX→WAW | 2026-10-29 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387 |
+| $248 | CNX→WAW | 2026-11-01 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY177-W61368 |
 
 ## Near misses
 
 | Total | Route | Date | Source | Link |
 | --- | --- | --- | --- | --- |
-| $258 | CNX→WAW | 2026-10-31 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY177-W61368 |
-| $262 | CNX→WAW | 2026-10-27 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432 |
-| $265 | CNX→WAW | 2026-10-27 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY113-W61476 |
-| $265 | CNX→WAW | 2026-10-27 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY111-W61476 |
-| $269 | CNX→KTW | 2026-10-30 | kiwi | https://kiwi.com/u/b834ss |
-| $274 | CNX→KTW | 2026-10-31 | kiwi | https://kiwi.com/u/9b756n4 |
-| $274 | CNX→WAW | 2026-11-01 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY177-W61368 |
-| $276 | CNX→KTW | 2026-10-27 | kiwi | https://kiwi.com/u/bt6wt8 |
-| $276 | CNX→KTW | 2026-10-28 | kiwi | https://kiwi.com/u/xhpnh6 |
-| $278 | CNX→KTW | 2026-10-29 | kiwi | https://kiwi.com/u/7926kw |
-| $280 | CNX→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/tbufrh |
-| $281.31 | CNX→KTW | 2026-10-27 | kiwi | https://kiwi.com/u/wdp5wv |
-| $285.02 | CNX→POZ | 2026-10-27 | kiwi | https://kiwi.com/u/y44fnq |
-| $287 | CNX→GDN | 2026-10-28 | kiwi | https://kiwi.com/u/snb6gu |
-| $288.13 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/yvzb4s |
-| $289.04 | CNX→POZ | 2026-10-29 | kiwi | https://kiwi.com/u/4t85r5m |
-| $289.77 | CNX→KRK | 2026-10-27 | kiwi | https://kiwi.com/u/32ju4um |
-| $292 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/kbww7up |
-| $293.31 | CNX→GDN | 2026-10-31 | kiwi | https://kiwi.com/u/gzbzj5 |
-| $294 | CNX→WRO | 2026-10-27 | kiwi | https://kiwi.com/u/bhpknn |
-| $294 | CNX→WRO | 2026-10-28 | kiwi | https://kiwi.com/u/8rq88r |
-| $295 | CNX→WRO | 2026-10-31 | kiwi | https://kiwi.com/u/5p4fdg |
-| $295.50 | CNX→KTW | 2026-10-27 | kiwi | https://kiwi.com/u/czxsycb |
-| $296 | CNX→WRO | 2026-10-29 | kiwi | https://kiwi.com/u/pumhm2 |
-| $300 | CNX→KRK | 2026-10-27 | kiwi | https://kiwi.com/u/h7bmwm |
-| $300 | CNX→KRK | 2026-10-28 | kiwi | https://kiwi.com/u/c97mkv |
-| $300 | CNX→POZ | 2026-10-28 | kiwi | https://kiwi.com/u/byntpzk |
-| $300 | CNX→POZ | 2026-10-30 | kiwi | https://kiwi.com/u/u79sng |
+| $251 | CNX→WAW | 2026-10-27 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY111-W61476 |
+| $251 | CNX→WAW | 2026-10-27 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY113-W61476 |
+| $251 | CNX→WAW | 2026-10-28 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387 |
+| $252 | CNX→WAW | 2026-10-31 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY177-W61368 |
+| $255 | CNX→WAW | 2026-10-28 | skiplagged | https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432 |
+| $274 | CNX→KTW | 2026-10-28 | kiwi | https://kiwi.com/u/w8v72f |
+| $275 | CNX→KTW | 2026-10-31 | kiwi | https://kiwi.com/u/jfb26n |
+| $278 | CNX→KTW | 2026-10-27 | kiwi | https://kiwi.com/u/8wdznu |
+| $278 | CNX→KTW | 2026-10-29 | kiwi | https://kiwi.com/u/c5vyrh |
+| $278 | CNX→KTW | 2026-10-30 | kiwi | https://kiwi.com/u/crfbhdk |
+| $280.58 | CNX→WMI | 2026-10-28 | kiwi | https://kiwi.com/u/xc7jc3 |
+| $282.14 | CNX→WMI | 2026-10-29 | kiwi | https://kiwi.com/u/xh4vt8 |
+| $285.04 | CNX→POZ | 2026-10-27 | kiwi | https://kiwi.com/u/y6f96c |
+| $285.05 | CNX→WMI | 2026-10-27 | kiwi | https://kiwi.com/u/xdvs9r |
+| $286.51 | CNX→KRK | 2026-10-27 | kiwi | https://kiwi.com/u/ctjxnt |
+| $289.05 | CNX→POZ | 2026-10-29 | kiwi | https://kiwi.com/u/x7fuv4b |
+| $289.78 | CNX→KRK | 2026-10-27 | kiwi | https://kiwi.com/u/h765pk |
+| $291.05 | CNX→WMI | 2026-11-01 | kiwi | https://kiwi.com/u/6vrqgu |
+| $292 | CNX→GDN | 2026-10-28 | kiwi | https://kiwi.com/u/2gcyyk |
+| $292 | CNX→GDN | 2026-10-29 | kiwi | https://kiwi.com/u/h3rw3gy |
+| $292 | CNX→GDN | 2026-11-01 | kiwi | https://kiwi.com/u/qp5hvb4 |
+| $293.33 | CNX→GDN | 2026-10-31 | kiwi | https://kiwi.com/u/5u8t37 |
+| $294 | CNX→WRO | 2026-10-29 | kiwi | https://kiwi.com/u/zpp588 |
+| $295.51 | CNX→KTW | 2026-10-27 | kiwi | https://kiwi.com/u/x3c3wr |
+| $296 | CNX→WRO | 2026-10-27 | kiwi | https://kiwi.com/u/95zn6u |
+| $296 | CNX→WRO | 2026-10-28 | kiwi | https://kiwi.com/u/wvj3572 |
+| $296 | CNX→WRO | 2026-10-31 | kiwi | https://kiwi.com/u/gbxhtqn |
 
 ## Best per source
 
 | Source | Total | Route | Date |
 | --- | --- | --- | --- |
 | google | $198 | CNX→WAW | 2026-10-27 |
-| kiwi | $200 | CNX→WAW | 2026-10-27 |
-| letsfg | $470 | CNX→KTW | 2026-10-21 |
+| kiwi | $202 | CNX→WAW | 2026-10-27 |
 | skiplagged | $182 | CNX→WAW | 2026-10-27 |
 
 ## Source status
 
 | Source | Status | Count | Seconds | Error |
 | --- | --- | --- | --- | --- |
-| chartershop | ok | 0 | 2.4 |  |
-| google | ok | 183 | 102.6 |  |
-| hops | ok | 514 | 56.0 |  |
-| itaka | ok | 0 | 3.4 |  |
-| kiwi | ok | 419 | 15.5 |  |
-| letsfg | ok | 25 | 46.3 |  |
-| rpl | ok | 0 | 2.3 |  |
-| skiplagged | ok | 291 | 235.8 |  |
+| chartershop | ok | 0 | 2.8 |  |
+| google | ok | 165 | 87.4 |  |
+| hops | ok | 472 | 122.5 |  |
+| itaka | ok | 0 | 4.3 |  |
+| kiwi | ok | 419 | 17.0 |  |
+| letsfg | error | 0 | 1800.0 | timeout after 1800s |
+| rpl | ok | 0 | 2.2 |  |
+| skiplagged | ok | 278 | 238.5 |  |
 | skyscanner | error | 0 | 0.3 | skyscanner: Apify insufficient credit / payment required (HTTP 403) |
-| trip | error | 0 | 0.2 | trip: Apify insufficient credit / payment required (HTTP 403) |
+| trip | error | 0 | 0.3 | trip: Apify insufficient credit / payment required (HTTP 403) |
