@@ -285,6 +285,11 @@
       "last_alerted": "2026-10-06T06:16:36.555763+00:00",
       "total_usd": 248.0
     },
+    "CNX-WAW|2026-11-01||": {
+      "first_seen": "2026-10-06T13:21:41.977503+00:00",
+      "last_alerted": "2026-10-06T13:21:41.977503+00:00",
+      "total_usd": 199.0
+    },
     "CNX-WMI|2026-10-29|2026-10-29T18:05:00|FD4109,N0194,FR1945": {
       "first_seen": "2026-09-27T16:56:21.301515+00:00",
       "last_alerted": "2026-09-27T16:56:21.301515+00:00",
@@ -387,24 +392,24 @@
     }
   },
   "last_heartbeat_date": "2026-10-06",
-  "runs": 34,
+  "runs": 35,
   "sources": {
     "chartershop": {
       "data": {},
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-06T06:16:36.555763+00:00"
+        "last_ok": "2026-10-06T13:21:41.977503+00:00"
       }
     },
     "google": {
       "data": {
-        "date_parity": 0
+        "date_parity": 1
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-06T06:16:36.555763+00:00"
+        "last_ok": "2026-10-06T13:21:41.977503+00:00"
       }
     },
     "hops": {
@@ -412,7 +417,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-06T06:16:36.555763+00:00"
+        "last_ok": "2026-10-06T13:21:41.977503+00:00"
       }
     },
     "itaka": {
@@ -420,7 +425,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-06T06:16:36.555763+00:00"
+        "last_ok": "2026-10-06T13:21:41.977503+00:00"
       }
     },
     "kiwi": {
@@ -428,17 +433,17 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-06T06:16:36.555763+00:00"
+        "last_ok": "2026-10-06T13:21:41.977503+00:00"
       }
     },
     "letsfg": {
       "data": {
-        "cursor": 16,
+        "cursor": 20,
         "day": "2026-10-06",
-        "searches_today": 10
+        "searches_today": 14
       },
       "health": {
-        "consecutive_failures": 1,
+        "consecutive_failures": 2,
         "last_error": "timeout after 1800s",
         "last_ok": "2026-10-06T00:01:24.612921+00:00"
       }
@@ -448,7 +453,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-06T06:16:36.555763+00:00"
+        "last_ok": "2026-10-06T13:21:41.977503+00:00"
       }
     },
     "skiplagged": {
@@ -456,17 +461,17 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-06T06:16:36.555763+00:00"
+        "last_ok": "2026-10-06T13:21:41.977503+00:00"
       }
     },
     "skyscanner": {
       "data": {
-        "cursor": 50,
+        "cursor": 51,
         "day": "2026-10-06",
-        "runs_today": 2
+        "runs_today": 3
       },
       "health": {
-        "consecutive_failures": 4,
+        "consecutive_failures": 5,
         "last_error": "skyscanner: Apify insufficient credit / payment required (HTTP 403)",
         "last_ok": "2026-10-04T21:21:22.658865+00:00"
       }
@@ -475,11 +480,11 @@
       "data": {
         "cursor": 12,
         "day": "2026-10-06",
-        "route_cursor": 21,
-        "routes_today": 2
+        "route_cursor": 22,
+        "routes_today": 3
       },
       "health": {
-        "consecutive_failures": 4,
+        "consecutive_failures": 5,
         "last_error": "trip: Apify insufficient credit / payment required (HTTP 403)",
         "last_ok": "2026-10-04T21:21:22.658865+00:00"
       }
