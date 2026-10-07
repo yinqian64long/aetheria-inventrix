@@ -19,8 +19,8 @@
       "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI3agcIARIDQ05YcgcIARIDV0FXQAFIAXABmAEC&hl=en&gl=US&curr=USD",
       "notes": "bags not verified (Google)",
       "origin": "CNX",
-      "price_original": 199.0,
-      "price_usd": 199.0,
+      "price_original": 198.0,
+      "price_usd": 198.0,
       "self_transfer": null,
       "source": "google",
       "stops": 1
@@ -41,7 +41,7 @@
         "EY159"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/qq2dmt",
+      "link": "https://kiwi.com/u/hdkm3u7",
       "notes": "",
       "origin": "CNX",
       "price_original": 201.0,
@@ -69,15 +69,15 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
       "notes": "",
       "origin": "CNX",
-      "price_original": 179.0,
-      "price_usd": 179.0,
+      "price_original": 178.0,
+      "price_usd": 178.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 1
     }
   },
-  "dropped_count": 22,
-  "finished_at": "2026-10-06T22:41:38.131658+00:00",
+  "dropped_count": 7,
+  "finished_at": "2026-10-07T06:25:23.498232+00:00",
   "messages_sent": 1,
   "near_misses": [
     {
@@ -101,8 +101,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 252.0,
-      "price_usd": 252.0,
+      "price_original": 251.0,
+      "price_usd": 251.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -128,8 +128,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY177-W61368",
       "notes": "",
       "origin": "CNX",
-      "price_original": 257.0,
-      "price_usd": 257.0,
+      "price_original": 252.0,
+      "price_usd": 252.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 2
@@ -139,25 +139,79 @@
         "Etihad Airways",
         "Wizz Air"
       ],
-      "arrive_time": "2026-10-28T10:20:00",
+      "arrive_time": "2026-11-02T10:15:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 1865,
+      "flight_numbers": [
+        "EY427",
+        "EY177",
+        "W61368"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY177-W61368",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 252.0,
+      "price_usd": 252.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Wizz Air"
+      ],
+      "arrive_time": "2026-10-28T13:25:00",
       "cabin_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-27",
       "depart_time": "2026-10-27T09:10:00",
       "destination": "WAW",
-      "duration_minutes": 1870,
+      "duration_minutes": 2055,
       "flight_numbers": [
         "EY427",
-        "EY79",
-        "W61432"
+        "EY111",
+        "W61476"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432",
-      "notes": "virtual-interline",
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY111-W61476",
+      "notes": "",
       "origin": "CNX",
-      "price_original": 260.0,
-      "price_usd": 260.0,
-      "self_transfer": true,
+      "price_original": 255.0,
+      "price_usd": 255.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Wizz Air"
+      ],
+      "arrive_time": "2026-10-28T13:25:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 2055,
+      "flight_numbers": [
+        "EY427",
+        "EY113",
+        "W61476"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY113-W61476",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 255.0,
+      "price_usd": 255.0,
+      "self_transfer": null,
       "source": "skiplagged",
       "stops": 2
     },
@@ -182,8 +236,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 261.0,
-      "price_usd": 261.0,
+      "price_original": 264.0,
+      "price_usd": 264.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -206,11 +260,11 @@
         "LO3883"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/6j4rdn",
+      "link": "https://kiwi.com/u/tw23q8",
       "notes": "self-transfer",
       "origin": "CNX",
-      "price_original": 274.0,
-      "price_usd": 274.0,
+      "price_original": 273.0,
+      "price_usd": 273.0,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -218,27 +272,27 @@
     {
       "airlines": [
         "Etihad Airways",
-        "Wizz Air"
+        "Wizz Air Malta"
       ],
-      "arrive_time": "2026-10-28T13:25:00",
+      "arrive_time": "2026-10-30T09:10:00",
       "cabin_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
       "destination": "WAW",
-      "duration_minutes": 2055,
+      "duration_minutes": 1800,
       "flight_numbers": [
         "EY427",
-        "EY111",
-        "W61476"
+        "EY79",
+        "W46387"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY111-W61476",
-      "notes": "",
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387",
+      "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 274.0,
-      "price_usd": 274.0,
-      "self_transfer": null,
+      "price_original": 273.0,
+      "price_usd": 273.0,
+      "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
     },
@@ -260,7 +314,7 @@
         "LO3883"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/sqs8zc65",
+      "link": "https://kiwi.com/u/tmfp77",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 277.0,
@@ -287,7 +341,7 @@
         "LO3883"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/vyjr7t",
+      "link": "https://kiwi.com/u/3c5w29",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 277.0,
@@ -314,7 +368,7 @@
         "LO3881"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/yw39vx",
+      "link": "https://kiwi.com/u/7qd9zmn",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 277.0,
@@ -341,11 +395,11 @@
         "LO3883"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/vmtscpw",
+      "link": "https://kiwi.com/u/y3wdzp5",
       "notes": "self-transfer",
       "origin": "CNX",
-      "price_original": 278.0,
-      "price_usd": 278.0,
+      "price_original": 277.0,
+      "price_usd": 277.0,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -368,65 +422,11 @@
         "FR5821"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/pymht9b",
+      "link": "https://kiwi.com/u/ptt8cs",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 281.401215,
       "price_usd": 281.401215,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "EY",
-        "LO"
-      ],
-      "arrive_time": "2026-10-29T11:15:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 1925,
-      "flight_numbers": [
-        "EY427",
-        "EY159",
-        "LO3835"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/jsmhz7",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 283.0,
-      "price_usd": 283.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "EY",
-        "FR"
-      ],
-      "arrive_time": "2026-11-01T12:30:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 2000,
-      "flight_numbers": [
-        "EY427",
-        "EY177",
-        "FR6848"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/bpv4m2",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 283.952552,
-      "price_usd": 283.952552,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -449,7 +449,7 @@
         "FR3593"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/qbwmpw6",
+      "link": "https://kiwi.com/u/6nx9k27",
       "notes": "self-transfer; airport change at MXP→BGY",
       "origin": "CNX",
       "price_original": 284.13296,
@@ -476,11 +476,11 @@
         "FR3341"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/v775cgc",
+      "link": "https://kiwi.com/u/y7kfs2",
       "notes": "self-transfer; airport change at MXP→BGY",
       "origin": "CNX",
-      "price_original": 285.147595,
-      "price_usd": 285.147595,
+      "price_original": 284.147595,
+      "price_usd": 284.147595,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -488,26 +488,26 @@
     {
       "airlines": [
         "EY",
-        "LO"
+        "FR"
       ],
-      "arrive_time": "2026-10-28T11:15:00",
+      "arrive_time": "2026-11-02T14:15:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T09:10:00",
       "destination": "GDN",
-      "duration_minutes": 1925,
+      "duration_minutes": 2105,
       "flight_numbers": [
         "EY427",
-        "EY159",
-        "LO3835"
+        "EY177",
+        "FR6845"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/nmy9m6",
+      "link": "https://kiwi.com/u/79fq6c8",
       "notes": "self-transfer",
       "origin": "CNX",
-      "price_original": 288.0,
-      "price_usd": 288.0,
+      "price_original": 285.682868,
+      "price_usd": 285.682868,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -530,7 +530,7 @@
         "FR1903"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/mmv4tu",
+      "link": "https://kiwi.com/u/dfmrmu7",
       "notes": "self-transfer; airport change at MXP→BGY",
       "origin": "CNX",
       "price_original": 288.220614,
@@ -557,11 +557,38 @@
         "FR888"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/rv3qws",
+      "link": "https://kiwi.com/u/fgpku7",
       "notes": "self-transfer; airport change at MXP→BGY",
       "origin": "CNX",
-      "price_original": 289.87934,
-      "price_usd": 289.87934,
+      "price_original": 288.87934,
+      "price_usd": 288.87934,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-11-01T12:30:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T09:10:00",
+      "destination": "GDN",
+      "duration_minutes": 2000,
+      "flight_numbers": [
+        "EY427",
+        "EY177",
+        "FR6848"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/73c2ct",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 288.952552,
+      "price_usd": 288.952552,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -584,11 +611,38 @@
         "FR7306"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/tntq4z",
+      "link": "https://kiwi.com/u/q3ught",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 290.147595,
       "price_usd": 290.147595,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "LO"
+      ],
+      "arrive_time": "2026-10-29T11:15:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
+      "destination": "GDN",
+      "duration_minutes": 1925,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3835"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/6jq4cr",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 291.0,
+      "price_usd": 291.0,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -611,7 +665,7 @@
         "LO3835"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/z72qyjt",
+      "link": "https://kiwi.com/u/23ff8c",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 291.0,
@@ -638,7 +692,7 @@
         "LO3835"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/p7uj9fz",
+      "link": "https://kiwi.com/u/r4s7kf",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 291.0,
@@ -665,7 +719,7 @@
         "FR2762"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/gfustxr",
+      "link": "https://kiwi.com/u/bgc5jh",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 294.401435,
@@ -692,7 +746,7 @@
         "FR3413"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/zq93z4",
+      "link": "https://kiwi.com/u/sjwm84",
       "notes": "self-transfer; airport change at MXP→BGY",
       "origin": "CNX",
       "price_original": 294.611086,
@@ -719,7 +773,7 @@
         "FR3593"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/z5vncf",
+      "link": "https://kiwi.com/u/p285qy",
       "notes": "self-transfer; airport change at MXP→BGY",
       "origin": "CNX",
       "price_original": 294.87934,
@@ -746,7 +800,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/2dzdss",
+      "link": "https://kiwi.com/u/8qup8z",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 296.0,
@@ -773,7 +827,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/7u36sg4",
+      "link": "https://kiwi.com/u/cjs377b",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 296.0,
@@ -800,7 +854,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/kkx59x",
+      "link": "https://kiwi.com/u/stwpdd",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 296.0,
@@ -827,7 +881,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/47gjbjq",
+      "link": "https://kiwi.com/u/kfv339",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 296.0,
@@ -854,7 +908,7 @@
         "FR4463"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/jqynmd",
+      "link": "https://kiwi.com/u/3qwmn8",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 296.41585,
@@ -885,8 +939,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
       "notes": "",
       "origin": "CNX",
-      "price_original": 179.0,
-      "price_usd": 179.0,
+      "price_original": 178.0,
+      "price_usd": 178.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 1
@@ -910,8 +964,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
       "notes": "",
       "origin": "CNX",
-      "price_original": 179.0,
-      "price_usd": 179.0,
+      "price_original": 178.0,
+      "price_usd": 178.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 1
@@ -935,58 +989,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
       "notes": "",
       "origin": "CNX",
-      "price_original": 179.0,
-      "price_usd": 179.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Etihad Airways"
-      ],
-      "arrive_time": "2026-11-01T06:20:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T09:10:00",
-      "destination": "WAW",
-      "duration_minutes": 1630,
-      "flight_numbers": [
-        "EY427",
-        "EY159"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
-      "notes": "",
-      "origin": "CNX",
-      "price_original": 179.0,
-      "price_usd": 179.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Etihad Airways"
-      ],
-      "arrive_time": "2026-11-02T06:20:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T09:10:00",
-      "destination": "WAW",
-      "duration_minutes": 1630,
-      "flight_numbers": [
-        "EY427",
-        "EY159"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
-      "notes": "",
-      "origin": "CNX",
-      "price_original": 179.0,
-      "price_usd": 179.0,
+      "price_original": 178.0,
+      "price_usd": 178.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 1
@@ -1010,8 +1014,58 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-30?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
       "notes": "",
       "origin": "CNX",
-      "price_original": 179.0,
-      "price_usd": 179.0,
+      "price_original": 178.0,
+      "price_usd": 178.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Etihad Airways"
+      ],
+      "arrive_time": "2026-11-01T06:20:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 1630,
+      "flight_numbers": [
+        "EY427",
+        "EY159"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 178.0,
+      "price_usd": 178.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Etihad Airways"
+      ],
+      "arrive_time": "2026-11-02T06:20:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 1630,
+      "flight_numbers": [
+        "EY427",
+        "EY159"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 178.0,
+      "price_usd": 178.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 1
@@ -1021,65 +1075,11 @@
         "Etihad Airways",
         "Wizz Air"
       ],
-      "arrive_time": "2026-11-02T10:15:00",
+      "arrive_time": "2026-10-28T10:20:00",
       "cabin_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T09:10:00",
-      "destination": "WAW",
-      "duration_minutes": 1865,
-      "flight_numbers": [
-        "EY427",
-        "EY177",
-        "W61368"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY177-W61368",
-      "notes": "",
-      "origin": "CNX",
-      "price_original": 247.0,
-      "price_usd": 247.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Wizz Air Malta"
-      ],
-      "arrive_time": "2026-10-30T09:10:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "WAW",
-      "duration_minutes": 1800,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "W46387"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387",
-      "notes": "",
-      "origin": "CNX",
-      "price_original": 250.0,
-      "price_usd": 250.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Wizz Air"
-      ],
-      "arrive_time": "2026-10-30T10:20:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
       "destination": "WAW",
       "duration_minutes": 1870,
       "flight_numbers": [
@@ -1088,11 +1088,11 @@
         "W61432"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432",
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 250.0,
-      "price_usd": 250.0,
+      "price_original": 237.0,
+      "price_usd": 237.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -1118,8 +1118,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 252.0,
-      "price_usd": 252.0,
+      "price_original": 251.0,
+      "price_usd": 251.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -1145,8 +1145,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY177-W61368",
       "notes": "",
       "origin": "CNX",
-      "price_original": 257.0,
-      "price_usd": 257.0,
+      "price_original": 252.0,
+      "price_usd": 252.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 2
@@ -1156,25 +1156,79 @@
         "Etihad Airways",
         "Wizz Air"
       ],
-      "arrive_time": "2026-10-28T10:20:00",
+      "arrive_time": "2026-11-02T10:15:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 1865,
+      "flight_numbers": [
+        "EY427",
+        "EY177",
+        "W61368"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY177-W61368",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 252.0,
+      "price_usd": 252.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Wizz Air"
+      ],
+      "arrive_time": "2026-10-28T13:25:00",
       "cabin_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-27",
       "depart_time": "2026-10-27T09:10:00",
       "destination": "WAW",
-      "duration_minutes": 1870,
+      "duration_minutes": 2055,
       "flight_numbers": [
         "EY427",
-        "EY79",
-        "W61432"
+        "EY111",
+        "W61476"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432",
-      "notes": "virtual-interline",
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY111-W61476",
+      "notes": "",
       "origin": "CNX",
-      "price_original": 260.0,
-      "price_usd": 260.0,
-      "self_transfer": true,
+      "price_original": 255.0,
+      "price_usd": 255.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "Etihad Airways",
+        "Wizz Air"
+      ],
+      "arrive_time": "2026-10-28T13:25:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 2055,
+      "flight_numbers": [
+        "EY427",
+        "EY113",
+        "W61476"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY113-W61476",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 255.0,
+      "price_usd": 255.0,
+      "self_transfer": null,
       "source": "skiplagged",
       "stops": 2
     },
@@ -1199,8 +1253,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 261.0,
-      "price_usd": 261.0,
+      "price_original": 264.0,
+      "price_usd": 264.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -1223,11 +1277,11 @@
         "LO3883"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/6j4rdn",
+      "link": "https://kiwi.com/u/tw23q8",
       "notes": "self-transfer",
       "origin": "CNX",
-      "price_original": 274.0,
-      "price_usd": 274.0,
+      "price_original": 273.0,
+      "price_usd": 273.0,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -1235,27 +1289,27 @@
     {
       "airlines": [
         "Etihad Airways",
-        "Wizz Air"
+        "Wizz Air Malta"
       ],
-      "arrive_time": "2026-10-28T13:25:00",
+      "arrive_time": "2026-10-30T09:10:00",
       "cabin_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:10:00",
       "destination": "WAW",
-      "duration_minutes": 2055,
+      "duration_minutes": 1800,
       "flight_numbers": [
         "EY427",
-        "EY111",
-        "W61476"
+        "EY79",
+        "W46387"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY111-W61476",
-      "notes": "",
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387",
+      "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 274.0,
-      "price_usd": 274.0,
-      "self_transfer": null,
+      "price_original": 273.0,
+      "price_usd": 273.0,
+      "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
     },
@@ -1277,7 +1331,7 @@
         "LO3883"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/sqs8zc65",
+      "link": "https://kiwi.com/u/tmfp77",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 277.0,
@@ -1304,7 +1358,7 @@
         "LO3883"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/vyjr7t",
+      "link": "https://kiwi.com/u/3c5w29",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 277.0,
@@ -1331,7 +1385,7 @@
         "LO3881"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/yw39vx",
+      "link": "https://kiwi.com/u/7qd9zmn",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 277.0,
@@ -1358,11 +1412,11 @@
         "LO3883"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/vmtscpw",
+      "link": "https://kiwi.com/u/y3wdzp5",
       "notes": "self-transfer",
       "origin": "CNX",
-      "price_original": 278.0,
-      "price_usd": 278.0,
+      "price_original": 277.0,
+      "price_usd": 277.0,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -1385,65 +1439,11 @@
         "FR5821"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/pymht9b",
+      "link": "https://kiwi.com/u/ptt8cs",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 281.401215,
       "price_usd": 281.401215,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "EY",
-        "LO"
-      ],
-      "arrive_time": "2026-10-29T11:15:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 1925,
-      "flight_numbers": [
-        "EY427",
-        "EY159",
-        "LO3835"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/jsmhz7",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 283.0,
-      "price_usd": 283.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "EY",
-        "FR"
-      ],
-      "arrive_time": "2026-11-01T12:30:00",
-      "cabin_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-31",
-      "depart_time": "2026-10-31T09:10:00",
-      "destination": "GDN",
-      "duration_minutes": 2000,
-      "flight_numbers": [
-        "EY427",
-        "EY177",
-        "FR6848"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/bpv4m2",
-      "notes": "self-transfer",
-      "origin": "CNX",
-      "price_original": 283.952552,
-      "price_usd": 283.952552,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -1466,7 +1466,7 @@
         "FR3593"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/qbwmpw6",
+      "link": "https://kiwi.com/u/6nx9k27",
       "notes": "self-transfer; airport change at MXP→BGY",
       "origin": "CNX",
       "price_original": 284.13296,
@@ -1493,11 +1493,11 @@
         "FR3341"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/v775cgc",
+      "link": "https://kiwi.com/u/y7kfs2",
       "notes": "self-transfer; airport change at MXP→BGY",
       "origin": "CNX",
-      "price_original": 285.147595,
-      "price_usd": 285.147595,
+      "price_original": 284.147595,
+      "price_usd": 284.147595,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -1505,26 +1505,26 @@
     {
       "airlines": [
         "EY",
-        "LO"
+        "FR"
       ],
-      "arrive_time": "2026-10-28T11:15:00",
+      "arrive_time": "2026-11-02T14:15:00",
       "cabin_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-27",
-      "depart_time": "2026-10-27T09:10:00",
+      "depart_date": "2026-11-01",
+      "depart_time": "2026-11-01T09:10:00",
       "destination": "GDN",
-      "duration_minutes": 1925,
+      "duration_minutes": 2105,
       "flight_numbers": [
         "EY427",
-        "EY159",
-        "LO3835"
+        "EY177",
+        "FR6845"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/nmy9m6",
+      "link": "https://kiwi.com/u/79fq6c8",
       "notes": "self-transfer",
       "origin": "CNX",
-      "price_original": 288.0,
-      "price_usd": 288.0,
+      "price_original": 285.682868,
+      "price_usd": 285.682868,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -1547,7 +1547,7 @@
         "FR1903"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/mmv4tu",
+      "link": "https://kiwi.com/u/dfmrmu7",
       "notes": "self-transfer; airport change at MXP→BGY",
       "origin": "CNX",
       "price_original": 288.220614,
@@ -1574,11 +1574,38 @@
         "FR888"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/rv3qws",
+      "link": "https://kiwi.com/u/fgpku7",
       "notes": "self-transfer; airport change at MXP→BGY",
       "origin": "CNX",
-      "price_original": 289.87934,
-      "price_usd": 289.87934,
+      "price_original": 288.87934,
+      "price_usd": 288.87934,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "FR"
+      ],
+      "arrive_time": "2026-11-01T12:30:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-31",
+      "depart_time": "2026-10-31T09:10:00",
+      "destination": "GDN",
+      "duration_minutes": 2000,
+      "flight_numbers": [
+        "EY427",
+        "EY177",
+        "FR6848"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/73c2ct",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 288.952552,
+      "price_usd": 288.952552,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -1601,11 +1628,38 @@
         "FR7306"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/tntq4z",
+      "link": "https://kiwi.com/u/q3ught",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 290.147595,
       "price_usd": 290.147595,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 2
+    },
+    {
+      "airlines": [
+        "EY",
+        "LO"
+      ],
+      "arrive_time": "2026-10-29T11:15:00",
+      "cabin_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:10:00",
+      "destination": "GDN",
+      "duration_minutes": 1925,
+      "flight_numbers": [
+        "EY427",
+        "EY159",
+        "LO3835"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/6jq4cr",
+      "notes": "self-transfer",
+      "origin": "CNX",
+      "price_original": 291.0,
+      "price_usd": 291.0,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 2
@@ -1628,7 +1682,7 @@
         "LO3835"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/z72qyjt",
+      "link": "https://kiwi.com/u/23ff8c",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 291.0,
@@ -1655,7 +1709,7 @@
         "LO3835"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/p7uj9fz",
+      "link": "https://kiwi.com/u/r4s7kf",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 291.0,
@@ -1682,7 +1736,7 @@
         "FR2762"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/gfustxr",
+      "link": "https://kiwi.com/u/bgc5jh",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 294.401435,
@@ -1709,7 +1763,7 @@
         "FR3413"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/zq93z4",
+      "link": "https://kiwi.com/u/sjwm84",
       "notes": "self-transfer; airport change at MXP→BGY",
       "origin": "CNX",
       "price_original": 294.611086,
@@ -1736,7 +1790,7 @@
         "FR3593"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/z5vncf",
+      "link": "https://kiwi.com/u/p285qy",
       "notes": "self-transfer; airport change at MXP→BGY",
       "origin": "CNX",
       "price_original": 294.87934,
@@ -1763,7 +1817,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/2dzdss",
+      "link": "https://kiwi.com/u/8qup8z",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 296.0,
@@ -1790,7 +1844,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/7u36sg4",
+      "link": "https://kiwi.com/u/cjs377b",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 296.0,
@@ -1817,7 +1871,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/kkx59x",
+      "link": "https://kiwi.com/u/stwpdd",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 296.0,
@@ -1844,7 +1898,7 @@
         "LO3851"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/47gjbjq",
+      "link": "https://kiwi.com/u/kfv339",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 296.0,
@@ -1871,7 +1925,7 @@
         "FR4463"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/jqynmd",
+      "link": "https://kiwi.com/u/3qwmn8",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 296.41585,
@@ -1891,11 +1945,11 @@
           "cabin_bag_included": null,
           "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI3agcIARIDQ05YcgcIARIDV0FXQAFIAXABmAEC&hl=en&gl=US&curr=USD",
           "source": "google",
-          "total_usd": 199.0
+          "total_usd": 198.0
         },
         {
           "cabin_bag_included": true,
-          "link": "https://kiwi.com/u/qq2dmt",
+          "link": "https://kiwi.com/u/hdkm3u7",
           "source": "kiwi",
           "total_usd": 201.0
         }
@@ -1915,8 +1969,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
       "notes": "",
       "origin": "CNX",
-      "price_original": 179.0,
-      "price_usd": 179.0,
+      "price_original": 178.0,
+      "price_usd": 178.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 1
@@ -1930,11 +1984,11 @@
           "cabin_bag_included": null,
           "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI4agcIARIDQ05YcgcIARIDV0FXQAFIAXABmAEC&hl=en&gl=US&curr=USD",
           "source": "google",
-          "total_usd": 199.0
+          "total_usd": 198.0
         },
         {
           "cabin_bag_included": true,
-          "link": "https://kiwi.com/u/x728ng",
+          "link": "https://kiwi.com/u/9v2544",
           "source": "kiwi",
           "total_usd": 201.0
         }
@@ -1954,8 +2008,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
       "notes": "",
       "origin": "CNX",
-      "price_original": 179.0,
-      "price_usd": 179.0,
+      "price_original": 178.0,
+      "price_usd": 178.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 1
@@ -1969,11 +2023,11 @@
           "cabin_bag_included": null,
           "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQ05YcgcIARIDV0FXQAFIAXABmAEC&hl=en&gl=US&curr=USD",
           "source": "google",
-          "total_usd": 199.0
+          "total_usd": 198.0
         },
         {
           "cabin_bag_included": true,
-          "link": "https://kiwi.com/u/g4sxu9",
+          "link": "https://kiwi.com/u/rq9f69",
           "source": "kiwi",
           "total_usd": 201.0
         }
@@ -1993,8 +2047,47 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
       "notes": "",
       "origin": "CNX",
-      "price_original": 179.0,
-      "price_usd": 179.0,
+      "price_original": 178.0,
+      "price_usd": 178.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Etihad Airways"
+      ],
+      "also_seen": [
+        {
+          "cabin_bag_included": null,
+          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTMwagcIARIDQ05YcgcIARIDV0FXQAFIAXABmAEC&hl=en&gl=US&curr=USD",
+          "source": "google",
+          "total_usd": 198.0
+        },
+        {
+          "cabin_bag_included": true,
+          "link": "https://kiwi.com/u/pqmrpw",
+          "source": "kiwi",
+          "total_usd": 201.0
+        }
+      ],
+      "arrive_time": "2026-10-31T06:20:00",
+      "cabin_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-30",
+      "depart_time": "2026-10-30T09:10:00",
+      "destination": "WAW",
+      "duration_minutes": 1630,
+      "flight_numbers": [
+        "EY427",
+        "EY159"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-30?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 178.0,
+      "price_usd": 178.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 1
@@ -2008,11 +2101,11 @@
           "cabin_bag_included": null,
           "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTMxagcIARIDQ05YcgcIARIDV0FXQAFIAXABmAEC&hl=en&gl=US&curr=USD",
           "source": "google",
-          "total_usd": 199.0
+          "total_usd": 198.0
         },
         {
           "cabin_bag_included": true,
-          "link": "https://kiwi.com/u/hgdp8h",
+          "link": "https://kiwi.com/u/vn5d8z",
           "source": "kiwi",
           "total_usd": 201.0
         }
@@ -2032,8 +2125,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-31?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
       "notes": "",
       "origin": "CNX",
-      "price_original": 179.0,
-      "price_usd": 179.0,
+      "price_original": 178.0,
+      "price_usd": 178.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 1
@@ -2047,11 +2140,11 @@
           "cabin_bag_included": null,
           "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTExLTAxagcIARIDQ05YcgcIARIDV0FXQAFIAXABmAEC&hl=en&gl=US&curr=USD",
           "source": "google",
-          "total_usd": 199.0
+          "total_usd": 198.0
         },
         {
           "cabin_bag_included": true,
-          "link": "https://kiwi.com/u/538vmy",
+          "link": "https://kiwi.com/u/99smpf",
           "source": "kiwi",
           "total_usd": 201.0
         }
@@ -2071,47 +2164,8 @@
       "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
       "notes": "",
       "origin": "CNX",
-      "price_original": 179.0,
-      "price_usd": 179.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Etihad Airways"
-      ],
-      "also_seen": [
-        {
-          "cabin_bag_included": null,
-          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTMwagcIARIDQ05YcgcIARIDV0FXQAFIAXABmAEC&hl=en&gl=US&curr=USD",
-          "source": "google",
-          "total_usd": 199.0
-        },
-        {
-          "cabin_bag_included": true,
-          "link": "https://kiwi.com/u/u8fp9c",
-          "source": "kiwi",
-          "total_usd": 202.0
-        }
-      ],
-      "arrive_time": "2026-10-31T06:20:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-30",
-      "depart_time": "2026-10-30T09:10:00",
-      "destination": "WAW",
-      "duration_minutes": 1630,
-      "flight_numbers": [
-        "EY427",
-        "EY159"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-30?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY159",
-      "notes": "",
-      "origin": "CNX",
-      "price_original": 179.0,
-      "price_usd": 179.0,
+      "price_original": 178.0,
+      "price_usd": 178.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 1
@@ -2122,67 +2176,11 @@
         "Wizz Air"
       ],
       "also_seen": [],
-      "arrive_time": "2026-11-02T10:15:00",
+      "arrive_time": "2026-10-28T10:20:00",
       "cabin_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-11-01",
-      "depart_time": "2026-11-01T09:10:00",
-      "destination": "WAW",
-      "duration_minutes": 1865,
-      "flight_numbers": [
-        "EY427",
-        "EY177",
-        "W61368"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-11-01?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY177-W61368",
-      "notes": "",
-      "origin": "CNX",
-      "price_original": 247.0,
-      "price_usd": 247.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Wizz Air Malta"
-      ],
-      "also_seen": [],
-      "arrive_time": "2026-10-30T09:10:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
-      "destination": "WAW",
-      "duration_minutes": 1800,
-      "flight_numbers": [
-        "EY427",
-        "EY79",
-        "W46387"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W46387",
-      "notes": "",
-      "origin": "CNX",
-      "price_original": 250.0,
-      "price_usd": 250.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "Etihad Airways",
-        "Wizz Air"
-      ],
-      "also_seen": [],
-      "arrive_time": "2026-10-30T10:20:00",
-      "cabin_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:10:00",
+      "depart_date": "2026-10-27",
+      "depart_time": "2026-10-27T09:10:00",
       "destination": "WAW",
       "duration_minutes": 1870,
       "flight_numbers": [
@@ -2191,11 +2189,11 @@
         "W61432"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432",
+      "link": "https://skiplagged.com/flights/CNX/WAW/2026-10-27?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=EY427-EY79-W61432",
       "notes": "virtual-interline",
       "origin": "CNX",
-      "price_original": 250.0,
-      "price_usd": 250.0,
+      "price_original": 237.0,
+      "price_usd": 237.0,
       "self_transfer": true,
       "source": "skiplagged",
       "stops": 2
@@ -2205,64 +2203,64 @@
     "chartershop": {
       "count": 0,
       "error": null,
-      "seconds": 2.708760844000004,
+      "seconds": 2.770152154999977,
       "status": "ok"
     },
     "google": {
-      "count": 163,
+      "count": 181,
       "error": null,
-      "seconds": 87.69909056200001,
+      "seconds": 96.575471854,
       "status": "ok"
     },
     "hops": {
-      "count": 508,
+      "count": 506,
       "error": null,
-      "seconds": 51.51339374500001,
+      "seconds": 56.028941420999985,
       "status": "ok"
     },
     "itaka": {
       "count": 0,
       "error": null,
-      "seconds": 3.605579587000001,
+      "seconds": 3.561108251999997,
       "status": "ok"
     },
     "kiwi": {
       "count": 419,
       "error": null,
-      "seconds": 13.706540817000004,
+      "seconds": 13.458734141000008,
       "status": "ok"
     },
     "letsfg": {
       "count": 0,
-      "error": "letsfg: search start failed HTTP 520",
-      "seconds": 53.734608914,
+      "error": "timeout after 1800s",
+      "seconds": 1800.067334538,
       "status": "error"
     },
     "rpl": {
       "count": 0,
       "error": null,
-      "seconds": 2.7966862410000033,
+      "seconds": 2.059854806000004,
       "status": "ok"
     },
     "skiplagged": {
-      "count": 289,
+      "count": 276,
       "error": null,
-      "seconds": 181.42515084899998,
+      "seconds": 178.414326831,
       "status": "ok"
     },
     "skyscanner": {
       "count": 0,
       "error": "skyscanner: Apify insufficient credit / payment required (HTTP 403)",
-      "seconds": 0.2874796239999995,
+      "seconds": 0.26067083600000274,
       "status": "error"
     },
     "trip": {
       "count": 0,
       "error": "trip: Apify insufficient credit / payment required (HTTP 403)",
-      "seconds": 0.25980804499999977,
+      "seconds": 0.23317988799999512,
       "status": "error"
     }
   },
-  "started_at": "2026-10-06T22:38:35.679706+00:00",
+  "started_at": "2026-10-07T05:55:22.291248+00:00",
   "window_over": false
 }
