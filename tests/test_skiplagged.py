@@ -320,7 +320,7 @@ async def test_calendar_errors_stop_early(monkeypatch: pytest.MonkeyPatch) -> No
     src = SkiplaggedSource({"max_detail_searches": 12})
     query = _query(
         positioning_origins=(),
-        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ"),
+        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST", "BUD"),
         extra_destinations=(),
     )
     with pytest.raises(SourceError, match="calendar phase failed"):
