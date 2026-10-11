@@ -1,0 +1,45 @@
+[
+  {
+    "offerId": "aa-1",
+    "origin": "DMK",
+    "destination": "HAN",
+    "departureDate": "2026-10-29",
+    "price": 92.4,
+    "currency": "USD",
+    "departureTimeLocal": "2026-10-29T07:10:00",
+    "arrivalTimeLocal": "2026-10-29T09:00:00",
+    "airlines": ["AirAsia"],
+    "stops": 0,
+    "durationSeconds": 6600,
+    "segments": [
+      {
+        "airline": "AirAsia",
+        "flightNumber": "FD614",
+        "origin": "DMK",
+        "destination": "HAN"
+      }
+    ],
+    "baggage": {
+      "cabin": {"weight": 7, "unit": "KG"},
+      "checked": {"weight": 20, "unit": "KG"}
+    },
+    "selfTransfer": false,
+    "searchUrl": "https://www.airasia.com/flights/search/?origin=DMK&destination=HAN"
+  },
+  {
+    "type": "SEARCH_REPORT",
+    "capturedOffers": 1,
+    "advertisedTotal": 4
+  },
+  {
+    "offerId": "aa-2",
+    "origin": "DMK",
+    "destination": "HAN",
+    "departureDate": "2026-10-29",
+    "price": 55,
+    "currency": "USD",
+    "airlines": ["AirAsia"],
+    "stops": 0,
+    "baggage": {"checked": false, "cabin": true}
+  }
+]

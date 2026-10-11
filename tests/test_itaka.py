@@ -43,10 +43,9 @@ def _load(name: str) -> Any:
 
 def _query(**overrides: Any) -> SearchQuery:
     base: dict[str, Any] = dict(
-        home_origin="CNX",
-        positioning_origins=("BKK", "DMK", "HKT"),
-        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST", "BUD"),
-        extra_destinations=("WMI",),
+        origins=("CNX", "BKK", "DMK", "HKT"),
+        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST", "BUD", "WMI"),
+        priority_routes=(),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 11, 1),
         adults=1,

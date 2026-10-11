@@ -22,6 +22,7 @@ class Offer:
     duration_minutes: int | None = None
     link: str | None = None
     cabin_bag_included: bool | None = None
+    checked_bag_included: bool | None = None
     self_transfer: bool | None = None
     notes: str = ""
     hop: "Offer | None" = None
@@ -59,6 +60,7 @@ class Offer:
             "duration_minutes": self.duration_minutes,
             "link": self.link,
             "cabin_bag_included": self.cabin_bag_included,
+            "checked_bag_included": self.checked_bag_included,
             "self_transfer": self.self_transfer,
             "notes": self.notes,
             "hop": self.hop.to_dict() if self.hop else None,
@@ -84,10 +86,23 @@ class Offer:
             duration_minutes=data.get("duration_minutes"),
             link=data.get("link"),
             cabin_bag_included=data.get("cabin_bag_included"),
+            checked_bag_included=data.get("checked_bag_included"),
             self_transfer=data.get("self_transfer"),
             notes=data.get("notes") or "",
             hop=cls.from_dict(hop_data) if hop_data else None,
         )
+
+
+def _unique_pairs(pairs) -> list[tuple[str, str]]:
+    out: list[tuple[str, str]] = []
+    seen: set[tuple[str, str]] = set()
+    for origin, dest in pairs:
+        key = (str(origin).strip().upper(), str(dest).strip().upper())
+        if not key[0] or not key[1] or key in seen:
+            continue
+        seen.add(key)
+        out.append(key)
+    return out
 
 
 def _parse_date(value: date | str) -> date:
@@ -106,10 +121,9 @@ def _parse_datetime(value: datetime | str | None) -> datetime | None:
 
 @dataclass(frozen=True)
 class SearchQuery:
-    home_origin: str
-    positioning_origins: tuple[str, ...]
+    origins: tuple[str, ...]
     destinations: tuple[str, ...]
-    extra_destinations: tuple[str, ...]
+    priority_routes: tuple[tuple[str, str], ...]
     date_from: date
     date_to: date
     adults: int
@@ -121,11 +135,22 @@ class SearchQuery:
 
     @property
     def all_origins(self) -> tuple[str, ...]:
-        return (self.home_origin, *self.positioning_origins)
+        return self.origins
 
     @property
     def all_destinations(self) -> tuple[str, ...]:
-        return (*self.destinations, *self.extra_destinations)
+        return self.destinations
+
+    def route_pairs(self, *, priority: bool = False) -> list[tuple[str, str]]:
+        """Origin-destination pairs.
+
+        ``priority=True`` returns ``priority_routes`` when that list is set,
+        so paid sources stay inside a daily actor budget. Otherwise every
+        origin is paired with every destination.
+        """
+        if priority and self.priority_routes:
+            return _unique_pairs(self.priority_routes)
+        return _unique_pairs((origin, dest) for origin in self.origins for dest in self.destinations)
 
     def dates(self, today: date) -> list[date]:
         start = max(self.date_from, today)

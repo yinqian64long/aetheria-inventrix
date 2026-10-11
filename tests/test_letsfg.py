@@ -59,10 +59,9 @@ def _load(name: str) -> dict[str, Any]:
 
 def _query(**overrides: Any) -> SearchQuery:
     base = dict(
-        home_origin="CNX",
-        positioning_origins=("BKK", "DMK", "HKT"),
+        origins=("CNX",),
         destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST", "BUD"),
-        extra_destinations=("WMI",),
+        priority_routes=(),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 11, 1),
         adults=1,
@@ -149,7 +148,7 @@ def test_is_available_requires_refresh_and_client_id() -> None:
     assert reason == ""
 
 
-def test_cells_home_origin_only_waw_covers_wmi() -> None:
+def test_cells_cover_configured_origins_and_destinations() -> None:
     query = _query()
     cells = cells_for(query, date(2026, 9, 25))
     origins = {c[0] for c in cells}

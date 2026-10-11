@@ -37,26 +37,8 @@ def run_url(actor_id: str) -> str:
 
 
 def route_pairs(query: SearchQuery) -> list[tuple[str, str]]:
-    """Home origin covers every destination, including WMI.
-
-    Positioning origins cover the main Polish airports only.
-    """
-    pairs: list[tuple[str, str]] = []
-    seen: set[tuple[str, str]] = set()
-    for origin, dest in (
-        *((query.home_origin, dest) for dest in query.all_destinations),
-        *(
-            (origin, dest)
-            for origin in query.positioning_origins
-            for dest in query.destinations
-        ),
-    ):
-        key = (origin.upper(), dest.upper())
-        if key in seen or not key[0] or not key[1]:
-            continue
-        seen.add(key)
-        pairs.append(key)
-    return pairs
+    """Priority routes when configured, otherwise every origin-destination pair."""
+    return query.route_pairs(priority=True)
 
 
 class TripSource(Source):

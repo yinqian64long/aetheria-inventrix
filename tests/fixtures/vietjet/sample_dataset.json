@@ -1,0 +1,58 @@
+[
+  {
+    "type": "flight_itinerary",
+    "bestPrice": 79.0,
+    "currency": "USD",
+    "airline": "VietJet Air",
+    "from": {"code": "BKK"},
+    "to": {"code": "SGN"},
+    "departDate": "2026-10-28",
+    "departTime": "06:05",
+    "arriveDate": "2026-10-28",
+    "arriveTime": "07:40",
+    "durationMinutes": 95,
+    "stops": 0,
+    "segments": [
+      {
+        "airline": "VietJet Air",
+        "airlineCode": "VJ",
+        "flightNumber": "VJ805"
+      }
+    ],
+    "baggage": {
+      "carryOnBagsIncluded": true,
+      "checkedBagsIncluded": 20
+    },
+    "isSelfTransfer": false,
+    "links": {"book": "https://www.skyscanner.com/"}
+  },
+  {
+    "type": "flight_itinerary",
+    "bestPrice": 120.0,
+    "currency": "USD",
+    "airline": "Thai Airways",
+    "from": {"code": "BKK"},
+    "to": {"code": "SGN"},
+    "departDate": "2026-10-28",
+    "departTime": "08:00",
+    "arriveTime": "09:20",
+    "stops": 0,
+    "segments": [
+      {"airlineCode": "TG", "flightNumber": "TG550"}
+    ]
+  },
+  {
+    "type": "flight_itinerary",
+    "bestPrice": 99.0,
+    "currency": "USD",
+    "airline": "VietJet Air",
+    "from": {"code": "BKK"},
+    "to": {"code": "SGN"},
+    "departDate": "2026-10-28",
+    "stops": 1,
+    "segments": [
+      {"airlineCode": "VJ", "flightNumber": "VJ805"},
+      {"airlineCode": "VN", "flightNumber": "VN123"}
+    ]
+  }
+]

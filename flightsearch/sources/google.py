@@ -19,7 +19,6 @@ _LANGUAGE = "en"
 _COUNTRY = "US"
 _EMPTY_MSG = "google flights returned empty payloads (blocked or API change)"
 _BAGS_NOTE = "bags not verified (Google)"
-_STATE_PARITY = "date_parity"
 _JITTER_S = (0.3, 0.8)
 
 
@@ -107,18 +106,13 @@ def _explicit_cabin_bag(result: Any) -> bool | None:
 
 
 def plan_date_jobs(
-    query: SearchQuery, dates: list[date], parity: int
+    query: SearchQuery, dates: list[date]
 ) -> list[tuple[str, str, date]]:
-    """Home origin: every dest × every date. Positioning: main dests, every other date."""
+    """Every origin-destination pair, for every day in the window."""
     jobs: list[tuple[str, str, date]] = []
-    for dest in query.all_destinations:
+    for origin, dest in query.route_pairs():
         for day in dates:
-            jobs.append((query.home_origin, dest, day))
-    pos_dates = [day for i, day in enumerate(dates) if i % 2 == parity]
-    for origin in query.positioning_origins:
-        for dest in query.destinations:
-            for day in pos_dates:
-                jobs.append((origin, dest, day))
+            jobs.append((origin, dest, day))
     return jobs
 
 
@@ -422,9 +416,7 @@ class GoogleFlightsSource(Source):
         if not dates:
             return []
 
-        parity = int(ctx.state.get(_STATE_PARITY) or 0) % 2
-        jobs = plan_date_jobs(query, dates, parity)
-        ctx.state[_STATE_PARITY] = 1 - parity
+        jobs = plan_date_jobs(query, dates)
         if not jobs:
             return []
 

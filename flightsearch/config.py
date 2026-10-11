@@ -13,11 +13,8 @@ from flightsearch.models import SearchQuery
 @dataclass
 class AppConfig:
     query: SearchQuery
-    hop_min_connection_minutes: int
-    hop_max_connection_hours: int
     sources: dict[str, dict]
     notify: dict
-    hop_fetch_timeout_s: int = 360
 
 
 def _as_date(value: date | str) -> date:
@@ -32,12 +29,10 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
     with open(path, encoding="utf-8") as f:
         raw: dict[str, Any] = yaml.safe_load(f)
 
-    hop = raw.get("hop") or {}
     query = SearchQuery(
-        home_origin=raw["home_origin"],
-        positioning_origins=tuple(raw.get("positioning_origins") or ()),
-        destinations=tuple(raw.get("destinations") or ()),
-        extra_destinations=tuple(raw.get("extra_destinations") or ()),
+        origins=_codes(raw.get("origins")),
+        destinations=_codes(raw.get("destinations")),
+        priority_routes=_routes(raw.get("priority_routes")),
         date_from=_as_date(raw["date_from"]),
         date_to=_as_date(raw["date_to"]),
         adults=int(raw["adults"]),
@@ -49,9 +44,26 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
     )
     return AppConfig(
         query=query,
-        hop_min_connection_minutes=int(hop["min_connection_minutes"]),
-        hop_max_connection_hours=int(hop["max_connection_hours"]),
         sources=dict(raw.get("sources") or {}),
         notify=dict(raw.get("notify") or {}),
-        hop_fetch_timeout_s=int(hop.get("fetch_timeout_s", 360)),
     )
+
+
+def _codes(value: Any) -> tuple[str, ...]:
+    return tuple(str(code).strip().upper() for code in (value or []) if str(code).strip())
+
+
+def _routes(value: Any) -> tuple[tuple[str, str], ...]:
+    routes: list[tuple[str, str]] = []
+    for item in value or []:
+        if isinstance(item, str) and "-" in item:
+            origin, dest = item.split("-", 1)
+        elif isinstance(item, (list, tuple)) and len(item) == 2:
+            origin, dest = item
+        else:
+            continue
+        origin_code = str(origin).strip().upper()
+        dest_code = str(dest).strip().upper()
+        if origin_code and dest_code:
+            routes.append((origin_code, dest_code))
+    return tuple(routes)

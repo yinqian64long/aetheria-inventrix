@@ -31,10 +31,9 @@ class _FakeFx:
 
 def _query(**overrides: object) -> SearchQuery:
     base: dict = dict(
-        home_origin="CNX",
-        positioning_origins=("BKK",),
+        origins=("CNX", "BKK"),
         destinations=("WAW", "KRK"),
-        extra_destinations=(),
+        priority_routes=(),
         date_from=date(2026, 10, 27),
         date_to=date(2026, 10, 28),
         adults=1,
@@ -83,18 +82,20 @@ def test_is_available_requires_apify_token() -> None:
     assert reason == ""
 
 
-def test_route_pairs_include_wmi_and_keep_dmk() -> None:
+def test_route_pairs_prefer_priority_routes() -> None:
     query = _query(
-        positioning_origins=("BKK", "DMK", "HKT"),
+        origins=("CNX", "BKK"),
         destinations=("WAW", "KRK"),
-        extra_destinations=("WMI",),
+        priority_routes=(("BKK", "SGN"), ("CNX", "HAN")),
     )
-    pairs = route_pairs(query)
-    assert pairs[0] == ("CNX", "WAW")
-    assert ("CNX", "WMI") in pairs
-    assert ("DMK", "WAW") in pairs
-    assert ("DMK", "WMI") not in pairs
-    assert ("BKK", "KRK") in pairs
+    assert route_pairs(query) == [("BKK", "SGN"), ("CNX", "HAN")]
+    full = _query(origins=("CNX", "BKK"), destinations=("WAW", "KRK"), priority_routes=())
+    assert route_pairs(full) == [
+        ("CNX", "WAW"),
+        ("CNX", "KRK"),
+        ("BKK", "WAW"),
+        ("BKK", "KRK"),
+    ]
 
 
 @pytest.mark.asyncio
@@ -106,7 +107,7 @@ async def test_request_shape_and_parsing() -> None:
     )
     src = TripSource({"max_routes_per_day": 4, "max_results": 8, "date_timeout_s": 90})
     state: dict = {}
-    query = _query(destinations=("WAW",), positioning_origins=(), date_to=date(2026, 10, 27))
+    query = _query(destinations=("WAW",), origins=("CNX",), date_to=date(2026, 10, 27))
     async with httpx.AsyncClient() as http:
         offers = await src.search(query, _ctx(state=state, http=http))
 
@@ -166,7 +167,7 @@ async def test_window_fans_out_one_date_per_actor_run() -> None:
     src = TripSource({"max_routes_per_day": 4})
     async with httpx.AsyncClient() as http:
         await src.search(
-            _query(destinations=("WAW",), positioning_origins=()),
+            _query(destinations=("WAW",), origins=("CNX",)),
             _ctx(http=http),
         )
     dates = sorted(
@@ -234,7 +235,7 @@ async def test_http_error_all_routes_raise() -> None:
     async with httpx.AsyncClient() as http:
         with pytest.raises(SourceError, match="all 1 route"):
             await src.search(
-                _query(destinations=("WAW",), positioning_origins=()),
+                _query(destinations=("WAW",), origins=("CNX",)),
                 _ctx(http=http),
             )
 
@@ -266,7 +267,7 @@ async def test_partial_date_failure_keeps_offers() -> None:
     src = TripSource({"max_routes_per_day": 4})
     async with httpx.AsyncClient() as http:
         offers = await src.search(
-            _query(destinations=("WAW",), positioning_origins=()),
+            _query(destinations=("WAW",), origins=("CNX",)),
             _ctx(http=http),
         )
     assert len(offers) == 1
@@ -283,7 +284,7 @@ async def test_token_never_logged(caplog: pytest.LogCaptureFixture) -> None:
     with caplog.at_level(logging.DEBUG, logger="test.trip"):
         async with httpx.AsyncClient() as http:
             await src.search(
-                _query(destinations=("WAW",), positioning_origins=()),
+                _query(destinations=("WAW",), origins=("CNX",)),
                 _ctx(http=http, env={"APIFY_TOKEN": secret}),
             )
     joined = "\n".join(record.message for record in caplog.records)
@@ -311,7 +312,7 @@ async def test_caps_twenty_per_route() -> None:
         offers = await src.search(
             _query(
                 destinations=("WAW",),
-                positioning_origins=(),
+                origins=("CNX",),
                 date_to=date(2026, 10, 27),
             ),
             _ctx(http=http),

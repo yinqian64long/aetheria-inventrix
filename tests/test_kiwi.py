@@ -13,7 +13,7 @@ from flightsearch.context import RunContext
 from flightsearch.models import SearchQuery
 from flightsearch.sources.base import SourceError
 from flightsearch.sources import kiwi as kiwi_mod
-from flightsearch.sources.kiwi import KiwiSource, fetch_hops, parse_search_response
+from flightsearch.sources.kiwi import KiwiSource, parse_search_response
 
 FIXTURES = Path(__file__).resolve().parent / "fixtures" / "kiwi"
 
@@ -36,10 +36,9 @@ def _load(name: str) -> dict[str, Any]:
 
 def _query(**overrides: Any) -> SearchQuery:
     base = dict(
-        home_origin="CNX",
-        positioning_origins=("BKK", "DMK", "HKT"),
-        destinations=("WAW",),
-        extra_destinations=("WMI",),
+        origins=("CNX", "BKK", "DMK", "HKT"),
+        destinations=("WAW", "WMI"),
+        priority_routes=(),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 11, 1),
         adults=1,
@@ -168,9 +167,8 @@ async def test_partial_failure_tolerance(monkeypatch: pytest.MonkeyPatch) -> Non
     _patch_session(monkeypatch, fake_call)
     src = KiwiSource()
     query = _query(
-        positioning_origins=(),
-        destinations=("WAW",),
-        extra_destinations=("WMI",),
+        origins=("CNX",),
+        destinations=("WAW", "WMI"),
     )
     ctx = _ctx()
     offers = await src.search(query, ctx)
@@ -187,55 +185,9 @@ async def test_all_fail_raises_source_error(monkeypatch: pytest.MonkeyPatch) -> 
 
     _patch_session(monkeypatch, fake_call)
     src = KiwiSource()
-    query = _query(positioning_origins=(), destinations=("WAW",), extra_destinations=())
+    query = _query(origins=("CNX",), destinations=("WAW",))
     with pytest.raises(SourceError, match="all .* failed"):
         await src.search(query, _ctx())
-
-
-@pytest.mark.asyncio
-async def test_fetch_hops_date_span(monkeypatch: pytest.MonkeyPatch) -> None:
-    seen: list[tuple[str, str, str | None]] = []
-
-    async def fake_call(tool: str, args: dict, **kwargs: Any) -> Any:
-        seen.append(
-            (args["flyFrom"], args["flyTo"], args.get("departureDateTo"))
-        )
-        data = _load("cnx_bkk_hop.json")
-        # Rewrite to match requested day so keep filter passes.
-        day = datetime.strptime(args["departureDate"], "%d/%m/%Y").date()
-        for it in data["itineraries"]:
-            ob = it["outbound"]
-            dep = datetime(day.year, day.month, day.day, 8, 0)
-            arr = datetime(day.year, day.month, day.day, 9, 20)
-            ob["departureTime"] = dep.isoformat()
-            ob["arrivalTime"] = arr.isoformat()
-            ob["from"] = "CNX"
-            ob["to"] = args["flyTo"]
-            for seg in ob["segments"]:
-                seg["departureTime"] = dep.isoformat()
-                seg["arrivalTime"] = arr.isoformat()
-                seg["from"] = "CNX"
-                seg["to"] = args["flyTo"]
-        return data
-
-    _patch_session(monkeypatch, fake_call)
-    query = _query(
-        positioning_origins=("BKK", "DMK"),
-        destinations=("WAW",),
-        extra_destinations=(),
-        date_from=date(2026, 10, 20),
-        date_to=date(2026, 10, 22),
-    )
-    offers = await fetch_hops(query, _ctx())
-    # first search date - 1 .. last = 19..22 inclusive = 4 days × 2 dests
-    assert len(seen) == 8
-    assert all(s[0] == "CNX" for s in seen)
-    assert {s[1] for s in seen} == {"BKK", "DMK"}
-    assert all(s[2] is None for s in seen)  # per-date, no range
-    assert offers
-    assert all(o.depart_time and o.arrive_time for o in offers)
-    assert min(o.depart_date for o in offers) == date(2026, 10, 19)
-    assert max(o.depart_date for o in offers) == date(2026, 10, 22)
 
 
 @pytest.mark.live
@@ -243,9 +195,8 @@ async def test_fetch_hops_date_span(monkeypatch: pytest.MonkeyPatch) -> None:
 async def test_live_search_cnx_waw() -> None:
     src = KiwiSource()
     query = _query(
-        positioning_origins=(),
+        origins=("CNX",),
         destinations=("WAW",),
-        extra_destinations=(),
     )
     ctx = _ctx()
     try:
@@ -253,28 +204,6 @@ async def test_live_search_cnx_waw() -> None:
     finally:
         await ctx.http.aclose()
     assert offers
-    assert any(o.origin == "CNX" and o.destination in {"WAW", "WMI"} for o in offers)
+    assert any(o.origin == "CNX" and o.destination == "WAW" for o in offers)
     assert min(o.price_usd for o in offers) < 400
 
-
-@pytest.mark.live
-@pytest.mark.asyncio
-async def test_live_fetch_hops() -> None:
-    query = _query(
-        positioning_origins=("BKK",),
-        destinations=("WAW",),
-        extra_destinations=(),
-        date_from=date(2026, 10, 25),
-        date_to=date(2026, 10, 27),
-    )
-    ctx = _ctx()
-    try:
-        offers = await fetch_hops(query, ctx)
-    finally:
-        await ctx.http.aclose()
-    # 25-1=24 .. 27 → 4 days × BKK
-    assert offers
-    dates = {o.depart_date for o in offers}
-    assert date(2026, 10, 25) in dates or date(2026, 10, 26) in dates
-    assert all(o.origin == "CNX" for o in offers)
-    assert all(o.depart_time and o.arrive_time for o in offers)

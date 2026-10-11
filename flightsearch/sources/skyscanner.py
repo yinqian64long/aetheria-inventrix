@@ -29,8 +29,8 @@ class SkyscannerSource(Source):
     """Skyscanner-adjacent fares via Apify ``makework36/flight-price-scraper``.
 
     Uses IATA + ``departDate``/``departDateEnd`` so each actor run covers the
-    full query date window for one home_origin→destination pair, staying
-    within the daily Apify budget.
+    full query date window for one priority route, staying within the daily
+    Apify budget.
     """
 
     name: ClassVar[str] = "skyscanner"
@@ -51,7 +51,7 @@ class SkyscannerSource(Source):
         if date_from > date_to:
             return []
 
-        pairs = [(query.home_origin, dest) for dest in query.destinations]
+        pairs = query.route_pairs(priority=True)
         if not pairs:
             return []
 
