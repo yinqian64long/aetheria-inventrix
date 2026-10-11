@@ -65,21 +65,22 @@ def test_offer_key_without_hop_uses_airlines_fallback() -> None:
 
 def test_search_query_dates() -> None:
     query = SearchQuery(
-        home_origin="CNX",
-        positioning_origins=("BKK",),
-        destinations=("WAW",),
-        extra_destinations=("WMI",),
+        origins=("BKK", "CNX"),
+        destinations=("SGN", "HAN"),
+        priority_routes=(("BKK", "SGN"),),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 10, 22),
         adults=1,
         cabin_bags=1,
-        checked_bags=0,
-        max_total_usd=250.0,
-        near_miss_usd=300.0,
+        checked_bags=1,
+        max_total_usd=110.0,
+        near_miss_usd=130.0,
         currency="USD",
     )
-    assert query.all_origins == ("CNX", "BKK")
-    assert query.all_destinations == ("WAW", "WMI")
+    assert query.all_origins == ("BKK", "CNX")
+    assert query.all_destinations == ("SGN", "HAN")
+    assert query.route_pairs() == [("BKK", "SGN"), ("BKK", "HAN"), ("CNX", "SGN"), ("CNX", "HAN")]
+    assert query.route_pairs(priority=True) == [("BKK", "SGN")]
     assert query.dates(date(2026, 10, 21)) == [
         date(2026, 10, 21),
         date(2026, 10, 22),
@@ -94,20 +95,19 @@ def test_search_query_dates() -> None:
 
 def test_load_config_real_yaml() -> None:
     cfg = load_config(ROOT / "config.yaml")
-    assert cfg.query.home_origin == "CNX"
-    assert cfg.query.positioning_origins == ("BKK", "DMK", "HKT")
-    assert cfg.query.destinations == ("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST", "BUD")
-    assert cfg.query.extra_destinations == ("WMI",)
-    assert cfg.query.date_from == date(2026, 10, 20)
-    assert cfg.query.date_to == date(2026, 11, 1)
+    assert cfg.query.origins == ("BKK", "DMK", "CNX", "HKT", "KBV", "USM", "HDY", "CEI")
+    assert cfg.query.destinations == ("SGN", "HAN", "DAD", "CXR", "PQC", "HPH")
+    assert ("BKK", "SGN") in cfg.query.priority_routes
+    assert ("HKT", "HAN") in cfg.query.priority_routes
+    assert cfg.query.date_from == date(2026, 10, 28)
+    assert cfg.query.date_to == date(2026, 10, 31)
     assert cfg.query.adults == 1
     assert cfg.query.cabin_bags == 1
-    assert cfg.query.checked_bags == 0
-    assert cfg.query.max_total_usd == 250
-    assert cfg.query.near_miss_usd == 300
+    assert cfg.query.checked_bags == 1
+    assert cfg.query.max_total_usd == 110
+    assert cfg.query.near_miss_usd == 130
     assert cfg.query.currency == "USD"
-    assert cfg.hop_min_connection_minutes == 240
-    assert cfg.hop_max_connection_hours == 24
-    assert cfg.hop_fetch_timeout_s == 360
     assert cfg.sources["skiplagged"]["max_detail_searches"] == 12
+    assert cfg.sources["agoda"]["enabled"] is True
+    assert cfg.sources["rpl"]["enabled"] is False
     assert cfg.notify["telegram"]["heartbeat_utc_hour"] == 0

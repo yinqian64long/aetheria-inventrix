@@ -1,1 +1,1 @@
-"""Thailand→Poland flight search package."""
+"""Thailand to Vietnam one-way flight search."""

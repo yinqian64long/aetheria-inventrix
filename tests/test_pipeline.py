@@ -1,9 +1,7 @@
 from __future__ import annotations
 
-import asyncio
 from collections.abc import Mapping
 from datetime import date, datetime, timezone
-from pathlib import Path
 from typing import ClassVar
 
 import httpx
@@ -24,10 +22,9 @@ NOW = datetime(2026, 10, 21, 8, 0, tzinfo=timezone.utc)
 
 def _query() -> SearchQuery:
     return SearchQuery(
-        home_origin="CNX",
-        positioning_origins=("BKK", "DMK", "HKT"),
-        destinations=("WAW", "KRK"),
-        extra_destinations=("WMI",),
+        origins=("CNX", "BKK", "DMK", "HKT"),
+        destinations=("WAW", "KRK", "WMI"),
+        priority_routes=(),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 11, 1),
         adults=1,
@@ -42,8 +39,6 @@ def _query() -> SearchQuery:
 def _config(sources: dict | None = None) -> AppConfig:
     return AppConfig(
         query=_query(),
-        hop_min_connection_minutes=240,
-        hop_max_connection_hours=24,
         sources=sources
         or {
             "kiwi": {"enabled": True},
@@ -113,23 +108,11 @@ def _install_sources(monkeypatch: pytest.MonkeyPatch, mapping: dict[str, FakeSou
     monkeypatch.setattr("flightsearch.pipeline.load_source", fake_load)
 
 
-def _patch_hops(monkeypatch: pytest.MonkeyPatch, hops: list[Offer] | None = None) -> None:
-    async def fake(query: SearchQuery, ctx: RunContext) -> list[Offer]:
-        return list(hops or [])
-
-    monkeypatch.setattr("flightsearch.pipeline.fetch_hops", fake)
-
-
 @respx.mock
 async def _run(monkeypatch, **kwargs):
     respx.get(FRANKFURTER_URL).mock(
         return_value=httpx.Response(200, json={"rates": {"EUR": 0.9, "PLN": 4.0}})
     )
-    hops_fn = kwargs.pop("hops_fn", None)
-    if hops_fn is not None:
-        monkeypatch.setattr("flightsearch.pipeline.fetch_hops", hops_fn)
-    else:
-        _patch_hops(monkeypatch, kwargs.pop("hops", []))
     async with httpx.AsyncClient() as http:
         return await run_search(http=http, **kwargs)
 
@@ -167,6 +150,7 @@ def test_format_deals_matches_spec_example() -> None:
     assert "Airlines: Oman Air, Ryanair · 2 stops · self-transfer" in text
     assert "+ hop CNX→BKK $35 (arr 07:10) — included in total" in text
     assert "Cabin bag: yes" in text
+    assert "Checked bag: unknown" in text
     assert 'Source: kiwi · <a href="https://example.com/offer">open</a>' in text
 
 
@@ -213,9 +197,9 @@ def test_format_deals_also_on_lines_max_three() -> None:
         },
     ]
     text = format_deals([offer], [extras])
-    assert "also on kiwi $198 (cabin bag yes) · <a href=\"https://kiwi.example/1\">open</a>" in text
-    assert "also on letsfg $205 (cabin bag not included)" in text
-    assert "also on skiplagged $210 (cabin bag unknown)" in text
+    assert "also on kiwi $198 (cabin bag yes, checked bag unknown) · <a href=\"https://kiwi.example/1\">open</a>" in text
+    assert "also on letsfg $205 (cabin bag not included, checked bag unknown)" in text
+    assert "also on skiplagged $210 (cabin bag unknown, checked bag unknown)" in text
     assert "rpl" not in text
     risky = _offer(source="google", destination="KRK", price_usd=210.0, flight_numbers=["X2"])
     risky.notes = "see <script>alert(1)</script>"
@@ -264,7 +248,7 @@ async def test_dedupe_across_sources_keeps_cheapest(monkeypatch: pytest.MonkeyPa
         result.qualifying,
         [extras],
     )
-    assert "also on kiwi $220 (cabin bag unknown)" in text
+    assert "also on kiwi $220 (cabin bag unknown, checked bag unknown)" in text
 
 
 async def test_alert_only_new_or_cheaper(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -397,14 +381,6 @@ async def test_heartbeat_once_per_utc_day(monkeypatch: pytest.MonkeyPatch) -> No
 
 
 async def test_window_over_skips_search(monkeypatch: pytest.MonkeyPatch) -> None:
-    called = {"n": 0}
-
-    async def boom(query, ctx):
-        called["n"] += 1
-        raise AssertionError("hops should not run")
-
-    monkeypatch.setattr("flightsearch.pipeline.fetch_hops", boom)
-
     def fail_load(name, settings):
         raise AssertionError("sources should not load")
 
@@ -422,7 +398,6 @@ async def test_window_over_skips_search(monkeypatch: pytest.MonkeyPatch) -> None
     assert result.window_over is True
     assert result.offers == []
     assert result.qualifying == []
-    assert called["n"] == 0
     assert any("window is over" in m.lower() or "heartbeat" in m.lower() for m in notifier.sent)
     assert state.last_heartbeat_date == "2026-11-02"
 
@@ -464,114 +439,7 @@ async def test_skipped_unknown_source(monkeypatch: pytest.MonkeyPatch) -> None:
     )
     assert result.source_status["none_existing_name"]["status"] == "skipped"
     assert result.window_over is False
-    assert result.source_status["hops"]["status"] == "ok"
-
-
-async def test_hop_fetch_runs_alongside_sources(monkeypatch: pytest.MonkeyPatch) -> None:
-    order: list[str] = []
-
-    async def slow_hops(query: SearchQuery, ctx: RunContext) -> list[Offer]:
-        order.append("hops-start")
-        await asyncio.sleep(0.05)
-        order.append("hops-end")
-        return []
-
-    class SlowSource(FakeSource):
-        async def search(self, query: SearchQuery, ctx: RunContext) -> list[Offer]:
-            order.append("src-start")
-            await asyncio.sleep(0.05)
-            order.append("src-end")
-            return [_offer(source="kiwi", price_usd=210.0)]
-
-    src = SlowSource({})
-    src.name = "kiwi"
-    _install_sources(monkeypatch, {"kiwi": src})
-    result = await _run(
-        monkeypatch,
-        config=_config({"kiwi": {"enabled": True}}),
-        env={},
-        state=State(),
-        now=NOW,
-        dry_run=True,
-        hops_fn=slow_hops,
-    )
-    assert "hops-start" in order and "src-start" in order
-    assert order.index("src-start") < order.index("hops-end")
-    assert order.index("hops-start") < order.index("src-end")
-    assert result.source_status["hops"]["status"] == "ok"
-
-
-async def test_hop_fetch_failure_recorded_and_health(
-    monkeypatch: pytest.MonkeyPatch,
-) -> None:
-    async def boom(query: SearchQuery, ctx: RunContext) -> list[Offer]:
-        raise RuntimeError("mcp down")
-
-    source = FakeSource({"offers": [_offer(source="kiwi", price_usd=210.0)]})
-    source.name = "kiwi"
-    _install_sources(monkeypatch, {"kiwi": source})
-    state = State()
-    cfg = _config({"kiwi": {"enabled": True}})
-    result = await _run(
-        monkeypatch,
-        config=cfg,
-        env={},
-        state=state,
-        now=NOW,
-        dry_run=True,
-        hops_fn=boom,
-    )
-    assert result.source_status["hops"]["status"] == "error"
-    assert "mcp down" in (result.source_status["hops"]["error"] or "")
-    assert result.qualifying  # sources still succeed
-    assert state.sources["hops"]["health"]["consecutive_failures"] == 1
-
-
-async def test_hop_timeout_uses_config_and_health_alert(
-    monkeypatch: pytest.MonkeyPatch,
-) -> None:
-    async def slow(query: SearchQuery, ctx: RunContext) -> list[Offer]:
-        await asyncio.sleep(1)
-        return []
-
-    source = FakeSource({"offers": [_offer(source="kiwi", price_usd=210.0)]})
-    source.name = "kiwi"
-    _install_sources(monkeypatch, {"kiwi": source})
-    state = State()
-    notifier = FakeNotifier()
-    cfg = _config({"kiwi": {"enabled": True}})
-    cfg.hop_fetch_timeout_s = 0.05
-    for _ in range(2):
-        await _run(
-            monkeypatch,
-            config=cfg,
-            env={},
-            state=state,
-            now=NOW,
-            notifier=notifier,
-            hops_fn=slow,
-        )
-    assert state.sources["hops"]["health"]["consecutive_failures"] == 2
-    assert not any("hops" in msg and "3 consecutive" in msg for msg in notifier.sent)
-    notifier.sent.clear()
-    third = await _run(
-        monkeypatch,
-        config=cfg,
-        env={},
-        state=state,
-        now=NOW,
-        notifier=notifier,
-        hops_fn=slow,
-    )
-    assert third.source_status["hops"]["status"] == "error"
-    assert "timeout" in (third.source_status["hops"]["error"] or "")
-    assert state.sources["hops"]["health"]["consecutive_failures"] == 3
-    assert any("hops" in msg and "3 consecutive" in msg for msg in notifier.sent)
-
-
-def test_config_yaml_has_hop_fetch_timeout() -> None:
-    text = (Path(__file__).resolve().parents[1] / "config.yaml").read_text(encoding="utf-8")
-    assert "fetch_timeout_s: 360" in text
+    assert "hops" not in result.source_status
 
 
 async def test_sources_see_bangkok_date(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -587,10 +455,6 @@ async def test_sources_see_bangkok_date(monkeypatch: pytest.MonkeyPatch) -> None
     source.name = "kiwi"
     _install_sources(monkeypatch, {"kiwi": source})
 
-    async def hop_check(query: SearchQuery, ctx: RunContext) -> list[Offer]:
-        seen["hop_date"] = ctx.now.date()
-        return []
-
     now = datetime(2026, 10, 19, 17, 30, tzinfo=timezone.utc)
     await _run(
         monkeypatch,
@@ -599,8 +463,6 @@ async def test_sources_see_bangkok_date(monkeypatch: pytest.MonkeyPatch) -> None
         state=State(),
         now=now,
         dry_run=True,
-        hops_fn=hop_check,
     )
     assert seen["date"] == date(2026, 10, 20)
-    assert seen["hop_date"] == date(2026, 10, 20)
     assert seen["tz"] == "Asia/Bangkok"

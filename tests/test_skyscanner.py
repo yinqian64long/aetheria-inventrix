@@ -32,10 +32,9 @@ class _FakeFx:
 
 def _query(**overrides: object) -> SearchQuery:
     base: dict = dict(
-        home_origin="CNX",
-        positioning_origins=("BKK",),
+        origins=("CNX",),
         destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST", "BUD"),
-        extra_destinations=("WMI",),
+        priority_routes=(),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 11, 1),
         adults=1,

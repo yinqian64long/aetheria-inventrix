@@ -729,8 +729,6 @@ class SkiplaggedSource(Source):
             return _DEFAULT_MAX_DETAIL
 
     def _destinations(self, query: SearchQuery) -> list[str]:
-        # Skip WMI (extra_destinations) — calendar×detail budget is tight and
-        # WMI rarely beats the main Polish airports on long-haul from TH.
         return [d.upper() for d in query.destinations]
 
     async def search(self, query: SearchQuery, ctx: RunContext) -> list[Offer]:
@@ -738,7 +736,7 @@ class SkiplaggedSource(Source):
         if not dates:
             return []
 
-        origins = [o.upper() for o in query.all_origins]
+        origins = [o.upper() for o in query.origins]
         destinations = self._destinations(query)
         if not origins or not destinations:
             return []

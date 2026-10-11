@@ -1,28 +1,38 @@
-home_origin: CNX
-positioning_origins: [BKK, DMK, HKT]
-destinations: [WAW, KRK, GDN, KTW, WRO, POZ, PRG, IST, BUD]
-extra_destinations: [WMI]
-date_from: 2026-10-20
-date_to: 2026-11-01
+origins: [BKK, DMK, CNX, HKT, KBV, USM, HDY, CEI]
+destinations: [SGN, HAN, DAD, CXR, PQC, HPH]
+priority_routes:
+  - [BKK, SGN]
+  - [BKK, HAN]
+  - [BKK, DAD]
+  - [BKK, PQC]
+  - [DMK, SGN]
+  - [DMK, HAN]
+  - [DMK, DAD]
+  - [DMK, PQC]
+  - [CNX, HAN]
+  - [CNX, SGN]
+  - [HKT, SGN]
+  - [HKT, HAN]
+date_from: 2026-10-28
+date_to: 2026-10-31
 adults: 1
 cabin_bags: 1
-checked_bags: 0
-max_total_usd: 250
-near_miss_usd: 300
+checked_bags: 1
+max_total_usd: 110
+near_miss_usd: 130
 currency: USD
-hop:
-  min_connection_minutes: 240
-  max_connection_hours: 24
-  fetch_timeout_s: 360
 sources:
   kiwi: {enabled: true}
   skiplagged: {enabled: true, max_detail_searches: 12, timeout_s: 1200}
   google: {enabled: true}
   letsfg: {enabled: true, max_searches_per_run: 20, timeout_s: 1800}
   skyscanner: {enabled: true, max_runs_per_day: 6, timeout_s: 1200}
-  rpl: {enabled: true}
-  itaka: {enabled: true}
-  chartershop: {enabled: true}
+  rpl: {enabled: false}
+  itaka: {enabled: false}
+  chartershop: {enabled: false}
   trip: {enabled: true, max_routes_per_day: 4, max_results: 8, timeout_s: 1200}
+  agoda: {enabled: true, max_routes_per_day: 4, max_results: 10, timeout_s: 1200}
+  airasia: {enabled: true, max_routes_per_day: 4, max_results: 10, timeout_s: 1200}
+  vietjet: {enabled: true, max_routes_per_day: 4, max_results: 10, timeout_s: 1200}
 notify:
   telegram: {enabled: true, heartbeat_utc_hour: 0}

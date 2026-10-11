@@ -15,14 +15,13 @@ from flightsearch.config import AppConfig
 from flightsearch.context import RunContext
 from flightsearch.fx import LiveFx
 from flightsearch.hops import attach_hops
-from flightsearch.models import Offer, SearchQuery
+from flightsearch.models import Offer
 from flightsearch.report import format_deals, format_health_alert, format_heartbeat
 from flightsearch.sources import SOURCE_CLASSES, load_source
 from flightsearch.state import State
 
 BANGKOK = ZoneInfo("Asia/Bangkok")
 DEFAULT_SOURCE_TIMEOUT_S = 900
-HOPS_STATUS_NAME = "hops"
 log = logging.getLogger("flightsearch")
 
 
@@ -51,12 +50,6 @@ class _SourceOutcome:
     error: str | None = None
     offers: list[Offer] = field(default_factory=list)
     health_alert: bool = False
-
-
-async def fetch_hops(query: SearchQuery, ctx: RunContext) -> list[Offer]:
-    from flightsearch.sources.kiwi import fetch_hops as _fetch_hops
-
-    return await _fetch_hops(query, ctx)
 
 
 async def run_search(
@@ -137,17 +130,9 @@ async def _execute(
     if not window_over:
         fx = await LiveFx.load(http)
         planned = _plan_sources(config, only_sources)
-        hops_task = asyncio.create_task(
-            _run_hops(config, http, fx, state, now, ctx_now, env)
+        outcomes = await _run_sources(
+            planned, config, env, state, now, ctx_now, http, fx
         )
-        try:
-            outcomes = await _run_sources(
-                planned, config, env, state, now, ctx_now, http, fx
-            )
-            hop_outcome = await hops_task
-        except BaseException:
-            hops_task.cancel()
-            raise
         raw_offers: list[Offer] = []
         for outcome in outcomes:
             source_status[outcome.name] = {
@@ -157,20 +142,7 @@ async def _execute(
                 "error": outcome.error,
             }
             raw_offers.extend(outcome.offers)
-        source_status[hop_outcome.name] = {
-            "status": hop_outcome.status,
-            "count": hop_outcome.count,
-            "seconds": hop_outcome.seconds,
-            "error": hop_outcome.error,
-        }
-        hops = list(hop_outcome.offers)
-        kept, dropped = attach_hops(
-            raw_offers,
-            hops,
-            config.query,
-            config.hop_min_connection_minutes,
-            config.hop_max_connection_hours,
-        )
+        kept, dropped = attach_hops(raw_offers, config.query)
         dropped_count = len(dropped)
         best_per_source = _best_per_source(kept)
         offers, also_seen = _dedupe(kept, state)
@@ -181,7 +153,7 @@ async def _execute(
             if config.query.max_total_usd < o.total_usd <= config.query.near_miss_usd
         ]
         new_alerts = [o for o in qualifying if state.should_alert(o)]
-        health_needed = [o for o in [*outcomes, hop_outcome] if o.health_alert]
+        health_needed = [o for o in outcomes if o.health_alert]
 
     result = RunResult(
         window_over=window_over,
@@ -228,46 +200,6 @@ def _plan_sources(
             continue
         planned.append((name, settings))
     return planned
-
-
-async def _run_hops(
-    config: AppConfig,
-    http: httpx.AsyncClient,
-    fx: LiveFx,
-    state: State,
-    now: datetime,
-    ctx_now: datetime,
-    env: Mapping[str, str],
-) -> _SourceOutcome:
-    timeout = float(config.hop_fetch_timeout_s)
-    ctx = RunContext(
-        http=http,
-        fx=fx,
-        state=state.source_data("kiwi"),
-        log=logging.getLogger("flightsearch.hops"),
-        now=ctx_now,
-        env=env,
-    )
-    t0 = time.perf_counter()
-    try:
-        found = await asyncio.wait_for(fetch_hops(config.query, ctx), timeout=timeout)
-        seconds = time.perf_counter() - t0
-        state.record_source_result(HOPS_STATUS_NAME, True, None, now)
-        return _SourceOutcome(
-            name=HOPS_STATUS_NAME,
-            status="ok",
-            count=len(found),
-            seconds=seconds,
-            offers=list(found),
-        )
-    except Exception as exc:
-        seconds = time.perf_counter() - t0
-        if isinstance(exc, TimeoutError):
-            err = f"timeout after {timeout:g}s"
-        else:
-            err = str(exc) or type(exc).__name__
-        log.warning("hop fetch failed: %s", err)
-        return _error_outcome(state, HOPS_STATUS_NAME, now, err, seconds=seconds)
 
 
 async def _run_sources(
@@ -393,6 +325,7 @@ def _dedupe(
                 "total_usd": other.total_usd,
                 "link": other.link,
                 "cabin_bag_included": other.cabin_bag_included,
+                "checked_bag_included": other.checked_bag_included,
             }
             for other in sorted(group, key=lambda o: (o.total_usd, o.source))
             if other.source != winner.source

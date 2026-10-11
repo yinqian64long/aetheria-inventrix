@@ -104,10 +104,14 @@ def _as_int(value: Any) -> int | None:
 
 
 def cells_for(query: SearchQuery, today: date) -> list[tuple[str, str, date]]:
-    """Origin × destination × date grid. WMI is covered by WAW all-airports."""
+    """Every origin × destination × date. Day-major so a cursor walks airports first."""
     dates = query.dates(today)
-    origin = query.home_origin
-    return [(origin, dest, day) for day in dates for dest in query.destinations]
+    return [
+        (origin, dest, day)
+        for origin in query.origins
+        for day in dates
+        for dest in query.destinations
+    ]
 
 
 def _write_rotated_refresh(path: str, token: str) -> None:

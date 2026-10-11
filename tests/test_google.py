@@ -46,10 +46,9 @@ def _load(name: str) -> Any:
 
 def _query(**overrides: Any) -> SearchQuery:
     base: dict[str, Any] = dict(
-        home_origin="BKK",
-        positioning_origins=(),
+        origins=("BKK",),
         destinations=("WAW",),
-        extra_destinations=(),
+        priority_routes=(),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 10, 22),
         adults=1,
@@ -320,33 +319,27 @@ async def test_search_empty_dates() -> None:
         await ctx.http.aclose()
 
 
-def test_plan_date_jobs_home_full_positioning_rotates() -> None:
+def test_plan_date_jobs_covers_every_pair_and_day() -> None:
     query = _query(
-        home_origin="CNX",
-        positioning_origins=("BKK", "DMK", "HKT"),
-        destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST", "BUD"),
-        extra_destinations=("WMI",),
-        date_from=date(2026, 10, 20),
-        date_to=date(2026, 11, 1),
+        origins=("CNX", "BKK", "DMK"),
+        destinations=("SGN", "HAN"),
+        date_from=date(2026, 10, 28),
+        date_to=date(2026, 10, 31),
     )
-    dates = query.dates(date(2026, 9, 25))
-    assert len(dates) == 13
-    even = plan_date_jobs(query, dates, 0)
-    odd = plan_date_jobs(query, dates, 1)
-    assert len(even) == 130 + 189
-    assert len(odd) == 130 + 162
-    assert {(o, d, day) for o, d, day in even if o == "CNX"} == {
-        ("CNX", dest, day) for dest in query.all_destinations for day in dates
+    dates = query.dates(date(2026, 10, 11))
+    jobs = plan_date_jobs(query, dates)
+    assert len(dates) == 4
+    assert len(jobs) == 3 * 2 * 4
+    assert set(jobs) == {
+        (origin, dest, day)
+        for origin in ("CNX", "BKK", "DMK")
+        for dest in ("SGN", "HAN")
+        for day in dates
     }
-    assert not any(dest == "WMI" and origin != "CNX" for origin, dest, _day in even + odd)
-    bkk_even = {day for o, dest, day in even if o == "BKK" and dest == "WAW"}
-    bkk_odd = {day for o, dest, day in odd if o == "BKK" and dest == "WAW"}
-    assert bkk_even.isdisjoint(bkk_odd)
-    assert bkk_even | bkk_odd == set(dates)
 
 
 @pytest.mark.asyncio
-async def test_state_rotates_positioning_dates(monkeypatch: pytest.MonkeyPatch) -> None:
+async def test_search_repeats_the_full_grid(monkeypatch: pytest.MonkeyPatch) -> None:
     seen: list[tuple[str, str, date]] = []
 
     def fake_dates(
@@ -359,28 +352,27 @@ async def test_state_rotates_positioning_dates(monkeypatch: pytest.MonkeyPatch) 
     monkeypatch.setattr(google_mod, "search_flight_results", lambda *_a, **_k: [])
     src = GoogleFlightsSource({"max_detail_searches": 0, "jitter_s": (0, 0)})
     query = _query(
-        home_origin="CNX",
-        positioning_origins=("BKK",),
-        destinations=("WAW",),
-        extra_destinations=("WMI",),
-        date_from=date(2026, 10, 20),
-        date_to=date(2026, 10, 23),
+        origins=("CNX", "BKK"),
+        destinations=("SGN",),
+        date_from=date(2026, 10, 28),
+        date_to=date(2026, 10, 29),
     )
     ctx = _ctx()
     try:
         await src.search(query, ctx)
-        assert ctx.state["date_parity"] == 1
-        first_pos = {day for o, _d, day in seen if o == "BKK"}
+        first = list(seen)
         seen.clear()
         await src.search(query, ctx)
-        assert ctx.state["date_parity"] == 0
-        second_pos = {day for o, _d, day in seen if o == "BKK"}
     finally:
         await ctx.http.aclose()
-    days = {date(2026, 10, 20), date(2026, 10, 21), date(2026, 10, 22), date(2026, 10, 23)}
-    assert first_pos.isdisjoint(second_pos)
-    assert first_pos | second_pos == days
-    assert not any(dest == "WMI" and origin == "BKK" for origin, dest, _day in seen)
+    expected = {
+        ("CNX", "SGN", date(2026, 10, 28)),
+        ("CNX", "SGN", date(2026, 10, 29)),
+        ("BKK", "SGN", date(2026, 10, 28)),
+        ("BKK", "SGN", date(2026, 10, 29)),
+    }
+    assert set(first) == expected
+    assert set(seen) == expected
 
 
 @pytest.mark.live
@@ -388,10 +380,8 @@ async def test_state_rotates_positioning_dates(monkeypatch: pytest.MonkeyPatch) 
 async def test_live_bkk_waw() -> None:
     src = GoogleFlightsSource({"max_detail_searches": 2, "concurrency": 1})
     query = _query(
-        home_origin="BKK",
-        positioning_origins=(),
+        origins=("BKK",),
         destinations=("WAW",),
-        extra_destinations=(),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 10, 21),
         near_miss_usd=1000.0,

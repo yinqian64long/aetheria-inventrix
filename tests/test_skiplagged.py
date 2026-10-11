@@ -45,10 +45,9 @@ def _load(name: str) -> Any:
 
 def _query(**overrides: Any) -> SearchQuery:
     base = dict(
-        home_origin="CNX",
-        positioning_origins=("BKK",),
+        origins=("CNX", "BKK"),
         destinations=("WAW", "KRK"),
-        extra_destinations=("WMI",),
+        priority_routes=(),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 11, 1),
         adults=1,
@@ -270,14 +269,12 @@ async def test_search_partial_failure(monkeypatch: pytest.MonkeyPatch) -> None:
     _patch_session(monkeypatch, fake_call)
     src = SkiplaggedSource({"max_detail_searches": 3})
     query = _query(
-        positioning_origins=(),
+        origins=("CNX",),
         destinations=("WAW", "KRK"),
-        extra_destinations=("WMI",),
     )
     offers = await src.search(query, _ctx())
     assert offers
-    # WMI must not be queried (extra destination skipped).
-    assert all(c[1].get("destination") != "WMI" for c in calls)
+    assert {c[1].get("destination") for c in calls} <= {"WAW", "KRK"}
     # Calendar failure for WAW still allows KRK path to produce offers.
     assert any(o.destination == "KRK" for o in offers)
     # Calendar-only cells (detail failures / not selected) carry the note.
@@ -292,9 +289,8 @@ async def test_search_all_fail_raises(monkeypatch: pytest.MonkeyPatch) -> None:
     _patch_session(monkeypatch, fake_call)
     src = SkiplaggedSource({"max_detail_searches": 2})
     query = _query(
-        positioning_origins=(),
+        origins=("CNX",),
         destinations=("WAW",),
-        extra_destinations=(),
     )
     with pytest.raises(SourceError, match="calendar phase failed"):
         await src.search(query, _ctx())
@@ -319,9 +315,8 @@ async def test_calendar_errors_stop_early(monkeypatch: pytest.MonkeyPatch) -> No
     _patch_session(monkeypatch, fake_call)
     src = SkiplaggedSource({"max_detail_searches": 12})
     query = _query(
-        positioning_origins=(),
+        origins=("CNX",),
         destinations=("WAW", "KRK", "GDN", "KTW", "WRO", "POZ", "PRG", "IST", "BUD"),
-        extra_destinations=(),
     )
     with pytest.raises(SourceError, match="calendar phase failed"):
         await src.search(query, _ctx())
@@ -346,9 +341,8 @@ async def test_empty_calendar_uses_fallback(monkeypatch: pytest.MonkeyPatch) -> 
     _patch_session(monkeypatch, fake_call)
     src = SkiplaggedSource({"max_detail_searches": 4})
     query = _query(
-        positioning_origins=("BKK",),
+        origins=("CNX", "BKK"),
         destinations=("KRK",),
-        extra_destinations=(),
         date_from=date(2026, 10, 20),
         date_to=date(2026, 10, 25),
     )

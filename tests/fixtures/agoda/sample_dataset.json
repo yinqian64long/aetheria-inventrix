@@ -1,0 +1,56 @@
+[
+  {
+    "search_origin": "BKK",
+    "search_destination": "SGN",
+    "search_depart_date": "2026-10-28",
+    "search_currency": "USD",
+    "price": {"total": 89.5, "currency": "USD"},
+    "ticketingAirline": "VietJet Air",
+    "totalDurationMinutes": 95,
+    "totalStops": 0,
+    "outbound": {
+      "segments": [
+        {
+          "origin": "BKK",
+          "destination": "SGN",
+          "departureTime": "2026-10-28T06:05:00",
+          "arrivalTime": "2026-10-28T07:40:00",
+          "airlineName": "VietJet Air",
+          "flightNumber": "VJ805",
+          "baggageAllowance": [
+            {"type": "CABIN", "quantity": 1, "weightKg": 7},
+            {"type": "CHECKED", "quantity": 1, "weightKg": 20}
+          ]
+        }
+      ]
+    },
+    "url": "https://www.agoda.com/flights/results?departureFrom=BKK&arrivalTo=SGN"
+  },
+  {
+    "airline": "Thai AirAsia",
+    "departureTime": "09:15",
+    "arrivalTime": "10:40",
+    "duration": "1h 25m",
+    "stops": 0,
+    "price": 74,
+    "currency": "USD"
+  },
+  {
+    "origin": "BKK",
+    "destination": "SGN",
+    "departureDate": "2026-10-28",
+    "departureTime": "2026-10-28T18:00:00",
+    "price": 60,
+    "currency": "USD",
+    "airline": "VietJet Air",
+    "flightNumber": "VJ809",
+    "baggage": [{"type": "CHECKED", "quantity": 0, "weightKg": 0}]
+  },
+  {
+    "origin": "BKK",
+    "destination": "SGN",
+    "departureDate": "2026-12-01",
+    "price": 40,
+    "currency": "USD"
+  }
+]

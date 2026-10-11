@@ -230,6 +230,8 @@ def test_telegram_chat_id(monkeypatch: pytest.MonkeyPatch, capsys: pytest.Captur
     assert "ada" in out
 
 
-def test_load_config_reads_hop_fetch_timeout() -> None:
+def test_load_config_reads_vietnam_search() -> None:
     cfg = load_config(ROOT / "config.yaml")
-    assert cfg.hop_fetch_timeout_s == 360
+    assert cfg.query.checked_bags == 1
+    assert cfg.query.max_total_usd == 110
+    assert cfg.sources["vietjet"]["max_routes_per_day"] == 4

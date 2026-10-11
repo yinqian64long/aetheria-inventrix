@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import asyncio
-from datetime import date, datetime, timedelta
+from datetime import date, datetime
 from typing import Any, ClassVar
 
 from flightsearch.context import RunContext
@@ -184,6 +184,7 @@ def itinerary_to_offer(
         duration_minutes=duration_minutes,
         link=itinerary.get("bookingUrl"),
         cabin_bag_included=_cabin_included(itinerary.get("baggage"), query),
+        checked_bag_included=int(query.checked_bags) > 0,
         self_transfer=self_transfer,
         notes=notes,
     )
@@ -257,11 +258,7 @@ class KiwiSource(Source):
             return []
 
         date_from, date_to = dates[0], dates[-1]
-        pairs = [
-            (origin, dest)
-            for origin in query.all_origins
-            for dest in query.all_destinations
-        ]
+        pairs = query.route_pairs()
         if not pairs:
             return []
 
@@ -318,85 +315,3 @@ def _top_n_per_od(offers: list[Offer], n: int = _MAX_PER_OD) -> list[Offer]:
         group.sort(key=lambda o: (o.price_usd, o.depart_date.isoformat()))
         out.extend(group[:n])
     return out
-
-
-async def fetch_hops(query: SearchQuery, ctx: RunContext) -> list[Offer]:
-    """CNX → each positioning origin with local depart/arrive times.
-
-    Empirically, a single date-range call returns only a handful of calendar
-    days (API caps ~15 itineraries, biased to cheapest days). Per-date calls
-    are required for hop coverage.
-    """
-    dates = query.dates(ctx.now.date())
-    if not dates:
-        return []
-
-    hop_start = dates[0] - timedelta(days=1)
-    hop_end = dates[-1]
-    day = hop_start
-    hop_dates: list[date] = []
-    while day <= hop_end:
-        hop_dates.append(day)
-        day += timedelta(days=1)
-
-    dests = list(query.positioning_origins)
-    if not dests:
-        return []
-
-    tasks = [(d, dest) for dest in dests for d in hop_dates]
-    sem = asyncio.Semaphore(_CONCURRENCY)
-    offers: list[Offer] = []
-    failures = 0
-    lock = asyncio.Lock()
-
-    async def one(session: McpSession, dep: date, dest: str) -> None:
-        nonlocal failures
-        args = _search_args(
-            fly_from=query.home_origin,
-            fly_to=dest,
-            date_from=dep,
-            date_to=None,
-            query=query,
-            max_sector_stopovers=0,
-        )
-        async with sem:
-            try:
-                data = await session.call_tool(_TOOL, args, retries=2)
-            except Exception as exc:
-                ctx.log.warning(
-                    "kiwi hop failed %s→%s on %s: %s",
-                    query.home_origin,
-                    dest,
-                    dep.isoformat(),
-                    exc,
-                )
-                async with lock:
-                    failures += 1
-                return
-        parsed = parse_search_response(
-            data,
-            query=query,
-            fx=ctx.fx,
-            requested_from=query.home_origin,
-            requested_to=dest,
-            source="kiwi",
-        )
-        # Prefer results that actually serve the requested airport/day.
-        kept = [
-            o
-            for o in parsed
-            if o.depart_date == dep
-            and o.depart_time is not None
-            and o.arrive_time is not None
-        ]
-        async with lock:
-            offers.extend(kept)
-
-    async with McpSession(KIWI_MCP_URL, timeout=120) as session:
-        await asyncio.gather(*(one(session, d, dest) for d, dest in tasks))
-
-    if tasks and failures == len(tasks):
-        raise SourceError(f"kiwi: all {failures} hop calls failed")
-
-    offers.sort(key=lambda o: (o.destination, o.depart_date.isoformat(), o.price_usd))
-    return offers

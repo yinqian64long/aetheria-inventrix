@@ -145,7 +145,12 @@ def _format_deal(offer: Offer, also_seen: Sequence[Mapping[str, Any]] | None = N
         )
 
     bag = _bag_label(offer.cabin_bag_included)
-    tail = [f"Cabin bag: {bag}", f"Source: {html.escape(offer.source)}"]
+    checked = _bag_label(offer.checked_bag_included)
+    tail = [
+        f"Cabin bag: {bag}",
+        f"Checked bag: {checked}",
+        f"Source: {html.escape(offer.source)}",
+    ]
     if offer.link:
         href = html.escape(offer.link, quote=True)
         tail.append(f'<a href="{href}">open</a>')
@@ -162,7 +167,8 @@ def _format_also_on(extra: Mapping[str, Any]) -> str:
     source = html.escape(str(extra.get("source") or "unknown"))
     total = _money(float(extra.get("total_usd") or 0))
     bag = _bag_label(extra.get("cabin_bag_included"))  # type: ignore[arg-type]
-    line = f"also on {source} {total} (cabin bag {bag})"
+    checked = _bag_label(extra.get("checked_bag_included"))  # type: ignore[arg-type]
+    line = f"also on {source} {total} (cabin bag {bag}, checked bag {checked})"
     link = extra.get("link")
     if link:
         href = html.escape(str(link), quote=True)
