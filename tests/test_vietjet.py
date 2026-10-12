@@ -91,3 +91,30 @@ async def test_insufficient_credit() -> None:
     async with httpx.AsyncClient() as http:
         with pytest.raises(SourceError, match="insufficient credit"):
             await src.search(_query(), _ctx(http=http))
+
+
+@pytest.mark.asyncio
+@respx.mock
+async def test_429_is_retried_then_succeeds(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(
+        "flightsearch.sources.apify_routes._CAPACITY_BACKOFF_S",
+        (0.0, 0.0, 0.0),
+    )
+    route = respx.post(APIFY_RUN_URL)
+    route.side_effect = [
+        httpx.Response(
+            429,
+            json={
+                "error": {
+                    "type": "rate-limit-exceeded",
+                    "message": "too many requests",
+                }
+            },
+        ),
+        httpx.Response(200, json=[]),
+    ]
+    src = VietjetSource({"max_routes_per_day": 4})
+    async with httpx.AsyncClient() as http:
+        offers = await src.search(_query(), _ctx(http=http))
+    assert offers == []
+    assert route.call_count == 2

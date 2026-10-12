@@ -15,6 +15,7 @@ class AppConfig:
     query: SearchQuery
     sources: dict[str, dict]
     notify: dict
+    apify_max_concurrent_runs: int = 3
 
 
 def _as_date(value: date | str) -> date:
@@ -46,6 +47,7 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
         query=query,
         sources=dict(raw.get("sources") or {}),
         notify=dict(raw.get("notify") or {}),
+        apify_max_concurrent_runs=max(1, int(raw.get("apify_max_concurrent_runs", 3))),
     )
 
 

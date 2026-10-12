@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 import asyncio
+import logging
 import math
 import re
 from abc import abstractmethod
-from collections.abc import Mapping
+from collections.abc import Mapping, Sequence
 from datetime import date, datetime, timezone
 from typing import Any, ClassVar
 
@@ -15,10 +16,205 @@ from flightsearch.models import Offer, SearchQuery
 from flightsearch.sources.base import Source, SourceError
 
 MAX_OFFERS_PER_OD = 20
+DEFAULT_APIFY_MAX_CONCURRENT_RUNS = 3
 _DEFAULT_MAX_ROUTES_PER_DAY = 4
 _DEFAULT_MAX_RESULTS = 10
 _DEFAULT_DATE_TIMEOUT_S = 240
 _DEFAULT_DATE_CONCURRENCY = 2
+# First call, then three retries. Runs already in flight need time to finish
+# and free Apify memory.
+_CAPACITY_BACKOFF_S = (15.0, 30.0, 60.0)
+
+_CAPACITY_TYPES = frozenset(
+    {
+        "actor-memory-limit-exceeded",
+        "concurrent-runs-limit-exceeded",
+        "rate-limit-exceeded",
+        "too-many-requests",
+    }
+)
+_CREDIT_TYPES = frozenset({"not-enough-usage-to-run-paid-actor"})
+_CREDIT_NEEDLES = (
+    "insufficient credit",
+    "not enough credit",
+    "not-enough-usage",
+    "monthly usage",
+    "payment required",
+)
+_CAPACITY_NEEDLES = (
+    "memory limit",
+    "memory-limit",
+    "concurrent actor",
+    "concurrent runs",
+    "too many requests",
+    "rate limit",
+)
+
+_slot: asyncio.Semaphore | None = None
+_slot_limit: int | None = None
+_slot_loop: asyncio.AbstractEventLoop | None = None
+
+
+class ApifyCapacityError(Exception):
+    """Apify refused a run because of memory, concurrency, or rate limits."""
+
+
+class ApifyCreditError(SourceError):
+    """Apify refused a run because the account has no usage left."""
+
+
+_exhausted_tokens: set[str] = set()
+_TOKEN_ENV_KEYS = ("APIFY_TOKEN", "APIFY_TOKEN_BACKUP")
+
+
+def apify_tokens(env: Mapping[str, str]) -> list[str]:
+    """Primary Apify token, then the backup token when that account is set."""
+    tokens: list[str] = []
+    for key in _TOKEN_ENV_KEYS:
+        value = (env.get(key) or "").strip()
+        if value and value not in tokens:
+            tokens.append(value)
+    return tokens
+
+
+def clear_exhausted_apify_tokens() -> None:
+    """Forget which Apify tokens have run out of credits."""
+    _exhausted_tokens.clear()
+
+
+def configure_apify_concurrency(limit: int) -> None:
+    """Set the account-wide cap on simultaneous Apify actor runs."""
+    global _slot, _slot_limit, _slot_loop
+    limit = max(1, int(limit))
+    try:
+        loop: asyncio.AbstractEventLoop | None = asyncio.get_running_loop()
+    except RuntimeError:
+        loop = None
+    if _slot is not None and _slot_limit == limit and _slot_loop is loop:
+        return
+    _slot_limit = limit
+    if loop is None:
+        _slot = None
+        _slot_loop = None
+        return
+    _slot = asyncio.Semaphore(limit)
+    _slot_loop = loop
+
+
+def apify_run_slot() -> asyncio.Semaphore:
+    """Lazily create the shared Apify run semaphore on the running loop."""
+    loop = asyncio.get_running_loop()
+    if _slot is None or _slot_loop is not loop:
+        configure_apify_concurrency(_slot_limit or DEFAULT_APIFY_MAX_CONCURRENT_RUNS)
+    assert _slot is not None
+    return _slot
+
+
+def _token_chain(token: str, backup_tokens: Sequence[str]) -> list[str]:
+    chain: list[str] = []
+    for raw in (token, *backup_tokens):
+        value = str(raw or "").strip()
+        if value and value not in chain:
+            chain.append(value)
+    return chain
+
+
+async def call_apify_actor(
+    http: httpx.AsyncClient,
+    url: str,
+    *,
+    payload: dict[str, Any],
+    token: str,
+    timeout_s: int,
+    log_name: str,
+    log: logging.Logger,
+    backup_tokens: Sequence[str] = (),
+) -> list[dict[str, Any]]:
+    """POST one actor run and return dataset items.
+
+    Memory, concurrency, and HTTP 429 refusals are retried. When the current
+    token is out of credits, the same run is sent with the next backup token
+    and that exhausted token is skipped for the rest of the process. If every
+    token is out of credits, ``ApifyCreditError`` is raised. Other HTTP errors
+    raise ``RuntimeError`` so only that date fails.
+    """
+    chain = _token_chain(token, backup_tokens)
+    if not chain:
+        raise SourceError("APIFY_TOKEN not set")
+    live = [item for item in chain if item not in _exhausted_tokens] or chain[-1:]
+    last_credit: ApifyCreditError | None = None
+    for index, current in enumerate(live):
+        try:
+            return await _call_with_token(
+                http,
+                url,
+                payload=payload,
+                token=current,
+                timeout_s=timeout_s,
+                log_name=log_name,
+                log=log,
+            )
+        except ApifyCreditError as exc:
+            already = current in _exhausted_tokens
+            _exhausted_tokens.add(current)
+            last_credit = exc
+            if index >= len(live) - 1:
+                raise
+            if not already:
+                log.warning(
+                    "%s: Apify credits exhausted; switching to backup API token",
+                    log_name,
+                )
+    assert last_credit is not None
+    raise last_credit
+
+
+async def _call_with_token(
+    http: httpx.AsyncClient,
+    url: str,
+    *,
+    payload: dict[str, Any],
+    token: str,
+    timeout_s: int,
+    log_name: str,
+    log: logging.Logger,
+) -> list[dict[str, Any]]:
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json",
+    }
+    timeout = httpx.Timeout(float(timeout_s) + 30.0)
+    attempts = len(_CAPACITY_BACKOFF_S) + 1
+    last: ApifyCapacityError | None = None
+    for attempt in range(attempts):
+        if attempt:
+            delay = _CAPACITY_BACKOFF_S[attempt - 1]
+            log.warning(
+                "%s: Apify at capacity, retry %s/%s in %.0fs: %s",
+                log_name,
+                attempt,
+                len(_CAPACITY_BACKOFF_S),
+                delay,
+                last,
+            )
+            await asyncio.sleep(delay)
+        async with apify_run_slot():
+            try:
+                resp = await http.post(
+                    url,
+                    params={"timeout": timeout_s},
+                    headers=headers,
+                    json=payload,
+                    timeout=timeout,
+                )
+            except httpx.HTTPError as exc:
+                raise RuntimeError(f"HTTP error calling Apify: {exc}") from exc
+        try:
+            return _dataset_from_response(resp, log_name)
+        except ApifyCapacityError as exc:
+            last = exc
+    assert last is not None
+    raise last
 
 
 def run_url(actor_id: str) -> str:
@@ -40,7 +236,7 @@ class DatedRouteSource(Source):
     log_name: ClassVar[str]
 
     def is_available(self, env: Mapping[str, str]) -> tuple[bool, str]:
-        if not (env.get("APIFY_TOKEN") or "").strip():
+        if not apify_tokens(env):
             return False, "APIFY_TOKEN not set"
         return True, ""
 
@@ -77,9 +273,10 @@ class DatedRouteSource(Source):
         ...
 
     async def search(self, query: SearchQuery, ctx: RunContext) -> list[Offer]:
-        token = (ctx.env.get("APIFY_TOKEN") or "").strip()
-        if not token:
+        tokens = apify_tokens(ctx.env)
+        if not tokens:
             raise SourceError("APIFY_TOKEN not set")
+        token, backup_tokens = tokens[0], tokens[1:]
 
         today = ctx.now.astimezone(timezone.utc).date()
         dates = query.dates(today)
@@ -94,12 +291,14 @@ class DatedRouteSource(Source):
 
         offers: list[Offer] = []
         failures = 0
+        last_error = ""
         for _ in range(budget):
             origin, dest = self._next_pair(ctx, pairs)
             try:
                 items_by_date = await self._search_route(
                     ctx,
                     token=token,
+                    backup_tokens=backup_tokens,
                     origin=origin,
                     destination=dest,
                     dates=dates,
@@ -110,6 +309,7 @@ class DatedRouteSource(Source):
                 raise
             except Exception as exc:
                 failures += 1
+                last_error = str(exc)
                 ctx.log.warning(
                     "%s: route failed for %s→%s: %s",
                     self.log_name,
@@ -122,6 +322,7 @@ class DatedRouteSource(Source):
             route_items = 0
             for day, items in items_by_date:
                 if isinstance(items, Exception):
+                    last_error = str(items)
                     ctx.log.warning(
                         "%s: %s→%s %s failed: %s",
                         self.log_name,
@@ -149,7 +350,10 @@ class DatedRouteSource(Source):
                 failures += 1
 
         if failures and failures == budget and not offers:
-            raise SourceError(f"{self.log_name}: all {failures} route(s) failed")
+            message = f"{self.log_name}: all {failures} route(s) failed"
+            if last_error:
+                message = f"{message}: {last_error}"
+            raise SourceError(message)
         return self._cap_per_od(offers)
 
     def _routes_this_pipeline(self, ctx: RunContext) -> int:
@@ -181,6 +385,7 @@ class DatedRouteSource(Source):
         ctx: RunContext,
         *,
         token: str,
+        backup_tokens: Sequence[str],
         origin: str,
         destination: str,
         dates: list[date],
@@ -200,6 +405,7 @@ class DatedRouteSource(Source):
                     items = await self._run_actor(
                         ctx,
                         token=token,
+                        backup_tokens=backup_tokens,
                         origin=origin,
                         destination=destination,
                         depart=day,
@@ -219,6 +425,7 @@ class DatedRouteSource(Source):
         ctx: RunContext,
         *,
         token: str,
+        backup_tokens: Sequence[str],
         origin: str,
         destination: str,
         depart: date,
@@ -236,10 +443,6 @@ class DatedRouteSource(Source):
             currency=currency,
             max_results=max(1, max_results),
         )
-        headers = {
-            "Authorization": f"Bearer {token}",
-            "Content-Type": "application/json",
-        }
         ctx.log.info(
             "%s: Apify run %s %s→%s %s (maxResults=%s)",
             self.log_name,
@@ -249,27 +452,16 @@ class DatedRouteSource(Source):
             depart.isoformat(),
             payload.get("maxResults"),
         )
-        try:
-            resp = await ctx.http.post(
-                run_url(actor),
-                params={"timeout": timeout_s},
-                headers=headers,
-                json=payload,
-                timeout=httpx.Timeout(timeout_s + 30.0),
-            )
-        except httpx.HTTPError as exc:
-            raise RuntimeError(f"HTTP error calling Apify: {exc}") from exc
-
-        if resp.status_code == 402 or _is_insufficient_credit(resp):
-            raise SourceError(
-                f"{self.log_name}: Apify insufficient credit / payment required "
-                f"(HTTP {resp.status_code})"
-            )
-        if resp.status_code >= 400:
-            raise RuntimeError(
-                f"Apify HTTP {resp.status_code}: {_safe_body_snippet(resp)}"
-            )
-        return _dataset_items(resp.json())
+        return await call_apify_actor(
+            ctx.http,
+            run_url(actor),
+            payload=payload,
+            token=token,
+            backup_tokens=backup_tokens,
+            timeout_s=timeout_s,
+            log_name=self.log_name,
+            log=ctx.log,
+        )
 
     @staticmethod
     def _cap_per_od(offers: list[Offer]) -> list[Offer]:
@@ -292,21 +484,89 @@ def _dataset_items(data: Any) -> list[dict[str, Any]]:
     return []
 
 
-def _is_insufficient_credit(resp: httpx.Response) -> bool:
-    text = (resp.text or "").lower()
-    needles = (
-        "insufficient credit",
-        "insufficient permissions",
-        "payment required",
-        "not enough credit",
-        "monthly usage",
+def _dataset_from_response(resp: httpx.Response, log_name: str) -> list[dict[str, Any]]:
+    if resp.status_code < 400:
+        return _dataset_items(resp.json())
+    err_type, message = _apify_error_parts(resp)
+    if _is_capacity(resp.status_code, err_type, message):
+        raise ApifyCapacityError(
+            _format_apify_failure(
+                log_name, resp.status_code, err_type, message, credit=False
+            )
+        )
+    if _is_credit(resp.status_code, err_type, message):
+        raise ApifyCreditError(
+            _format_apify_failure(
+                log_name, resp.status_code, err_type, message, credit=True
+            )
+        )
+    raise RuntimeError(
+        _format_apify_failure(
+            log_name, resp.status_code, err_type, message, credit=False
+        )
     )
-    return any(n in text for n in needles)
 
 
-def _safe_body_snippet(resp: httpx.Response, limit: int = 200) -> str:
-    text = (resp.text or "").replace("\n", " ").strip()
-    return text[:limit]
+def _apify_error_parts(resp: httpx.Response) -> tuple[str, str]:
+    err_type = ""
+    message = ""
+    data: Any = None
+    try:
+        data = resp.json()
+    except Exception:
+        data = None
+    if isinstance(data, dict):
+        err = data.get("error")
+        if isinstance(err, dict):
+            err_type = str(err.get("type") or "").strip()
+            message = str(err.get("message") or "").strip()
+        elif isinstance(err, str) and err.strip():
+            message = err.strip()
+    if not message:
+        message = (resp.text or "").replace("\n", " ").strip()
+    return err_type, message[:300]
+
+
+def _is_capacity(status: int, err_type: str, message: str) -> bool:
+    if status == 429:
+        return True
+    type_key = err_type.strip().lower()
+    if type_key in _CAPACITY_TYPES:
+        return True
+    if any(part in type_key for part in ("memory-limit", "concurrent", "rate-limit")):
+        return True
+    blob = message.lower()
+    return any(needle in blob for needle in _CAPACITY_NEEDLES)
+
+
+def _is_credit(status: int, err_type: str, message: str) -> bool:
+    type_key = err_type.strip().lower()
+    if type_key in _CREDIT_TYPES or "not-enough-usage" in type_key:
+        return True
+    blob = f"{type_key} {message}".lower()
+    if any(needle in blob for needle in _CREDIT_NEEDLES):
+        return True
+    return status == 402
+
+
+def _format_apify_failure(
+    log_name: str,
+    status: int,
+    err_type: str,
+    message: str,
+    *,
+    credit: bool,
+) -> str:
+    if credit:
+        head = (
+            f"{log_name}: Apify insufficient credit / payment required (HTTP {status})"
+        )
+    else:
+        head = f"{log_name}: Apify HTTP {status}"
+    detail = " — ".join(part for part in (err_type, message[:200]) if part)
+    if detail:
+        return f"{head}: {detail}"
+    return head
 
 
 _IATA_RE = re.compile(r"^[A-Za-z]{3}$")

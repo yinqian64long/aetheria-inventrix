@@ -3,14 +3,13 @@ from __future__ import annotations
 import asyncio
 import math
 import re
-from collections.abc import Mapping
+from collections.abc import Mapping, Sequence
 from datetime import date, datetime, timezone
 from typing import Any, ClassVar
 
-import httpx
-
 from flightsearch.context import RunContext
 from flightsearch.models import Offer, SearchQuery
+from flightsearch.sources.apify_routes import apify_tokens, call_apify_actor
 from flightsearch.sources.base import Source, SourceError
 
 ACTOR_ID = "lentic_clockss~trip-com-scraper"
@@ -46,21 +45,23 @@ class TripSource(Source):
 
     Each pipeline run takes the next origin-destination pair and searches
     every remaining day in the travel window. The actor accepts one departure
-    date per run, so those days run together under ``APIFY_TOKEN``. The daily
-    cap counts routes, not individual dates.
+    date per run, so those days run together under ``APIFY_TOKEN``. If that
+    account is out of credits, the same run continues with
+    ``APIFY_TOKEN_BACKUP``. The daily cap counts routes, not individual dates.
     """
 
     name: ClassVar[str] = "trip"
 
     def is_available(self, env: Mapping[str, str]) -> tuple[bool, str]:
-        if not (env.get("APIFY_TOKEN") or "").strip():
+        if not apify_tokens(env):
             return False, "APIFY_TOKEN not set"
         return True, ""
 
     async def search(self, query: SearchQuery, ctx: RunContext) -> list[Offer]:
-        token = (ctx.env.get("APIFY_TOKEN") or "").strip()
-        if not token:
+        tokens = apify_tokens(ctx.env)
+        if not tokens:
             raise SourceError("APIFY_TOKEN not set")
+        token, backup_tokens = tokens[0], tokens[1:]
 
         today = ctx.now.astimezone(timezone.utc).date()
         dates = query.dates(today)
@@ -75,12 +76,14 @@ class TripSource(Source):
 
         offers: list[Offer] = []
         failures = 0
+        last_error = ""
         for _ in range(budget):
             origin, dest = self._next_pair(ctx, pairs)
             try:
                 items_by_date = await self._search_route(
                     ctx,
                     token=token,
+                    backup_tokens=backup_tokens,
                     origin=origin,
                     destination=dest,
                     dates=dates,
@@ -91,6 +94,7 @@ class TripSource(Source):
                 raise
             except Exception as exc:
                 failures += 1
+                last_error = str(exc)
                 ctx.log.warning(
                     "trip: route failed for %s→%s: %s", origin, dest, exc
                 )
@@ -99,6 +103,7 @@ class TripSource(Source):
             route_items = 0
             for day, items in items_by_date:
                 if isinstance(items, Exception):
+                    last_error = str(items)
                     ctx.log.warning(
                         "trip: %s→%s %s failed: %s",
                         origin,
@@ -125,7 +130,10 @@ class TripSource(Source):
                 failures += 1
 
         if failures and failures == budget and not offers:
-            raise SourceError(f"trip: all {failures} route(s) failed")
+            message = f"trip: all {failures} route(s) failed"
+            if last_error:
+                message = f"{message}: {last_error}"
+            raise SourceError(message)
         return self._cap_per_od(offers)
 
     def _routes_this_pipeline(self, ctx: RunContext) -> int:
@@ -157,6 +165,7 @@ class TripSource(Source):
         ctx: RunContext,
         *,
         token: str,
+        backup_tokens: Sequence[str],
         origin: str,
         destination: str,
         dates: list[date],
@@ -176,6 +185,7 @@ class TripSource(Source):
                     items = await self._run_actor(
                         ctx,
                         token=token,
+                        backup_tokens=backup_tokens,
                         origin=origin,
                         destination=destination,
                         depart=day,
@@ -195,6 +205,7 @@ class TripSource(Source):
         ctx: RunContext,
         *,
         token: str,
+        backup_tokens: Sequence[str],
         origin: str,
         destination: str,
         depart: date,
@@ -219,10 +230,6 @@ class TripSource(Source):
             "includeSponsored": False,
             "enrichDetails": False,
         }
-        headers = {
-            "Authorization": f"Bearer {token}",
-            "Content-Type": "application/json",
-        }
         ctx.log.info(
             "trip: Apify run %s→%s %s (maxResults=%s)",
             origin,
@@ -230,27 +237,16 @@ class TripSource(Source):
             depart.isoformat(),
             payload["maxResults"],
         )
-        try:
-            resp = await ctx.http.post(
-                run_url(actor),
-                params={"timeout": timeout_s},
-                headers=headers,
-                json=payload,
-                timeout=httpx.Timeout(timeout_s + 30.0),
-            )
-        except httpx.HTTPError as exc:
-            raise RuntimeError(f"HTTP error calling Apify: {exc}") from exc
-
-        if resp.status_code == 402 or _is_insufficient_credit(resp):
-            raise SourceError(
-                "trip: Apify insufficient credit / payment required "
-                f"(HTTP {resp.status_code})"
-            )
-        if resp.status_code >= 400:
-            raise RuntimeError(
-                f"Apify HTTP {resp.status_code}: {_safe_body_snippet(resp)}"
-            )
-        return _dataset_items(resp.json())
+        return await call_apify_actor(
+            ctx.http,
+            run_url(actor),
+            payload=payload,
+            token=token,
+            backup_tokens=backup_tokens,
+            timeout_s=timeout_s,
+            log_name="trip",
+            log=ctx.log,
+        )
 
     def _parse_item(
         self,
@@ -351,14 +347,6 @@ def _actor_id(value: str) -> str:
     if not text:
         return ACTOR_ID
     return text.replace("/", "~")
-
-
-def _dataset_items(data: Any) -> list[dict[str, Any]]:
-    if isinstance(data, list):
-        return [x for x in data if isinstance(x, dict)]
-    if isinstance(data, dict) and isinstance(data.get("items"), list):
-        return [x for x in data["items"] if isinstance(x, dict)]
-    return []
 
 
 def _price_and_currency(item: dict[str, Any]) -> tuple[float, str] | None:
@@ -578,20 +566,3 @@ def _link(
         f"&quantity={max(1, int(adults))}&locale=en-US&curr={currency}"
     )
     return f"https://www.trip.com/flights/showfarefirst?{query}"
-
-
-def _is_insufficient_credit(resp: httpx.Response) -> bool:
-    text = (resp.text or "").lower()
-    needles = (
-        "insufficient credit",
-        "insufficient permissions",
-        "payment required",
-        "not enough credit",
-        "monthly usage",
-    )
-    return any(n in text for n in needles)
-
-
-def _safe_body_snippet(resp: httpx.Response, limit: int = 200) -> str:
-    text = (resp.text or "").replace("\n", " ").strip()
-    return text[:limit]

@@ -18,6 +18,7 @@ from flightsearch.hops import attach_hops
 from flightsearch.models import Offer
 from flightsearch.report import format_deals, format_health_alert, format_heartbeat
 from flightsearch.sources import SOURCE_CLASSES, load_source
+from flightsearch.sources.apify_routes import configure_apify_concurrency
 from flightsearch.state import State
 
 BANGKOK = ZoneInfo("Asia/Bangkok")
@@ -212,6 +213,7 @@ async def _run_sources(
     http: httpx.AsyncClient,
     fx: LiveFx,
 ) -> list[_SourceOutcome]:
+    configure_apify_concurrency(config.apify_max_concurrent_runs)
     skipped = [p for p in planned if isinstance(p, _SourceOutcome)]
     runnable = [p for p in planned if isinstance(p, tuple)]
     ran = await asyncio.gather(

@@ -28,7 +28,7 @@ After the last day of the window passes, `results/latest.json` sets `"window_ove
 | **skiplagged** | None (MCP) | Free | Hidden-city itineraries; airline terms may prohibit intentional skip — use at your own risk |
 | **google** | None (`flights` / Google Flights) | Free | May be blocked or rate-limited from datacenter IPs |
 | **letsfg** | OAuth (`LETSFG_CLIENT_ID`, `LETSFG_REFRESH_TOKEN`) + **`GH_SECRETS_PAT`** | ~100 searches/day | Refresh token rotates on every use; CI must update `LETSFG_REFRESH_TOKEN` via `GH_SECRETS_PAT` or the next run breaks |
-| **skyscanner** | `APIFY_TOKEN` (optional) | Apify usage; budgeted in config (`max_runs_per_day`) | Disabled without token |
+| **skyscanner** | `APIFY_TOKEN` (optional), then `APIFY_TOKEN_BACKUP` | Apify usage; budgeted in config (`max_runs_per_day`) | Disabled without a token. Backup is used after the primary account runs out of credits |
 | **rpl** | None | Free | Disabled. Polish charter inventory, not Thailand–Vietnam |
 | **itaka** | None | Free | Disabled. Polish charter inventory, not Thailand–Vietnam |
 | **chartershop** | None | Free | Disabled. Polish charter inventory, not Thailand–Vietnam |
@@ -38,6 +38,8 @@ After the last day of the window passes, `results/latest.json` sets `"window_ove
 | **vietjet** | `APIFY_TOKEN` | Apify `maximedupre/flight-scraper` with preferred airline VJ; non-VietJet rows are dropped | [VietJet](https://www.vietjetair.com/). There is no VietJet-only Apify actor, so this uses a multi-source scraper filtered to VJ |
 
 Enable or tune sources under `sources:` in `config.yaml`. Override for a single run with `--sources kiwi,skiplagged`.
+
+Apify sources share one account. When `APIFY_TOKEN` is out of credits, the same actor run is retried with `APIFY_TOKEN_BACKUP`, and that backup is used for the rest of the process.
 
 ## Setup
 
@@ -51,7 +53,8 @@ Enable or tune sources under `sources:` in `config.yaml`. Override for a single 
    gh secret set LETSFG_REFRESH_TOKEN
    gh secret set GH_SECRETS_PAT   # required if letsfg is enabled (see below)
    # Optional:
-   gh secret set APIFY_TOKEN      # Skyscanner and Trip.com
+   gh secret set APIFY_TOKEN         # primary Apify account
+   gh secret set APIFY_TOKEN_BACKUP  # used after the primary account runs out of credits
    ```
 
    **`GH_SECRETS_PAT` (required when LetsFG is enabled):** LetsFG refresh tokens rotate on every API use. The workflow writes the new token back with `gh secret set LETSFG_REFRESH_TOKEN`, which needs a **fine-grained PAT** stored as `GH_SECRETS_PAT`: access limited to **this repository only**, permission **Secrets: Read and write**, expiry **at least 45 days** (rotate the PAT before it expires).

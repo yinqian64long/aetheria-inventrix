@@ -56,6 +56,7 @@ jobs:
           LETSFG_CLIENT_ID: ${{ secrets.LETSFG_CLIENT_ID }}
           LETSFG_REFRESH_TOKEN: ${{ secrets.LETSFG_REFRESH_TOKEN }}
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          APIFY_TOKEN_BACKUP: ${{ secrets.APIFY_TOKEN_BACKUP }}
           LETSFG_REFRESH_TOKEN_OUT: ${{ runner.temp }}/letsfg_rt
         run: |
           set -euo pipefail

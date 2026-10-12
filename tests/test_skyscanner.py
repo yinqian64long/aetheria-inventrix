@@ -75,6 +75,9 @@ def test_is_available_requires_token() -> None:
     ok, reason = src.is_available({"APIFY_TOKEN": "tok"})
     assert ok is True
     assert reason == ""
+    ok, reason = src.is_available({"APIFY_TOKEN_BACKUP": "backup-token"})
+    assert ok is True
+    assert reason == ""
 
 
 @pytest.mark.asyncio
@@ -211,6 +214,91 @@ async def test_402_insufficient_credit() -> None:
         ctx = _ctx(http=http)
         with pytest.raises(SourceError, match="insufficient credit"):
             await src.search(_query(), ctx)
+
+
+@pytest.mark.asyncio
+@respx.mock
+async def test_credit_error_includes_apify_type() -> None:
+    route = respx.post(APIFY_RUN_URL).mock(
+        return_value=httpx.Response(
+            402,
+            json={
+                "error": {
+                    "type": "not-enough-usage-to-run-paid-actor",
+                    "message": "not enough credit on the Apify account",
+                }
+            },
+        )
+    )
+    src = SkyscannerSource({"max_runs_per_day": 1})
+    async with httpx.AsyncClient() as http:
+        with pytest.raises(SourceError, match="not-enough-usage-to-run-paid-actor") as exc:
+            await src.search(_query(), _ctx(http=http))
+    assert "not enough credit" in str(exc.value)
+    assert route.call_count == 1
+
+
+@pytest.mark.asyncio
+@respx.mock
+async def test_credit_exhaustion_switches_to_backup_token() -> None:
+    primary = "primary-apify-token-sky"
+    backup = "backup-apify-token-sky"
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        if request.headers["Authorization"] == f"Bearer {primary}":
+            return httpx.Response(
+                402,
+                json={
+                    "error": {
+                        "type": "not-enough-usage-to-run-paid-actor",
+                        "message": "not enough credit on the Apify account",
+                    }
+                },
+            )
+        return httpx.Response(200, json=[])
+
+    route = respx.post(APIFY_RUN_URL).mock(side_effect=handler)
+    src = SkyscannerSource({"max_runs_per_day": 1})
+    async with httpx.AsyncClient() as http:
+        offers = await src.search(
+            _query(),
+            _ctx(http=http, env={"APIFY_TOKEN": primary, "APIFY_TOKEN_BACKUP": backup}),
+        )
+    assert offers == []
+    assert route.call_count == 2
+    assert [call.request.headers["Authorization"] for call in route.calls] == [
+        f"Bearer {primary}",
+        f"Bearer {backup}",
+    ]
+
+
+@pytest.mark.asyncio
+@respx.mock
+async def test_memory_limit_is_retried_then_succeeds(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setattr(
+        "flightsearch.sources.apify_routes._CAPACITY_BACKOFF_S",
+        (0.0, 0.0, 0.0),
+    )
+    route = respx.post(APIFY_RUN_URL)
+    route.side_effect = [
+        httpx.Response(
+            402,
+            json={
+                "error": {
+                    "type": "actor-memory-limit-exceeded",
+                    "message": "exceed the memory limit of concurrent Actor runs",
+                }
+            },
+        ),
+        httpx.Response(200, json=[]),
+    ]
+    src = SkyscannerSource({"max_runs_per_day": 1})
+    async with httpx.AsyncClient() as http:
+        offers = await src.search(_query(), _ctx(http=http))
+    assert offers == []
+    assert route.call_count == 2
 
 
 @pytest.mark.asyncio

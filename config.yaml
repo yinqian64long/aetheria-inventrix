@@ -21,6 +21,7 @@ checked_bags: 1
 max_total_usd: 110
 near_miss_usd: 130
 currency: USD
+apify_max_concurrent_runs: 3
 sources:
   kiwi: {enabled: true}
   skiplagged: {enabled: true, max_detail_searches: 12, timeout_s: 1200}

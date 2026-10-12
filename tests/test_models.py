@@ -111,3 +111,4 @@ def test_load_config_real_yaml() -> None:
     assert cfg.sources["agoda"]["enabled"] is True
     assert cfg.sources["rpl"]["enabled"] is False
     assert cfg.notify["telegram"]["heartbeat_utc_hour"] == 0
+    assert cfg.apify_max_concurrent_runs == 3

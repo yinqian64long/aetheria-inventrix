@@ -2,14 +2,13 @@ from __future__ import annotations
 
 import math
 import re
-from collections.abc import Mapping
+from collections.abc import Mapping, Sequence
 from datetime import date, datetime, timezone
 from typing import Any, ClassVar
 
-import httpx
-
 from flightsearch.context import RunContext
 from flightsearch.models import Offer, SearchQuery
+from flightsearch.sources.apify_routes import apify_tokens, call_apify_actor
 from flightsearch.sources.base import Source, SourceError
 
 ACTOR_ID = "makework36~flight-price-scraper"
@@ -36,14 +35,15 @@ class SkyscannerSource(Source):
     name: ClassVar[str] = "skyscanner"
 
     def is_available(self, env: Mapping[str, str]) -> tuple[bool, str]:
-        if not (env.get("APIFY_TOKEN") or "").strip():
+        if not apify_tokens(env):
             return False, "APIFY_TOKEN not set"
         return True, ""
 
     async def search(self, query: SearchQuery, ctx: RunContext) -> list[Offer]:
-        token = (ctx.env.get("APIFY_TOKEN") or "").strip()
-        if not token:
+        tokens = apify_tokens(ctx.env)
+        if not tokens:
             raise SourceError("APIFY_TOKEN not set")
+        token, backup_tokens = tokens[0], tokens[1:]
 
         today = ctx.now.astimezone(timezone.utc).date()
         date_from = max(query.date_from, today)
@@ -62,12 +62,14 @@ class SkyscannerSource(Source):
 
         offers: list[Offer] = []
         failures = 0
+        last_error = ""
         for _ in range(budget):
             origin, dest = self._next_pair(ctx, pairs)
             try:
                 items = await self._run_actor(
                     ctx,
                     token=token,
+                    backup_tokens=backup_tokens,
                     origin=origin,
                     destination=dest,
                     date_from=date_from,
@@ -79,6 +81,7 @@ class SkyscannerSource(Source):
                 raise
             except Exception as exc:
                 failures += 1
+                last_error = str(exc)
                 ctx.log.warning(
                     "skyscanner: actor run failed for %s→%s: %s",
                     origin,
@@ -95,7 +98,10 @@ class SkyscannerSource(Source):
                     offers.append(offer)
 
         if failures and failures == budget and not offers:
-            raise SourceError(f"skyscanner: all {failures} actor run(s) failed")
+            message = f"skyscanner: all {failures} actor run(s) failed"
+            if last_error:
+                message = f"{message}: {last_error}"
+            raise SourceError(message)
 
         return self._cap_per_od(offers)
 
@@ -127,6 +133,7 @@ class SkyscannerSource(Source):
         ctx: RunContext,
         *,
         token: str,
+        backup_tokens: Sequence[str],
         origin: str,
         destination: str,
         date_from: date,
@@ -145,10 +152,6 @@ class SkyscannerSource(Source):
             "currency": currency,
             "maxFlights": MAX_FLIGHTS,
         }
-        headers = {
-            "Authorization": f"Bearer {token}",
-            "Content-Type": "application/json",
-        }
         ctx.log.info(
             "skyscanner: Apify run %s→%s %s..%s (maxFlights=%s)",
             origin,
@@ -157,33 +160,16 @@ class SkyscannerSource(Source):
             date_to.isoformat(),
             MAX_FLIGHTS,
         )
-        try:
-            resp = await ctx.http.post(
-                APIFY_RUN_URL,
-                params={"timeout": timeout_s},
-                headers=headers,
-                json=payload,
-                timeout=httpx.Timeout(timeout_s + 30.0),
-            )
-        except httpx.HTTPError as exc:
-            raise RuntimeError(f"HTTP error calling Apify: {exc}") from exc
-
-        if resp.status_code == 402 or _is_insufficient_credit(resp):
-            raise SourceError(
-                "skyscanner: Apify insufficient credit / payment required "
-                f"(HTTP {resp.status_code})"
-            )
-        if resp.status_code >= 400:
-            raise RuntimeError(
-                f"Apify HTTP {resp.status_code}: {_safe_body_snippet(resp)}"
-            )
-
-        data = resp.json()
-        if isinstance(data, list):
-            return [x for x in data if isinstance(x, dict)]
-        if isinstance(data, dict) and isinstance(data.get("items"), list):
-            return [x for x in data["items"] if isinstance(x, dict)]
-        return []
+        return await call_apify_actor(
+            ctx.http,
+            APIFY_RUN_URL,
+            payload=payload,
+            token=token,
+            backup_tokens=backup_tokens,
+            timeout_s=timeout_s,
+            log_name="skyscanner",
+            log=ctx.log,
+        )
 
     def _parse_item(
         self,
@@ -387,19 +373,3 @@ def _skyscanner_link(origin: str, destination: str, depart: date) -> str:
         f"{origin.lower()}/{destination.lower()}/{yymmdd}/"
     )
 
-
-def _is_insufficient_credit(resp: httpx.Response) -> bool:
-    text = (resp.text or "").lower()
-    needles = (
-        "insufficient credit",
-        "insufficient permissions",
-        "payment required",
-        "not enough credit",
-        "monthly usage",
-    )
-    return any(n in text for n in needles)
-
-
-def _safe_body_snippet(resp: httpx.Response, limit: int = 200) -> str:
-    text = (resp.text or "").replace("\n", " ").strip()
-    return text[:limit]
