@@ -110,6 +110,11 @@
       "last_alerted": "2026-10-11T21:55:17.271085+00:00",
       "total_usd": 99.0
     },
+    "BKK-CXR|2026-10-31||": {
+      "first_seen": "2026-10-12T05:52:25.185650+00:00",
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 82.0
+    },
     "BKK-DAD|2026-10-28|2026-10-28T08:15:00|VZ964": {
       "first_seen": "2026-10-11T05:54:37.771228+00:00",
       "last_alerted": "2026-10-11T05:54:37.771228+00:00",
@@ -260,6 +265,11 @@
       "last_alerted": "2026-10-11T05:54:37.771228+00:00",
       "total_usd": 99.0
     },
+    "BKK-DAD|2026-10-31|2026-10-31T20:50:00|VN608,VN6030": {
+      "first_seen": "2026-10-12T05:52:25.185650+00:00",
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 99.0
+    },
     "BKK-DAD|2026-10-31||Sun PhuQuoc Airways": {
       "first_seen": "2026-10-11T12:45:08.309682+00:00",
       "last_alerted": "2026-10-11T12:45:08.309682+00:00",
@@ -405,6 +415,16 @@
       "last_alerted": "2026-10-11T05:54:37.771228+00:00",
       "total_usd": 108.0
     },
+    "BKK-HPH|2026-10-29|2026-10-29T08:15:00|VZ964,VJ724": {
+      "first_seen": "2026-10-12T05:52:25.185650+00:00",
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 107.0
+    },
+    "BKK-HPH|2026-10-29|2026-10-29T10:50:00|VZ960,VJ724": {
+      "first_seen": "2026-10-12T05:52:25.185650+00:00",
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 107.0
+    },
     "BKK-HPH|2026-10-29|2026-10-29T11:20:00|VN600,VN1186": {
       "first_seen": "2026-10-11T12:45:08.309682+00:00",
       "last_alerted": "2026-10-11T12:45:08.309682+00:00",
@@ -485,6 +505,11 @@
       "last_alerted": "2026-10-11T21:55:17.271085+00:00",
       "total_usd": 102.0
     },
+    "BKK-PQC|2026-10-28|2026-10-28T09:40:00|980": {
+      "first_seen": "2026-10-12T05:52:25.185650+00:00",
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 77.88
+    },
     "BKK-PQC|2026-10-28|2026-10-28T09:40:00|VZ980": {
       "first_seen": "2026-10-11T05:54:37.771228+00:00",
       "last_alerted": "2026-10-11T05:54:37.771228+00:00",
@@ -500,10 +525,20 @@
       "last_alerted": "2026-10-11T05:54:37.771228+00:00",
       "total_usd": 97.0
     },
+    "BKK-PQC|2026-10-28|2026-10-28T13:15:00|702": {
+      "first_seen": "2026-10-12T05:52:25.185650+00:00",
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 73.94
+    },
     "BKK-PQC|2026-10-28|2026-10-28T13:15:00|9G702": {
       "first_seen": "2026-10-11T05:54:37.771228+00:00",
       "last_alerted": "2026-10-11T05:54:37.771228+00:00",
       "total_usd": 68.0
+    },
+    "BKK-PQC|2026-10-28|2026-10-28T14:40:00|982": {
+      "first_seen": "2026-10-12T05:52:25.185650+00:00",
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 77.88
     },
     "BKK-PQC|2026-10-28|2026-10-28T14:40:00|VZ982": {
       "first_seen": "2026-10-11T05:54:37.771228+00:00",
@@ -545,10 +580,25 @@
       "last_alerted": "2026-10-11T21:55:17.271085+00:00",
       "total_usd": 99.0
     },
+    "BKK-PQC|2026-10-30|2026-10-30T09:40:00|980": {
+      "first_seen": "2026-10-12T05:52:25.185650+00:00",
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 85.21
+    },
     "BKK-PQC|2026-10-30|2026-10-30T09:40:00|VZ980": {
       "first_seen": "2026-10-11T12:45:08.309682+00:00",
-      "last_alerted": "2026-10-11T12:45:08.309682+00:00",
-      "total_usd": 86.0
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 79.0
+    },
+    "BKK-PQC|2026-10-30|2026-10-30T11:20:00|VN600,VN1835": {
+      "first_seen": "2026-10-12T05:52:25.185650+00:00",
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 97.0
+    },
+    "BKK-PQC|2026-10-30|2026-10-30T13:15:00|702": {
+      "first_seen": "2026-10-12T05:52:25.185650+00:00",
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 88.45
     },
     "BKK-PQC|2026-10-30|2026-10-30T13:15:00|9G702": {
       "first_seen": "2026-10-11T05:54:37.771228+00:00",
@@ -560,10 +610,20 @@
       "last_alerted": "2026-10-11T21:55:17.271085+00:00",
       "total_usd": 103.0
     },
+    "BKK-PQC|2026-10-30|2026-10-30T14:20:00|VN604,VN1835": {
+      "first_seen": "2026-10-12T05:52:25.185650+00:00",
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 97.0
+    },
+    "BKK-PQC|2026-10-30|2026-10-30T14:40:00|982": {
+      "first_seen": "2026-10-12T05:52:25.185650+00:00",
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 81.13
+    },
     "BKK-PQC|2026-10-30|2026-10-30T14:40:00|VZ982": {
       "first_seen": "2026-10-11T21:55:17.271085+00:00",
-      "last_alerted": "2026-10-11T21:55:17.271085+00:00",
-      "total_usd": 83.0
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 77.0
     },
     "BKK-PQC|2026-10-30||": {
       "first_seen": "2026-10-11T05:54:37.771228+00:00",
@@ -1160,6 +1220,11 @@
       "last_alerted": "2026-10-11T05:54:37.771228+00:00",
       "total_usd": 82.0
     },
+    "KBV-PQC|2026-10-28||": {
+      "first_seen": "2026-10-12T05:52:25.185650+00:00",
+      "last_alerted": "2026-10-12T05:52:25.185650+00:00",
+      "total_usd": 82.0
+    },
     "KBV-PQC|2026-10-29||": {
       "first_seen": "2026-10-11T05:54:37.771228+00:00",
       "last_alerted": "2026-10-11T05:54:37.771228+00:00",
@@ -1176,31 +1241,31 @@
       "total_usd": 89.0
     }
   },
-  "last_heartbeat_date": "2026-10-11",
-  "runs": 3,
+  "last_heartbeat_date": "2026-10-12",
+  "runs": 4,
   "sources": {
     "agoda": {
       "data": {
-        "day": "2026-10-11",
-        "route_cursor": 3,
-        "routes_today": 3
+        "day": "2026-10-12",
+        "route_cursor": 4,
+        "routes_today": 1
       },
       "health": {
-        "consecutive_failures": 3,
+        "consecutive_failures": 4,
         "last_error": "agoda: Apify insufficient credit / payment required (HTTP 402)",
         "last_ok": null
       }
     },
     "airasia": {
       "data": {
-        "day": "2026-10-11",
-        "route_cursor": 3,
-        "routes_today": 3
+        "day": "2026-10-12",
+        "route_cursor": 4,
+        "routes_today": 1
       },
       "health": {
-        "consecutive_failures": 2,
-        "last_error": "airasia: Apify insufficient credit / payment required (HTTP 402)",
-        "last_ok": "2026-10-11T05:54:37.771228+00:00"
+        "consecutive_failures": 0,
+        "last_error": null,
+        "last_ok": "2026-10-12T05:52:25.185650+00:00"
       }
     },
     "google": {
@@ -1208,7 +1273,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-11T21:55:17.271085+00:00"
+        "last_ok": "2026-10-12T05:52:25.185650+00:00"
       }
     },
     "kiwi": {
@@ -1216,19 +1281,19 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-11T21:55:17.271085+00:00"
+        "last_ok": "2026-10-12T05:52:25.185650+00:00"
       }
     },
     "letsfg": {
       "data": {
-        "cursor": 34,
-        "day": "2026-10-11",
-        "searches_today": 34
+        "cursor": 37,
+        "day": "2026-10-12",
+        "searches_today": 3
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-11T21:55:17.271085+00:00"
+        "last_ok": "2026-10-12T05:52:25.185650+00:00"
       }
     },
     "skiplagged": {
@@ -1236,41 +1301,41 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-11T21:55:17.271085+00:00"
+        "last_ok": "2026-10-12T05:52:25.185650+00:00"
       }
     },
     "skyscanner": {
       "data": {
-        "cursor": 5,
-        "day": "2026-10-11",
-        "runs_today": 5
-      },
-      "health": {
-        "consecutive_failures": 1,
-        "last_error": "skyscanner: Apify insufficient credit / payment required (HTTP 402)",
-        "last_ok": "2026-10-11T12:45:08.309682+00:00"
-      }
-    },
-    "trip": {
-      "data": {
-        "day": "2026-10-11",
-        "route_cursor": 3,
-        "routes_today": 3
+        "cursor": 7,
+        "day": "2026-10-12",
+        "runs_today": 2
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
+        "last_ok": "2026-10-12T05:52:25.185650+00:00"
+      }
+    },
+    "trip": {
+      "data": {
+        "day": "2026-10-12",
+        "route_cursor": 4,
+        "routes_today": 1
+      },
+      "health": {
+        "consecutive_failures": 1,
+        "last_error": "trip: Apify insufficient credit / payment required (HTTP 402)",
         "last_ok": "2026-10-11T21:55:17.271085+00:00"
       }
     },
     "vietjet": {
       "data": {
-        "day": "2026-10-11",
-        "route_cursor": 3,
-        "routes_today": 3
+        "day": "2026-10-12",
+        "route_cursor": 4,
+        "routes_today": 1
       },
       "health": {
-        "consecutive_failures": 3,
+        "consecutive_failures": 4,
         "last_error": "vietjet: Apify insufficient credit / payment required (HTTP 402)",
         "last_ok": null
       }
