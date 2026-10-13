@@ -95,10 +95,9 @@ def test_search_query_dates() -> None:
 
 def test_load_config_real_yaml() -> None:
     cfg = load_config(ROOT / "config.yaml")
-    assert cfg.query.origins == ("BKK", "DMK", "CNX", "HKT", "KBV", "USM", "HDY", "CEI")
-    assert cfg.query.destinations == ("SGN", "HAN", "DAD", "CXR", "PQC", "HPH")
-    assert ("BKK", "SGN") in cfg.query.priority_routes
-    assert ("HKT", "HAN") in cfg.query.priority_routes
+    assert cfg.query.origins == ("BKK", "DMK", "CNX")
+    assert cfg.query.destinations == ("DAD",)
+    assert cfg.query.priority_routes == (("BKK", "DAD"), ("DMK", "DAD"), ("CNX", "DAD"))
     assert cfg.query.date_from == date(2026, 10, 28)
     assert cfg.query.date_to == date(2026, 10, 31)
     assert cfg.query.adults == 1

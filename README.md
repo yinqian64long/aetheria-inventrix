@@ -1,6 +1,6 @@
 # flightsearch
 
-Scheduled one-way flight search from Thailand to Vietnam. The app polls multiple sources and sends Telegram alerts when the total is at or below the configured USD cap.
+Scheduled one-way flight search from Bangkok or Chiang Mai to Da Nang. The app polls multiple sources and sends Telegram alerts when the total is at or below the configured USD cap.
 
 ## Search specification
 
@@ -8,9 +8,9 @@ Defaults live in [`config.yaml`](config.yaml):
 
 | Parameter | Default |
 |-----------|---------|
-| Origins | BKK, DMK, CNX, HKT, KBV, USM, HDY, CEI |
-| Destinations | SGN, HAN, DAD, CXR, PQC, HPH |
-| Priority routes | BKK/DMK to SGN, HAN, DAD and PQC, plus CNX–HAN, CNX–SGN, HKT–SGN, HKT–HAN. Paid Apify sources rotate through this list. Kiwi, Skiplagged and Google search every airport pair. |
+| Origins | BKK, DMK, CNX |
+| Destinations | DAD |
+| Priority routes | BKK–DAD, DMK–DAD, CNX–DAD. Paid Apify sources rotate through this list. Kiwi, Skiplagged and Google search every airport pair. |
 | Travel dates | 2026-10-28 through 2026-10-31, one way |
 | Passengers | 1 adult, 1 cabin bag, 1 checked bag |
 | Alert threshold | Total ≤ 110 USD |

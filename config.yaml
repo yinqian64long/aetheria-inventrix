@@ -1,18 +1,9 @@
-origins: [BKK, DMK, CNX, HKT, KBV, USM, HDY, CEI]
-destinations: [SGN, HAN, DAD, CXR, PQC, HPH]
+origins: [BKK, DMK, CNX]
+destinations: [DAD]
 priority_routes:
-  - [BKK, SGN]
-  - [BKK, HAN]
   - [BKK, DAD]
-  - [BKK, PQC]
-  - [DMK, SGN]
-  - [DMK, HAN]
   - [DMK, DAD]
-  - [DMK, PQC]
-  - [CNX, HAN]
-  - [CNX, SGN]
-  - [HKT, SGN]
-  - [HKT, HAN]
+  - [CNX, DAD]
 date_from: 2026-10-28
 date_to: 2026-10-31
 adults: 1
