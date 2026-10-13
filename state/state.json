@@ -1125,25 +1125,60 @@
       "last_alerted": "2026-10-11T21:55:17.271085+00:00",
       "total_usd": 83.0
     },
+    "DMK-DAD|2026-10-28|2026-10-28T07:25:00|634": {
+      "first_seen": "2026-10-13T10:31:36.540684+00:00",
+      "last_alerted": "2026-10-13T10:31:36.540684+00:00",
+      "total_usd": 65.73
+    },
     "DMK-DAD|2026-10-28|2026-10-28T07:25:00|FD634": {
       "first_seen": "2026-10-11T21:55:17.271085+00:00",
       "last_alerted": "2026-10-11T21:55:17.271085+00:00",
       "total_usd": 65.0
+    },
+    "DMK-DAD|2026-10-28|2026-10-28T10:35:00|636": {
+      "first_seen": "2026-10-13T10:31:36.540684+00:00",
+      "last_alerted": "2026-10-13T10:31:36.540684+00:00",
+      "total_usd": 65.73
     },
     "DMK-DAD|2026-10-28|2026-10-28T10:35:00|FD636": {
       "first_seen": "2026-10-11T12:45:08.309682+00:00",
       "last_alerted": "2026-10-11T12:45:08.309682+00:00",
       "total_usd": 68.0
     },
+    "DMK-DAD|2026-10-28|2026-10-28T16:40:00|638": {
+      "first_seen": "2026-10-13T10:31:36.540684+00:00",
+      "last_alerted": "2026-10-13T10:31:36.540684+00:00",
+      "total_usd": 65.73
+    },
     "DMK-DAD|2026-10-28|2026-10-28T16:40:00|FD638": {
       "first_seen": "2026-10-11T21:55:17.271085+00:00",
       "last_alerted": "2026-10-11T21:55:17.271085+00:00",
       "total_usd": 66.0
     },
+    "DMK-DAD|2026-10-29|2026-10-29T07:25:00|634": {
+      "first_seen": "2026-10-13T10:31:36.540684+00:00",
+      "last_alerted": "2026-10-13T10:31:36.540684+00:00",
+      "total_usd": 65.73
+    },
     "DMK-DAD|2026-10-29|2026-10-29T07:25:00|FD634": {
       "first_seen": "2026-10-11T21:55:17.271085+00:00",
       "last_alerted": "2026-10-11T21:55:17.271085+00:00",
       "total_usd": 65.0
+    },
+    "DMK-DAD|2026-10-29|2026-10-29T10:35:00|636": {
+      "first_seen": "2026-10-13T10:31:36.540684+00:00",
+      "last_alerted": "2026-10-13T10:31:36.540684+00:00",
+      "total_usd": 65.73
+    },
+    "DMK-DAD|2026-10-29|2026-10-29T10:35:00|FD636": {
+      "first_seen": "2026-10-13T10:31:36.540684+00:00",
+      "last_alerted": "2026-10-13T10:31:36.540684+00:00",
+      "total_usd": 68.0
+    },
+    "DMK-DAD|2026-10-29|2026-10-29T16:40:00|638": {
+      "first_seen": "2026-10-13T10:31:36.540684+00:00",
+      "last_alerted": "2026-10-13T10:31:36.540684+00:00",
+      "total_usd": 65.73
     },
     "DMK-DAD|2026-10-29|2026-10-29T16:40:00|FD638": {
       "first_seen": "2026-10-11T12:45:08.309682+00:00",
@@ -1592,30 +1627,30 @@
     }
   },
   "last_heartbeat_date": "2026-10-13",
-  "runs": 7,
+  "runs": 8,
   "sources": {
     "agoda": {
       "data": {
         "day": "2026-10-13",
-        "route_cursor": 7,
-        "routes_today": 2
+        "route_cursor": 8,
+        "routes_today": 3
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-13T02:11:57.433204+00:00"
+        "last_ok": "2026-10-13T10:31:36.540684+00:00"
       }
     },
     "airasia": {
       "data": {
         "day": "2026-10-13",
-        "route_cursor": 7,
-        "routes_today": 2
+        "route_cursor": 8,
+        "routes_today": 3
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-13T02:11:57.433204+00:00"
+        "last_ok": "2026-10-13T10:31:36.540684+00:00"
       }
     },
     "google": {
@@ -1623,7 +1658,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-13T02:11:57.433204+00:00"
+        "last_ok": "2026-10-13T10:31:36.540684+00:00"
       }
     },
     "kiwi": {
@@ -1631,18 +1666,18 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-13T02:11:57.433204+00:00"
+        "last_ok": "2026-10-13T10:31:36.540684+00:00"
       }
     },
     "letsfg": {
       "data": {
-        "cursor": 5,
+        "cursor": 4,
         "day": "2026-10-13",
-        "searches_today": 38
+        "searches_today": 43
       },
       "health": {
-        "consecutive_failures": 0,
-        "last_error": null,
+        "consecutive_failures": 1,
+        "last_error": "timeout after 1800s",
         "last_ok": "2026-10-13T02:11:57.433204+00:00"
       }
     },
@@ -1651,43 +1686,43 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-13T02:11:57.433204+00:00"
+        "last_ok": "2026-10-13T10:31:36.540684+00:00"
       }
     },
     "skyscanner": {
       "data": {
-        "cursor": 13,
+        "cursor": 15,
         "day": "2026-10-13",
-        "runs_today": 4
+        "runs_today": 6
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-13T02:11:57.433204+00:00"
+        "last_ok": "2026-10-13T10:31:36.540684+00:00"
       }
     },
     "trip": {
       "data": {
         "day": "2026-10-13",
-        "route_cursor": 7,
-        "routes_today": 2
+        "route_cursor": 8,
+        "routes_today": 3
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-13T02:11:57.433204+00:00"
+        "last_ok": "2026-10-13T10:31:36.540684+00:00"
       }
     },
     "vietjet": {
       "data": {
         "day": "2026-10-13",
-        "route_cursor": 7,
-        "routes_today": 2
+        "route_cursor": 8,
+        "routes_today": 3
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-13T02:11:57.433204+00:00"
+        "last_ok": "2026-10-13T10:31:36.540684+00:00"
       }
     }
   },

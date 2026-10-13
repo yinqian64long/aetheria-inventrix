@@ -2,25 +2,25 @@
   "best_per_source": {
     "airasia": {
       "airlines": [
-        "Thai Vietjet"
+        "Thai AirAsia"
       ],
-      "arrive_time": "2026-10-28T12:30:00",
+      "arrive_time": "2026-10-28T09:05:00",
       "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T10:50:00",
+      "depart_time": "2026-10-28T07:25:00",
       "destination": "DAD",
       "duration_minutes": 100,
       "flight_numbers": [
-        "960"
+        "634"
       ],
       "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
       "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 66.96,
-      "price_usd": 66.96,
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
       "self_transfer": null,
       "source": "airasia",
       "stops": 0
@@ -66,38 +66,13 @@
         "FD636"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/2zkmzm",
+      "link": "https://kiwi.com/u/g4s5w7",
       "notes": "",
       "origin": "DMK",
       "price_original": 68.0,
       "price_usd": 68.0,
       "self_transfer": false,
       "source": "kiwi",
-      "stops": 0
-    },
-    "letsfg": {
-      "airlines": [
-        "FD"
-      ],
-      "arrive_time": "2026-10-28T12:10:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T10:35:00",
-      "destination": "DAD",
-      "duration_minutes": 95,
-      "flight_numbers": [
-        "FD636"
-      ],
-      "hop": null,
-      "link": "https://letsfg.co/en?stage=results&sid=ws_01d29fe7fc614d5f&offer=wo_3a951b9c6ffd&cur=USD",
-      "notes": "checked bag not verified",
-      "origin": "DMK",
-      "price_original": 66.0,
-      "price_usd": 66.0,
-      "self_transfer": null,
-      "source": "letsfg",
       "stops": 0
     },
     "skiplagged": {
@@ -149,151 +124,29 @@
       "self_transfer": false,
       "source": "skyscanner",
       "stops": 0
-    },
-    "vietjet": {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-28T12:30:00",
-      "cabin_bag_included": false,
-      "checked_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T10:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "VZ960"
-      ],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-28&adults=1&currency=USD",
-      "notes": "",
-      "origin": "BKK",
-      "price_original": 65.0,
-      "price_usd": 65.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
     }
   },
   "dropped_count": 0,
-  "finished_at": "2026-10-13T02:22:46.706644+00:00",
+  "finished_at": "2026-10-13T11:01:37.400040+00:00",
   "messages_sent": 1,
   "near_misses": [
     {
       "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-28T05:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T03:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-28&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 72.0,
-      "price_usd": 72.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-29T05:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T03:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-29&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 72.0,
-      "price_usd": 72.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "FD"
-      ],
-      "arrive_time": "2026-10-29T12:10:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T10:35:00",
-      "destination": "DAD",
-      "duration_minutes": 95,
-      "flight_numbers": [
-        "FD636"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/pbujz6",
-      "notes": "",
-      "origin": "DMK",
-      "price_original": 84.0,
-      "price_usd": 84.0,
-      "self_transfer": false,
-      "source": "kiwi",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "VZ"
-      ],
-      "arrive_time": "2026-10-30T09:55:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T17:20:00",
-      "destination": "DAD",
-      "duration_minutes": 995,
-      "flight_numbers": [
-        "VZ109",
-        "VZ964"
-      ],
-      "hop": null,
-      "link": "https://letsfg.co/en?stage=results&sid=ws_0cdbe6c8c1914174&offer=wo_496bd6d86642&cur=USD",
-      "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 93.0,
-      "price_usd": 93.0,
-      "self_transfer": null,
-      "source": "letsfg",
-      "stops": 1
-    },
-    {
-      "airlines": [
         "VN"
       ],
-      "arrive_time": "2026-10-28T14:00:00",
+      "arrive_time": "2026-10-29T14:00:00",
       "cabin_bag_included": true,
       "checked_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T12:20:00",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T12:20:00",
       "destination": "DAD",
       "duration_minutes": 100,
       "flight_numbers": [
         "VN698"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/bgtsqqk",
+      "link": "https://kiwi.com/u/u4p2zd",
       "notes": "",
       "origin": "BKK",
       "price_original": 98.0,
@@ -318,11 +171,11 @@
         "VZ960"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/gp87u5h",
+      "link": "https://kiwi.com/u/47xnmb",
       "notes": "",
       "origin": "BKK",
-      "price_original": 99.100335,
-      "price_usd": 99.100335,
+      "price_original": 99.124855,
+      "price_usd": 99.124855,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -343,11 +196,11 @@
         "VZ964"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/d9zksj",
+      "link": "https://kiwi.com/u/hx7td5r",
       "notes": "",
       "origin": "BKK",
-      "price_original": 99.100335,
-      "price_usd": 99.100335,
+      "price_original": 99.124855,
+      "price_usd": 99.124855,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -368,11 +221,11 @@
         "VZ964"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/5pbbbr",
+      "link": "https://kiwi.com/u/39f8z3",
       "notes": "",
       "origin": "BKK",
-      "price_original": 99.100335,
-      "price_usd": 99.100335,
+      "price_original": 99.124855,
+      "price_usd": 99.124855,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -381,19 +234,19 @@
       "airlines": [
         "VN"
       ],
-      "arrive_time": "2026-10-29T14:00:00",
+      "arrive_time": "2026-10-28T14:00:00",
       "cabin_bag_included": true,
       "checked_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T12:20:00",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T12:20:00",
       "destination": "DAD",
       "duration_minutes": 100,
       "flight_numbers": [
         "VN698"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/kct2gt",
+      "link": "https://kiwi.com/u/3hbwy24",
       "notes": "",
       "origin": "BKK",
       "price_original": 100.0,
@@ -419,7 +272,7 @@
         "VZ962"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/3hvgz8",
+      "link": "https://kiwi.com/u/x3njmv",
       "notes": "",
       "origin": "CNX",
       "price_original": 102.0,
@@ -444,11 +297,11 @@
         "VZ962"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/gnm8r6",
+      "link": "https://kiwi.com/u/skcbmvn",
       "notes": "",
       "origin": "BKK",
-      "price_original": 102.100335,
-      "price_usd": 102.100335,
+      "price_original": 102.124855,
+      "price_usd": 102.124855,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -469,11 +322,11 @@
         "VZ962"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/p6dwn7",
+      "link": "https://kiwi.com/u/ydf4jb",
       "notes": "",
       "origin": "BKK",
-      "price_original": 102.100335,
-      "price_usd": 102.100335,
+      "price_original": 102.124855,
+      "price_usd": 102.124855,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -494,11 +347,11 @@
         "VZ960"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/wx7xwq",
+      "link": "https://kiwi.com/u/h96h2v",
       "notes": "",
       "origin": "BKK",
-      "price_original": 102.100335,
-      "price_usd": 102.100335,
+      "price_original": 102.124855,
+      "price_usd": 102.124855,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -519,7 +372,7 @@
         "VN626"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/q4vrscm",
+      "link": "https://kiwi.com/u/n8s23r",
       "notes": "",
       "origin": "BKK",
       "price_original": 105.0,
@@ -544,11 +397,11 @@
         "VN626"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/74r6f3",
+      "link": "https://kiwi.com/u/64rhmu",
       "notes": "",
       "origin": "BKK",
-      "price_original": 107.0,
-      "price_usd": 107.0,
+      "price_original": 105.0,
+      "price_usd": 105.0,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -570,11 +423,11 @@
         "VZ960"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/nm6vduu",
+      "link": "https://kiwi.com/u/73tz4h",
       "notes": "",
       "origin": "CNX",
-      "price_original": 125.057644,
-      "price_usd": 125.057644,
+      "price_original": 126.112245,
+      "price_usd": 126.112245,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 1
@@ -596,11 +449,11 @@
         "VZ960"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/bqdzfp6",
+      "link": "https://kiwi.com/u/5ykxzfc",
       "notes": "",
       "origin": "CNX",
-      "price_original": 125.057644,
-      "price_usd": 125.057644,
+      "price_original": 126.112245,
+      "price_usd": 126.112245,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 1
@@ -622,11 +475,11 @@
         "VZ962"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/phjcr7",
+      "link": "https://kiwi.com/u/792wf4",
       "notes": "",
       "origin": "CNX",
-      "price_original": 133.057644,
-      "price_usd": 133.057644,
+      "price_original": 133.112245,
+      "price_usd": 133.112245,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 1
@@ -648,11 +501,11 @@
         "VZ962"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/yjkkm2",
+      "link": "https://kiwi.com/u/n9bkpt",
       "notes": "",
       "origin": "CNX",
-      "price_original": 133.057644,
-      "price_usd": 133.057644,
+      "price_original": 133.112245,
+      "price_usd": 133.112245,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 1
@@ -674,11 +527,11 @@
         "VZ962"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/gwnsmk",
+      "link": "https://kiwi.com/u/2m7gf3",
       "notes": "",
       "origin": "CNX",
-      "price_original": 133.057644,
-      "price_usd": 133.057644,
+      "price_original": 133.112245,
+      "price_usd": 133.112245,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 1
@@ -687,326 +540,178 @@
   "new_alerts": [
     {
       "airlines": [
-        "Thai Vietjet"
+        "Thai AirAsia"
       ],
-      "arrive_time": "2026-10-28T12:30:00",
+      "arrive_time": "2026-10-28T09:05:00",
       "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T10:50:00",
+      "depart_time": "2026-10-28T07:25:00",
       "destination": "DAD",
       "duration_minutes": 100,
       "flight_numbers": [
-        "960"
+        "634"
       ],
       "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
       "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 66.96,
-      "price_usd": 66.96,
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
       "self_transfer": null,
       "source": "airasia",
       "stops": 0
     },
     {
       "airlines": [
-        "Thai Vietjet"
+        "Thai AirAsia"
       ],
-      "arrive_time": "2026-10-28T09:55:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T08:15:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "964"
-      ],
-      "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 67.85,
-      "price_usd": 67.85,
-      "self_transfer": null,
-      "source": "airasia",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-28T12:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T10:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-28&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 69.0,
-      "price_usd": 69.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-28T09:55:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T08:15:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-28&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 69.0,
-      "price_usd": 69.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-29T09:55:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T08:15:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-29&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 69.0,
-      "price_usd": 69.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-29T12:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T10:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-29&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 69.0,
-      "price_usd": 69.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet"
-      ],
-      "arrive_time": "2026-10-28T17:30:00",
+      "arrive_time": "2026-10-28T12:10:00",
       "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T15:50:00",
+      "depart_time": "2026-10-28T10:35:00",
       "destination": "DAD",
-      "duration_minutes": 100,
+      "duration_minutes": 95,
       "flight_numbers": [
-        "962"
+        "636"
       ],
       "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
       "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 69.64,
-      "price_usd": 69.64,
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
       "self_transfer": null,
       "source": "airasia",
       "stops": 0
     },
     {
       "airlines": [
-        "Thai Vietjet Air"
+        "Thai AirAsia"
       ],
-      "arrive_time": "2026-10-28T17:30:00",
-      "cabin_bag_included": null,
+      "arrive_time": "2026-10-28T18:20:00",
+      "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T06:35:00",
+      "depart_time": "2026-10-28T16:40:00",
       "destination": "DAD",
-      "duration_minutes": 655,
+      "duration_minutes": 100,
       "flight_numbers": [
-        "VZ2105",
-        "VZ962"
+        "638"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-VZ962",
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
       "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 79.0,
-      "price_usd": 79.0,
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
       "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
+      "source": "airasia",
+      "stops": 0
     },
     {
       "airlines": [
-        "Thai Vietjet Air"
+        "Thai AirAsia"
       ],
-      "arrive_time": "2026-10-29T12:30:00",
-      "cabin_bag_included": null,
+      "arrive_time": "2026-10-29T09:05:00",
+      "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T06:35:00",
+      "depart_time": "2026-10-29T07:25:00",
       "destination": "DAD",
-      "duration_minutes": 355,
+      "duration_minutes": 100,
       "flight_numbers": [
-        "VZ2105",
-        "VZ960"
+        "634"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-VZ960",
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=29%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
       "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 79.0,
-      "price_usd": 79.0,
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
       "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
+      "source": "airasia",
+      "stops": 0
     },
     {
       "airlines": [
-        "Thai Vietjet Air"
+        "Thai AirAsia"
       ],
-      "arrive_time": "2026-10-29T17:30:00",
-      "cabin_bag_included": null,
+      "arrive_time": "2026-10-29T12:10:00",
+      "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T06:35:00",
+      "depart_time": "2026-10-29T10:35:00",
       "destination": "DAD",
-      "duration_minutes": 655,
+      "duration_minutes": 95,
       "flight_numbers": [
-        "VZ2105",
-        "VZ962"
+        "636"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-VZ962",
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=29%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
       "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 79.0,
-      "price_usd": 79.0,
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
       "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
+      "source": "airasia",
+      "stops": 0
     },
     {
       "airlines": [
-        "Thai Vietjet Air"
+        "Thai AirAsia"
       ],
-      "arrive_time": "2026-10-29T17:30:00",
-      "cabin_bag_included": null,
+      "arrive_time": "2026-10-29T18:20:00",
+      "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T08:25:00",
+      "depart_time": "2026-10-29T16:40:00",
       "destination": "DAD",
-      "duration_minutes": 545,
+      "duration_minutes": 100,
       "flight_numbers": [
-        "VZ101",
-        "VZ962"
+        "638"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ101-VZ962",
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=29%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
       "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 86.0,
-      "price_usd": 86.0,
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
       "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
+      "source": "airasia",
+      "stops": 0
     },
     {
       "airlines": [
-        "Thai Vietjet Air"
+        "FD"
       ],
-      "arrive_time": "2026-10-30T09:55:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
+      "arrive_time": "2026-10-29T12:10:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T20:50:00",
+      "depart_time": "2026-10-29T10:35:00",
       "destination": "DAD",
-      "duration_minutes": 785,
+      "duration_minutes": 95,
       "flight_numbers": [
-        "VZ2107",
-        "VZ964"
+        "FD636"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2107-VZ964",
-      "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 86.0,
-      "price_usd": 86.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-30T09:55:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T19:35:00",
-      "destination": "DAD",
-      "duration_minutes": 860,
-      "flight_numbers": [
-        "VZ123",
-        "VZ964"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ123-VZ964",
-      "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 86.0,
-      "price_usd": 86.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
+      "link": "https://kiwi.com/u/dkgc7n",
+      "notes": "",
+      "origin": "DMK",
+      "price_original": 68.0,
+      "price_usd": 68.0,
+      "self_transfer": false,
+      "source": "kiwi",
+      "stops": 0
     }
   ],
   "offers": [
@@ -1087,27 +792,152 @@
     },
     {
       "airlines": [
-        "Thai VietJet Air"
+        "Thai AirAsia"
       ],
-      "arrive_time": "2026-10-29T12:30:00",
-      "cabin_bag_included": null,
+      "arrive_time": "2026-10-28T09:05:00",
+      "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T10:50:00",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T07:25:00",
       "destination": "DAD",
       "duration_minutes": 100,
       "flight_numbers": [
-        "VZ960"
+        "634"
       ],
       "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-29&adults=1&currency=USD",
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
       "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 65.0,
-      "price_usd": 65.0,
-      "self_transfer": false,
-      "source": "vietjet",
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "Thai AirAsia"
+      ],
+      "arrive_time": "2026-10-28T12:10:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T10:35:00",
+      "destination": "DAD",
+      "duration_minutes": 95,
+      "flight_numbers": [
+        "636"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "Thai AirAsia"
+      ],
+      "arrive_time": "2026-10-28T18:20:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T16:40:00",
+      "destination": "DAD",
+      "duration_minutes": 100,
+      "flight_numbers": [
+        "638"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "Thai AirAsia"
+      ],
+      "arrive_time": "2026-10-29T09:05:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T07:25:00",
+      "destination": "DAD",
+      "duration_minutes": 100,
+      "flight_numbers": [
+        "634"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=29%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "Thai AirAsia"
+      ],
+      "arrive_time": "2026-10-29T12:10:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T10:35:00",
+      "destination": "DAD",
+      "duration_minutes": 95,
+      "flight_numbers": [
+        "636"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=29%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "Thai AirAsia"
+      ],
+      "arrive_time": "2026-10-29T18:20:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T16:40:00",
+      "destination": "DAD",
+      "duration_minutes": 100,
+      "flight_numbers": [
+        "638"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=29%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
+      "self_transfer": null,
+      "source": "airasia",
       "stops": 0
     },
     {
@@ -1115,8 +945,8 @@
         "FD"
       ],
       "arrive_time": "2026-10-28T12:10:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
       "depart_time": "2026-10-28T10:35:00",
@@ -1126,13 +956,13 @@
         "FD636"
       ],
       "hop": null,
-      "link": "https://letsfg.co/en?stage=results&sid=ws_01d29fe7fc614d5f&offer=wo_3a951b9c6ffd&cur=USD",
-      "notes": "checked bag not verified",
+      "link": "https://kiwi.com/u/g4s5w7",
+      "notes": "",
       "origin": "DMK",
-      "price_original": 66.0,
-      "price_usd": 66.0,
-      "self_transfer": null,
-      "source": "letsfg",
+      "price_original": 68.0,
+      "price_usd": 68.0,
+      "self_transfer": false,
+      "source": "kiwi",
       "stops": 0
     },
     {
@@ -1140,8 +970,8 @@
         "FD"
       ],
       "arrive_time": "2026-10-28T18:20:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
       "depart_time": "2026-10-28T16:40:00",
@@ -1151,13 +981,13 @@
         "FD638"
       ],
       "hop": null,
-      "link": "https://letsfg.co/en?stage=results&sid=ws_01d29fe7fc614d5f&offer=wo_d82c422bfebc&cur=USD",
-      "notes": "checked bag not verified",
+      "link": "https://kiwi.com/u/j2b9uv",
+      "notes": "",
       "origin": "DMK",
-      "price_original": 66.0,
-      "price_usd": 66.0,
-      "self_transfer": null,
-      "source": "letsfg",
+      "price_original": 68.0,
+      "price_usd": 68.0,
+      "self_transfer": false,
+      "source": "kiwi",
       "stops": 0
     },
     {
@@ -1165,8 +995,8 @@
         "FD"
       ],
       "arrive_time": "2026-10-28T09:05:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
       "depart_time": "2026-10-28T07:25:00",
@@ -1176,38 +1006,38 @@
         "FD634"
       ],
       "hop": null,
-      "link": "https://letsfg.co/en?stage=results&sid=ws_01d29fe7fc614d5f&offer=wo_7b653c82164e&cur=USD",
-      "notes": "checked bag not verified",
+      "link": "https://kiwi.com/u/f3td45",
+      "notes": "",
       "origin": "DMK",
-      "price_original": 66.0,
-      "price_usd": 66.0,
-      "self_transfer": null,
-      "source": "letsfg",
+      "price_original": 68.0,
+      "price_usd": 68.0,
+      "self_transfer": false,
+      "source": "kiwi",
       "stops": 0
     },
     {
       "airlines": [
         "FD"
       ],
-      "arrive_time": "2026-10-29T09:05:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
+      "arrive_time": "2026-10-29T12:10:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T07:25:00",
+      "depart_time": "2026-10-29T10:35:00",
       "destination": "DAD",
-      "duration_minutes": 100,
+      "duration_minutes": 95,
       "flight_numbers": [
-        "FD634"
+        "FD636"
       ],
       "hop": null,
-      "link": "https://letsfg.co/en?stage=results&sid=ws_ca1df6fbcd714d41&offer=wo_7b653c82164e&cur=USD",
-      "notes": "checked bag not verified",
+      "link": "https://kiwi.com/u/dkgc7n",
+      "notes": "",
       "origin": "DMK",
-      "price_original": 66.0,
-      "price_usd": 66.0,
-      "self_transfer": null,
-      "source": "letsfg",
+      "price_original": 68.0,
+      "price_usd": 68.0,
+      "self_transfer": false,
+      "source": "kiwi",
       "stops": 0
     },
     {
@@ -1215,8 +1045,8 @@
         "FD"
       ],
       "arrive_time": "2026-10-29T18:20:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
       "depart_time": "2026-10-29T16:40:00",
@@ -1226,88 +1056,38 @@
         "FD638"
       ],
       "hop": null,
-      "link": "https://letsfg.co/en?stage=results&sid=ws_ca1df6fbcd714d41&offer=wo_d82c422bfebc&cur=USD",
-      "notes": "checked bag not verified",
+      "link": "https://kiwi.com/u/qkv77r",
+      "notes": "",
       "origin": "DMK",
-      "price_original": 66.0,
-      "price_usd": 66.0,
-      "self_transfer": null,
-      "source": "letsfg",
+      "price_original": 68.0,
+      "price_usd": 68.0,
+      "self_transfer": false,
+      "source": "kiwi",
       "stops": 0
     },
     {
       "airlines": [
-        "Thai Vietjet"
+        "FD"
       ],
-      "arrive_time": "2026-10-28T12:30:00",
+      "arrive_time": "2026-10-29T09:05:00",
       "cabin_bag_included": true,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T10:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "960"
-      ],
-      "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 66.96,
-      "price_usd": 66.96,
-      "self_transfer": null,
-      "source": "airasia",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai VietJet Air"
-      ],
-      "arrive_time": "2026-10-29T17:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
+      "checked_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T15:50:00",
+      "depart_time": "2026-10-29T07:25:00",
       "destination": "DAD",
       "duration_minutes": 100,
       "flight_numbers": [
-        "VZ962"
+        "FD634"
       ],
       "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-29&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 67.72,
-      "price_usd": 67.72,
+      "link": "https://kiwi.com/u/2ksnh68",
+      "notes": "",
+      "origin": "DMK",
+      "price_original": 68.0,
+      "price_usd": 68.0,
       "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet"
-      ],
-      "arrive_time": "2026-10-28T09:55:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T08:15:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "964"
-      ],
-      "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 67.85,
-      "price_usd": 67.85,
-      "self_transfer": null,
-      "source": "airasia",
+      "source": "kiwi",
       "stops": 0
     },
     {
@@ -1339,69 +1119,25 @@
       "airlines": [
         "Thai Vietjet Air"
       ],
-      "arrive_time": "2026-10-28T12:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T10:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-28&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 69.0,
-      "price_usd": 69.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-28T09:55:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T08:15:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-28&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 69.0,
-      "price_usd": 69.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-29T09:55:00",
+      "arrive_time": "2026-10-29T17:30:00",
       "cabin_bag_included": null,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T08:15:00",
+      "depart_time": "2026-10-29T15:50:00",
       "destination": "DAD",
       "duration_minutes": 100,
-      "flight_numbers": [],
+      "flight_numbers": [
+        "VZ962"
+      ],
       "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-29&adults=1&currency=USD",
+      "link": "https://skiplagged.com/flights/BKK/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ962",
       "notes": "checked bag not verified",
       "origin": "BKK",
-      "price_original": 69.0,
-      "price_usd": 69.0,
-      "self_transfer": false,
-      "source": "vietjet",
+      "price_original": 68.0,
+      "price_usd": 68.0,
+      "self_transfer": null,
+      "source": "skiplagged",
       "stops": 0
     },
     {
@@ -1416,139 +1152,18 @@
       "depart_time": "2026-10-29T10:50:00",
       "destination": "DAD",
       "duration_minutes": 100,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-29&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 69.0,
-      "price_usd": 69.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet"
-      ],
-      "arrive_time": "2026-10-28T17:30:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T15:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
       "flight_numbers": [
-        "962"
-      ],
-      "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 69.64,
-      "price_usd": 69.64,
-      "self_transfer": null,
-      "source": "airasia",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-28T05:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T03:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-28&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 72.0,
-      "price_usd": 72.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-29T05:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T03:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-29&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 72.0,
-      "price_usd": 72.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-28T12:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T06:35:00",
-      "destination": "DAD",
-      "duration_minutes": 355,
-      "flight_numbers": [
-        "VZ2105",
         "VZ960"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-VZ960",
+      "link": "https://skiplagged.com/flights/BKK/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ960",
       "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 79.0,
-      "price_usd": 79.0,
+      "origin": "BKK",
+      "price_original": 68.0,
+      "price_usd": 68.0,
       "self_transfer": null,
       "source": "skiplagged",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-28T17:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T06:35:00",
-      "destination": "DAD",
-      "duration_minutes": 655,
-      "flight_numbers": [
-        "VZ2105",
-        "VZ962"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-VZ962",
-      "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 79.0,
-      "price_usd": 79.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
+      "stops": 0
     },
     {
       "airlines": [
@@ -1604,103 +1219,52 @@
     },
     {
       "airlines": [
-        "FD"
+        "Thai Vietjet Air"
       ],
-      "arrive_time": "2026-10-29T12:10:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": false,
+      "arrive_time": "2026-10-28T12:30:00",
+      "cabin_bag_included": null,
+      "checked_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T10:35:00",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T06:35:00",
       "destination": "DAD",
-      "duration_minutes": 95,
+      "duration_minutes": 355,
       "flight_numbers": [
-        "FD636"
+        "VZ2105",
+        "VZ960"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/pbujz6",
-      "notes": "",
-      "origin": "DMK",
-      "price_original": 84.0,
-      "price_usd": 84.0,
-      "self_transfer": false,
-      "source": "kiwi",
-      "stops": 0
+      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-VZ960",
+      "notes": "checked bag not verified",
+      "origin": "CNX",
+      "price_original": 80.0,
+      "price_usd": 80.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 1
     },
     {
       "airlines": [
         "Thai Vietjet Air"
       ],
-      "arrive_time": "2026-10-29T17:30:00",
+      "arrive_time": "2026-10-28T17:30:00",
       "cabin_bag_included": null,
       "checked_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T08:25:00",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T06:35:00",
       "destination": "DAD",
-      "duration_minutes": 545,
+      "duration_minutes": 655,
       "flight_numbers": [
-        "VZ101",
+        "VZ2105",
         "VZ962"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ101-VZ962",
+      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-VZ962",
       "notes": "checked bag not verified",
       "origin": "CNX",
-      "price_original": 86.0,
-      "price_usd": 86.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-30T09:55:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T20:50:00",
-      "destination": "DAD",
-      "duration_minutes": 785,
-      "flight_numbers": [
-        "VZ2107",
-        "VZ964"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2107-VZ964",
-      "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 86.0,
-      "price_usd": 86.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-30T09:55:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T19:35:00",
-      "destination": "DAD",
-      "duration_minutes": 860,
-      "flight_numbers": [
-        "VZ123",
-        "VZ964"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ123-VZ964",
-      "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 86.0,
-      "price_usd": 86.0,
+      "price_original": 80.0,
+      "price_usd": 80.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 1
@@ -1761,6 +1325,32 @@
       "airlines": [
         "Thai Vietjet Air"
       ],
+      "arrive_time": "2026-10-29T17:30:00",
+      "cabin_bag_included": null,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T08:25:00",
+      "destination": "DAD",
+      "duration_minutes": 545,
+      "flight_numbers": [
+        "VZ101",
+        "VZ962"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ101-VZ962",
+      "notes": "checked bag not verified",
+      "origin": "CNX",
+      "price_original": 87.0,
+      "price_usd": 87.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai Vietjet Air"
+      ],
       "arrive_time": "2026-10-29T09:55:00",
       "cabin_bag_included": null,
       "checked_bag_included": null,
@@ -1785,54 +1375,55 @@
     },
     {
       "airlines": [
-        "VZ"
+        "Thai Vietjet Air"
       ],
       "arrive_time": "2026-10-30T09:55:00",
       "cabin_bag_included": null,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T17:20:00",
+      "depart_time": "2026-10-29T20:50:00",
       "destination": "DAD",
-      "duration_minutes": 995,
+      "duration_minutes": 785,
       "flight_numbers": [
-        "VZ109",
+        "VZ2107",
         "VZ964"
       ],
       "hop": null,
-      "link": "https://letsfg.co/en?stage=results&sid=ws_0cdbe6c8c1914174&offer=wo_496bd6d86642&cur=USD",
+      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2107-VZ964",
       "notes": "checked bag not verified",
       "origin": "CNX",
-      "price_original": 93.0,
-      "price_usd": 93.0,
+      "price_original": 87.0,
+      "price_usd": 87.0,
       "self_transfer": null,
-      "source": "letsfg",
+      "source": "skiplagged",
       "stops": 1
     },
     {
       "airlines": [
-        "Vietnam Airlines"
+        "Thai Vietjet Air"
       ],
-      "arrive_time": "2026-10-28T14:00:00",
+      "arrive_time": "2026-10-30T09:55:00",
       "cabin_bag_included": null,
       "checked_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T12:20:00",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T19:35:00",
       "destination": "DAD",
-      "duration_minutes": 100,
+      "duration_minutes": 860,
       "flight_numbers": [
-        "VN698"
+        "VZ123",
+        "VZ964"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/BKK/DAD/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VN698",
+      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ123-VZ964",
       "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 93.0,
-      "price_usd": 93.0,
+      "origin": "CNX",
+      "price_original": 87.0,
+      "price_usd": 87.0,
       "self_transfer": null,
       "source": "skiplagged",
-      "stops": 0
+      "stops": 1
     },
     {
       "airlines": [
@@ -1863,55 +1454,6 @@
     },
     {
       "airlines": [
-        "Sun PhuQuoc Airways"
-      ],
-      "arrive_time": null,
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": null,
-      "destination": "DAD",
-      "duration_minutes": 530,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/bkk/dad/261028/",
-      "notes": "cheapestSource=google · checked bag not verified",
-      "origin": "BKK",
-      "price_original": 94.0,
-      "price_usd": 94.0,
-      "self_transfer": false,
-      "source": "skyscanner",
-      "stops": 2
-    },
-    {
-      "airlines": [
-        "9G"
-      ],
-      "arrive_time": "2026-10-30T17:45:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T13:15:00",
-      "destination": "DAD",
-      "duration_minutes": 1710,
-      "flight_numbers": [
-        "9G702",
-        "9G2966"
-      ],
-      "hop": null,
-      "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQktLcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
-      "notes": "bags not verified (Google) · checked bag not verified",
-      "origin": "BKK",
-      "price_original": 96.0,
-      "price_usd": 96.0,
-      "self_transfer": null,
-      "source": "google",
-      "stops": 1
-    },
-    {
-      "airlines": [
         "Vietnam Airlines"
       ],
       "arrive_time": "2026-10-29T14:00:00",
@@ -1929,67 +1471,19 @@
       "link": "https://skiplagged.com/flights/BKK/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VN698",
       "notes": "checked bag not verified",
       "origin": "BKK",
-      "price_original": 96.0,
-      "price_usd": 96.0,
+      "price_original": 94.0,
+      "price_usd": 94.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 0
     },
     {
       "airlines": [
-        "Sun PhuQuoc Airways"
-      ],
-      "arrive_time": null,
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": null,
-      "destination": "DAD",
-      "duration_minutes": 1710,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/bkk/dad/261029/",
-      "notes": "cheapestSource=google · checked bag not verified",
-      "origin": "BKK",
-      "price_original": 96.0,
-      "price_usd": 96.0,
-      "self_transfer": false,
-      "source": "skyscanner",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Emirates"
-      ],
-      "arrive_time": "2026-10-28T21:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T19:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "370"
-      ],
-      "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 96.03,
-      "price_usd": 96.03,
-      "self_transfer": null,
-      "source": "airasia",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "VN"
+        "Vietnam Airlines"
       ],
       "arrive_time": "2026-10-28T14:00:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": true,
+      "cabin_bag_included": null,
+      "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
       "depart_time": "2026-10-28T12:20:00",
@@ -1999,7 +1493,32 @@
         "VN698"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/bgtsqqk",
+      "link": "https://skiplagged.com/flights/BKK/DAD/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VN698",
+      "notes": "checked bag not verified",
+      "origin": "BKK",
+      "price_original": 96.0,
+      "price_usd": 96.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "VN"
+      ],
+      "arrive_time": "2026-10-29T14:00:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T12:20:00",
+      "destination": "DAD",
+      "duration_minutes": 100,
+      "flight_numbers": [
+        "VN698"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/u4p2zd",
       "notes": "",
       "origin": "BKK",
       "price_original": 98.0,
@@ -2007,6 +1526,32 @@
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
+    },
+    {
+      "airlines": [
+        "Vietnam Airlines"
+      ],
+      "arrive_time": "2026-10-29T16:35:00",
+      "cabin_bag_included": null,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T11:20:00",
+      "destination": "DAD",
+      "duration_minutes": 315,
+      "flight_numbers": [
+        "VN600",
+        "VN134"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/BKK/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VN600-VN134",
+      "notes": "checked bag not verified",
+      "origin": "BKK",
+      "price_original": 99.0,
+      "price_usd": 99.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 1
     },
     {
       "airlines": [
@@ -2024,11 +1569,11 @@
         "VZ960"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/gp87u5h",
+      "link": "https://kiwi.com/u/47xnmb",
       "notes": "",
       "origin": "BKK",
-      "price_original": 99.100335,
-      "price_usd": 99.100335,
+      "price_original": 99.124855,
+      "price_usd": 99.124855,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -2049,11 +1594,11 @@
         "VZ964"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/d9zksj",
+      "link": "https://kiwi.com/u/hx7td5r",
       "notes": "",
       "origin": "BKK",
-      "price_original": 99.100335,
-      "price_usd": 99.100335,
+      "price_original": 99.124855,
+      "price_usd": 99.124855,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -2074,11 +1619,11 @@
         "VZ964"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/5pbbbr",
+      "link": "https://kiwi.com/u/39f8z3",
       "notes": "",
       "origin": "BKK",
-      "price_original": 99.100335,
-      "price_usd": 99.100335,
+      "price_original": 99.124855,
+      "price_usd": 99.124855,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -2087,19 +1632,19 @@
       "airlines": [
         "VN"
       ],
-      "arrive_time": "2026-10-29T14:00:00",
+      "arrive_time": "2026-10-28T14:00:00",
       "cabin_bag_included": true,
       "checked_bag_included": true,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T12:20:00",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T12:20:00",
       "destination": "DAD",
       "duration_minutes": 100,
       "flight_numbers": [
         "VN698"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/kct2gt",
+      "link": "https://kiwi.com/u/3hbwy24",
       "notes": "",
       "origin": "BKK",
       "price_original": 100.0,
@@ -2150,7 +1695,7 @@
         "VZ962"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/3hvgz8",
+      "link": "https://kiwi.com/u/x3njmv",
       "notes": "",
       "origin": "CNX",
       "price_original": 102.0,
@@ -2175,11 +1720,11 @@
         "VZ962"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/gnm8r6",
+      "link": "https://kiwi.com/u/skcbmvn",
       "notes": "",
       "origin": "BKK",
-      "price_original": 102.100335,
-      "price_usd": 102.100335,
+      "price_original": 102.124855,
+      "price_usd": 102.124855,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -2200,11 +1745,11 @@
         "VZ962"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/p6dwn7",
+      "link": "https://kiwi.com/u/ydf4jb",
       "notes": "",
       "origin": "BKK",
-      "price_original": 102.100335,
-      "price_usd": 102.100335,
+      "price_original": 102.124855,
+      "price_usd": 102.124855,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -2225,14 +1770,40 @@
         "VZ960"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/wx7xwq",
+      "link": "https://kiwi.com/u/h96h2v",
       "notes": "",
       "origin": "BKK",
-      "price_original": 102.100335,
-      "price_usd": 102.100335,
+      "price_original": 102.124855,
+      "price_usd": 102.124855,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
+    },
+    {
+      "airlines": [
+        "9G"
+      ],
+      "arrive_time": "2026-10-30T17:45:00",
+      "cabin_bag_included": null,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T13:15:00",
+      "destination": "DAD",
+      "duration_minutes": 1710,
+      "flight_numbers": [
+        "9G702",
+        "9G2966"
+      ],
+      "hop": null,
+      "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQktLcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
+      "notes": "bags not verified (Google) · checked bag not verified",
+      "origin": "BKK",
+      "price_original": 103.0,
+      "price_usd": 103.0,
+      "self_transfer": null,
+      "source": "google",
+      "stops": 1
     },
     {
       "airlines": [
@@ -2250,32 +1821,7 @@
         "VN626"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/q4vrscm",
-      "notes": "",
-      "origin": "BKK",
-      "price_original": 105.0,
-      "price_usd": 105.0,
-      "self_transfer": false,
-      "source": "kiwi",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "VN"
-      ],
-      "arrive_time": "2026-10-28T19:45:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T18:05:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "VN626"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/fqjd8c",
+      "link": "https://kiwi.com/u/n8s23r",
       "notes": "",
       "origin": "BKK",
       "price_original": 105.0,
@@ -2289,8 +1835,8 @@
         "VN"
       ],
       "arrive_time": "2026-10-29T19:45:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
+      "cabin_bag_included": true,
+      "checked_bag_included": true,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
       "depart_time": "2026-10-29T18:05:00",
@@ -2300,63 +1846,63 @@
         "VN626"
       ],
       "hop": null,
-      "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQktLcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
+      "link": "https://kiwi.com/u/64rhmu",
+      "notes": "",
+      "origin": "BKK",
+      "price_original": 105.0,
+      "price_usd": 105.0,
+      "self_transfer": false,
+      "source": "kiwi",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "VN"
+      ],
+      "arrive_time": "2026-10-29T19:45:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T18:05:00",
+      "destination": "DAD",
+      "duration_minutes": 100,
+      "flight_numbers": [
+        "VN626"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/y6jzbt",
+      "notes": "",
+      "origin": "BKK",
+      "price_original": 105.0,
+      "price_usd": 105.0,
+      "self_transfer": false,
+      "source": "kiwi",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "VN"
+      ],
+      "arrive_time": "2026-10-28T19:45:00",
+      "cabin_bag_included": null,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T18:05:00",
+      "destination": "DAD",
+      "duration_minutes": 100,
+      "flight_numbers": [
+        "VN626"
+      ],
+      "hop": null,
+      "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI4agcIARIDQktLcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
       "notes": "bags not verified (Google) · checked bag not verified",
       "origin": "BKK",
       "price_original": 106.0,
       "price_usd": 106.0,
       "self_transfer": null,
       "source": "google",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "VN"
-      ],
-      "arrive_time": "2026-10-29T19:45:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T18:05:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "VN626"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/74r6f3",
-      "notes": "",
-      "origin": "BKK",
-      "price_original": 107.0,
-      "price_usd": 107.0,
-      "self_transfer": false,
-      "source": "kiwi",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Vietnam Airlines"
-      ],
-      "arrive_time": "2026-10-28T14:00:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T12:20:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "698"
-      ],
-      "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 108.08,
-      "price_usd": 108.08,
-      "self_transfer": null,
-      "source": "airasia",
       "stops": 0
     },
     {
@@ -2375,7 +1921,7 @@
         "EK370"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/mnsz93",
+      "link": "https://kiwi.com/u/cm6ny3",
       "notes": "",
       "origin": "BKK",
       "price_original": 111.0,
@@ -2383,84 +1929,6 @@
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai AirAsia"
-      ],
-      "arrive_time": "2026-10-29T09:05:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T20:40:00",
-      "destination": "DAD",
-      "duration_minutes": 745,
-      "flight_numbers": [
-        "FD4103",
-        "FD634"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261028/",
-      "notes": "cheapestSource=kiwi · checked bag not verified",
-      "origin": "CNX",
-      "price_original": 111.0,
-      "price_usd": 111.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Vietnam Airlines"
-      ],
-      "arrive_time": "2026-10-29T07:20:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T19:35:00",
-      "destination": "DAD",
-      "duration_minutes": 705,
-      "flight_numbers": [
-        "VN606",
-        "VN106"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/bkk/dad/261028/",
-      "notes": "cheapestSource=kiwi · checked bag not verified",
-      "origin": "BKK",
-      "price_original": 112.0,
-      "price_usd": 112.0,
-      "self_transfer": false,
-      "source": "skyscanner",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Vietnam Airlines"
-      ],
-      "arrive_time": "2026-10-30T07:20:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T20:50:00",
-      "destination": "DAD",
-      "duration_minutes": 630,
-      "flight_numbers": [
-        "VN608",
-        "VN106"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/bkk/dad/261029/",
-      "notes": "cheapestSource=kiwi · checked bag not verified",
-      "origin": "BKK",
-      "price_original": 112.0,
-      "price_usd": 112.0,
-      "self_transfer": false,
-      "source": "skyscanner",
-      "stops": 1
     },
     {
       "airlines": [
@@ -2478,11 +1946,11 @@
         "FD636"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/ppc8v8j",
+      "link": "https://kiwi.com/u/7ntswd",
       "notes": "",
       "origin": "DMK",
-      "price_original": 112.35442,
-      "price_usd": 112.35442,
+      "price_original": 112.428955,
+      "price_usd": 112.428955,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -2503,63 +1971,13 @@
         "FD638"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/9hgd8x",
+      "link": "https://kiwi.com/u/3ph2c9",
       "notes": "",
       "origin": "DMK",
-      "price_original": 112.35442,
-      "price_usd": 112.35442,
+      "price_original": 112.428955,
+      "price_usd": 112.428955,
       "self_transfer": false,
       "source": "kiwi",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "FD"
-      ],
-      "arrive_time": "2026-10-29T18:20:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T16:40:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "FD638"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/jrypwk5",
-      "notes": "",
-      "origin": "DMK",
-      "price_original": 112.35442,
-      "price_usd": 112.35442,
-      "self_transfer": false,
-      "source": "kiwi",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Vietnam Airlines"
-      ],
-      "arrive_time": "2026-10-28T19:45:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T18:05:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "626"
-      ],
-      "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 114.24,
-      "price_usd": 114.24,
-      "self_transfer": null,
-      "source": "airasia",
       "stops": 0
     },
     {
@@ -2578,11 +1996,36 @@
         "FD634"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/bvnphx",
+      "link": "https://kiwi.com/u/rhrywf",
       "notes": "",
       "origin": "DMK",
-      "price_original": 114.585783,
-      "price_usd": 114.585783,
+      "price_original": 112.428955,
+      "price_usd": 112.428955,
+      "self_transfer": false,
+      "source": "kiwi",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "FD"
+      ],
+      "arrive_time": "2026-10-29T12:10:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T10:35:00",
+      "destination": "DAD",
+      "duration_minutes": 95,
+      "flight_numbers": [
+        "FD636"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/krzf44",
+      "notes": "",
+      "origin": "DMK",
+      "price_original": 112.428955,
+      "price_usd": 112.428955,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -2603,11 +2046,36 @@
         "FD634"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/f7zqs5",
+      "link": "https://kiwi.com/u/rpdszu",
       "notes": "",
       "origin": "DMK",
-      "price_original": 114.585783,
-      "price_usd": 114.585783,
+      "price_original": 112.428955,
+      "price_usd": 112.428955,
+      "self_transfer": false,
+      "source": "kiwi",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "FD"
+      ],
+      "arrive_time": "2026-10-29T18:20:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": true,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T16:40:00",
+      "destination": "DAD",
+      "duration_minutes": 100,
+      "flight_numbers": [
+        "FD638"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/sc22zv",
+      "notes": "",
+      "origin": "DMK",
+      "price_original": 112.428955,
+      "price_usd": 112.428955,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 0
@@ -2633,8 +2101,8 @@
       "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261028/",
       "notes": "cheapestSource=kiwi · checked bag not verified",
       "origin": "CNX",
-      "price_original": 115.0,
-      "price_usd": 115.0,
+      "price_original": 114.0,
+      "price_usd": 114.0,
       "self_transfer": true,
       "source": "skyscanner",
       "stops": 1
@@ -2644,17 +2112,17 @@
         "Thai Lion Air",
         "Thai AirAsia"
       ],
-      "arrive_time": "2026-10-28T18:20:00",
+      "arrive_time": "2026-10-29T09:05:00",
       "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T10:30:00",
+      "depart_time": "2026-10-28T21:30:00",
       "destination": "DAD",
-      "duration_minutes": 470,
+      "duration_minutes": 695,
       "flight_numbers": [
-        "SL507",
-        "FD638"
+        "SL521",
+        "FD634"
       ],
       "hop": null,
       "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261028/",
@@ -2698,17 +2166,17 @@
         "Thai Lion Air",
         "Thai Vietjet"
       ],
-      "arrive_time": "2026-10-30T12:30:00",
+      "arrive_time": "2026-10-30T09:55:00",
       "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
       "depart_time": "2026-10-29T21:30:00",
       "destination": "DAD",
-      "duration_minutes": 900,
+      "duration_minutes": 745,
       "flight_numbers": [
         "SL521",
-        "VZ960"
+        "VZ964"
       ],
       "hop": null,
       "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261029/",
@@ -2718,33 +2186,6 @@
       "price_usd": 117.0,
       "self_transfer": true,
       "source": "skyscanner",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "FD",
-        "VU"
-      ],
-      "arrive_time": "2026-10-29T18:20:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:55:00",
-      "destination": "DAD",
-      "duration_minutes": 505,
-      "flight_numbers": [
-        "FD640",
-        "VU211"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/n48jswk",
-      "notes": "self-transfer",
-      "origin": "DMK",
-      "price_original": 118.0,
-      "price_usd": 118.0,
-      "self_transfer": true,
-      "source": "kiwi",
       "stops": 1
     },
     {
@@ -2764,7 +2205,7 @@
         "FD638"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/c4ymjmg",
+      "link": "https://kiwi.com/u/7kwv3u",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 119.0,
@@ -2790,7 +2231,7 @@
         "FD638"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/22b4dy",
+      "link": "https://kiwi.com/u/5dvu2x",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 119.0,
@@ -2801,106 +2242,29 @@
     },
     {
       "airlines": [
-        "Vietnam Airlines"
+        "FD",
+        "VU"
       ],
-      "arrive_time": "2026-10-28T18:05:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
+      "arrive_time": "2026-10-29T18:20:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
       "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T11:20:00",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:55:00",
       "destination": "DAD",
-      "duration_minutes": 405,
+      "duration_minutes": 505,
       "flight_numbers": [
-        "600",
-        "140"
+        "FD640",
+        "VU211"
       ],
       "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 119.42,
-      "price_usd": 119.42,
-      "self_transfer": null,
-      "source": "airasia",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Vietnam Airlines"
-      ],
-      "arrive_time": "2026-10-28T16:35:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T11:20:00",
-      "destination": "DAD",
-      "duration_minutes": 315,
-      "flight_numbers": [
-        "600",
-        "134"
-      ],
-      "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 119.42,
-      "price_usd": 119.42,
-      "self_transfer": null,
-      "source": "airasia",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Vietnam Airlines"
-      ],
-      "arrive_time": "2026-10-29T07:20:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T19:35:00",
-      "destination": "DAD",
-      "duration_minutes": 705,
-      "flight_numbers": [
-        "606",
-        "106"
-      ],
-      "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 119.42,
-      "price_usd": 119.42,
-      "self_transfer": null,
-      "source": "airasia",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Vietnam Airlines"
-      ],
-      "arrive_time": "2026-10-29T09:20:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T19:35:00",
-      "destination": "DAD",
-      "duration_minutes": 825,
-      "flight_numbers": [
-        "606",
-        "112"
-      ],
-      "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 119.42,
-      "price_usd": 119.42,
-      "self_transfer": null,
-      "source": "airasia",
+      "link": "https://kiwi.com/u/s9t97m",
+      "notes": "self-transfer",
+      "origin": "DMK",
+      "price_original": 119.0,
+      "price_usd": 119.0,
+      "self_transfer": true,
+      "source": "kiwi",
       "stops": 1
     },
     {
@@ -2920,7 +2284,7 @@
         "FD638"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/2s4n6c7",
+      "link": "https://kiwi.com/u/p2dxcf",
       "notes": "",
       "origin": "CNX",
       "price_original": 120.0,
@@ -2946,33 +2310,7 @@
         "FD636"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/mgu252",
-      "notes": "",
-      "origin": "CNX",
-      "price_original": 120.0,
-      "price_usd": 120.0,
-      "self_transfer": false,
-      "source": "kiwi",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "FD"
-      ],
-      "arrive_time": "2026-10-29T12:10:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T06:30:00",
-      "destination": "DAD",
-      "duration_minutes": 340,
-      "flight_numbers": [
-        "FD3417",
-        "FD636"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/n87gmd",
+      "link": "https://kiwi.com/u/f33dzz",
       "notes": "",
       "origin": "CNX",
       "price_original": 120.0,
@@ -2998,7 +2336,33 @@
         "FD638"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/7nrqph6",
+      "link": "https://kiwi.com/u/j6xvyy",
+      "notes": "",
+      "origin": "CNX",
+      "price_original": 120.0,
+      "price_usd": 120.0,
+      "self_transfer": false,
+      "source": "kiwi",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "FD"
+      ],
+      "arrive_time": "2026-10-29T12:10:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T06:30:00",
+      "destination": "DAD",
+      "duration_minutes": 340,
+      "flight_numbers": [
+        "FD3417",
+        "FD636"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/gfpykw",
       "notes": "",
       "origin": "CNX",
       "price_original": 120.0,
@@ -3016,11 +2380,11 @@
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T17:10:00",
+      "depart_time": "2026-10-28T20:40:00",
       "destination": "DAD",
-      "duration_minutes": 955,
+      "duration_minutes": 745,
       "flight_numbers": [
-        "FD3420",
+        "FD4103",
         "FD634"
       ],
       "hop": null,
@@ -3035,29 +2399,109 @@
     },
     {
       "airlines": [
-        "Nok Air",
-        "Thai Vietjet"
+        "Thai AirAsia"
       ],
-      "arrive_time": "2026-10-30T12:30:00",
+      "arrive_time": "2026-10-28T18:20:00",
       "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T22:30:00",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T10:50:00",
       "destination": "DAD",
-      "duration_minutes": 840,
+      "duration_minutes": 450,
       "flight_numbers": [
-        "DD141",
-        "VZ960"
+        "FD3444",
+        "FD638"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261029/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261028/",
       "notes": "cheapestSource=kiwi · checked bag not verified",
       "origin": "CNX",
       "price_original": 120.0,
       "price_usd": 120.0,
       "self_transfer": true,
       "source": "skyscanner",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai AirAsia",
+        "Vietravel Airlines"
+      ],
+      "arrive_time": "2026-10-29T18:20:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T06:55:00",
+      "destination": "DAD",
+      "duration_minutes": 685,
+      "flight_numbers": [
+        "642",
+        "211"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=29%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 120.05,
+      "price_usd": 120.05,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Nok Air",
+        "Thai Vietjet"
+      ],
+      "arrive_time": "2026-10-30T09:55:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T22:30:00",
+      "destination": "DAD",
+      "duration_minutes": 685,
+      "flight_numbers": [
+        "DD141",
+        "VZ964"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261029/",
+      "notes": "cheapestSource=kiwi · checked bag not verified",
+      "origin": "CNX",
+      "price_original": 121.0,
+      "price_usd": 121.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "FD",
+        "VU"
+      ],
+      "arrive_time": "2026-10-28T18:20:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:55:00",
+      "destination": "DAD",
+      "duration_minutes": 505,
+      "flight_numbers": [
+        "FD640",
+        "VU211"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/d23xpm",
+      "notes": "self-transfer",
+      "origin": "DMK",
+      "price_original": 122.0,
+      "price_usd": 122.0,
+      "self_transfer": true,
+      "source": "kiwi",
       "stops": 1
     },
     {
@@ -3135,22 +2579,103 @@
     {
       "airlines": [
         "FD",
-        "VJ"
+        "9G"
       ],
-      "arrive_time": "2026-10-28T23:45:00",
+      "arrive_time": "2026-10-28T17:45:00",
       "cabin_bag_included": true,
       "checked_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T18:30:00",
+      "depart_time": "2026-10-28T12:00:00",
       "destination": "DAD",
-      "duration_minutes": 315,
+      "duration_minutes": 345,
       "flight_numbers": [
-        "FD644",
-        "VJ1513"
+        "FD660",
+        "9G2966"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/6wyt2y",
+      "link": "https://kiwi.com/u/pswq4w",
+      "notes": "self-transfer",
+      "origin": "DMK",
+      "price_original": 124.0,
+      "price_usd": 124.0,
+      "self_transfer": true,
+      "source": "kiwi",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai AirAsia",
+        "Vietravel Airlines"
+      ],
+      "arrive_time": "2026-10-28T14:45:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T07:30:00",
+      "destination": "DAD",
+      "duration_minutes": 435,
+      "flight_numbers": [
+        "656",
+        "254"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 124.53,
+      "price_usd": 124.53,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai AirAsia",
+        "Vietravel Airlines"
+      ],
+      "arrive_time": "2026-10-29T18:20:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T09:55:00",
+      "destination": "DAD",
+      "duration_minutes": 505,
+      "flight_numbers": [
+        "640",
+        "211"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=29%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 124.53,
+      "price_usd": 124.53,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "FD",
+        "9G"
+      ],
+      "arrive_time": "2026-10-29T17:45:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T12:00:00",
+      "destination": "DAD",
+      "duration_minutes": 345,
+      "flight_numbers": [
+        "FD660",
+        "9G2966"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/df8r74",
       "notes": "self-transfer",
       "origin": "DMK",
       "price_original": 125.0,
@@ -3177,7 +2702,7 @@
         "VJ523"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/39mczzd",
+      "link": "https://kiwi.com/u/jmz2yy",
       "notes": "self-transfer",
       "origin": "DMK",
       "price_original": 125.0,
@@ -3234,6 +2759,52 @@
     },
     {
       "airlines": [
+        "FD"
+      ],
+      "arrive_time": null,
+      "cabin_bag_included": null,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-11-24T18:15:00",
+      "destination": "DAD",
+      "duration_minutes": 890,
+      "flight_numbers": [],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261028/",
+      "notes": "cheapestSource=cached · checked bag not verified",
+      "origin": "CNX",
+      "price_original": 126.0,
+      "price_usd": 126.0,
+      "self_transfer": false,
+      "source": "skyscanner",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "FD"
+      ],
+      "arrive_time": null,
+      "cabin_bag_included": null,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-11-24T18:15:00",
+      "destination": "DAD",
+      "duration_minutes": 890,
+      "flight_numbers": [],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261029/",
+      "notes": "cheapestSource=cached · checked bag not verified",
+      "origin": "CNX",
+      "price_original": 126.0,
+      "price_usd": 126.0,
+      "self_transfer": false,
+      "source": "skyscanner",
+      "stops": 1
+    },
+    {
+      "airlines": [
         "VZ"
       ],
       "arrive_time": "2026-10-28T12:30:00",
@@ -3249,11 +2820,11 @@
         "VZ960"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/nm6vduu",
+      "link": "https://kiwi.com/u/73tz4h",
       "notes": "",
       "origin": "CNX",
-      "price_original": 125.057644,
-      "price_usd": 125.057644,
+      "price_original": 126.112245,
+      "price_usd": 126.112245,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 1
@@ -3275,12 +2846,66 @@
         "VZ960"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/bqdzfp6",
+      "link": "https://kiwi.com/u/5ykxzfc",
       "notes": "",
       "origin": "CNX",
-      "price_original": 125.057644,
-      "price_usd": 125.057644,
+      "price_original": 126.112245,
+      "price_usd": 126.112245,
       "self_transfer": false,
+      "source": "kiwi",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai AirAsia",
+        "Vietravel Airlines"
+      ],
+      "arrive_time": "2026-10-29T07:50:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T18:30:00",
+      "destination": "DAD",
+      "duration_minutes": 800,
+      "flight_numbers": [
+        "644",
+        "201"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 126.78,
+      "price_usd": 126.78,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "FD",
+        "VJ"
+      ],
+      "arrive_time": "2026-10-28T23:45:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T18:30:00",
+      "destination": "DAD",
+      "duration_minutes": 315,
+      "flight_numbers": [
+        "FD644",
+        "VJ1513"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/kc3m8zr",
+      "notes": "self-transfer",
+      "origin": "DMK",
+      "price_original": 127.0,
+      "price_usd": 127.0,
+      "self_transfer": true,
       "source": "kiwi",
       "stops": 1
     },
@@ -3289,24 +2914,24 @@
         "FD",
         "VJ"
       ],
-      "arrive_time": "2026-10-28T14:55:00",
+      "arrive_time": "2026-10-29T23:45:00",
       "cabin_bag_included": true,
       "checked_bag_included": false,
       "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T06:55:00",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T18:30:00",
       "destination": "DAD",
-      "duration_minutes": 480,
+      "duration_minutes": 315,
       "flight_numbers": [
-        "FD642",
-        "VJ523"
+        "FD644",
+        "VJ1513"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/97rqvq",
+      "link": "https://kiwi.com/u/ps4zhfm",
       "notes": "self-transfer",
       "origin": "DMK",
-      "price_original": 126.0,
-      "price_usd": 126.0,
+      "price_original": 127.0,
+      "price_usd": 127.0,
       "self_transfer": true,
       "source": "kiwi",
       "stops": 1
@@ -3329,107 +2954,7 @@
         "VJ511"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/tybcj4",
-      "notes": "self-transfer",
-      "origin": "DMK",
-      "price_original": 126.0,
-      "price_usd": 126.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "FD",
-        "VJ"
-      ],
-      "arrive_time": "2026-10-29T18:05:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T09:55:00",
-      "destination": "DAD",
-      "duration_minutes": 490,
-      "flight_numbers": [
-        "FD640",
-        "VJ519"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/67gzpff",
-      "notes": "self-transfer",
-      "origin": "DMK",
-      "price_original": 126.0,
-      "price_usd": 126.0,
-      "self_transfer": true,
-      "source": "kiwi",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "FD"
-      ],
-      "arrive_time": null,
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-11-24T18:15:00",
-      "destination": "DAD",
-      "duration_minutes": 890,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261028/",
-      "notes": "cheapestSource=cached · checked bag not verified",
-      "origin": "CNX",
-      "price_original": 126.0,
-      "price_usd": 126.0,
-      "self_transfer": false,
-      "source": "skyscanner",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "FD"
-      ],
-      "arrive_time": null,
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-11-24T18:15:00",
-      "destination": "DAD",
-      "duration_minutes": 890,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261029/",
-      "notes": "cheapestSource=cached · checked bag not verified",
-      "origin": "CNX",
-      "price_original": 126.0,
-      "price_usd": 126.0,
-      "self_transfer": false,
-      "source": "skyscanner",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "FD",
-        "VJ"
-      ],
-      "arrive_time": "2026-10-29T23:45:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": false,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T18:30:00",
-      "destination": "DAD",
-      "duration_minutes": 315,
-      "flight_numbers": [
-        "FD644",
-        "VJ1513"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/6stx7s",
+      "link": "https://kiwi.com/u/fpm6nw",
       "notes": "self-transfer",
       "origin": "DMK",
       "price_original": 127.0,
@@ -3440,29 +2965,56 @@
     },
     {
       "airlines": [
-        "FD",
-        "9G"
+        "Thai AirAsia",
+        "Vietravel Airlines"
       ],
-      "arrive_time": "2026-10-29T17:45:00",
+      "arrive_time": "2026-10-29T18:20:00",
       "cabin_bag_included": true,
-      "checked_bag_included": false,
+      "checked_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T12:00:00",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T18:30:00",
       "destination": "DAD",
-      "duration_minutes": 345,
+      "duration_minutes": 1430,
       "flight_numbers": [
-        "FD660",
-        "9G2966"
+        "FD644",
+        "VU211"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/gnfkbs",
-      "notes": "self-transfer",
+      "link": "https://www.skyscanner.net/transport/flights/dmk/dad/261028/",
+      "notes": "cheapestSource=kiwi · checked bag not verified",
       "origin": "DMK",
-      "price_original": 128.0,
-      "price_usd": 128.0,
+      "price_original": 127.0,
+      "price_usd": 127.0,
       "self_transfer": true,
-      "source": "kiwi",
+      "source": "skyscanner",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai AirAsia",
+        "Vietravel Airlines"
+      ],
+      "arrive_time": "2026-10-28T18:20:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T09:55:00",
+      "destination": "DAD",
+      "duration_minutes": 505,
+      "flight_numbers": [
+        "640",
+        "211"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 127.9,
+      "price_usd": 127.9,
+      "self_transfer": null,
+      "source": "airasia",
       "stops": 1
     },
     {
@@ -3470,52 +3022,27 @@
         "Thai Lion Air",
         "Thai AirAsia"
       ],
-      "arrive_time": "2026-10-30T18:20:00",
+      "arrive_time": "2026-10-30T12:10:00",
       "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
       "depart_time": "2026-10-29T21:30:00",
       "destination": "DAD",
-      "duration_minutes": 1250,
+      "duration_minutes": 880,
       "flight_numbers": [
         "SL521",
-        "FD638"
+        "FD636"
       ],
       "hop": null,
       "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261029/",
       "notes": "cheapestSource=kiwi · checked bag not verified",
       "origin": "CNX",
-      "price_original": 128.0,
-      "price_usd": 128.0,
+      "price_original": 129.0,
+      "price_usd": 129.0,
       "self_transfer": true,
       "source": "skyscanner",
       "stops": 1
-    },
-    {
-      "airlines": [
-        "FD"
-      ],
-      "arrive_time": "2026-10-29T12:10:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": true,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T10:35:00",
-      "destination": "DAD",
-      "duration_minutes": 95,
-      "flight_numbers": [
-        "FD636"
-      ],
-      "hop": null,
-      "link": "https://kiwi.com/u/6ybjm5y",
-      "notes": "",
-      "origin": "DMK",
-      "price_original": 128.35442,
-      "price_usd": 128.35442,
-      "self_transfer": false,
-      "source": "kiwi",
-      "stops": 0
     },
     {
       "airlines": [
@@ -3542,19 +3069,19 @@
     },
     {
       "airlines": [
-        "DD"
+        "SL"
       ],
       "arrive_time": null,
       "cabin_bag_included": null,
       "checked_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2027-01-07T14:20:00",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-12-02T08:00:00",
       "destination": "DAD",
-      "duration_minutes": 2750,
+      "duration_minutes": 620,
       "flight_numbers": [],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261029/",
+      "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261028/",
       "notes": "cheapestSource=cached · checked bag not verified",
       "origin": "CNX",
       "price_original": 130.0,
@@ -3566,19 +3093,100 @@
     {
       "airlines": [
         "Thai AirAsia",
-        "Vietnam Airlines"
+        "Vietravel Airlines"
       ],
-      "arrive_time": "2026-10-29T07:20:00",
+      "arrive_time": "2026-10-30T18:20:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T18:30:00",
+      "destination": "DAD",
+      "duration_minutes": 1430,
+      "flight_numbers": [
+        "FD644",
+        "VU211"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/dmk/dad/261029/",
+      "notes": "cheapestSource=kiwi · checked bag not verified",
+      "origin": "DMK",
+      "price_original": 131.0,
+      "price_usd": 131.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai AirAsia",
+        "Vietravel Airlines"
+      ],
+      "arrive_time": "2026-10-30T14:45:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T19:25:00",
+      "destination": "DAD",
+      "duration_minutes": 1160,
+      "flight_numbers": [
+        "FD658",
+        "VU254"
+      ],
+      "hop": null,
+      "link": "https://www.skyscanner.net/transport/flights/dmk/dad/261029/",
+      "notes": "cheapestSource=kiwi · checked bag not verified",
+      "origin": "DMK",
+      "price_original": 132.0,
+      "price_usd": 132.0,
+      "self_transfer": true,
+      "source": "skyscanner",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai AirAsia",
+        "Vietravel Airlines"
+      ],
+      "arrive_time": "2026-10-30T07:50:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T18:30:00",
+      "destination": "DAD",
+      "duration_minutes": 800,
+      "flight_numbers": [
+        "644",
+        "201"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=29%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 132.39,
+      "price_usd": 132.39,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai AirAsia",
+        "VietJet Air"
+      ],
+      "arrive_time": "2026-10-29T21:30:00",
       "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
       "depart_time": "2026-10-28T19:25:00",
       "destination": "DAD",
-      "duration_minutes": 715,
+      "duration_minutes": 1565,
       "flight_numbers": [
         "FD658",
-        "VN106"
+        "VJ632"
       ],
       "hop": null,
       "link": "https://www.skyscanner.net/transport/flights/dmk/dad/261028/",
@@ -3589,83 +3197,6 @@
       "self_transfer": true,
       "source": "skyscanner",
       "stops": 1
-    },
-    {
-      "airlines": [
-        "Thai AirAsia",
-        "Sun PhuQuoc Airways"
-      ],
-      "arrive_time": "2026-10-30T22:05:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T19:25:00",
-      "destination": "DAD",
-      "duration_minutes": 1600,
-      "flight_numbers": [
-        "FD658",
-        "9G990"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/dmk/dad/261029/",
-      "notes": "cheapestSource=kiwi · checked bag not verified",
-      "origin": "DMK",
-      "price_original": 133.0,
-      "price_usd": 133.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-28T12:30:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T10:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "VZ4782"
-      ],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-28&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 133.0,
-      "price_usd": 133.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "arrive_time": "2026-10-28T17:30:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T15:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "VZ4846"
-      ],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-28&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 133.0,
-      "price_usd": 133.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
     },
     {
       "airlines": [
@@ -3684,11 +3215,11 @@
         "VZ962"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/phjcr7",
+      "link": "https://kiwi.com/u/792wf4",
       "notes": "",
       "origin": "CNX",
-      "price_original": 133.057644,
-      "price_usd": 133.057644,
+      "price_original": 133.112245,
+      "price_usd": 133.112245,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 1
@@ -3710,11 +3241,11 @@
         "VZ962"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/yjkkm2",
+      "link": "https://kiwi.com/u/n9bkpt",
       "notes": "",
       "origin": "CNX",
-      "price_original": 133.057644,
-      "price_usd": 133.057644,
+      "price_original": 133.112245,
+      "price_usd": 133.112245,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 1
@@ -3736,11 +3267,11 @@
         "VZ962"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/gwnsmk",
+      "link": "https://kiwi.com/u/2m7gf3",
       "notes": "",
       "origin": "CNX",
-      "price_original": 133.057644,
-      "price_usd": 133.057644,
+      "price_original": 133.112245,
+      "price_usd": 133.112245,
       "self_transfer": false,
       "source": "kiwi",
       "stops": 1
@@ -3763,7 +3294,7 @@
         "VU211"
       ],
       "hop": null,
-      "link": "https://kiwi.com/u/zmt82f2",
+      "link": "https://kiwi.com/u/8h3bu9",
       "notes": "self-transfer",
       "origin": "CNX",
       "price_original": 134.0,
@@ -3775,81 +3306,28 @@
     {
       "airlines": [
         "Thai AirAsia",
-        "Sun PhuQuoc Airways"
+        "Vietravel Airlines"
       ],
-      "arrive_time": "2026-10-28T17:45:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T12:00:00",
-      "destination": "DAD",
-      "duration_minutes": 345,
-      "flight_numbers": [
-        "FD660",
-        "9G2966"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/dmk/dad/261028/",
-      "notes": "cheapestSource=kiwi · checked bag not verified",
-      "origin": "DMK",
-      "price_original": 134.0,
-      "price_usd": 134.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Thai AirAsia",
-        "VietJet Air"
-      ],
-      "arrive_time": "2026-10-30T11:05:00",
+      "arrive_time": "2026-10-29T14:45:00",
       "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T18:30:00",
+      "depart_time": "2026-10-29T07:30:00",
       "destination": "DAD",
-      "duration_minutes": 995,
+      "duration_minutes": 435,
       "flight_numbers": [
-        "FD644",
-        "VJ527"
+        "656",
+        "254"
       ],
       "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/dmk/dad/261029/",
-      "notes": "cheapestSource=kiwi · checked bag not verified",
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=29%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
       "origin": "DMK",
-      "price_original": 135.0,
-      "price_usd": 135.0,
-      "self_transfer": true,
-      "source": "skyscanner",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "VietJet Air"
-      ],
-      "arrive_time": "2026-10-29T23:45:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T18:35:00",
-      "destination": "DAD",
-      "duration_minutes": 310,
-      "flight_numbers": [
-        "VJ904",
-        "VJ1513"
-      ],
-      "hop": null,
-      "link": "https://www.skyscanner.net/transport/flights/bkk/dad/261029/",
-      "notes": "cheapestSource=kiwi · checked bag not verified",
-      "origin": "BKK",
-      "price_original": 140.0,
-      "price_usd": 140.0,
-      "self_transfer": true,
-      "source": "skyscanner",
+      "price_original": 138.0,
+      "price_usd": 138.0,
+      "self_transfer": null,
+      "source": "airasia",
       "stops": 1
     }
   ],
@@ -3860,55 +3338,6 @@
       ],
       "also_seen": [
         {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-28&adults=1&currency=USD",
-          "source": "vietjet",
-          "total_usd": 66.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_01d29fe7fc614d5f&offer=wo_2f6f3a071d66&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5f4f0ca143df43ef&offer=wo_2f6f3a071d66&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_01d29fe7fc614d5f&offer=wo_2f6f3a071d66&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5f4f0ca143df43ef&offer=wo_2f6f3a071d66&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_01d29fe7fc614d5f&offer=wo_2f6f3a071d66&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5f4f0ca143df43ef&offer=wo_2f6f3a071d66&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
           "cabin_bag_included": null,
           "checked_bag_included": null,
           "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI4agcIARIDQktLcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
@@ -3918,7 +3347,7 @@
         {
           "cabin_bag_included": true,
           "checked_bag_included": false,
-          "link": "https://kiwi.com/u/8r43um",
+          "link": "https://kiwi.com/u/6cfw7k",
           "source": "kiwi",
           "total_usd": 70.0
         }
@@ -3950,55 +3379,6 @@
       ],
       "also_seen": [
         {
-          "cabin_bag_included": false,
-          "checked_bag_included": false,
-          "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-28&adults=1&currency=USD",
-          "source": "vietjet",
-          "total_usd": 65.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_01d29fe7fc614d5f&offer=wo_efd4f7cd8f27&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5f4f0ca143df43ef&offer=wo_efd4f7cd8f27&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_01d29fe7fc614d5f&offer=wo_efd4f7cd8f27&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5f4f0ca143df43ef&offer=wo_efd4f7cd8f27&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_01d29fe7fc614d5f&offer=wo_efd4f7cd8f27&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5f4f0ca143df43ef&offer=wo_efd4f7cd8f27&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
           "cabin_bag_included": null,
           "checked_bag_included": null,
           "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI4agcIARIDQktLcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
@@ -4008,16 +3388,9 @@
         {
           "cabin_bag_included": true,
           "checked_bag_included": false,
-          "link": "https://kiwi.com/u/tjvuhx",
+          "link": "https://kiwi.com/u/pvrjrz",
           "source": "kiwi",
           "total_usd": 70.0
-        },
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": null,
-          "link": "https://www.skyscanner.net/transport/flights/bkk/dad/261028/",
-          "source": "skyscanner",
-          "total_usd": 72.0
         }
       ],
       "arrive_time": "2026-10-28T12:30:00",
@@ -4049,55 +3422,6 @@
         {
           "cabin_bag_included": null,
           "checked_bag_included": null,
-          "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-29&adults=1&currency=USD",
-          "source": "vietjet",
-          "total_usd": 65.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_ca1df6fbcd714d41&offer=wo_4bda16a351db&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_a65e29d1ee914451&offer=wo_2f6f3a071d66&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_ca1df6fbcd714d41&offer=wo_4bda16a351db&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_a65e29d1ee914451&offer=wo_2f6f3a071d66&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_ca1df6fbcd714d41&offer=wo_4bda16a351db&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_a65e29d1ee914451&offer=wo_2f6f3a071d66&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
           "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQktLcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
           "source": "google",
           "total_usd": 69.0
@@ -4105,16 +3429,9 @@
         {
           "cabin_bag_included": true,
           "checked_bag_included": false,
-          "link": "https://kiwi.com/u/kh9pp6",
+          "link": "https://kiwi.com/u/7jmu8p",
           "source": "kiwi",
           "total_usd": 70.0
-        },
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": null,
-          "link": "https://www.skyscanner.net/transport/flights/bkk/dad/261029/",
-          "source": "skyscanner",
-          "total_usd": 72.0
         }
       ],
       "arrive_time": "2026-10-29T09:55:00",
@@ -4140,92 +3457,158 @@
     },
     {
       "airlines": [
-        "Thai VietJet Air"
+        "Thai AirAsia"
       ],
-      "also_seen": [
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_a65e29d1ee914451&offer=wo_efd4f7cd8f27&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_a65e29d1ee914451&offer=wo_efd4f7cd8f27&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_a65e29d1ee914451&offer=wo_efd4f7cd8f27&cur=USD",
-          "source": "letsfg",
-          "total_usd": 67.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://skiplagged.com/flights/BKK/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ960",
-          "source": "skiplagged",
-          "total_usd": 68.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQktLcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
-          "source": "google",
-          "total_usd": 69.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_ca1df6fbcd714d41&offer=wo_6d99b87520b7&cur=USD",
-          "source": "letsfg",
-          "total_usd": 69.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_ca1df6fbcd714d41&offer=wo_6d99b87520b7&cur=USD",
-          "source": "letsfg",
-          "total_usd": 69.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_ca1df6fbcd714d41&offer=wo_6d99b87520b7&cur=USD",
-          "source": "letsfg",
-          "total_usd": 69.0
-        },
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/pwx72ym",
-          "source": "kiwi",
-          "total_usd": 73.0
-        }
-      ],
-      "arrive_time": "2026-10-29T12:30:00",
-      "cabin_bag_included": null,
+      "also_seen": [],
+      "arrive_time": "2026-10-28T09:05:00",
+      "cabin_bag_included": true,
       "checked_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T10:50:00",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T07:25:00",
       "destination": "DAD",
       "duration_minutes": 100,
       "flight_numbers": [
-        "VZ960"
+        "634"
       ],
       "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-29&adults=1&currency=USD",
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
       "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 65.0,
-      "price_usd": 65.0,
-      "self_transfer": false,
-      "source": "vietjet",
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "Thai AirAsia"
+      ],
+      "also_seen": [],
+      "arrive_time": "2026-10-28T12:10:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T10:35:00",
+      "destination": "DAD",
+      "duration_minutes": 95,
+      "flight_numbers": [
+        "636"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "Thai AirAsia"
+      ],
+      "also_seen": [],
+      "arrive_time": "2026-10-28T18:20:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T16:40:00",
+      "destination": "DAD",
+      "duration_minutes": 100,
+      "flight_numbers": [
+        "638"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "Thai AirAsia"
+      ],
+      "also_seen": [],
+      "arrive_time": "2026-10-29T09:05:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T07:25:00",
+      "destination": "DAD",
+      "duration_minutes": 100,
+      "flight_numbers": [
+        "634"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=29%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "Thai AirAsia"
+      ],
+      "also_seen": [],
+      "arrive_time": "2026-10-29T12:10:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T10:35:00",
+      "destination": "DAD",
+      "duration_minutes": 95,
+      "flight_numbers": [
+        "636"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=29%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
+      "self_transfer": null,
+      "source": "airasia",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "Thai AirAsia"
+      ],
+      "also_seen": [],
+      "arrive_time": "2026-10-29T18:20:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T16:40:00",
+      "destination": "DAD",
+      "duration_minutes": 100,
+      "flight_numbers": [
+        "638"
+      ],
+      "hop": null,
+      "link": "https://www.airasia.com/flights/search/?origin=DMK&destination=DAD&departDate=29%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
+      "notes": "checked bag not verified",
+      "origin": "DMK",
+      "price_original": 65.73,
+      "price_usd": 65.73,
+      "self_transfer": null,
+      "source": "airasia",
       "stops": 0
     },
     {
@@ -4233,20 +3616,6 @@
         "FD"
       ],
       "also_seen": [
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/2zkmzm",
-          "source": "kiwi",
-          "total_usd": 68.0
-        },
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/n3n9wd",
-          "source": "kiwi",
-          "total_usd": 68.0
-        },
         {
           "cabin_bag_included": true,
           "checked_bag_included": null,
@@ -4256,8 +3625,8 @@
         }
       ],
       "arrive_time": "2026-10-28T12:10:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
       "depart_time": "2026-10-28T10:35:00",
@@ -4267,38 +3636,23 @@
         "FD636"
       ],
       "hop": null,
-      "link": "https://letsfg.co/en?stage=results&sid=ws_01d29fe7fc614d5f&offer=wo_3a951b9c6ffd&cur=USD",
-      "notes": "checked bag not verified",
+      "link": "https://kiwi.com/u/g4s5w7",
+      "notes": "",
       "origin": "DMK",
-      "price_original": 66.0,
-      "price_usd": 66.0,
-      "self_transfer": null,
-      "source": "letsfg",
+      "price_original": 68.0,
+      "price_usd": 68.0,
+      "self_transfer": false,
+      "source": "kiwi",
       "stops": 0
     },
     {
       "airlines": [
         "FD"
       ],
-      "also_seen": [
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/qcz8dxb",
-          "source": "kiwi",
-          "total_usd": 68.0
-        },
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/bnk663d",
-          "source": "kiwi",
-          "total_usd": 68.0
-        }
-      ],
+      "also_seen": [],
       "arrive_time": "2026-10-28T18:20:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
       "depart_time": "2026-10-28T16:40:00",
@@ -4308,38 +3662,23 @@
         "FD638"
       ],
       "hop": null,
-      "link": "https://letsfg.co/en?stage=results&sid=ws_01d29fe7fc614d5f&offer=wo_d82c422bfebc&cur=USD",
-      "notes": "checked bag not verified",
+      "link": "https://kiwi.com/u/j2b9uv",
+      "notes": "",
       "origin": "DMK",
-      "price_original": 66.0,
-      "price_usd": 66.0,
-      "self_transfer": null,
-      "source": "letsfg",
+      "price_original": 68.0,
+      "price_usd": 68.0,
+      "self_transfer": false,
+      "source": "kiwi",
       "stops": 0
     },
     {
       "airlines": [
         "FD"
       ],
-      "also_seen": [
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/yydgsc",
-          "source": "kiwi",
-          "total_usd": 68.0
-        },
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/k22m7h",
-          "source": "kiwi",
-          "total_usd": 68.0
-        }
-      ],
+      "also_seen": [],
       "arrive_time": "2026-10-28T09:05:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-28",
       "depart_time": "2026-10-28T07:25:00",
@@ -4349,13 +3688,13 @@
         "FD634"
       ],
       "hop": null,
-      "link": "https://letsfg.co/en?stage=results&sid=ws_01d29fe7fc614d5f&offer=wo_7b653c82164e&cur=USD",
-      "notes": "checked bag not verified",
+      "link": "https://kiwi.com/u/f3td45",
+      "notes": "",
       "origin": "DMK",
-      "price_original": 66.0,
-      "price_usd": 66.0,
-      "self_transfer": null,
-      "source": "letsfg",
+      "price_original": 68.0,
+      "price_usd": 68.0,
+      "self_transfer": false,
+      "source": "kiwi",
       "stops": 0
     },
     {
@@ -4363,72 +3702,43 @@
         "FD"
       ],
       "also_seen": [
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/kcwzvv6",
-          "source": "kiwi",
-          "total_usd": 68.0
-        },
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/27g9tq",
-          "source": "kiwi",
-          "total_usd": 68.0
-        }
-      ],
-      "arrive_time": "2026-10-29T09:05:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T07:25:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "FD634"
-      ],
-      "hop": null,
-      "link": "https://letsfg.co/en?stage=results&sid=ws_ca1df6fbcd714d41&offer=wo_7b653c82164e&cur=USD",
-      "notes": "checked bag not verified",
-      "origin": "DMK",
-      "price_original": 66.0,
-      "price_usd": 66.0,
-      "self_transfer": null,
-      "source": "letsfg",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "FD"
-      ],
-      "also_seen": [
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/phbt5c",
-          "source": "kiwi",
-          "total_usd": 68.0
-        },
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/323cvh",
-          "source": "kiwi",
-          "total_usd": 68.0
-        },
         {
           "cabin_bag_included": true,
           "checked_bag_included": null,
           "link": "https://www.skyscanner.net/transport/flights/dmk/dad/261029/",
           "source": "skyscanner",
-          "total_usd": 75.0
+          "total_usd": 68.0
         }
       ],
+      "arrive_time": "2026-10-29T12:10:00",
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T10:35:00",
+      "destination": "DAD",
+      "duration_minutes": 95,
+      "flight_numbers": [
+        "FD636"
+      ],
+      "hop": null,
+      "link": "https://kiwi.com/u/dkgc7n",
+      "notes": "",
+      "origin": "DMK",
+      "price_original": 68.0,
+      "price_usd": 68.0,
+      "self_transfer": false,
+      "source": "kiwi",
+      "stops": 0
+    },
+    {
+      "airlines": [
+        "FD"
+      ],
+      "also_seen": [],
       "arrive_time": "2026-10-29T18:20:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
+      "cabin_bag_included": true,
+      "checked_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
       "depart_time": "2026-10-29T16:40:00",
@@ -4438,155 +3748,39 @@
         "FD638"
       ],
       "hop": null,
-      "link": "https://letsfg.co/en?stage=results&sid=ws_ca1df6fbcd714d41&offer=wo_d82c422bfebc&cur=USD",
-      "notes": "checked bag not verified",
+      "link": "https://kiwi.com/u/qkv77r",
+      "notes": "",
       "origin": "DMK",
-      "price_original": 66.0,
-      "price_usd": 66.0,
-      "self_transfer": null,
-      "source": "letsfg",
+      "price_original": 68.0,
+      "price_usd": 68.0,
+      "self_transfer": false,
+      "source": "kiwi",
       "stops": 0
     },
     {
       "airlines": [
-        "Thai Vietjet"
+        "FD"
       ],
       "also_seen": [],
-      "arrive_time": "2026-10-28T12:30:00",
+      "arrive_time": "2026-10-29T09:05:00",
       "cabin_bag_included": true,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T10:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "960"
-      ],
-      "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 66.96,
-      "price_usd": 66.96,
-      "self_transfer": null,
-      "source": "airasia",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai VietJet Air"
-      ],
-      "also_seen": [
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://skiplagged.com/flights/BKK/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ962",
-          "source": "skiplagged",
-          "total_usd": 68.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_ca1df6fbcd714d41&offer=wo_cc9e5e5ec031&cur=USD",
-          "source": "letsfg",
-          "total_usd": 69.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_ca1df6fbcd714d41&offer=wo_cc9e5e5ec031&cur=USD",
-          "source": "letsfg",
-          "total_usd": 69.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_ca1df6fbcd714d41&offer=wo_cc9e5e5ec031&cur=USD",
-          "source": "letsfg",
-          "total_usd": 69.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_a65e29d1ee914451&offer=wo_efde5a5207a3&cur=USD",
-          "source": "letsfg",
-          "total_usd": 70.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_a65e29d1ee914451&offer=wo_efde5a5207a3&cur=USD",
-          "source": "letsfg",
-          "total_usd": 70.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_a65e29d1ee914451&offer=wo_efde5a5207a3&cur=USD",
-          "source": "letsfg",
-          "total_usd": 70.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQktLcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
-          "source": "google",
-          "total_usd": 72.0
-        },
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/9bz7ty",
-          "source": "kiwi",
-          "total_usd": 73.0
-        }
-      ],
-      "arrive_time": "2026-10-29T17:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
+      "checked_bag_included": false,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T15:50:00",
+      "depart_time": "2026-10-29T07:25:00",
       "destination": "DAD",
       "duration_minutes": 100,
       "flight_numbers": [
-        "VZ962"
+        "FD634"
       ],
       "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-29&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 67.72,
-      "price_usd": 67.72,
+      "link": "https://kiwi.com/u/2ksnh68",
+      "notes": "",
+      "origin": "DMK",
+      "price_original": 68.0,
+      "price_usd": 68.0,
       "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet"
-      ],
-      "also_seen": [],
-      "arrive_time": "2026-10-28T09:55:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T08:15:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [
-        "964"
-      ],
-      "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 67.85,
-      "price_usd": 67.85,
-      "self_transfer": null,
-      "source": "airasia",
+      "source": "kiwi",
       "stops": 0
     },
     {
@@ -4594,13 +3788,6 @@
         "Thai Vietjet Air"
       ],
       "also_seen": [
-        {
-          "cabin_bag_included": false,
-          "checked_bag_included": false,
-          "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-28&adults=1&currency=USD",
-          "source": "vietjet",
-          "total_usd": 68.0
-        },
         {
           "cabin_bag_included": null,
           "checked_bag_included": null,
@@ -4611,7 +3798,7 @@
         {
           "cabin_bag_included": true,
           "checked_bag_included": false,
-          "link": "https://kiwi.com/u/q4kqfx",
+          "link": "https://kiwi.com/u/vjy89n",
           "source": "kiwi",
           "total_usd": 73.0
         }
@@ -4641,79 +3828,63 @@
       "airlines": [
         "Thai Vietjet Air"
       ],
-      "also_seen": [],
-      "arrive_time": "2026-10-28T12:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T10:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-28&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 69.0,
-      "price_usd": 69.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
+      "also_seen": [
+        {
+          "cabin_bag_included": null,
+          "checked_bag_included": null,
+          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQktLcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
+          "source": "google",
+          "total_usd": 72.0
+        },
+        {
+          "cabin_bag_included": true,
+          "checked_bag_included": false,
+          "link": "https://kiwi.com/u/22mskbz",
+          "source": "kiwi",
+          "total_usd": 73.0
+        }
       ],
-      "also_seen": [],
-      "arrive_time": "2026-10-28T09:55:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T08:15:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-28&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 69.0,
-      "price_usd": 69.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "also_seen": [],
-      "arrive_time": "2026-10-29T09:55:00",
+      "arrive_time": "2026-10-29T17:30:00",
       "cabin_bag_included": null,
       "checked_bag_included": null,
       "currency_original": "USD",
       "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T08:15:00",
+      "depart_time": "2026-10-29T15:50:00",
       "destination": "DAD",
       "duration_minutes": 100,
-      "flight_numbers": [],
+      "flight_numbers": [
+        "VZ962"
+      ],
       "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-29&adults=1&currency=USD",
+      "link": "https://skiplagged.com/flights/BKK/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ962",
       "notes": "checked bag not verified",
       "origin": "BKK",
-      "price_original": 69.0,
-      "price_usd": 69.0,
-      "self_transfer": false,
-      "source": "vietjet",
+      "price_original": 68.0,
+      "price_usd": 68.0,
+      "self_transfer": null,
+      "source": "skiplagged",
       "stops": 0
     },
     {
       "airlines": [
         "Thai Vietjet Air"
       ],
-      "also_seen": [],
+      "also_seen": [
+        {
+          "cabin_bag_included": null,
+          "checked_bag_included": null,
+          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQktLcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
+          "source": "google",
+          "total_usd": 69.0
+        },
+        {
+          "cabin_bag_included": true,
+          "checked_bag_included": false,
+          "link": "https://kiwi.com/u/v4ur9ws",
+          "source": "kiwi",
+          "total_usd": 73.0
+        }
+      ],
       "arrive_time": "2026-10-29T12:30:00",
       "cabin_bag_included": null,
       "checked_bag_included": null,
@@ -4722,112 +3893,18 @@
       "depart_time": "2026-10-29T10:50:00",
       "destination": "DAD",
       "duration_minutes": 100,
-      "flight_numbers": [],
-      "hop": null,
-      "link": "https://www.vietjetair.com/en/flight-search?origin=BKK&destination=DAD&departureDate=2026-10-29&adults=1&currency=USD",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 69.0,
-      "price_usd": 69.0,
-      "self_transfer": false,
-      "source": "vietjet",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet"
-      ],
-      "also_seen": [],
-      "arrive_time": "2026-10-28T17:30:00",
-      "cabin_bag_included": true,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T15:50:00",
-      "destination": "DAD",
-      "duration_minutes": 100,
       "flight_numbers": [
-        "962"
-      ],
-      "hop": null,
-      "link": "https://www.airasia.com/flights/search/?origin=BKK&destination=DAD&departDate=28%2F10%2F2026&tripType=O&adult=1&child=0&infant=0&locale=en-gb&currency=USD&ule=true&cabinClass=economy&uce=true&ancillaryAbTest=false&isOC=false&isDC=false&promoCode=&type=paired&airlineProfile=k%2Cd%2Cg&upsellWidget=true&upsellPremiumFlatbedWidget=true",
-      "notes": "checked bag not verified",
-      "origin": "BKK",
-      "price_original": 69.64,
-      "price_usd": 69.64,
-      "self_transfer": null,
-      "source": "airasia",
-      "stops": 0
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "also_seen": [
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_067057d5bb38&cur=USD",
-          "source": "letsfg",
-          "total_usd": 81.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_067057d5bb38&cur=USD",
-          "source": "letsfg",
-          "total_usd": 81.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_067057d5bb38&cur=USD",
-          "source": "letsfg",
-          "total_usd": 81.0
-        },
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/d3tb74q",
-          "source": "kiwi",
-          "total_usd": 84.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI4agcIARIDQ05YcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
-          "source": "google",
-          "total_usd": 108.0
-        },
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": null,
-          "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261028/",
-          "source": "skyscanner",
-          "total_usd": 121.0
-        }
-      ],
-      "arrive_time": "2026-10-28T12:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T06:35:00",
-      "destination": "DAD",
-      "duration_minutes": 355,
-      "flight_numbers": [
-        "VZ2105",
         "VZ960"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-VZ960",
+      "link": "https://skiplagged.com/flights/BKK/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ960",
       "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 79.0,
-      "price_usd": 79.0,
+      "origin": "BKK",
+      "price_original": 68.0,
+      "price_usd": 68.0,
       "self_transfer": null,
       "source": "skiplagged",
-      "stops": 1
+      "stops": 0
     },
     {
       "airlines": [
@@ -4837,86 +3914,9 @@
         {
           "cabin_bag_included": true,
           "checked_bag_included": false,
-          "link": "https://kiwi.com/u/qjy44t",
+          "link": "https://kiwi.com/u/2mux9hg",
           "source": "kiwi",
-          "total_usd": 84.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_c96eca931559&cur=USD",
-          "source": "letsfg",
-          "total_usd": 88.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_c96eca931559&cur=USD",
-          "source": "letsfg",
-          "total_usd": 88.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_c96eca931559&cur=USD",
-          "source": "letsfg",
-          "total_usd": 88.0
-        }
-      ],
-      "arrive_time": "2026-10-28T17:30:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-28",
-      "depart_time": "2026-10-28T06:35:00",
-      "destination": "DAD",
-      "duration_minutes": 655,
-      "flight_numbers": [
-        "VZ2105",
-        "VZ962"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-VZ962",
-      "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 79.0,
-      "price_usd": 79.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "also_seen": [
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_0cdbe6c8c1914174&offer=wo_067057d5bb38&cur=USD",
-          "source": "letsfg",
-          "total_usd": 81.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_0cdbe6c8c1914174&offer=wo_067057d5bb38&cur=USD",
-          "source": "letsfg",
-          "total_usd": 81.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_0cdbe6c8c1914174&offer=wo_067057d5bb38&cur=USD",
-          "source": "letsfg",
-          "total_usd": 81.0
-        },
-        {
-          "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/xs35qf",
-          "source": "kiwi",
-          "total_usd": 84.0
+          "total_usd": 85.0
         },
         {
           "cabin_bag_included": null,
@@ -4963,9 +3963,9 @@
         {
           "cabin_bag_included": true,
           "checked_bag_included": false,
-          "link": "https://kiwi.com/u/669dwh",
+          "link": "https://kiwi.com/u/c32cvf",
           "source": "kiwi",
-          "total_usd": 84.0
+          "total_usd": 85.0
         }
       ],
       "arrive_time": "2026-10-29T17:30:00",
@@ -4996,59 +3996,80 @@
       ],
       "also_seen": [
         {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_0cdbe6c8c1914174&offer=wo_f2a00f403661&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
+          "cabin_bag_included": true,
+          "checked_bag_included": false,
+          "link": "https://kiwi.com/u/t5r64u",
+          "source": "kiwi",
+          "total_usd": 85.0
         },
         {
           "cabin_bag_included": null,
           "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_0cdbe6c8c1914174&offer=wo_f2a00f403661&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_0cdbe6c8c1914174&offer=wo_f2a00f403661&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
+          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI4agcIARIDQ05YcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
+          "source": "google",
+          "total_usd": 108.0
         },
         {
           "cabin_bag_included": true,
-          "checked_bag_included": false,
-          "link": "https://kiwi.com/u/wg42c2s",
-          "source": "kiwi",
-          "total_usd": 92.0
-        },
-        {
-          "cabin_bag_included": null,
           "checked_bag_included": null,
-          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQ05YcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
-          "source": "google",
-          "total_usd": 126.0
+          "link": "https://www.skyscanner.net/transport/flights/cnx/dad/261028/",
+          "source": "skyscanner",
+          "total_usd": 121.0
         }
       ],
-      "arrive_time": "2026-10-29T17:30:00",
+      "arrive_time": "2026-10-28T12:30:00",
       "cabin_bag_included": null,
       "checked_bag_included": null,
       "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T08:25:00",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T06:35:00",
       "destination": "DAD",
-      "duration_minutes": 545,
+      "duration_minutes": 355,
       "flight_numbers": [
-        "VZ101",
+        "VZ2105",
+        "VZ960"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-VZ960",
+      "notes": "checked bag not verified",
+      "origin": "CNX",
+      "price_original": 80.0,
+      "price_usd": 80.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai Vietjet Air"
+      ],
+      "also_seen": [
+        {
+          "cabin_bag_included": true,
+          "checked_bag_included": false,
+          "link": "https://kiwi.com/u/49g8w98",
+          "source": "kiwi",
+          "total_usd": 85.0
+        }
+      ],
+      "arrive_time": "2026-10-28T17:30:00",
+      "cabin_bag_included": null,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-28",
+      "depart_time": "2026-10-28T06:35:00",
+      "destination": "DAD",
+      "duration_minutes": 655,
+      "flight_numbers": [
+        "VZ2105",
         "VZ962"
       ],
       "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ101-VZ962",
+      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-28?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2105-VZ962",
       "notes": "checked bag not verified",
       "origin": "CNX",
-      "price_original": 86.0,
-      "price_usd": 86.0,
+      "price_original": 80.0,
+      "price_usd": 80.0,
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 1
@@ -5058,136 +4079,10 @@
         "Thai Vietjet Air"
       ],
       "also_seen": [
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_0cdbe6c8c1914174&offer=wo_e3534147202b&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_0cdbe6c8c1914174&offer=wo_e3534147202b&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_0cdbe6c8c1914174&offer=wo_e3534147202b&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQ05YcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
-          "source": "google",
-          "total_usd": 126.0
-        }
-      ],
-      "arrive_time": "2026-10-30T09:55:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T20:50:00",
-      "destination": "DAD",
-      "duration_minutes": 785,
-      "flight_numbers": [
-        "VZ2107",
-        "VZ964"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2107-VZ964",
-      "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 86.0,
-      "price_usd": 86.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "also_seen": [
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_0cdbe6c8c1914174&offer=wo_0b734b9ff3a6&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_0cdbe6c8c1914174&offer=wo_0b734b9ff3a6&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_0cdbe6c8c1914174&offer=wo_0b734b9ff3a6&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        }
-      ],
-      "arrive_time": "2026-10-30T09:55:00",
-      "cabin_bag_included": null,
-      "checked_bag_included": null,
-      "currency_original": "USD",
-      "depart_date": "2026-10-29",
-      "depart_time": "2026-10-29T19:35:00",
-      "destination": "DAD",
-      "duration_minutes": 860,
-      "flight_numbers": [
-        "VZ123",
-        "VZ964"
-      ],
-      "hop": null,
-      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ123-VZ964",
-      "notes": "checked bag not verified",
-      "origin": "CNX",
-      "price_original": 86.0,
-      "price_usd": 86.0,
-      "self_transfer": null,
-      "source": "skiplagged",
-      "stops": 1
-    },
-    {
-      "airlines": [
-        "Thai Vietjet Air"
-      ],
-      "also_seen": [
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_073af74c3374&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_073af74c3374&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_073af74c3374&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        },
         {
           "cabin_bag_included": true,
           "checked_bag_included": false,
-          "link": "https://kiwi.com/u/dpy26j",
+          "link": "https://kiwi.com/u/hs72wt",
           "source": "kiwi",
           "total_usd": 92.0
         },
@@ -5227,30 +4122,9 @@
       ],
       "also_seen": [
         {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_f2a00f403661&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_f2a00f403661&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_f2a00f403661&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        },
-        {
           "cabin_bag_included": true,
           "checked_bag_included": false,
-          "link": "https://kiwi.com/u/8d9hzv",
+          "link": "https://kiwi.com/u/8txvnnu",
           "source": "kiwi",
           "total_usd": 92.0
         }
@@ -5283,26 +4157,47 @@
       ],
       "also_seen": [
         {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_e3534147202b&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
+          "cabin_bag_included": true,
+          "checked_bag_included": false,
+          "link": "https://kiwi.com/u/7v82u2",
+          "source": "kiwi",
+          "total_usd": 92.0
         },
         {
           "cabin_bag_included": null,
           "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_e3534147202b&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        },
-        {
-          "cabin_bag_included": null,
-          "checked_bag_included": null,
-          "link": "https://letsfg.co/en?stage=results&sid=ws_5a5c4e05339e4c0b&offer=wo_e3534147202b&cur=USD",
-          "source": "letsfg",
-          "total_usd": 89.0
-        },
+          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQ05YcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
+          "source": "google",
+          "total_usd": 126.0
+        }
+      ],
+      "arrive_time": "2026-10-29T17:30:00",
+      "cabin_bag_included": null,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T08:25:00",
+      "destination": "DAD",
+      "duration_minutes": 545,
+      "flight_numbers": [
+        "VZ101",
+        "VZ962"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ101-VZ962",
+      "notes": "checked bag not verified",
+      "origin": "CNX",
+      "price_original": 87.0,
+      "price_usd": 87.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai Vietjet Air"
+      ],
+      "also_seen": [
         {
           "cabin_bag_included": null,
           "checked_bag_included": null,
@@ -5332,19 +4227,81 @@
       "self_transfer": null,
       "source": "skiplagged",
       "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai Vietjet Air"
+      ],
+      "also_seen": [
+        {
+          "cabin_bag_included": null,
+          "checked_bag_included": null,
+          "link": "https://www.google.com/travel/flights?tfs=CBwQAhoeEgoyMDI2LTEwLTI5agcIARIDQ05YcgcIARIDREFEQAFIAXABmAEC&hl=en&gl=US&curr=USD",
+          "source": "google",
+          "total_usd": 126.0
+        }
+      ],
+      "arrive_time": "2026-10-30T09:55:00",
+      "cabin_bag_included": null,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T20:50:00",
+      "destination": "DAD",
+      "duration_minutes": 785,
+      "flight_numbers": [
+        "VZ2107",
+        "VZ964"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ2107-VZ964",
+      "notes": "checked bag not verified",
+      "origin": "CNX",
+      "price_original": 87.0,
+      "price_usd": 87.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 1
+    },
+    {
+      "airlines": [
+        "Thai Vietjet Air"
+      ],
+      "also_seen": [],
+      "arrive_time": "2026-10-30T09:55:00",
+      "cabin_bag_included": null,
+      "checked_bag_included": null,
+      "currency_original": "USD",
+      "depart_date": "2026-10-29",
+      "depart_time": "2026-10-29T19:35:00",
+      "destination": "DAD",
+      "duration_minutes": 860,
+      "flight_numbers": [
+        "VZ123",
+        "VZ964"
+      ],
+      "hop": null,
+      "link": "https://skiplagged.com/flights/CNX/DAD/2026-10-29?utm_source=mcp&utm_medium=ai&utm_campaign=skiplagged_mcp#trip=VZ123-VZ964",
+      "notes": "checked bag not verified",
+      "origin": "CNX",
+      "price_original": 87.0,
+      "price_usd": 87.0,
+      "self_transfer": null,
+      "source": "skiplagged",
+      "stops": 1
     }
   ],
   "source_status": {
     "agoda": {
       "count": 0,
       "error": null,
-      "seconds": 11.827872702,
+      "seconds": 12.546027951999996,
       "status": "ok"
     },
     "airasia": {
-      "count": 10,
+      "count": 15,
       "error": null,
-      "seconds": 112.697410425,
+      "seconds": 83.73701289799999,
       "status": "ok"
     },
     "chartershop": {
@@ -5356,7 +4313,7 @@
     "google": {
       "count": 37,
       "error": null,
-      "seconds": 5.226020297999995,
+      "seconds": 10.013863858,
       "status": "ok"
     },
     "itaka": {
@@ -5368,14 +4325,14 @@
     "kiwi": {
       "count": 89,
       "error": null,
-      "seconds": 8.225057642000003,
+      "seconds": 3.257469479000001,
       "status": "ok"
     },
     "letsfg": {
-      "count": 90,
-      "error": null,
-      "seconds": 648.463565021,
-      "status": "ok"
+      "count": 0,
+      "error": "timeout after 1800s",
+      "seconds": 1800.087692658,
+      "status": "error"
     },
     "rpl": {
       "count": 0,
@@ -5386,28 +4343,28 @@
     "skiplagged": {
       "count": 22,
       "error": null,
-      "seconds": 23.899487609999994,
+      "seconds": 25.809576364999998,
       "status": "ok"
     },
     "skyscanner": {
-      "count": 50,
+      "count": 40,
       "error": null,
-      "seconds": 77.85613684999998,
+      "seconds": 67.095959424,
       "status": "ok"
     },
     "trip": {
       "count": 0,
       "error": null,
-      "seconds": 4.008649826999999,
+      "seconds": 5.213527638999999,
       "status": "ok"
     },
     "vietjet": {
-      "count": 14,
+      "count": 0,
       "error": null,
-      "seconds": 74.49030859799998,
+      "seconds": 66.70208441,
       "status": "ok"
     }
   },
-  "started_at": "2026-10-13T02:11:57.433204+00:00",
+  "started_at": "2026-10-13T10:31:36.540684+00:00",
   "window_over": false
 }
