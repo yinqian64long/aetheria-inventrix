@@ -11,7 +11,9 @@ import respx
 from flightsearch.cli import main
 from flightsearch.config import load_config
 from flightsearch.models import Offer
-from flightsearch.notify.telegram import API_ROOT
+from flightsearch.notify.grok import GrokBotNotifier
+from flightsearch.notify.multi import MultiNotifier
+from flightsearch.notify.telegram import API_ROOT, TelegramNotifier
 from flightsearch.pipeline import RunResult
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -230,8 +232,48 @@ def test_telegram_chat_id(monkeypatch: pytest.MonkeyPatch, capsys: pytest.Captur
     assert "ada" in out
 
 
+@respx.mock
+def test_test_grok(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("GROK_BOT_WEBHOOK_URL", "https://grok.example/hook")
+    monkeypatch.setenv("GROK_BOT_WEBHOOK_KEY", "hook-key")
+    route = respx.post("https://grok.example/hook").mock(
+        return_value=httpx.Response(200, json={"ok": True})
+    )
+    assert main(["test-grok"]) == 0
+    assert route.call_count == 1
+    assert route.calls[0].request.headers["Authorization"] == "Bearer hook-key"
+    assert json.loads(route.calls[0].request.content)["message"] == "flightsearch test"
+
+
+def test_run_sends_alerts_to_grok_and_telegram(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    calls = _patch_run(monkeypatch, _result())
+    monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "tok")
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "1")
+    monkeypatch.setenv("GROK_BOT_WEBHOOK_URL", "https://grok.example/hook")
+    monkeypatch.setenv("GROK_BOT_WEBHOOK_KEY", "hook-key")
+    code = main(
+        [
+            "run",
+            "--config",
+            str(ROOT / "config.yaml"),
+            "--dry-run",
+            "--out",
+            str(tmp_path / "out"),
+            "--state",
+            str(tmp_path / "state.json"),
+        ]
+    )
+    assert code == 0
+    notifier = calls[0]["notifier"]
+    assert isinstance(notifier, MultiNotifier)
+    kinds = {type(item) for item in notifier.notifiers}
+    assert kinds == {TelegramNotifier, GrokBotNotifier}
+
+
 def test_load_config_reads_vietnam_search() -> None:
     cfg = load_config(ROOT / "config.yaml")
     assert cfg.query.checked_bags == 1
-    assert cfg.query.max_total_usd == 110
+    assert cfg.query.max_total_usd == 120
     assert cfg.sources["vietjet"]["max_routes_per_day"] == 4

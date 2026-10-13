@@ -6,7 +6,7 @@ Where and how to run the flight search on a schedule, plus backup triggers when 
 
 | Option | Schedule | Cost | Pros | Cons |
 |--------|----------|------|------|------|
-| **GitHub Actions** (recommended primary) | `cron: "17 */6 * * *"` (~4×/day, odd minute) | Free for public repos (standard minutes) | Native secrets, commits `state/` + `results/`, Step Summary, 60 min job budget | Datacenter IPs may be blocked; cron can slip under load; schedule auto-disables after 60 days repo inactivity |
+| **GitHub Actions** (recommended primary) | `cron: "17 */3 * * *"` (~8×/day, odd minute) | Free for public repos (standard minutes) | Native secrets, commits `state/` + `results/`, Step Summary, 60 min job budget | Datacenter IPs may be blocked; cron can slip under load; schedule auto-disables after 60 days repo inactivity |
 | **cron-job.org** (backup trigger) | External HTTP cron → `workflow_dispatch` | Free tier | Independent of GitHub’s scheduler | Needs repo dispatch token/PAT; does not run the search itself |
 | **Grok Bot routine** (backup + monitor) | Routines ≥ 5 min or webhook | Cursor Pro+/SuperGrok (metered weekly cap) | Different IP, real browser for hard sites; can health-check Actions | Nondeterministic, metered; secondary only |
 | **Cursor Automations** | Cloud cron | Metered cloud agent | Can call MCPs directly | Cost; overlap with Actions |
@@ -27,8 +27,8 @@ References: [Workflow syntax — schedule](https://docs.github.com/en/actions/us
 
 ## Recommendation
 
-1. **Primary:** `.github/workflows/search.yml` on GitHub Actions (every 6 hours).
-2. **Backup trigger:** [cron-job.org](https://cron-job.org) POST to GitHub `workflow_dispatch` (e.g. every 6 hours offset by 3 h) if you see missed runs.
+1. **Primary:** `.github/workflows/search.yml` on GitHub Actions (every 3 hours).
+2. **Backup trigger:** [cron-job.org](https://cron-job.org) POST to GitHub `workflow_dispatch` (e.g. every 3 hours, offset from :17) if you see missed runs.
 3. **Optional monitor:** Grok Bot routine on a Cursor cloud computer (see below) to verify the last successful `search.yml` run and re-dispatch if stale.
 4. **Local:** Manual `uv run python -m flightsearch run` for debugging only.
 
@@ -60,7 +60,7 @@ Environment (set in the Grok Bot cloud environment, never log values):
 Every run:
 1. cd to a clone of OWNER/REPO (pull latest main).
 2. Run: gh run list --workflow search.yml --limit 5 --json databaseId,status,conclusion,createdAt,updatedAt
-3. Find the latest run with conclusion "success". If none exists in the last 7 hours, or the newest success is older than 7 hours:
+3. Find the latest run with conclusion "success". If none exists in the last 4 hours, or the newest success is older than 4 hours:
    - Run: gh workflow run search.yml --ref main
    - Send Telegram: "Flight search: re-dispatched search.yml (last success stale or missing)."
 4. Else if the latest run (any conclusion) is "failure" and younger than 2 hours, send Telegram once with run URL and short log hint: gh run view <id> --log-failed | tail -40
@@ -69,7 +69,9 @@ Every run:
 Do not echo secrets. Use UTC timestamps in messages.
 ```
 
-Adjust `OWNER/REPO`, the 7 h threshold (workflow runs every 6 h), and Telegram wording as needed.
+Adjust `OWNER/REPO`, the 4 h threshold (workflow runs every 3 h), and Telegram wording as needed.
+
+Deal alerts, source-health alerts, and the daily heartbeat are also posted to a Grok Bot webhook when `notify.grok` is enabled. See the README for the routine instruction and `GROK_BOT_WEBHOOK_URL` / `GROK_BOT_WEBHOOK_KEY`.
 
 **Webhook alternative:** trigger the same routine from an external cron when you want a push-based check without waiting for Grok’s schedule.
 

@@ -190,6 +190,24 @@ async def test_all_fail_raises_source_error(monkeypatch: pytest.MonkeyPatch) -> 
         await src.search(query, _ctx())
 
 
+@pytest.mark.asyncio
+async def test_search_with_and_without_hold_bag(monkeypatch: pytest.MonkeyPatch) -> None:
+    holds: list[list[int]] = []
+
+    async def fake_call(tool: str, args: dict, **kwargs: Any) -> Any:
+        holds.append(list(args["adults_hold_bags"]))
+        return _load("cnx_waw_range.json")
+
+    _patch_session(monkeypatch, fake_call)
+    offers = await KiwiSource().search(
+        _query(origins=("CNX",), destinations=("WAW",), checked_bags=1),
+        _ctx(),
+    )
+    assert holds.count([1]) == 1
+    assert holds.count([0]) == 1
+    assert {o.checked_bag_included for o in offers} == {True, False}
+
+
 @pytest.mark.live
 @pytest.mark.asyncio
 async def test_live_search_cnx_waw() -> None:

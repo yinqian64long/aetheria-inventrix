@@ -40,7 +40,9 @@ class Offer:
             f"{self.depart_date.isoformat()}|{depart}|{ident}"
         )
         if self.hop is not None:
-            return f"{base}|hop:{self.hop.key()}"
+            base = f"{base}|hop:{self.hop.key()}"
+        if self.checked_bag_included is True:
+            return f"{base}|bag"
         return base
 
     def to_dict(self) -> dict[str, Any]:
@@ -120,6 +122,13 @@ def _parse_datetime(value: datetime | str | None) -> datetime | None:
 
 
 @dataclass(frozen=True)
+class PriceCap:
+    origins: tuple[str, ...]
+    with_bag_usd: float
+    without_bag_usd: float
+
+
+@dataclass(frozen=True)
 class SearchQuery:
     origins: tuple[str, ...]
     destinations: tuple[str, ...]
@@ -132,6 +141,17 @@ class SearchQuery:
     max_total_usd: float
     near_miss_usd: float
     currency: str
+    price_caps: tuple[PriceCap, ...] = ()
+    near_miss_margin_usd: float = 20
+
+    def cap_usd(self, offer: Offer) -> float:
+        origin = offer.origin.upper()
+        for rule in self.price_caps:
+            if origin in rule.origins:
+                if offer.checked_bag_included is True:
+                    return rule.with_bag_usd
+                return rule.without_bag_usd
+        return self.max_total_usd
 
     @property
     def all_origins(self) -> tuple[str, ...]:

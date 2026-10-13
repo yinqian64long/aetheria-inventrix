@@ -11,7 +11,7 @@ import respx
 from flightsearch.config import AppConfig
 from flightsearch.context import RunContext
 from flightsearch.fx import FRANKFURTER_URL
-from flightsearch.models import Offer, SearchQuery
+from flightsearch.models import Offer, PriceCap, SearchQuery
 from flightsearch.pipeline import run_search
 from flightsearch.report import format_deals
 from flightsearch.sources.base import Source, SourceError
@@ -424,6 +424,72 @@ async def test_cnx_price_thresholds(monkeypatch: pytest.MonkeyPatch) -> None:
     )
     assert [o.total_usd for o in result.qualifying] == [249.99]
     assert [o.total_usd for o in result.near_misses] == [250.01, 260.0]
+
+
+async def test_per_origin_bag_caps(monkeypatch: pytest.MonkeyPatch) -> None:
+    query = SearchQuery(
+        origins=("CNX", "BKK", "DMK"),
+        destinations=("DAD",),
+        priority_routes=(),
+        date_from=date(2026, 10, 28),
+        date_to=date(2026, 10, 29),
+        adults=1,
+        cabin_bags=1,
+        checked_bags=1,
+        max_total_usd=120.0,
+        near_miss_usd=140.0,
+        currency="USD",
+        price_caps=(
+            PriceCap(("CNX",), 120, 90),
+            PriceCap(("BKK", "DMK"), 90, 70),
+        ),
+    )
+    no_bag = _offer(
+        source="kiwi",
+        origin="BKK",
+        destination="DAD",
+        depart_date=date(2026, 10, 28),
+        price_usd=75,
+        flight_numbers=["N1"],
+    )
+    no_bag.checked_bag_included = False
+    with_bag = _offer(
+        source="kiwi",
+        origin="BKK",
+        destination="DAD",
+        depart_date=date(2026, 10, 28),
+        price_usd=85,
+        flight_numbers=["Y1"],
+    )
+    with_bag.checked_bag_included = True
+    unknown = _offer(
+        source="kiwi",
+        origin="CNX",
+        destination="DAD",
+        depart_date=date(2026, 10, 28),
+        price_usd=88,
+        flight_numbers=["U1"],
+    )
+    source = FakeSource({"offers": [no_bag, with_bag, unknown]})
+    source.name = "kiwi"
+    _install_sources(monkeypatch, {"kiwi": source})
+    result = await _run(
+        monkeypatch,
+        config=AppConfig(
+            query=query,
+            sources={"kiwi": {"enabled": True}},
+            notify={"telegram": {"enabled": False}},
+        ),
+        env={},
+        state=State(),
+        now=NOW,
+        dry_run=True,
+    )
+    qualifying = {(o.origin, o.checked_bag_included, o.total_usd) for o in result.qualifying}
+    assert qualifying == {("BKK", True, 85.0), ("CNX", None, 88.0)}
+    assert (no_bag.origin, no_bag.total_usd) not in {
+        (o.origin, o.total_usd) for o in result.qualifying
+    }
 
 
 async def test_skipped_unknown_source(monkeypatch: pytest.MonkeyPatch) -> None:

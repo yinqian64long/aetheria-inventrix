@@ -5,12 +5,16 @@ priority_routes:
   - [DMK, DAD]
   - [CNX, DAD]
 date_from: 2026-10-28
-date_to: 2026-10-31
+date_to: 2026-10-29
 adults: 1
 cabin_bags: 1
 checked_bags: 1
-max_total_usd: 110
-near_miss_usd: 130
+max_total_usd: 120
+near_miss_usd: 140
+near_miss_margin_usd: 20
+price_caps:
+  - {origins: [CNX], with_bag: 120, without_bag: 90}
+  - {origins: [BKK, DMK], with_bag: 90, without_bag: 70}
 currency: USD
 apify_max_concurrent_runs: 3
 sources:
@@ -28,3 +32,4 @@ sources:
   vietjet: {enabled: true, max_routes_per_day: 4, max_results: 10, timeout_s: 1200}
 notify:
   telegram: {enabled: true, heartbeat_utc_hour: 0}
+  grok: {enabled: true}

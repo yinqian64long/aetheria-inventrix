@@ -12,7 +12,12 @@ from pathlib import Path
 import httpx
 
 from flightsearch.config import load_config
-from flightsearch.notify import TelegramNotifier, get_chat_ids
+from flightsearch.notify import (
+    GrokBotNotifier,
+    MultiNotifier,
+    TelegramNotifier,
+    get_chat_ids,
+)
 from flightsearch.pipeline import RunResult, run_search
 from flightsearch.report import format_markdown
 from flightsearch.state import State
@@ -44,6 +49,7 @@ def _build_parser() -> argparse.ArgumentParser:
     run.add_argument("-v", "--verbose", action="store_true")
 
     sub.add_parser("test-telegram", help="Send a test Telegram message")
+    sub.add_parser("test-grok", help="Send a test message to the Grok Bot webhook")
     sub.add_parser("telegram-chat-id", help="Print chat ids from getUpdates")
     return parser
 
@@ -61,6 +67,8 @@ async def _dispatch(args: argparse.Namespace) -> int:
         return await _cmd_run(args)
     if args.command == "test-telegram":
         return await _cmd_test_telegram()
+    if args.command == "test-grok":
+        return await _cmd_test_grok()
     if args.command == "telegram-chat-id":
         return await _cmd_telegram_chat_id()
     return 2
@@ -97,17 +105,35 @@ def _maybe_notifier(
     config,
     env,
     http: httpx.AsyncClient,
-) -> TelegramNotifier | None:
-    telegram = (config.notify or {}).get("telegram") or {}
-    enabled = bool(telegram.get("enabled", False))
-    if args.no_notify or not enabled:
+):
+    if args.no_notify:
         return None
-    token = env.get("TELEGRAM_BOT_TOKEN") or ""
-    chat_id = env.get("TELEGRAM_CHAT_ID") or ""
-    if token and chat_id:
-        return TelegramNotifier(token, chat_id, http)
-    log.warning("Telegram notify enabled but TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID not set")
-    return None
+    notifiers = []
+    telegram = (config.notify or {}).get("telegram") or {}
+    if telegram.get("enabled", False):
+        token = env.get("TELEGRAM_BOT_TOKEN") or ""
+        chat_id = env.get("TELEGRAM_CHAT_ID") or ""
+        if token and chat_id:
+            notifiers.append(TelegramNotifier(token, chat_id, http))
+        else:
+            log.warning(
+                "Telegram notify enabled but TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID not set"
+            )
+    grok = (config.notify or {}).get("grok") or {}
+    if grok.get("enabled", False):
+        url = env.get("GROK_BOT_WEBHOOK_URL") or ""
+        key = env.get("GROK_BOT_WEBHOOK_KEY") or ""
+        if url and key:
+            notifiers.append(GrokBotNotifier(url, key, http))
+        else:
+            log.warning(
+                "Grok Bot notify enabled but GROK_BOT_WEBHOOK_URL/GROK_BOT_WEBHOOK_KEY not set"
+            )
+    if not notifiers:
+        return None
+    if len(notifiers) == 1:
+        return notifiers[0]
+    return MultiNotifier(notifiers)
 
 
 def _parse_sources(value: str | None) -> list[str] | None:
@@ -175,6 +201,17 @@ async def _cmd_test_telegram() -> int:
         return 1
     async with httpx.AsyncClient(timeout=30.0) as http:
         await TelegramNotifier(token, chat_id, http).send("flightsearch test ✅")
+    return 0
+
+
+async def _cmd_test_grok() -> int:
+    url = os.environ.get("GROK_BOT_WEBHOOK_URL") or ""
+    key = os.environ.get("GROK_BOT_WEBHOOK_KEY") or ""
+    if not url or not key:
+        print("GROK_BOT_WEBHOOK_URL and GROK_BOT_WEBHOOK_KEY are required", file=sys.stderr)
+        return 1
+    async with httpx.AsyncClient(timeout=30.0) as http:
+        await GrokBotNotifier(url, key, http).send("flightsearch test")
     return 0
 
 

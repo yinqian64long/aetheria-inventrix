@@ -11,12 +11,12 @@ Defaults live in [`config.yaml`](config.yaml):
 | Origins | BKK, DMK, CNX |
 | Destinations | DAD |
 | Priority routes | BKK–DAD, DMK–DAD, CNX–DAD. Paid Apify sources rotate through this list. Kiwi, Skiplagged and Google search every airport pair. |
-| Travel dates | 2026-10-28 through 2026-10-31, one way |
+| Travel dates | 2026-10-28 through 2026-10-29, one way |
 | Passengers | 1 adult, 1 cabin bag, 1 checked bag |
-| Alert threshold | Total ≤ 110 USD |
-| Near-miss reporting | Up to 130 USD (no alert) |
+| Alert caps | CNX: 120 USD with a suitcase, 90 USD without. Bangkok (BKK, DMK): 90 USD with a suitcase, 70 USD without. A fare with unknown bag status uses the no-suitcase cap. |
+| Near-miss reporting | Up to 20 USD above that offer's own cap (no alert) |
 
-A checked bag is part of the 110 USD cap when the source prices it. Kiwi is asked for a hold bag, so its fare counts as including one. Agoda, AirAsia and VietJet count a checked bag only when the allowance is 15 kg or more. Other fares stay in the results with the note `checked bag not verified`.
+A confirmed checked bag uses the higher cap for its origin. Unknown bag status counts as no suitcase. Kiwi is searched twice, once with a hold bag and once without, so those fares are marked accordingly. Agoda, AirAsia and VietJet count a checked bag only when the allowance is 15 kg or more. Other fares stay in the results with the note `checked bag not verified` and are judged against the no-suitcase cap.
 
 After the last day of the window passes, `results/latest.json` sets `"window_over": true` and the GitHub Actions workflow disables itself.
 
@@ -55,6 +55,8 @@ Apify sources share one account. When `APIFY_TOKEN` is out of credits, the same 
    # Optional:
    gh secret set APIFY_TOKEN         # primary Apify account
    gh secret set APIFY_TOKEN_BACKUP  # used after the primary account runs out of credits
+   gh secret set GROK_BOT_WEBHOOK_URL
+   gh secret set GROK_BOT_WEBHOOK_KEY
    ```
 
    **`GH_SECRETS_PAT` (required when LetsFG is enabled):** LetsFG refresh tokens rotate on every API use. The workflow writes the new token back with `gh secret set LETSFG_REFRESH_TOKEN`, which needs a **fine-grained PAT** stored as `GH_SECRETS_PAT`: access limited to **this repository only**, permission **Secrets: Read and write**, expiry **at least 45 days** (rotate the PAT before it expires).
@@ -75,7 +77,22 @@ Apify sources share one account. When `APIFY_TOKEN` is out of credits, the same 
    uv run python -m flightsearch test-telegram
    ```
 
-4. **LetsFG OAuth** (one time):
+4. **Grok Bot message**: in the Bot, add a routine whose only trigger is a webhook, and paste this instruction:
+
+   ```text
+   A flight search webhook arrived. The JSON body has a "message" field.
+   Post that message in this chat. Do not send email, post publicly, or change any account.
+   ```
+
+   Copy the routine's POST URL and key into `GROK_BOT_WEBHOOK_URL` and `GROK_BOT_WEBHOOK_KEY`. The search posts deal alerts, health alerts, and the daily heartbeat there. A 200 means the Bot started a run.
+
+   ```bash
+   export GROK_BOT_WEBHOOK_URL=...
+   export GROK_BOT_WEBHOOK_KEY=...
+   uv run python -m flightsearch test-grok
+   ```
+
+5. **LetsFG OAuth** (one time):
 
    ```bash
    uv run python scripts/letsfg_auth.py --set-gh-secrets --repo OWNER/REPO
@@ -83,7 +100,7 @@ Apify sources share one account. When `APIFY_TOKEN` is out of credits, the same 
 
    Requires `gh` authenticated and, for `--set-gh-secrets`, permission to write secrets.
 
-5. **Enable Actions** — the [`search`](.github/workflows/search.yml) workflow runs on a cron (every 6 hours at :17 UTC) and via manual dispatch.
+6. **Enable Actions** — the [`search`](.github/workflows/search.yml) workflow runs on a cron (every 3 hours at :17 UTC) and via manual dispatch.
 
 See [docs/RUNNERS.md](docs/RUNNERS.md) for runner choice, backup triggers, and health monitoring.
 
@@ -93,7 +110,7 @@ See [docs/RUNNERS.md](docs/RUNNERS.md) for runner choice, backup triggers, and h
 uv sync
 uv run pytest -q
 uv run python -m flightsearch run --config config.yaml --state state/state.json --out results
-uv run python -m flightsearch run --dry-run --no-notify   # no state write, no Telegram
+uv run python -m flightsearch run --dry-run --no-notify   # no state write, no Telegram or Grok Bot
 uv run python -m flightsearch run --sources kiwi,google -v
 ```
 

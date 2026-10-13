@@ -87,9 +87,12 @@ def _build_notes(
     return "; ".join(notes)
 
 
-def _bag_arrays(query: SearchQuery) -> tuple[list[int], list[int]]:
+def _bag_arrays(
+    query: SearchQuery, hold_bags: int | None = None
+) -> tuple[list[int], list[int]]:
     hand = max(0, min(1, int(query.cabin_bags)))
-    hold = max(0, min(2, int(query.checked_bags)))
+    hold_count = query.checked_bags if hold_bags is None else hold_bags
+    hold = max(0, min(2, int(hold_count)))
     n = max(1, int(query.adults))
     return [hand] * n, [hold] * n
 
@@ -113,6 +116,7 @@ def itinerary_to_offer(
     requested_from: str,
     requested_to: str,
     source: str = "kiwi",
+    hold_bags: int | None = None,
 ) -> Offer | None:
     outbound = itinerary.get("outbound")
     if not isinstance(outbound, dict):
@@ -184,10 +188,15 @@ def itinerary_to_offer(
         duration_minutes=duration_minutes,
         link=itinerary.get("bookingUrl"),
         cabin_bag_included=_cabin_included(itinerary.get("baggage"), query),
-        checked_bag_included=int(query.checked_bags) > 0,
+        checked_bag_included=_hold_included(query, hold_bags),
         self_transfer=self_transfer,
         notes=notes,
     )
+
+
+def _hold_included(query: SearchQuery, hold_bags: int | None) -> bool:
+    count = query.checked_bags if hold_bags is None else hold_bags
+    return int(count) > 0
 
 
 def parse_search_response(
@@ -198,6 +207,7 @@ def parse_search_response(
     requested_from: str,
     requested_to: str,
     source: str = "kiwi",
+    hold_bags: int | None = None,
 ) -> list[Offer]:
     if not isinstance(data, dict):
         return []
@@ -214,6 +224,7 @@ def parse_search_response(
             requested_from=requested_from,
             requested_to=requested_to,
             source=source,
+            hold_bags=hold_bags,
         )
         if offer is not None:
             offers.append(offer)
@@ -229,8 +240,9 @@ def _search_args(
     date_to: date | None,
     query: SearchQuery,
     max_sector_stopovers: int | None = None,
+    hold_bags: int | None = None,
 ) -> dict[str, Any]:
-    hand, hold = _bag_arrays(query)
+    hand, hold = _bag_arrays(query, hold_bags)
     args: dict[str, Any] = {
         "flyFrom": fly_from,
         "flyTo": fly_to,
@@ -266,8 +278,12 @@ class KiwiSource(Source):
         offers: list[Offer] = []
         failures = 0
         lock = asyncio.Lock()
+        hold_counts = [int(query.checked_bags)]
+        if int(query.checked_bags) > 0:
+            hold_counts.append(0)
+        calls = [(origin, dest, hold) for origin, dest in pairs for hold in hold_counts]
 
-        async def one(session: McpSession, origin: str, dest: str) -> None:
+        async def one(session: McpSession, origin: str, dest: str, hold_bags: int) -> None:
             nonlocal failures
             args = _search_args(
                 fly_from=origin,
@@ -275,6 +291,7 @@ class KiwiSource(Source):
                 date_from=date_from,
                 date_to=date_to,
                 query=query,
+                hold_bags=hold_bags,
             )
             async with sem:
                 try:
@@ -293,22 +310,23 @@ class KiwiSource(Source):
                 requested_from=origin,
                 requested_to=dest,
                 source=self.name,
+                hold_bags=hold_bags,
             )
             async with lock:
                 offers.extend(parsed)
 
         async with McpSession(KIWI_MCP_URL, timeout=120) as session:
-            await asyncio.gather(*(one(session, o, d) for o, d in pairs))
+            await asyncio.gather(*(one(session, o, d, h) for o, d, h in calls))
 
-        if failures == len(pairs):
+        if failures == len(calls):
             raise SourceError(f"kiwi: all {failures} search calls failed")
         return _top_n_per_od(offers)
 
 
 def _top_n_per_od(offers: list[Offer], n: int = _MAX_PER_OD) -> list[Offer]:
-    buckets: dict[tuple[str, str], list[Offer]] = {}
+    buckets: dict[tuple[str, str, bool | None], list[Offer]] = {}
     for offer in offers:
-        key = (offer.origin, offer.destination)
+        key = (offer.origin, offer.destination, offer.checked_bag_included)
         buckets.setdefault(key, []).append(offer)
     out: list[Offer] = []
     for group in buckets.values():

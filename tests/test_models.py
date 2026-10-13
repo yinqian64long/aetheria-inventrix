@@ -4,7 +4,7 @@ from datetime import date, datetime
 from pathlib import Path
 
 from flightsearch.config import load_config
-from flightsearch.models import Offer, SearchQuery
+from flightsearch.models import Offer, PriceCap, SearchQuery
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -61,6 +61,31 @@ def test_offer_key_without_hop_uses_airlines_fallback() -> None:
         airlines=["QR", "LO"],
     )
     assert offer.key() == "google|CNX-KRK|2026-10-25||QR,LO"
+    bagged = Offer(
+        source="kiwi",
+        origin="CNX",
+        destination="DAD",
+        depart_date=date(2026, 10, 28),
+        price_usd=100.0,
+        price_original=100.0,
+        currency_original="USD",
+        flight_numbers=["VZ964"],
+        checked_bag_included=True,
+    )
+    assert bagged.key().endswith("|bag")
+    bare = Offer(
+        source="kiwi",
+        origin="CNX",
+        destination="DAD",
+        depart_date=date(2026, 10, 28),
+        price_usd=80.0,
+        price_original=80.0,
+        currency_original="USD",
+        flight_numbers=["VZ964"],
+        checked_bag_included=False,
+    )
+    assert not bare.key().endswith("|bag")
+    assert bagged.key() != bare.key()
 
 
 def test_search_query_dates() -> None:
@@ -99,15 +124,62 @@ def test_load_config_real_yaml() -> None:
     assert cfg.query.destinations == ("DAD",)
     assert cfg.query.priority_routes == (("BKK", "DAD"), ("DMK", "DAD"), ("CNX", "DAD"))
     assert cfg.query.date_from == date(2026, 10, 28)
-    assert cfg.query.date_to == date(2026, 10, 31)
+    assert cfg.query.date_to == date(2026, 10, 29)
     assert cfg.query.adults == 1
     assert cfg.query.cabin_bags == 1
     assert cfg.query.checked_bags == 1
-    assert cfg.query.max_total_usd == 110
-    assert cfg.query.near_miss_usd == 130
+    assert cfg.query.max_total_usd == 120
+    assert cfg.query.near_miss_usd == 140
+    assert cfg.query.near_miss_margin_usd == 20
+    assert cfg.query.price_caps == (
+        PriceCap(("CNX",), 120, 90),
+        PriceCap(("BKK", "DMK"), 90, 70),
+    )
     assert cfg.query.currency == "USD"
     assert cfg.sources["skiplagged"]["max_detail_searches"] == 12
     assert cfg.sources["agoda"]["enabled"] is True
     assert cfg.sources["rpl"]["enabled"] is False
     assert cfg.notify["telegram"]["heartbeat_utc_hour"] == 0
+    assert cfg.notify["grok"]["enabled"] is True
     assert cfg.apify_max_concurrent_runs == 3
+
+
+def _priced(origin: str, bag: bool | None) -> Offer:
+    return Offer(
+        source="kiwi",
+        origin=origin,
+        destination="DAD",
+        depart_date=date(2026, 10, 28),
+        price_usd=1.0,
+        price_original=1.0,
+        currency_original="USD",
+        checked_bag_included=bag,
+    )
+
+
+def test_cap_usd_by_origin_and_bag() -> None:
+    query = SearchQuery(
+        origins=("BKK", "DMK", "CNX"),
+        destinations=("DAD",),
+        priority_routes=(),
+        date_from=date(2026, 10, 28),
+        date_to=date(2026, 10, 29),
+        adults=1,
+        cabin_bags=1,
+        checked_bags=1,
+        max_total_usd=120.0,
+        near_miss_usd=140.0,
+        currency="USD",
+        price_caps=(
+            PriceCap(("CNX",), 120, 90),
+            PriceCap(("BKK", "DMK"), 90, 70),
+        ),
+    )
+    assert query.cap_usd(_priced("CNX", True)) == 120
+    assert query.cap_usd(_priced("CNX", False)) == 90
+    assert query.cap_usd(_priced("CNX", None)) == 90
+    assert query.cap_usd(_priced("BKK", True)) == 90
+    assert query.cap_usd(_priced("BKK", False)) == 70
+    assert query.cap_usd(_priced("BKK", None)) == 70
+    assert query.cap_usd(_priced("DMK", None)) == 70
+    assert query.cap_usd(_priced("HKT", True)) == 120

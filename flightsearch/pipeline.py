@@ -147,11 +147,13 @@ async def _execute(
         dropped_count = len(dropped)
         best_per_source = _best_per_source(kept)
         offers, also_seen = _dedupe(kept, state)
-        qualifying = [o for o in offers if o.total_usd <= config.query.max_total_usd]
+        cap = config.query.cap_usd
+        margin = config.query.near_miss_margin_usd
+        qualifying = [o for o in offers if o.total_usd <= cap(o)]
         near_misses = [
             o
             for o in offers
-            if config.query.max_total_usd < o.total_usd <= config.query.near_miss_usd
+            if cap(o) < o.total_usd <= cap(o) + margin
         ]
         new_alerts = [o for o in qualifying if state.should_alert(o)]
         health_needed = [o for o in outcomes if o.health_alert]

@@ -7,7 +7,7 @@ from typing import Any
 
 import yaml
 
-from flightsearch.models import SearchQuery
+from flightsearch.models import PriceCap, SearchQuery
 
 
 @dataclass
@@ -42,6 +42,8 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
         max_total_usd=float(raw["max_total_usd"]),
         near_miss_usd=float(raw["near_miss_usd"]),
         currency=str(raw["currency"]),
+        price_caps=_price_caps(raw.get("price_caps")),
+        near_miss_margin_usd=float(raw.get("near_miss_margin_usd", 20)),
     )
     return AppConfig(
         query=query,
@@ -49,6 +51,28 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
         notify=dict(raw.get("notify") or {}),
         apify_max_concurrent_runs=max(1, int(raw.get("apify_max_concurrent_runs", 3))),
     )
+
+
+def _price_caps(value: Any) -> tuple[PriceCap, ...]:
+    caps: list[PriceCap] = []
+    for item in value or []:
+        if not isinstance(item, dict):
+            continue
+        origins = tuple(
+            str(code).strip().upper()
+            for code in (item.get("origins") or [])
+            if str(code).strip()
+        )
+        if not origins:
+            continue
+        caps.append(
+            PriceCap(
+                origins=origins,
+                with_bag_usd=float(item["with_bag"]),
+                without_bag_usd=float(item["without_bag"]),
+            )
+        )
+    return tuple(caps)
 
 
 def _codes(value: Any) -> tuple[str, ...]:

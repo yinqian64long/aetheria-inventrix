@@ -2,7 +2,7 @@ name: Flight search
 
 on:
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "17 */3 * * *"
   workflow_dispatch:
     inputs:
       sources:
@@ -10,7 +10,7 @@ on:
         type: string
         default: ""
       dry_run:
-        description: Run without saving state or sending Telegram alerts
+        description: Run without saving state or sending Telegram or Grok Bot alerts
         type: boolean
         default: false
 
@@ -53,6 +53,8 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GROK_BOT_WEBHOOK_URL: ${{ secrets.GROK_BOT_WEBHOOK_URL }}
+          GROK_BOT_WEBHOOK_KEY: ${{ secrets.GROK_BOT_WEBHOOK_KEY }}
           LETSFG_CLIENT_ID: ${{ secrets.LETSFG_CLIENT_ID }}
           LETSFG_REFRESH_TOKEN: ${{ secrets.LETSFG_REFRESH_TOKEN }}
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
