@@ -1202,8 +1202,8 @@
     },
     "DMK-DAD|2026-10-28|2026-10-28T10:30:00|FD636": {
       "first_seen": "2026-10-14T11:48:25.044437+00:00",
-      "last_alerted": "2026-10-14T11:48:25.044437+00:00",
-      "total_usd": 68.0
+      "last_alerted": "2026-10-14T21:39:08.024669+00:00",
+      "total_usd": 62.0
     },
     "DMK-DAD|2026-10-28|2026-10-28T10:35:00|636": {
       "first_seen": "2026-10-13T10:31:36.540684+00:00",
@@ -1262,8 +1262,8 @@
     },
     "DMK-DAD|2026-10-29|2026-10-29T16:35:00|FD638": {
       "first_seen": "2026-10-14T11:48:25.044437+00:00",
-      "last_alerted": "2026-10-14T11:48:25.044437+00:00",
-      "total_usd": 68.0
+      "last_alerted": "2026-10-14T21:39:08.024669+00:00",
+      "total_usd": 62.0
     },
     "DMK-DAD|2026-10-29|2026-10-29T16:40:00|638": {
       "first_seen": "2026-10-13T10:31:36.540684+00:00",
@@ -1717,7 +1717,7 @@
     }
   },
   "last_heartbeat_date": "2026-10-14",
-  "runs": 13,
+  "runs": 14,
   "sources": {
     "agoda": {
       "data": {
@@ -1728,7 +1728,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T17:07:44.932090+00:00"
+        "last_ok": "2026-10-14T21:39:08.024669+00:00"
       }
     },
     "airasia": {
@@ -1740,7 +1740,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T17:07:44.932090+00:00"
+        "last_ok": "2026-10-14T21:39:08.024669+00:00"
       }
     },
     "google": {
@@ -1748,7 +1748,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T17:07:44.932090+00:00"
+        "last_ok": "2026-10-14T21:39:08.024669+00:00"
       }
     },
     "kiwi": {
@@ -1756,7 +1756,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T17:07:44.932090+00:00"
+        "last_ok": "2026-10-14T21:39:08.024669+00:00"
       }
     },
     "letsfg": {
@@ -1766,7 +1766,7 @@
         "searches_today": 4
       },
       "health": {
-        "consecutive_failures": 6,
+        "consecutive_failures": 7,
         "last_error": "timeout after 1800s",
         "last_ok": "2026-10-13T02:11:57.433204+00:00"
       }
@@ -1776,7 +1776,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T17:07:44.932090+00:00"
+        "last_ok": "2026-10-14T21:39:08.024669+00:00"
       }
     },
     "skyscanner": {
@@ -1788,7 +1788,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T17:07:44.932090+00:00"
+        "last_ok": "2026-10-14T21:39:08.024669+00:00"
       }
     },
     "trip": {
@@ -1800,7 +1800,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T17:07:44.932090+00:00"
+        "last_ok": "2026-10-14T21:39:08.024669+00:00"
       }
     },
     "vietjet": {
@@ -1812,7 +1812,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T17:07:44.932090+00:00"
+        "last_ok": "2026-10-14T21:39:08.024669+00:00"
       }
     }
   },
