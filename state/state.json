@@ -1682,30 +1682,30 @@
     }
   },
   "last_heartbeat_date": "2026-10-14",
-  "runs": 10,
+  "runs": 11,
   "sources": {
     "agoda": {
       "data": {
         "day": "2026-10-14",
-        "route_cursor": 10,
-        "routes_today": 1
+        "route_cursor": 11,
+        "routes_today": 2
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T00:16:57.044015+00:00"
+        "last_ok": "2026-10-14T04:58:47.793798+00:00"
       }
     },
     "airasia": {
       "data": {
         "day": "2026-10-14",
-        "route_cursor": 10,
-        "routes_today": 1
+        "route_cursor": 11,
+        "routes_today": 2
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T00:16:57.044015+00:00"
+        "last_ok": "2026-10-14T04:58:47.793798+00:00"
       }
     },
     "google": {
@@ -1713,7 +1713,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T00:16:57.044015+00:00"
+        "last_ok": "2026-10-14T04:58:47.793798+00:00"
       }
     },
     "kiwi": {
@@ -1721,17 +1721,17 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T00:16:57.044015+00:00"
+        "last_ok": "2026-10-14T04:58:47.793798+00:00"
       }
     },
     "letsfg": {
       "data": {
-        "cursor": 0,
+        "cursor": 1,
         "day": "2026-10-14",
-        "searches_today": 1
+        "searches_today": 2
       },
       "health": {
-        "consecutive_failures": 3,
+        "consecutive_failures": 4,
         "last_error": "timeout after 1800s",
         "last_ok": "2026-10-13T02:11:57.433204+00:00"
       }
@@ -1741,43 +1741,43 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T00:16:57.044015+00:00"
+        "last_ok": "2026-10-14T04:58:47.793798+00:00"
       }
     },
     "skyscanner": {
       "data": {
-        "cursor": 17,
+        "cursor": 19,
         "day": "2026-10-14",
-        "runs_today": 2
+        "runs_today": 4
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T00:16:57.044015+00:00"
+        "last_ok": "2026-10-14T04:58:47.793798+00:00"
       }
     },
     "trip": {
       "data": {
         "day": "2026-10-14",
-        "route_cursor": 10,
-        "routes_today": 1
+        "route_cursor": 11,
+        "routes_today": 2
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T00:16:57.044015+00:00"
+        "last_ok": "2026-10-14T04:58:47.793798+00:00"
       }
     },
     "vietjet": {
       "data": {
         "day": "2026-10-14",
-        "route_cursor": 10,
-        "routes_today": 1
+        "route_cursor": 11,
+        "routes_today": 2
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T00:16:57.044015+00:00"
+        "last_ok": "2026-10-14T04:58:47.793798+00:00"
       }
     }
   },
