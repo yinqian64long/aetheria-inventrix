@@ -1217,8 +1217,8 @@
     },
     "DMK-DAD|2026-10-28|2026-10-28T16:35:00|FD638": {
       "first_seen": "2026-10-14T11:48:25.044437+00:00",
-      "last_alerted": "2026-10-14T11:48:25.044437+00:00",
-      "total_usd": 68.0
+      "last_alerted": "2026-10-14T17:07:44.932090+00:00",
+      "total_usd": 62.0
     },
     "DMK-DAD|2026-10-28|2026-10-28T16:40:00|638": {
       "first_seen": "2026-10-13T10:31:36.540684+00:00",
@@ -1232,8 +1232,8 @@
     },
     "DMK-DAD|2026-10-29|2026-10-29T07:20:00|FD634": {
       "first_seen": "2026-10-14T11:48:25.044437+00:00",
-      "last_alerted": "2026-10-14T11:48:25.044437+00:00",
-      "total_usd": 68.0
+      "last_alerted": "2026-10-14T17:07:44.932090+00:00",
+      "total_usd": 62.0
     },
     "DMK-DAD|2026-10-29|2026-10-29T07:25:00|634": {
       "first_seen": "2026-10-13T10:31:36.540684+00:00",
@@ -1247,8 +1247,8 @@
     },
     "DMK-DAD|2026-10-29|2026-10-29T10:30:00|FD636": {
       "first_seen": "2026-10-14T11:48:25.044437+00:00",
-      "last_alerted": "2026-10-14T11:48:25.044437+00:00",
-      "total_usd": 68.0
+      "last_alerted": "2026-10-14T17:07:44.932090+00:00",
+      "total_usd": 62.0
     },
     "DMK-DAD|2026-10-29|2026-10-29T10:35:00|636": {
       "first_seen": "2026-10-13T10:31:36.540684+00:00",
@@ -1717,30 +1717,30 @@
     }
   },
   "last_heartbeat_date": "2026-10-14",
-  "runs": 12,
+  "runs": 13,
   "sources": {
     "agoda": {
       "data": {
         "day": "2026-10-14",
-        "route_cursor": 12,
-        "routes_today": 3
+        "route_cursor": 13,
+        "routes_today": 4
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T11:48:25.044437+00:00"
+        "last_ok": "2026-10-14T17:07:44.932090+00:00"
       }
     },
     "airasia": {
       "data": {
         "day": "2026-10-14",
-        "route_cursor": 12,
-        "routes_today": 3
+        "route_cursor": 13,
+        "routes_today": 4
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T11:48:25.044437+00:00"
+        "last_ok": "2026-10-14T17:07:44.932090+00:00"
       }
     },
     "google": {
@@ -1748,7 +1748,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T11:48:25.044437+00:00"
+        "last_ok": "2026-10-14T17:07:44.932090+00:00"
       }
     },
     "kiwi": {
@@ -1756,17 +1756,17 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T11:48:25.044437+00:00"
+        "last_ok": "2026-10-14T17:07:44.932090+00:00"
       }
     },
     "letsfg": {
       "data": {
-        "cursor": 2,
+        "cursor": 3,
         "day": "2026-10-14",
-        "searches_today": 3
+        "searches_today": 4
       },
       "health": {
-        "consecutive_failures": 5,
+        "consecutive_failures": 6,
         "last_error": "timeout after 1800s",
         "last_ok": "2026-10-13T02:11:57.433204+00:00"
       }
@@ -1776,7 +1776,7 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T11:48:25.044437+00:00"
+        "last_ok": "2026-10-14T17:07:44.932090+00:00"
       }
     },
     "skyscanner": {
@@ -1788,31 +1788,31 @@
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T11:48:25.044437+00:00"
+        "last_ok": "2026-10-14T17:07:44.932090+00:00"
       }
     },
     "trip": {
       "data": {
         "day": "2026-10-14",
-        "route_cursor": 12,
-        "routes_today": 3
+        "route_cursor": 13,
+        "routes_today": 4
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T11:48:25.044437+00:00"
+        "last_ok": "2026-10-14T17:07:44.932090+00:00"
       }
     },
     "vietjet": {
       "data": {
         "day": "2026-10-14",
-        "route_cursor": 12,
-        "routes_today": 3
+        "route_cursor": 13,
+        "routes_today": 4
       },
       "health": {
         "consecutive_failures": 0,
         "last_error": null,
-        "last_ok": "2026-10-14T11:48:25.044437+00:00"
+        "last_ok": "2026-10-14T17:07:44.932090+00:00"
       }
     }
   },
